@@ -1,0 +1,225 @@
+html,body{height: 100%;}
+
+/*home_more样式*/
+.home_more .container-fluid{
+    background: #F2F2F2;
+    padding-top: 30px;
+    height: 450px;
+}
+.home_more .m_title{
+    color: #474747;
+    font-size: 24px;
+    padding-bottom: 15px;
+    line-height: 35px;
+}
+.home_more .m_box{
+    width: 350px;
+    text-align: justify;
+    color: rgb(71, 71, 71);
+    font-size: 14px;
+    line-height: 25px;
+    text-indent: 2em;
+    font-family: 黑体;
+    letter-spacing: -0.2px;
+    height: 180px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(218, 218, 218);
+    border-image: initial;
+    padding: 12px 22px 10px;
+    margin-top: 15px;
+}
+.m_box .m_box_title{
+    text-align: center;
+    color: #d92f18;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.m_box .m_box_a{
+    float: right;
+    text-decoration: none;
+    color: #919191;
+}
+.m_box .m_box_ul{
+    margin-left: 10px;
+    width: 344px;
+    margin-top: 10px;
+}
+.m_box_ul a{
+    width: 330px;
+    height: 33px;
+    background: url(../img/point.png) no-repeat left center;
+    color: #474747;
+    padding-left: 14px;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 33px;
+
+}
+.m_box_more{
+    color: #474747;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 24px;
+    float: right
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*home_footer样式*/
+.home_footer .container-fluid{
+    background-color: #c41a04;
+}
+.f_wrap{
+    margin-top: 64px;
+    height:725px;
+    width: 1200px;
+}
+.f_title{
+    background: url(../img/f_01.png) no-repeat left center;
+}
+.f_title_01{
+    color: #fff;
+    font-size: 60px;
+    margin-left: 110px;
+    width: 663px;
+    display: inline-block;
+}
+.f_title_02{
+    color: #fff;
+    font-size: 30px;
+    margin-left: 110px;
+    margin-top: -25px;
+    width: 663px;
+    display: inline-block;
+}
+.f_div{
+    width: 400px;
+    height: 160px;
+    text-align: center;
+    margin-top: 20px;
+}
+.f_div_01,.f_div_02{
+    width: 125px;
+    height: 160px;
+    text-align: center;
+    float: left;
+    margin: 0 15px;
+}
+.f_div p{
+    color: #fff;
+    line-height: 30px;
+    font-size: 12px;
+    font-family: "微软雅黑","宋体",Verdana, Arial;
+}
+.f_content_01{
+    margin:0;
+    padding:0;
+    color: #fdf135;
+    font-size:30px;
+    font-family: '微软雅黑';
+    line-height:10px;
+}
+.f_space{
+    height: 50px;
+}
+.f_line{
+    height: 3px;
+    background: url(../img/bg_03.png) repeat-x;
+    width: 1130px;
+    margin-top: 10px;
+}
+/*第二模块css*/
+.f_content_mid{
+    background: url(../img/f_04.png) no-repeat 825px bottom;
+    height: 320px;
+    padding-top: 24px;
+    margin-left: 35px;
+    width: 1135px;
+}
+.f_content_mid ul li{
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style-type: none;
+}
+.f_content_mid ul li a{
+    background: url(../img/point_01.png) no-repeat 10px center;
+    width: 210px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding-left: 25px;
+    text-decoration: none;
+    margin-left: -20px;
+}
+.f_content_mid ul li a:hover{background: url(../img/point_03.png) no-repeat 10px center #FDED35;
+    color: #000;}
+.f_content_mid .ft_01{background: url(../img/ft_01.png) no-repeat right center;}
+.f_content_mid .ft_02{background: url(../img/ft_02.png) no-repeat right center;}
+.f_content_mid .ft_03{background: url(../img/ft_03.png) no-repeat right center;}
+.f_content_mid .ft_04{background: url(../img/ft_04.png) no-repeat right center;}
+.f_content_mid h2{
+    width: 225px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 20px;
+    text-indent: 10px;
+}
+/*第三模块css*/
+.f_link .f_link_p{
+    color: #fff;
+    font-size: 13px;
+    line-height: 60px;
+    width: 1110px;
+    margin-left: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.f_link #f_scrollobj{
+    white-space: nowrap;
+    overflow: hidden;
+    width: 950px;
+    height: 55px;
+    color: #fff;
+    margin-left: 140px;
+    margin-top: -40px;
+}
+.f_link #f_scrollobj .f_scrollobj_01{
+    width: 950px;
+@-moz-animation:scrollobj 8s linear infinite ;
+@-o-animation:scrollobj 8s linear infinite ;
+@-webkit-animation:scrollobj 8s linear infinite ;
+animation:scrollobj 8s linear infinite ;
+}
+@keyframes scrollobj {
+    0%{
+        margin-left:0;
+    }
+    100%{
+        margin-left: -100px;
+    }
+}
+.f_link #f_scrollobj a{
+    color: #fff;
+    text-decoration: none
+}
+.f_link #f_ICP,#f_ICP a{
+    color: #fff;
+    padding: 0px 5px 0px 3px;
+    text-decoration: none;
+}
