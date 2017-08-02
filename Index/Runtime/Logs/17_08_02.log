@@ -1,7 +1,7 @@
-[ 2017-08-02T15:37:18+08:00 ] 0.0.0.0 /vvvle/index.php
+[ 2017-08-02T15:50:12+08:00 ] 0.0.0.0 /vvvle/index.php
 INFO: [ app_begin ] --START--
-INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000514s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000508s ]
 INFO: [ view_parse ] --START--
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 168 行.
@@ -100,17 +100,17 @@ NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_ca
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 197 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 137 行.
-INFO: ParseTemplate Behavior ::run [ RunTime:0.004653s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.004713s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030664s ]
 INFO: [ view_filter ] --START--
 NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Behavior/ContentReplaceBehavior.class.php 第 40 行.
 NOTIC: [8] Use of undefined constant APP_TMPL_PATH - assumed 'APP_TMPL_PATH' /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Behavior/ContentReplaceBehavior.class.php 第 47 行.
-INFO: ContentReplace Behavior ::run [ RunTime:0.000158s ]
-INFO: TokenBuild Behavior ::run [ RunTime:0.000141s ]
-INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000087s ]
-INFO: ShowRuntime Behavior ::run [ RunTime:0.000171s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000618s ]
+INFO: ContentReplace Behavior ::run [ RunTime:0.000488s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000429s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000303s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001721s ]
 INFO: [ view_end ] --START--
-INFO: ShowPageTrace Behavior ::run [ RunTime:0.000245s ]
-INFO: [ view_end ] --END-- [ RunTime:0.000267s ]
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000603s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000633s ]
 
