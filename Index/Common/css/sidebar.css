@@ -3,10 +3,11 @@ body{
     height: 100%;
 }
 .sidebar_warp{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     padding-left: 35px;
+    z-index: 99;
     height: 100%;
     background: #fff;
 }

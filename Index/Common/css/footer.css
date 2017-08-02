@@ -61,24 +61,11 @@ html,body{height: 100%;}
     font-size: 24px;
     display: inline-block;
     line-height: 24px;
-    float: right
+    float: right;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*home_footer样式*/
 .home_footer .container-fluid{
+    overflow: hidden;
     background-color: #c41a04;
 }
 .f_wrap{
@@ -201,9 +188,9 @@ html,body{height: 100%;}
 }
 .f_link #f_scrollobj .f_scrollobj_01{
     width: 950px;
-@-moz-animation:scrollobj 8s linear infinite ;
-@-o-animation:scrollobj 8s linear infinite ;
-@-webkit-animation:scrollobj 8s linear infinite ;
+-moz-animation:scrollobj 8s linear infinite ;
+-o-animation:scrollobj 8s linear infinite ;
+-webkit-animation:scrollobj 8s linear infinite ;
 animation:scrollobj 8s linear infinite ;
 }
 @keyframes scrollobj {
