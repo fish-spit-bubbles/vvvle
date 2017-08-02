@@ -54,69 +54,70 @@
     </div>
 </div>
     <div class="header">
-        <div class="home_more">
-	<div class="container-fluid">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-4 col-sm-4">
-					<b class="m_title">美瞳评测</b>
-					<div class="m_box">
-						<p class="m_box_title">NEO糖心蓝美瞳，蓝的特别美丽</p>
-						<p class="m_box_01">NEO 糖心蓝的蓝色总是特别的颜色，给人表现出一种美丽、冷静、理智、安详与广阔。是非常特别的一种颜色。NEO溏心蓝让瞳孔的呈现出不一样的魅力，让人联想到湛蓝的海水和幽静沁凉的湖泊.
-							<a href="#" class="m_box_a">更多</a>
-						</p>
-					</div>
-					<div class="m_box_ul">
-						<a href="">NEO美瞳哪个牌子好？NEO糖心...</a>
-						<a href="">在哪里可以买到正品NEO美瞳玫瑰...</a>
-						<a href="">NEO美瞳丽颜灰怎么样？NEO美...</a>
-						<a href="">NEO小黑环美瞳官方正品_NEO...</a>
-					</div>
-					<div>
-						<a href="" class="m_box_more">more</a>
-					</div>
-				</div>
-				<div class="col-xs-4 col-sm-4">
-					<b class="m_title">美瞳评测</b>
-					<div class="m_box">
-						<p class="m_box_title">NEO糖心蓝美瞳，蓝的特别美丽</p>
-						<p class="m_box_01">NEO 糖心蓝的蓝色总是特别的颜色，给人表现出一种美丽、冷静、理智、安详与广阔。是非常特别的一种颜色。NEO溏心蓝让瞳孔的呈现出不一样的魅力，让人联想到湛蓝的海水和幽静沁凉的湖泊.
-							<a href="#" class="m_box_a">更多</a>
-						</p>
-					</div>
-					<div class="m_box_ul">
-						<a href="">NEO美瞳哪个牌子好？NEO糖心...</a>
-						<a href="">在哪里可以买到正品NEO美瞳玫瑰...</a>
-						<a href="">NEO美瞳丽颜灰怎么样？NEO美...</a>
-						<a href="">NEO小黑环美瞳官方正品_NEO...</a>
-					</div>
-					<div>
-						<a href="" class="m_box_more">more</a>
-					</div>
-				</div>
-				<div class="col-xs-4 col-sm-4">
-					<b class="m_title">美瞳评测</b>
-					<div class="m_box">
-						<p class="m_box_title">NEO糖心蓝美瞳，蓝的特别美丽</p>
-						<p class="m_box_01">NEO 糖心蓝的蓝色总是特别的颜色，给人表现出一种美丽、冷静、理智、安详与广阔。是非常特别的一种颜色。NEO溏心蓝让瞳孔的呈现出不一样的魅力，让人联想到湛蓝的海水和幽静沁凉的湖泊.
-							<a href="#" class="m_box_a">更多</a>
-						</p>
-					</div>
-					<div class="m_box_ul">
-						<a href="">NEO美瞳哪个牌子好？NEO糖心...</a>
-						<a href="">在哪里可以买到正品NEO美瞳玫瑰...</a>
-						<a href="">NEO美瞳丽颜灰怎么样？NEO美...</a>
-						<a href="">NEO小黑环美瞳官方正品_NEO...</a>
-					</div>
-					<div>
-						<a href="" class="m_box_more">more</a>
+        
+<!--更多-->
+		<div class="home_more">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-4 col-sm-4">
+							<b class="m_title">美瞳评测</b>
+							<div class="m_box">
+								<p class="m_box_title">NEO糖心蓝美瞳，蓝的特别美丽</p>
+								<p class="m_box_01">NEO 糖心蓝的蓝色总是特别的颜色，给人表现出一种美丽、冷静、理智、安详与广阔。是非常特别的一种颜色。NEO溏心蓝让瞳孔的呈现出不一样的魅力，让人联想到湛蓝的海水和幽静沁凉的湖泊.
+									<a href="#" class="m_box_a">更多</a>
+								</p>
+							</div>
+							<div class="m_box_ul">
+								<a href="">NEO美瞳哪个牌子好？NEO糖心...</a>
+								<a href="">在哪里可以买到正品NEO美瞳玫瑰...</a>
+								<a href="">NEO美瞳丽颜灰怎么样？NEO美...</a>
+								<a href="">NEO小黑环美瞳官方正品_NEO...</a>
+							</div>
+							<div>
+								<a href="" class="m_box_more">more</a>
+							</div>
+						</div>
+						<div class="col-xs-4 col-sm-4">
+							<b class="m_title">瞳学会</b>
+							<div class="m_box">
+								<p class="m_box_title">NEO美瞳好还是博士伦好？要怎么...</p>
+								<p class="m_box_01">最近有个话题困住了我们，就是NEO美瞳还是博士伦好，双方的粉丝都互不相让，NEO美瞳好，博士伦更好等等。那么。到底是哪个好呢？
+									<a href="#" class="m_box_a">更多</a>
+								</p>
+							</div>
+							<div class="m_box_ul">
+								<a href="">NEO美瞳水润黑怎么样？</a>
+								<a href="">NEO美瞳使用方法，NEO雪花黑...</a>
+								<a href="">别告诉我，你不知道那里..那里....</a>
+								<a href="">17，它到底是个什么东西？</a>
+							</div>
+							<div>
+								<a href="" class="m_box_more">more</a>
+							</div>
+						</div>
+						<div class="col-xs-4 col-sm-4">
+							<b class="m_title">达人分享</b>
+							<div class="m_box">
+								<p class="m_box_title">【彩妆教室】★EOS ice 冰...</p>
+								<p class="m_box_01">【彩妆教室】★EOS ice 冰花灰★辣妈千金 混血减龄妆
+									<a href="#" class="m_box_a">更多</a>
+								</p>
+							</div>
+							<div class="m_box_ul">
+								<a href="">【彩妆教室】★COSPLAY艺术...</a>
+								<a href="">【彩妆教室】★OLIVI 熙乐灰...</a>
+								<a href="">【彩妆教室】★Dreamcon ...</a>
+								<a href="">【彩妆教室】★EOS paste...</a>
+							</div>
+							<div>
+								<a href="" class="m_box_more">more</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
-
 
 <div class="home_footer">
 	<div class="container-fluid">
