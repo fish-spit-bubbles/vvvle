@@ -72,6 +72,9 @@
                 <span>关闭工具栏</span>
             </li>
         </ul>
+        <div class="sidebar_tool">
+            <img src="__ROOT__/Index/Common/img/float_tool.png" alt="tool" />
+        </div>
     </div>
     <div class="sidebar_show">
 
