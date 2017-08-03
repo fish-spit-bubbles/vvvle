@@ -78,5 +78,23 @@ $(".sidebar_nav li").on('click', function() {
 $(".sidebar_nav .sbar_top").click(function() {
     $('body').animate({
         scrollTop: 0,
-    }, 1000);
+    }, 500);
 });
+$(".sidebar_nav .sbar_close").click(function() {
+    $('.sidebar_show').hide(function(){
+        $('.sidebar_warp').animate({
+            right: -35
+        }, 100);
+        $('.sidebar_tool').animate({
+            right: 35
+        }, 100);
+    });
+});
+$(".sidebar_tool").click(function(){
+    $('.sidebar_tool').animate({
+        right: -40
+    }, 100);
+    $('.sidebar_warp').animate({
+        right: 0
+    }, 100);
+})

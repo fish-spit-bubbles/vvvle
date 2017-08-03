@@ -264,3 +264,9 @@ body{
     text-decoration: none;
     border-bottom: none;
 }
+.sidebar_warp .sidebar_tool {
+    position: absolute;
+    bottom: 30px;
+    right: -40px;
+    z-index: -1;
+}

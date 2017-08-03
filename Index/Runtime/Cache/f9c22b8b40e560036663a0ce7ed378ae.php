@@ -11,48 +11,6 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
 </head>
 <body>
-    <div class="sidebar_warp">
-    <div class="sidebar">
-        <ul class="sidebar_nav">
-            <li>
-                <i class="profile_icon"></i>
-                <span>个人中心</span>
-            </li>
-            <li class="sbar_cat">
-                <i class="sbar_cat_icon"></i>
-                <p>购物袋</p>
-                <i class="sbar_nub_icon">0</i>
-            </li>
-            <li>
-                <i class="serivce_icon"></i>
-                <span class="conact_img"><img src="__ROOT__/Index/Common/img/conact_float.png" alt="联系方式"/></span>
-            </li>
-            <li>
-                <i class="favor_icon"></i>
-                <span>我的收藏</span>
-            </li>
-            <li>
-                <i class="history_icon"></i>
-                <span>我看过的</span>
-            </li>
-            <li>
-                <i class="qrcode_icon"></i>
-                <span class="qrcode"><img src="__ROOT__/Index/Common/img/qrcode.png" alt="微信客服"/></span>
-            </li>
-            <li class="sbar_btm sbar_top">
-                <i class="sbar_top_icon"></i>
-                <span>返回顶部</span>
-            </li>
-            <li class="sbar_btm sbar_close">
-                <i class="sbar_close_icon"></i>
-                <span>关闭工具栏</span>
-            </li>
-        </ul>
-    </div>
-    <div class="sidebar_show">
-
-    </div>
-</div>
     <div class="header">
         
 <!--更多-->
@@ -219,6 +177,51 @@
 	</div>
 </div>
     </div>
+    <div class="sidebar_warp">
+    <div class="sidebar">
+        <ul class="sidebar_nav">
+            <li>
+                <i class="profile_icon"></i>
+                <span>个人中心</span>
+            </li>
+            <li class="sbar_cat">
+                <i class="sbar_cat_icon"></i>
+                <p>购物袋</p>
+                <i class="sbar_nub_icon">0</i>
+            </li>
+            <li>
+                <i class="serivce_icon"></i>
+                <span class="conact_img"><img src="__ROOT__/Index/Common/img/conact_float.png" alt="联系方式"/></span>
+            </li>
+            <li>
+                <i class="favor_icon"></i>
+                <span>我的收藏</span>
+            </li>
+            <li>
+                <i class="history_icon"></i>
+                <span>我看过的</span>
+            </li>
+            <li>
+                <i class="qrcode_icon"></i>
+                <span class="qrcode"><img src="__ROOT__/Index/Common/img/qrcode.png" alt="微信客服"/></span>
+            </li>
+            <li class="sbar_btm sbar_top">
+                <i class="sbar_top_icon"></i>
+                <span>返回顶部</span>
+            </li>
+            <li class="sbar_btm sbar_close">
+                <i class="sbar_close_icon"></i>
+                <span>关闭工具栏</span>
+            </li>
+        </ul>
+        <div class="sidebar_tool">
+            <img src="__ROOT__/Index/Common/img/float_tool.png" alt="tool" />
+        </div>
+    </div>
+    <div class="sidebar_show">
+
+    </div>
+</div>
 </body>
 <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
 <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
