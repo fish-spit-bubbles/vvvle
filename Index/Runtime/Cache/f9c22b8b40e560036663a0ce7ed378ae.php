@@ -11,7 +11,18 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
 </head>
 <body>
-    <div class="header">
+    <!--首页头部  -->
+    <div>
+        
+    </div>
+    <!--首页主体  -->
+    <div class="home_page container">
+        <div class="home_page_top">
+            
+        </div>
+    </div>
+    <!--首页底部  -->
+    <div class="footer">
         
 <!--更多-->
 		<div class="home_more">
@@ -177,6 +188,7 @@
 	</div>
 </div>
     </div>
+    <!--侧边栏  -->
     <div class="sidebar_warp">
     <div class="sidebar">
         <ul class="sidebar_nav">
