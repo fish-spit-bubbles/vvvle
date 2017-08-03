@@ -1,6 +1,114 @@
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.sub_show{
+    position: absolute;
+    top: 0;
+    left: 267px; 
+    border: 1px solid #ddd; 
+}
+.show_left{
+    float: left;
+}
+.show_right{
+    float: right;
+    width: 200px;
+    height: 20px;
+    background: #000;
+}
 .home_page{
-    background: red;
+    width: 1200px;
+    margin: 0 auto;
+    background: orange;
     height: 900px;
+}
+.home_page .home_page_top{
+    background: red;
+    height: 554px;
+}
+.home_page .home_sub_nav{
+    float: left;
+    background: #fff;
+    width: 208px;
+    height: 554px;
+}
+.home_page .home_banner{
+    float: right;
+    background: green;
+    width: 992px;
+    height: 554px;
+}
+.sub_nav {
+    padding: 0;
+    list-style: none;
+}
+.sub_nav a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+.sub_nav .sub_hover {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+}
+.sub_nav .sub_hover:hover {
+    background: #ddd;
+}
+.sub_nav a i {
+    display: inline-block;
+    width: 36px;
+    height: 29px;
+    margin: 0 10px;
+    vertical-align: middle
+} 
+.sub_nav a span {
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle
+}
+.bg-crow {
+    width: 36px; height: 29px;
+    background: url('../img/img_home/sub_menu_icon.png') -1px -1px;
+}
+.bg-hx {
+    width: 36px; height: 29px;
+    background: url('../img/img_home/sub_menu_icon.png') -1px -32px;
+}
+.bg-leaf {
+    width: 36px; height: 29px;
+    background: url('../img/img_home/sub_menu_icon.png') -1px -63px;
+}
+.bg-qb {
+    width: 36px; height: 29px;
+    background: url('../img/img_home/sub_menu_icon.png') -1px -94px;
+}
+.bg-rp {
+    width: 36px; height: 29px;
+    background: url('../img/img_home/sub_menu_icon.png') -1px -125px;
+}
+.bg-tm {
+    width: 36px; height: 29px;
+    background: url('../img/img_home/sub_menu_icon.png') -1px -156px;
+}
+.bg-xs {
+    width: 36px; height: 29px;
+    background: url('../img/img_home/sub_menu_icon.png') -1px -187px;
+}
+.show_nav li{
+    margin: 15px 0;
 }
 /*home_more样式*/
 .home_more .container-fluid{

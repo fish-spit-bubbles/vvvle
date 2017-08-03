@@ -20,8 +20,54 @@
     </div>
     <!--首页主体  -->
     <div class="home_page container">
-        <div class="home_page_top">
+        <div class="home_page_top row clearfix">
+            <div class="home_sub_nav">
+                <ul class="sub_nav">
+                    <li>
+                        <a href="#" class="sub_hover"><i class="bg-crow"></i><span>超人气款</span></a>
+                        <div class="sub_show clearfix">
+                            <div class="show_left">
+                                <ul class="show_nav">
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="show_right">
 
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#" class="sub_hover"><i class="bg-leaf"></i><span>自然舒适</span></a></li>
+                    <li><a href="#" class="sub_hover"><i class="bg-hx"></i><span>混血冷艳</span></a></li>
+                    <li><a href="#" class="sub_hover"><i class="bg-xs"></i><span>学生白领</span></a></li>
+                    <li><a href="#" class="sub_hover"><i class="bg-tm"></i><span>甜美气质</span></a></li>
+                    <li><a href="#" class="sub_hover"><i class="bg-rp"></i><span>日抛美瞳</span></a></li>
+                    <li><a href="#" class="sub_hover"><i class="bg-qb"></i><span>全部品牌</span></a></li>
+                </ul>
+            </div>
+            <div class="home_banner"></div>
         </div>
     </div>
     <div class="home_more">
