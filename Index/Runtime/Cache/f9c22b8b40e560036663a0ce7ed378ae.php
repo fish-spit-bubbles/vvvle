@@ -167,12 +167,228 @@
                             </div>
                         </div>
                     </li>
-                    <li class="sub_nav_item"><a href="#" class="sub_hover"><i class="bg-leaf"></i><span>自然舒适</span></a></li>
-                    <li class="sub_nav_item"><a href="#" class="sub_hover"><i class="bg-hx"></i><span>混血冷艳</span></a></li>
-                    <li class="sub_nav_item"><a href="#" class="sub_hover"><i class="bg-xs"></i><span>学生白领</span></a></li>
-                    <li class="sub_nav_item"><a href="#" class="sub_hover"><i class="bg-tm"></i><span>甜美气质</span></a></li>
-                    <li class="sub_nav_item"><a href="#" class="sub_hover"><i class="bg-rp"></i><span>日抛美瞳</span></a></li>
-                    <li class="sub_nav_item"><a href="#" class="sub_hover"><i class="bg-qb"></i><span>全部品牌</span></a></li>
+                    <li class="sub_nav_item">
+                        <a href="#" class="sub_hover"><i class="bg-leaf"></i><span>自然舒适</span></a>
+                        <div class="sub_show clearfix">
+                            <div class="show_left">
+                                <ul class="show_nav">
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="show_right">
+                                <div class="right_up"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/neo.jpg" alt=""></a></div>
+                                <div class="right_down"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/OS CHOCOLATE.jpg" alt=""></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sub_nav_item">
+                        <a href="#" class="sub_hover"><i class="bg-hx"></i><span>混血冷艳</span></a>
+                        <div class="sub_show clearfix">
+                            <div class="show_left">
+                                <ul class="show_nav">
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="show_right">
+                                <div class="right_up"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/neo.jpg" alt=""></a></div>
+                                <div class="right_down"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/OS CHOCOLATE.jpg" alt=""></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sub_nav_item">
+                        <a href="#" class="sub_hover"><i class="bg-xs"></i><span>学生白领</span></a>
+                        <div class="sub_show clearfix">
+                            <div class="show_left">
+                                <ul class="show_nav">
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="show_right">
+                                <div class="right_up"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/neo.jpg" alt=""></a></div>
+                                <div class="right_down"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/OS CHOCOLATE.jpg" alt=""></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sub_nav_item">
+                        <a href="#" class="sub_hover"><i class="bg-tm"></i><span>甜美气质</span></a>
+                        <div class="sub_show clearfix">
+                            <div class="show_left">
+                                <ul class="show_nav">
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="show_right">
+                                <div class="right_up"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/neo.jpg" alt=""></a></div>
+                                <div class="right_down"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/OS CHOCOLATE.jpg" alt=""></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sub_nav_item">
+                        <a href="#" class="sub_hover"><i class="bg-rp"></i><span>日抛美瞳</span></a>
+                        <div class="sub_show clearfix">
+                            <div class="show_left">
+                                <ul class="show_nav">
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="show_right">
+                                <div class="right_up"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/neo.jpg" alt=""></a></div>
+                                <div class="right_down"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/OS CHOCOLATE.jpg" alt=""></a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sub_nav_item">
+                        <a href="#" class="sub_hover"><i class="bg-qb"></i><span>全部品牌</span></a>
+                        <div class="sub_show clearfix">
+                            <div class="show_left">
+                                <ul class="show_nav">
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="##">
+                                            <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
+                                            <span>轻瞳<br />轻芯巧克力</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="show_right">
+                                <div class="right_up"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/neo.jpg" alt=""></a></div>
+                                <div class="right_down"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/OS CHOCOLATE.jpg" alt=""></a></div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
                 <div class="sub_ad">
                     <img src="__ROOT__/Index/Common/img/img_home/ad_01.jpg" alt="ad">
@@ -394,4 +610,5 @@
 </div>
 </body>
 <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
+<script type="text/javascript" src="__ROOT__/Index/Common/js/home.js"></script>
 </html>
