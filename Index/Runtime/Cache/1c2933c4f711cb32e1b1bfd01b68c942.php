@@ -4,17 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LENS | 美瞳</title>
+    <title>Login | 登陆界面</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
 	<link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/sidebar.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/slideshow.css" />
-	<link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
-	<script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/lens.js"></script>
+    <style>
+        .login{width: 1000px;margin: 0 auto;margin-bottom: 25px;}
+        .login_img {margin-top: 25px;}
+        .login_bgcolor{width: 370px;height: 407px;float: right;background: url(__ROOT__/Index/Common/img/login/login_bg.gif) no-repeat;padding: 26px 26px 0px 28px;}
+        .weile{font-size: 14px;color: #f3116c;font-weight: bold;}
+        .zhu{    border: 1px solid #d0d0d0;
+                background: url(__ROOT__/Index/Common/img/login/login_icon.gif) no-repeat 10px 8px;
+                line-height: 35px;
+                width: 267px;
+                margin-top: 35px;
+                padding-left: 35px;
+                height: 35px;
+            }
+        .mima{
+                border: 1px solid #d0d0d0;
+                background: url(__ROOT__/Index/Common/img/login/login_lock.gif) no-repeat 10px 6px;
+                line-height: 35px;
+                width: 267px;
+                margin-top: 25px;
+                padding-left: 35px;
+                height: 35px;
+        }
+        .free{
+                   margin-top: 30px;
+                    font-size: 12px;
+                    position: relative;
+                    padding-left: 15px;
+                    color: #656565;
+                    height: 20px;
+        }
+        .weizhi{
+                position: absolute;
+                top: 2px;
+                left: 0;
+        }
+
+    </style>
 </head>
 <body>
+    <!--头部  -->
 	<header>
     <!-- 头部 -->
     <div class="container-fluid" title="top">
@@ -121,274 +160,44 @@
 
     });
 </script>
-   <div class="lens_wrap">
-   <!-- 轮播图 -->
-       <div class="lunbo" id="lunbo">
-    <ul id="lunboUl" class="lunboUl">
-        <li><a href="##"><img src="__ROOT__/Index/Common/img/img_lens/lens_imgs01.jpg" alt="" /></a></li>
-        <li><a href="##"><img src="__ROOT__/Index/Common/img/img_lens/lens_imgs02.jpg" alt="" /></a></li>
-        <li><a href="##"><img src="__ROOT__/Index/Common/img/img_lens/lens_imgs01.jpg" alt="" /></a></li>
-    </ul>	
-        <ol id="lunboOl">
-            <li class="actBtn"></li>
-            <li></li>
-        </ol>
-    <a href="##" id="rightBtn"></a>
-    <a href="##" id="leftBtn"></a>
-</div>
-   <!-- 筛选列表 -->
-        <div class="select_box">
-			<div class="select_top">
-				<span>已选条件：</span>    
-				<a href="##" class="select">
-					<span>OLIVI</span>
-					<span class="icon_01"></span>
-				</a>  
-				<a href="##" class="fr">清空筛选条件</a>
-        	</div>
-			<dl> 
-				<dt>品牌:</dt>
-				<!-- <div class="clearFloat"></div> -->
-				<dd>
-					<a href="##">mooc1</a>
-					<a href="##">mooc2</a>
-					<a href="##">mooc3</a>
-					<a href="##">mooc4</a>
-					<a href="##">mooc5</a>
-					<a href="##">mooc6</a>
-					<a href="##">mooc7</a>
-					<a href="##">mooc8</a>
-					<a href="##">mooc9</a>
-					<a href="##">mooc10</a>
-				</dd>
-			</dl> 		         
+    <!--登录表  -->
+    <div class="login">
+        <div class="row text-left">
+            <div class="col-sm-6 login_img">
+                <img src="__ROOT__/Index/Common/img/login/77.jpg" alt="8周年庆图片">
+            </div>
+            <div class="col-sm-6 login_bgcolor">
+                <div class="weile">登录微乐</div>
+                <form name="formLogin" action="user.php" method="post" onSubmit="return userLogin()">
+                   
+                    <input type="text" name="username" id="username" class="zhu" placeholder="用户名/邮箱/手机号" />
+                    
+                    <input type="password" name="password" id="password" class="mima" />
+                    
+                    <div class="free"><span><a href="##" class="f3">忘记密码?</a></span>
+                    
+                        <input name="remember" type="checkbox" value="1" class="weizhi" checked="checked" />&nbsp;自动登录
+                    </div>
+                   
+                    <input type="hidden" name="act" value="act_login" />
+                   
+                    <input type="hidden" name="back_act" value="" />
+                    
+                    <input type="submit" name="button" id="button" value="" class="login_bb" />
+
+                    
+                    <input type="button" name="button"  value="" class="login_bb"   onclick="javascript:location.href='user.php?act=register'";
+                    style="background: url(themes/default/images/zr/zc.jpg) no-repeat;margin-left: 15px;"/>
+                </form>
+                <div class="qita">你也可以使用一下账号登录：</div>
+                <div class="zhanghao"><a href="user.php?act=oath&type=qq"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c1.gif" width="93" height="24" border="0"/></a>
+                <a href="user.php?act=oath&type=weibo"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c2.gif" width="101" height="24" border="0" /></a>
+                <a href="user.php?act=oath&type=alipay"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c3.gif" width="75" height="24" border="0"/></a></div>
+   
+            </div>            
         </div>
-	</div>
-	<!--产品展示界面  Product_box产品盒子-->
-	<div class="Product_box">
-		<div class="Product_container">
-			<div class="Product_item">
-				<div class="item_01">
-					<a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-				</div>
-				<div class="item_02">
-					<a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-				</div>
-				<div class="item_03">
-					<!--
-						item_layer 下层
-					  -->
-					<div class="Next_layer">
-						<div class="Next_layer01">
-							<div>999</div>
-							<div>
-								<a href="##">180</a>
-							</div>
-						</div>
-						<div class="Next_layer02">
-							<div>￥<span>268</span></div>
-							<div></div>
-						</div>
-						<div class="Next_layer03">
-
-						</div>
-					</div>
-										
-				</div>
-			</div>
-			<div class="Product_item">
-				<div class="item_01">
-					<a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-				</div>
-				<div class="item_02">
-					<a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-				</div>
-				<div class="item_03">
-					<!--
-						item_layer 下层
-					  -->
-					<div class="Next_layer">
-						<div class="Next_layer01">
-							<div>999</div>
-							<div>
-								<a href="##">180</a>
-							</div>
-						</div>
-						<div class="Next_layer02">
-							<div>￥<span>268</span></div>
-							<div></div>
-						</div>
-						<div class="Next_layer03">
-
-						</div>
-					</div>
-										
-				</div>
-			</div>
-			<div class="Product_item">
-				<div class="item_01">
-					<a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-				</div>
-				<div class="item_02">
-					<a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-				</div>
-				<div class="item_03">
-					<!--
-						item_layer 下层
-					  -->
-					<div class="Next_layer">
-						<div class="Next_layer01">
-							<div>999</div>
-							<div>
-								<a href="##">180</a>
-							</div>
-						</div>
-						<div class="Next_layer02">
-							<div>￥<span>268</span></div>
-							<div></div>
-						</div>
-						<div class="Next_layer03">
-
-						</div>
-					</div>
-										
-				</div>
-			</div>
-			<div class="Product_item">
-				<div class="item_01">
-					<a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-				</div>
-				<div class="item_02">
-					<a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-				</div>
-				<div class="item_03">
-					<!--
-						item_layer 下层
-					  -->
-					<div class="Next_layer">
-						<div class="Next_layer01">
-							<div>999</div>
-							<div>
-								<a href="##">180</a>
-							</div>
-						</div>
-						<div class="Next_layer02">
-							<div>￥<span>268</span></div>
-							<div></div>
-						</div>
-						<div class="Next_layer03">
-
-						</div>
-					</div>
-										
-				</div>
-			</div>
-			<div class="Product_item">
-				<div class="item_01">
-					<a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-				</div>
-				<div class="item_02">
-					<a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-				</div>
-				<div class="item_03">
-					<!--
-						item_layer 下层
-					  -->
-					<div class="Next_layer">
-						<div class="Next_layer01">
-							<div>999</div>
-							<div>
-								<a href="##">180</a>
-							</div>
-						</div>
-						<div class="Next_layer02">
-							<div>￥<span>268</span></div>
-							<div></div>
-						</div>
-						<div class="Next_layer03">
-
-						</div>
-					</div>
-										
-				</div>
-			</div>
-			<div class="Product_item">
-				<div class="item_01">
-					<a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-				</div>
-				<div class="item_02">
-					<a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-				</div>
-				<div class="item_03">
-					<!--
-						item_layer 下层
-					  -->
-					<div class="Next_layer">
-						<div class="Next_layer01">
-							<div>999</div>
-							<div>
-								<a href="##">180</a>
-							</div>
-						</div>
-						<div class="Next_layer02">
-							<div>￥<span>268</span></div>
-							<div></div>
-						</div>
-						<div class="Next_layer03">
-
-						</div>
-					</div>
-										
-				</div>
-			</div>
-			<div class="Product_item">
-				<div class="item_01">
-					<a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-				</div>
-				<div class="item_02">
-					<a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-				</div>
-				<div class="item_03">
-					<!--
-						item_layer 下层
-					  -->
-					<div class="Next_layer">
-						<div class="Next_layer01">
-							<div>999</div>
-							<div>
-								<a href="##">180</a>
-							</div>
-						</div>
-						<div class="Next_layer02">
-							<div>￥<span>268</span></div>
-							<div></div>
-						</div>
-						<div class="Next_layer03">
-
-						</div>
-					</div>
-										
-				</div>
-			</div>		
-	</div>
-
-	<!--分页·paging -->
-	<div class="pager"> 
-		<span>«首页</span>
-		<span>上一页</span>  
-		<a href="##" class="current">1</a>  
-		<a href="##">2</a>  
-		<a href="##">3</a>  
-		<a href="##">4</a>  
-		<a href="##">5</a>  
-		<a href="##">6</a>  
-		<a href="##">下一页</a> 
-		<a href="##">尾页»</a>  
-		<span>1/共36页</span>
-	</div>
-
-
-
+        
+    </div>
 	<!--底部  -->
     <div class="header">
         <!--更多-->
@@ -539,7 +348,5 @@
     </div>
 </div>
 </body>
-<script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
-<script type="text/javascript" src="__ROOT__/Index/Common/js/slideshow.js"></script>
-<script type="text/javascript" src="__ROOT__/Index/Common/js/lens.js"></script>
+
 </html>
