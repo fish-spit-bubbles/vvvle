@@ -12,8 +12,9 @@ ul{
     padding: 0;
 }
 .sub_show{
-    display: none;
+    display: none; 
     position: absolute;
+    z-index: 999;
     top: 0;
     left: 210px; 
     width: 540px;
@@ -21,9 +22,12 @@ ul{
     border: 1px solid #ddd;
     background: #fff; 
 }
+.sub_show_qb{
+    width: 640px;
+}
 .show_left{
     float: left;
-    width: 200px;
+    width: 206px;
     border-right: 1px solid #ddd;
 }
 .show_right{
@@ -32,11 +36,33 @@ ul{
 .show_right div{
     margin-bottom: 50px;
 }
+.show_list_item{
+    float: left;
+    width: 200px;
+    height: 150px;
+}
+.show_list_item span{
+    float: left;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    background: #d92f18;
+}
+.show_list_item p{
+    height: 18px;
+    padding-left: 28px; 
+    font-size: 14px;
+    line-height: 18px;
+}
+.show_list_item p a{
+    font-weight: normal;
+}
 .home_page{
     width: 1200px;
     margin: 0 auto;
-    background: orange;
-    height: 900px;
 }
 .home_page .home_page_top{
     height: 554px;
@@ -49,7 +75,6 @@ ul{
 }
 .home_page .home_banner{
     float: right;
-    background: green;
     width: 980px;
     height: 554px;
     margin-left: 10px;
@@ -120,6 +145,175 @@ ul{
 }
 .show_nav li{
     margin-bottom: 15px;
+}
+/*轮播图样式  */
+.banner_wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.banner_wrap li {
+    list-style: none;
+}
+.banner_wrap .banner_imgs{
+    margin: 0;
+    height: 100%;
+}
+.banner_wrap .banner_imgs li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.banner_wrap .banner_imgs a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.banner_wrap .banner_imgs li img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.banner_wrap .banner_num {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.banner_wrap .banner_num li {
+    width: 13px;
+    height: 13px;
+    background: #feaba7;
+    cursor: pointer;
+    border: 1px solid #7f2925;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.banner_wrap .banner_num li.banner_active {
+    background: #333;
+    border-color: #333;
+}
+
+.banner_wrap .banner_btn {
+    position: absolute;
+    top: 50%;
+    width: 21px;
+    height: 88px;
+    margin-top: -44px;
+    cursor: pointer;
+    opacity: .4;
+}
+
+.banner_wrap .banner_btn_left {
+    left: 20px;
+    background: url("../img/img_home/prev_01.png")
+}
+
+.banner_wrap .banner_btn_right {
+    right: 20px;
+    background: url("../img/img_home/next_01.png")
+}
+
+.banner_wrap:hover .banner_btn {
+    display: block;
+}
+/*ad样式  */
+.home_page_ad {
+    margin: 45px -15px 0;
+    height: 420px;
+    font-size: 0;
+}
+.home_page_ad>a:nth-child(2){
+    margin: 0 33px;
+    background: #fded35;
+}
+/*销量排行榜的样式  */
+.home_salesList {
+    margin: 45px -15px 0;
+    height: 219px;  
+}
+.title_01 {
+    height: 45px;
+    border-bottom: 1px solid #4b4b4b;
+}
+.title_warp strong {
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+.title_warp span {
+    display: inline-block;
+    margin: 18px 0 0 20px;
+    padding-left: 10px;
+    height: 15px;
+    border-left: 1px solid #828282;
+    line-height: 15px;
+    font-size: 14px;
+    vertical-align: top;
+}
+.home_salesList_content ul{
+    position: relative;
+    margin: 9px 0 0;
+    padding: 0;
+    height: 165px;
+    overflow: hidden; 
+}
+.home_salesList_content li{
+    position: absolute;
+    list-style: none;
+    top: 0;
+}
+.home_salesList_content li:nth-child(1){
+    left: 0;
+}
+.home_salesList_content li:nth-child(2){
+    left: 768px;
+}
+.home_salesList_content li:nth-child(3){
+    left: 912px;
+}
+.home_salesList_content li:nth-child(4){
+    left: 1056px;
+}
+/*home_day样式  */
+.home_day {
+    margin: 45px -15px 0;
+    height: 991px;
+    background:orange;
+}
+.day_warp {
+    width: 581px;
+}
+.day_title {
+    width: 100%;
+    padding: 0 15px;
+    background: url("../img/img_home/bg_02.png");
+}
+.day_title span{
+    height: 41px;
+    line-height: 41px;
+    color: #fff;
+    font-size: 18px
+}
+.day_title span:nth-child(1) {
+    float: left;
+    padding-left: 48px;
+}
+.day_title span:nth-child(2) {
+    float: right;
+}
+.day_morning .day_title span:nth-child(1){
+    background: url('../img/img_home/bg_t.png') -10px -6px no-repeat;
 }
 /*home_more样式*/
 .home_more .container-fluid{
