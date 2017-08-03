@@ -12,15 +12,13 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/home.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
-
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
 </head>
 
 <body>
     <!--首页头部  -->
     <div>
-        <script src="__ROOT__/Index/Common/js/jquery.min.js">
-</script>
-<header>
+        <header>
     <!-- 头部 -->
     <div class="container-fluid" title="top">
         <div class="container" title="top_logo">
@@ -132,7 +130,7 @@
         <div class="home_page_top row clearfix">
             <div class="home_sub_nav">
                 <ul class="sub_nav">
-                    <li>
+                    <li class="sub_nav_item">
                         <a href="#" class="sub_hover"><i class="bg-crow"></i><span>超人气款</span></a>
                         <div class="sub_show clearfix">
                             <div class="show_left">
@@ -164,17 +162,21 @@
                                 </ul>
                             </div>
                             <div class="show_right">
-
+                                <div class="right_up"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/neo.jpg" alt=""></a></div>
+                                <div class="right_down"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/OS CHOCOLATE.jpg" alt=""></a></div>
                             </div>
                         </div>
                     </li>
-                    <li><a href="#" class="sub_hover"><i class="bg-leaf"></i><span>自然舒适</span></a></li>
-                    <li><a href="#" class="sub_hover"><i class="bg-hx"></i><span>混血冷艳</span></a></li>
-                    <li><a href="#" class="sub_hover"><i class="bg-xs"></i><span>学生白领</span></a></li>
-                    <li><a href="#" class="sub_hover"><i class="bg-tm"></i><span>甜美气质</span></a></li>
-                    <li><a href="#" class="sub_hover"><i class="bg-rp"></i><span>日抛美瞳</span></a></li>
-                    <li><a href="#" class="sub_hover"><i class="bg-qb"></i><span>全部品牌</span></a></li>
+                    <li class="sub_nav_item"><a href="#" class="sub_hover"><i class="bg-leaf"></i><span>自然舒适</span></a></li>
+                    <li class="sub_nav_item"><a href="#" class="sub_hover"><i class="bg-hx"></i><span>混血冷艳</span></a></li>
+                    <li class="sub_nav_item"><a href="#" class="sub_hover"><i class="bg-xs"></i><span>学生白领</span></a></li>
+                    <li class="sub_nav_item"><a href="#" class="sub_hover"><i class="bg-tm"></i><span>甜美气质</span></a></li>
+                    <li class="sub_nav_item"><a href="#" class="sub_hover"><i class="bg-rp"></i><span>日抛美瞳</span></a></li>
+                    <li class="sub_nav_item"><a href="#" class="sub_hover"><i class="bg-qb"></i><span>全部品牌</span></a></li>
                 </ul>
+                <div class="sub_ad">
+                    <img src="__ROOT__/Index/Common/img/img_home/ad_01.jpg" alt="ad">
+                </div>
             </div>
             <div class="home_banner"></div>
         </div>
@@ -391,7 +393,5 @@
     </div>
 </div>
 </body>
-<script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
 <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
-
 </html>
