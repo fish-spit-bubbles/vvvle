@@ -1,0 +1,108 @@
+<script src="__ROOT__/Index/Common/js/jquery.min.js">
+</script>
+<header>
+    <!-- 头部 -->
+    <div class="container-fluid" title="top">
+        <div class="container" title="top_logo">
+            <div class="top_logo_fled">
+                <a href="#">微乐美瞳网</a>
+            </div>
+            <div class="top_logo_rled">
+                <span>Hi~[
+                        <a href="#">请登录</a>
+                        ][
+                        <a href="#">免费注册</a>
+                        ]
+                    </span>
+                <!-- 购物车 -->
+                <a href="#" title="che">
+                    <i class="glyphicon glyphicon-shopping-cart"></i>
+                </a>
+                <a href="#" class="top_logo_rled_add">购物车</a>
+                <a href="#" class="top_logo_rled_add" title="red">0</a>
+                <!-- 下箭头 -->
+                <a href="#">
+                    <i class="glyphicon glyphicon-menu-down"></i>
+                </a>
+                <a href="#" class="top_logo_rled_add">我的订单</a>
+                <a href="#" class="top_logo_rled_add">我的收藏</a>
+                <a href="#" class="top_logo_rled_add">领取优惠券</a>
+                <a href="#" class="top_logo_rled_add">订单查询</a>
+                <!-- 消息 -->
+                <a href="#">
+                    <i class="glyphicon glyphicon-envelope"></i>
+                </a>
+                <a href="#" class="top_logo_rled_add">消息</a>
+                <a href="#" class="top_logo_rled_add">收藏微乐</a>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索部分 -->
+    <div class="container-fluid" title="center">
+        <div class="container" title="center_input">
+            <a class="center_input_logo" href="#">
+                <img src="__ROOT__/Index/Common/img/logo_02.png" alt="LOGO">
+            </a>
+            <div class="center_input_form">
+                <input type="text" placeholder="请输出商品">
+                <a href="#">
+                    <img src="__ROOT__/Index/Common/img/search_01.png" alt="搜索">
+                </a>
+                <!-- 推荐 -->
+                <div class="center_input_tuijian">热门搜索：
+                    <a href="#">OLIVI</a>|
+                    <a href="#">轻瞳</a>|
+                    <a href="#">硅水凝胶</a>|
+                    <a href="#">活动</a>|
+                </div>
+            </div>
+            <div class="center_input_News">
+                <span>NEWS:</span>
+                <div class="center_input_News_conten">
+                    <a title="fl" href="#">VVVLEHK</a>
+                    <a title="rl" href="#">微信客服</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 导航部分 -->
+    <div class="container-fluid" title="bootm">
+        <div class="container" title="bootm_navie">
+            <a href="#" class="bootm_naviea_hove" title="red">
+                <p class="naviea_hove" title="bg">HOME</p>
+                <p class="naviea_hove" title="ms">首页</p>
+            </a>
+            <a href="#" class="bootm_naviea_hove">
+                <p class="naviea_hove" title="bg">LENS</p>
+                <p class="naviea_hove" title="ms">美瞳</p>
+            </a>
+            <a href="#" class="bootm_naviea_hove">
+                <p class="naviea_hove" title="bg">EYE DROPS</p>
+                <p class="naviea_hove" title="ms">海外购</p>
+            </a>
+            <a href="#" class="bootm_naviea_hove">
+                <p class="naviea_hove" title="bg">PARTS</p>
+                <p class="naviea_hove" title="ms">超级配件</p>
+            </a>
+            <a href="#" class="bootm_naviea_hove">
+                <p class="naviea_hove" title="bg">NEW</p>
+                <p class="naviea_hove" title="ms">新品</p>
+            </a>
+            <a href="#" class="bootm_naviea_hove">
+                <p class="naviea_hove" title="bg">HOT</p>
+                <p class="naviea_hove" title="ms">热销宝贝</p>
+            </a>
+        </div>
+    </div>
+</header>
+<script>
+    $(".bootm_naviea_hove").each(function(i) {
+        $(this).click(function() {
+            $(this).css("color", "red");
+            $(".bootm_naviea_hove" + ":gt(" + i + ")").css("color", "#000");
+            $(".bootm_naviea_hove" + ":lt(" + i + ")").css("color", "#000");
+        });
+
+    });
+</script>
