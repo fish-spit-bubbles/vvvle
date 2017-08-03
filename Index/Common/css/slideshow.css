@@ -1,0 +1,75 @@
+*{
+				margin: 0;padding: 0;
+}
+li{
+    list-style: none;
+}
+.lunbo{
+        width: 1200px;
+        height: 230px;
+        position: relative;	 
+        overflow: hidden;
+        margin: 0 auto;
+}
+.lunboUl{
+        overflow: hidden;
+        position: absolute;
+}
+.lunboUl li{ 
+        width: 1200px;
+        height: 230px;
+        float: left; 
+}
+.lunboUl li a{
+    display: inline-block;
+}
+.lunbo img{
+    vertical-align: top;
+        width: 1200px;
+        height: 230px;
+        cursor: pointer;
+}
+
+#lunboOl{
+    width:122px ;
+    height: 15px;
+    position: absolute;
+    left: 1120px;
+    bottom: 0;
+    
+}
+#lunboOl li{
+        width: 15px;
+        background-color: white;
+        float: left;
+        margin-left: 10px;
+        cursor: pointer;
+        border: 1px solid #fff;
+        margin-top: 2px;
+        opacity: 0.5;
+}
+#lunboOl .actBtn{
+    margin-top: 0;
+    height: 15px;
+    background-color:red;
+    opacity: 1;
+}
+#rightBtn{
+    border-top:30px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-left: 25px solid lightblue;
+        right: 10px;
+        top: 50%;
+        position: absolute;left: 1150px;top: 100px;
+        opacity: 0.5;
+}
+#leftBtn{
+    border-top:30px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-right: 25px solid lightblue;
+        left: 10px;
+        top: 50%;
+        position: absolute;left: 20px;top: 100px;
+        opacity: 0.5;
+}
+
