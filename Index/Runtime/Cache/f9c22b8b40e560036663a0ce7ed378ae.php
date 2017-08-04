@@ -162,8 +162,12 @@
                                 </ul>
                             </div>
                             <div class="show_right">
-                                <div class="right_up"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/neo.jpg" alt=""></a></div>
-                                <div class="right_down"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/OS CHOCOLATE.jpg" alt=""></a></div>
+                                <div class="right_up">
+                                    <a href="##"><img src="__ROOT__/Index/Common/img/img_home/neo.jpg" alt=""></a>
+                                </div>
+                                <div class="right_down">
+                                    <a href="##"><img src="__ROOT__/Index/Common/img/img_home/OS CHOCOLATE.jpg" alt=""></a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -447,7 +451,7 @@
                         </li>
                     </ul>
                     <ul class="banner_num">
-                       
+
                     </ul>
                     <div class="banner_btn banner_btn_left">
                     </div>
@@ -475,24 +479,344 @@
                 </ul>
             </div>
         </div>
-        <div class="home_day">
-            <div class="day_morning day_warp">
-                <div class="day_title clearfix">
-                    <span>上班上学</span>
-                    <span>Morning</span>
+        <div class="home_day_show">
+            <div class="home_day clearfix">
+                <div class="day_morning day_warp">
+                    <div class="day_title clearfix">
+                        <span>上班上学</span>
+                        <span>Morning</span>
+                    </div>
+                    <div class="day_content"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/list_01.jpg" alt=""></a></div>
+                    <ul class="day_warp_ul">
+                        <li>
+                            <a href="##">
+                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                            <p>OLIVI轻瞳</p>
+                            <p>轻芯巧克力</p>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                            <p>OLIVI轻瞳</p>
+                            <p>轻芯巧克力</p>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                            <p>OLIVI轻瞳</p>
+                            <p>轻芯巧克力</p>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                            <p>OLIVI轻瞳</p>
+                            <p>轻芯巧克力</p>
+                        </a>
+                        </li>
+                    </ul>
                 </div>
-                <div><a href="##"></a></div>
-                <ul>
+                <div class="day_morning day_warp">
+                    <div class="day_title clearfix">
+                        <span>上班上学</span>
+                        <span>Morning</span>
+                    </div>
+                    <div class="day_content"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/list_01.jpg" alt=""></a></div>
+                    <ul class="day_warp_ul">
+                        <li>
+                            <a href="##">
+                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                            <p>OLIVI轻瞳</p>
+                            <p>轻芯巧克力</p>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                            <p>OLIVI轻瞳</p>
+                            <p>轻芯巧克力</p>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                            <p>OLIVI轻瞳</p>
+                            <p>轻芯巧克力</p>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                            <p>OLIVI轻瞳</p>
+                            <p>轻芯巧克力</p>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="day_morning day_warp">
+                    <div class="day_title clearfix">
+                        <span>上班上学</span>
+                        <span>Morning</span>
+                    </div>
+                    <div class="day_content"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/list_01.jpg" alt=""></a></div>
+                    <ul class="day_warp_ul">
+                        <li>
+                            <a href="##">
+                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                            <p>OLIVI轻瞳</p>
+                            <p>轻芯巧克力</p>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                            <p>OLIVI轻瞳</p>
+                            <p>轻芯巧克力</p>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                            <p>OLIVI轻瞳</p>
+                            <p>轻芯巧克力</p>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                            <p>OLIVI轻瞳</p>
+                            <p>轻芯巧克力</p>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="day_morning day_warp">
+                    <div class="day_title clearfix">
+                        <span>上班上学</span>
+                        <span>Morning</span>
+                    </div>
+                    <div class="day_content"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/list_01.jpg" alt=""></a></div>
+                    <ul class="day_warp_ul">
+                        <li>
+                            <a href="##">
+                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                            <p>OLIVI轻瞳</p>
+                            <p>轻芯巧克力</p>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                            <p>OLIVI轻瞳</p>
+                            <p>轻芯巧克力</p>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                            <p>OLIVI轻瞳</p>
+                            <p>轻芯巧克力</p>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="##">
+                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                            <p>OLIVI轻瞳</p>
+                            <p>轻芯巧克力</p>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="home_hots clearfix">
+            <div class="home_hot_show">
+                <div class="home_hot">
+                    <div class="title_02 title_warp">
+                        <strong>新品推荐</strong>
+                        <span>HOT</span>
+                    </div>
+                    <div class="home_hot_content clearfix">
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_home/61.jpg" alt=""></a>
+                        <a class="hot_content" href="##"><img src="__ROOT__/Index/Common/img/img_home/62.png" alt=""><p>Modern小浆果</p></a>
+                        <a class="hot_content" href="##"><img src="__ROOT__/Index/Common/img/img_home/62.png" alt=""><p>Modern小浆果</p></a>
+                        <a class="hot_content" href="##"><img src="__ROOT__/Index/Common/img/img_home/62.png" alt=""><p>Modern小浆果</p></a>
+                        <a class="hot_content" href="##"><img src="__ROOT__/Index/Common/img/img_home/62.png" alt=""><p>Modern小浆果</p></a>
+                        <a class="hot_content" href="##"><img src="__ROOT__/Index/Common/img/img_home/62.png" alt=""><p>Modern小浆果</p></a>
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_home/65.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="phone_app">
+                <img src="__ROOT__/Index/Common/img/img_home/ewm_01.png" alt="">
+                <a href="##"><img src="__ROOT__/Index/Common/img/img_home/app.png" alt=""></a>
+            </div>
+        </div>
+        <div class="home_classis">
+            <div class="title_03 title_warp">
+                <strong>精选款式</strong>
+                <span>CLASSIS</span>
+            </div>
+            <div class="home_classis_content">
+                <ul class="classis_content">
                     <li>
-                        <a href="##">
-                            <img src="##" alt="">
-                            <span></span>
-                            <span></span>
+                        <a href="##" class="classis_a">
+                            <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
+                            <div class="classis_info clearfix">
+                                <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
+                                <div class="classis_infos">
+                                    <p class="classis_title">OLIVI 轻瞳 轻...</p>
+                                    <p class="classis_cinfo">直径:<span>14.0</span>mm | 厚度:<span>0.008</span>mm</p>
+                                    <p class="classis_cinfo_price">&yen;现价<span>132</span></p>
+                                </div>
+                            </div>
                         </a>
                     </li>
-                    <li><a href="##"></a></li>
-                    <li><a href="##"></a></li>
-                    <li><a href="##"></a></li>
+                    <li>
+                        <a href="##" class="classis_a">
+                            <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
+                            <div class="classis_info clearfix">
+                                <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
+                                <div class="classis_infos">
+                                    <p class="classis_title">OLIVI 轻瞳 轻...</p>
+                                    <p class="classis_cinfo">直径:<span>14.0</span>mm | 厚度:<span>0.008</span>mm</p>
+                                    <p class="classis_cinfo_price">&yen;现价<span>132</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="##" class="classis_a">
+                            <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
+                            <div class="classis_info clearfix">
+                                <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
+                                <div class="classis_infos">
+                                    <p class="classis_title">OLIVI 轻瞳 轻...</p>
+                                    <p class="classis_cinfo">直径:<span>14.0</span>mm | 厚度:<span>0.008</span>mm</p>
+                                    <p class="classis_cinfo_price">&yen;现价<span>132</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="##" class="classis_a">
+                            <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
+                            <div class="classis_info clearfix">
+                                <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
+                                <div class="classis_infos">
+                                    <p class="classis_title">OLIVI 轻瞳 轻...</p>
+                                    <p class="classis_cinfo">直径:<span>14.0</span>mm | 厚度:<span>0.008</span>mm</p>
+                                    <p class="classis_cinfo_price">&yen;现价<span>132</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="##" class="classis_a">
+                            <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
+                            <div class="classis_info clearfix">
+                                <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
+                                <div class="classis_infos">
+                                    <p class="classis_title">OLIVI 轻瞳 轻...</p>
+                                    <p class="classis_cinfo">直径:<span>14.0</span>mm | 厚度:<span>0.008</span>mm</p>
+                                    <p class="classis_cinfo_price">&yen;现价<span>132</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="##" class="classis_a">
+                            <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
+                            <div class="classis_info clearfix">
+                                <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
+                                <div class="classis_infos">
+                                    <p class="classis_title">OLIVI 轻瞳 轻...</p>
+                                    <p class="classis_cinfo">直径:<span>14.0</span>mm | 厚度:<span>0.008</span>mm</p>
+                                    <p class="classis_cinfo_price">&yen;现价<span>132</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="##" class="classis_a">
+                            <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
+                            <div class="classis_info clearfix">
+                                <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
+                                <div class="classis_infos">
+                                    <p class="classis_title">OLIVI 轻瞳 轻...</p>
+                                    <p class="classis_cinfo">直径:<span>14.0</span>mm | 厚度:<span>0.008</span>mm</p>
+                                    <p class="classis_cinfo_price">&yen;现价<span>132</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="##" class="classis_a">
+                            <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
+                            <div class="classis_info clearfix">
+                                <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
+                                <div class="classis_infos">
+                                    <p class="classis_title">OLIVI 轻瞳 轻...</p>
+                                    <p class="classis_cinfo">直径:<span>14.0</span>mm | 厚度:<span>0.008</span>mm</p>
+                                    <p class="classis_cinfo_price">&yen;现价<span>132</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="##" class="classis_a">
+                            <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
+                            <div class="classis_info clearfix">
+                                <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
+                                <div class="classis_infos">
+                                    <p class="classis_title">OLIVI 轻瞳 轻...</p>
+                                    <p class="classis_cinfo">直径:<span>14.0</span>mm | 厚度:<span>0.008</span>mm</p>
+                                    <p class="classis_cinfo_price">&yen;现价<span>132</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="##" class="classis_a">
+                            <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
+                            <div class="classis_info clearfix">
+                                <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
+                                <div class="classis_infos">
+                                    <p class="classis_title">OLIVI 轻瞳 轻...</p>
+                                    <p class="classis_cinfo">直径:<span>14.0</span>mm | 厚度:<span>0.008</span>mm</p>
+                                    <p class="classis_cinfo_price">&yen;现价<span>132</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="##" class="classis_a">
+                            <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
+                            <div class="classis_info clearfix">
+                                <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
+                                <div class="classis_infos">
+                                    <p class="classis_title">OLIVI 轻瞳 轻...</p>
+                                    <p class="classis_cinfo">直径:<span>14.0</span>mm | 厚度:<span>0.008</span>mm</p>
+                                    <p class="classis_cinfo_price">&yen;现价<span>132</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="##" class="classis_a">
+                            <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
+                            <div class="classis_info clearfix">
+                                <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
+                                <div class="classis_infos">
+                                    <p class="classis_title">OLIVI 轻瞳 轻...</p>
+                                    <p class="classis_cinfo">直径:<span>14.0</span>mm | 厚度:<span>0.008</span>mm</p>
+                                    <p class="classis_cinfo_price">&yen;现价<span>132</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
