@@ -138,7 +138,6 @@
             $(".bootm_naviea_hove" + ":gt(" + i + ")").css("color", "#000");
             $(".bootm_naviea_hove" + ":lt(" + i + ")").css("color", "#000");
         });
-
     });
 </script>
     </div>

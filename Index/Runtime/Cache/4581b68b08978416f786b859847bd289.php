@@ -26,9 +26,9 @@
             </div>
             <div class="top_logo_rled">
                 <span>Hi~[
-                        <a href="#">请登录</a>
+                        <a href="__APP__/Login/login">请登录</a>
                         ][
-                        <a href="#">免费注册</a>
+                        <a href="__APP__/Register/register">免费注册</a>
                         ]
                     </span>
                 <!-- 购物车 -->
@@ -86,27 +86,27 @@
     <!-- 导航部分 -->
     <div class="container-fluid" title="bootm">
         <div class="container" title="bootm_navie">
-            <a href="#" class="bootm_naviea_hove" title="red">
+            <a href="__APP__/Index/index" class="bootm_naviea_hove" title="red">
                 <p class="naviea_hove" title="bg">HOME</p>
                 <p class="naviea_hove" title="ms">首页</p>
             </a>
-            <a href="#" class="bootm_naviea_hove">
+            <a href="__APP__/Lens/lens" class="bootm_naviea_hove">
                 <p class="naviea_hove" title="bg">LENS</p>
                 <p class="naviea_hove" title="ms">美瞳</p>
             </a>
-            <a href="#" class="bootm_naviea_hove">
+            <a href="__APP__/Accesories/accesories" class="bootm_naviea_hove">
                 <p class="naviea_hove" title="bg">EYE DROPS</p>
                 <p class="naviea_hove" title="ms">海外购</p>
             </a>
-            <a href="#" class="bootm_naviea_hove">
+            <a href="__APP__/Parts/parts" class="bootm_naviea_hove">
                 <p class="naviea_hove" title="bg">PARTS</p>
                 <p class="naviea_hove" title="ms">超级配件</p>
             </a>
-            <a href="#" class="bootm_naviea_hove">
+            <a href="__APP__/NewProduct/newProduct" class="bootm_naviea_hove">
                 <p class="naviea_hove" title="bg">NEW</p>
                 <p class="naviea_hove" title="ms">新品</p>
             </a>
-            <a href="#" class="bootm_naviea_hove">
+            <a href="__APP__/Hot/hot" class="bootm_naviea_hove">
                 <p class="naviea_hove" title="bg">HOT</p>
                 <p class="naviea_hove" title="ms">热销宝贝</p>
             </a>
@@ -120,7 +120,6 @@
             $(".bootm_naviea_hove" + ":gt(" + i + ")").css("color", "#000");
             $(".bootm_naviea_hove" + ":lt(" + i + ")").css("color", "#000");
         });
-
     });
 </script>
     </div>
@@ -139,7 +138,7 @@
                     <tr class="table_header">
                         <td>
                             <input type="checkbox" class="selectAll" id="selectAll1" />
-                            <label class="lab" for="selectAll">全选</label>
+                            <label class="lab" for="selectAll1">全选</label>
                         </td>
                         <td>商品名称</td>
                         <td>属性</td>
@@ -162,11 +161,15 @@
                             <span>右眼度数:平光</span>
                         </td>
                         <td>198.00</td>
-                        <td>&yen;<span>132.00</span></td>
-                        <td></td>
-                        <td>&yen;<span>132.00</span></td>
+                        <td>&yen;<span class="proPirce">132.00</span></td>
+                        <td class="proCount">
+                            <input type="button" value="-" class="ys ys1" />
+                            <input type="text" class="count" value="1" />
+                            <input type="button" value="+" class="ys ys2"/>
+                        </td>
+                        <td>&yen;<span class="proMoney">132.00</span></td>
                         <td>
-                            <a href="##">删除</a>&nbsp;&nbsp;
+                            <a href="##" class="proDel">删除</a>&nbsp;&nbsp;
                             <a href="##">放入收藏夹</a>
                         </td>
                     </tr>
@@ -183,31 +186,38 @@
                             <span>右眼度数:平光</span>
                         </td>
                         <td>198.00</td>
-                        <td>&yen;<span>132.00</span></td>
-                        <td></td>
-                        <td>&yen;<span>132.00</span></td>
+                        <td>&yen;<span class="proPirce">132.00</span></td>
+                        <td class="proCount">
+                            <input type="button" value="-" class="ys ys1" />
+                            <input type="text" class="count" value="1" />
+                            <input type="button" value="+" class="ys ys2"/>
+                        </td>
+                        <td>&yen;<span class="proMoney">132.00</span></td>
                         <td>
-                            <a href="##">删除</a>&nbsp;&nbsp;
+                            <a href="##" class="proDel">删除</a>&nbsp;&nbsp;
                             <a href="##">放入收藏夹</a>
                         </td>
                     </tr>
                     <tr class="goods_mid">
                         <td>
                             <input type="checkbox" class="selectAll" id="selectAll2" />
-                            <label class="lab" for="selectAll">全选</label>
+                            <label class="lab" for="selectAll2">全选</label>
                         </td>
-                        <td colspan="6">
+                        <td>
+                            <a href="##">继续购物</a>
+                        </td>
+                        <td colspan="5">
                             <span>&nbsp;&nbsp;总计：</span><br />
                             <span>&nbsp;&nbsp;优惠：</span>
                         </td>
                         <td>
-                            <p>&yen;<span>132.00</span></p>
+                            <p>&yen;<span class="goods_btm_money">0.00</span></p>
                             <p>&yen;<span>0.00</span></p>
                         </td>
                     </tr>
                     <tr class="goods_btm">
                         <td colspan="8">
-                            <p>总计（不含运费）： <i>&yen;</i><span>320.00</span></p>
+                            <p>总计（不含运费）： <i>&yen;</i><span class="goods_btm_money">0.00</span></p>
                         </td>
                     </tr>
                 </table>
@@ -323,4 +333,5 @@
 </div>
     </div>
 </body>
+<script type="text/javascript" src="__ROOT__/Index/Common/js/shopcart.js"></script>
 </html>

@@ -101,6 +101,26 @@
     height: 50px;
     margin: 5px;
 }
+.proCount .count{
+    width: 52px;
+    height: 17px;
+    text-align: center;
+    vertical-align: middle
+}
+.cart_goods_list .proCount .ys{
+    width: 15px;
+    height: 15px;
+    line-height: 9px;
+    background: #fff;
+    border: 1px solid #989898;
+    outline: none
+}
+.cart_goods_list .proCount .ys1{
+    text-indent: -1px;
+} 
+.cart_goods_list .proCount .ys2{
+    text-indent: -3px;
+}
 .goods_mid{
     height: 49px;
 }
@@ -109,6 +129,9 @@
     margin: 0 15px 0 0;
 }
 .goods_mid td:nth-child(2){
+    text-align: left;
+}
+.goods_mid td:nth-child(3){
     text-align: right;
     padding-right: 14px;
 }

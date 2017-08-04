@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>HOME | 首页</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/sidebar.css" />
@@ -121,7 +121,6 @@
             $(".bootm_naviea_hove" + ":gt(" + i + ")").css("color", "#000");
             $(".bootm_naviea_hove" + ":lt(" + i + ")").css("color", "#000");
         });
-
     });
 </script>
     </div>
@@ -136,7 +135,7 @@
                             <div class="show_left">
                                 <ul class="show_nav">
                                     <li>
-                                        <a href=<?php echo U("Lens/lens");?>>
+                                        <a href="##">
                                             <img src="__ROOT__/Index/Common/img/img_home/rq1.png" alt="超人气款">
                                             <span>轻瞳<br />轻芯巧克力</span>
                                         </a>
