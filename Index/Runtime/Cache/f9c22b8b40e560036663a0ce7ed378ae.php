@@ -478,10 +478,10 @@
         <div class="home_day">
             <div class="day_morning day_warp">
                 <div class="day_title clearfix">
-                    <span>二人世界</span>
-                    <span>Evening</span>
+                    <span>上班上学</span>
+                    <span>Morning</span>
                 </div>
-                <div><a href=""></a></div>
+                <div><a href="##"></a></div>
                 <ul>
                     <li>
                         <a href="##">

@@ -14,9 +14,7 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
 </head>
 <body>
-	<script src="__ROOT__/Index/Common/js/jquery.min.js">
-</script>
-<header>
+	<header>
     <!-- 头部 -->
     <div class="container-fluid" title="top">
         <div class="container" title="top_logo">
