@@ -9,9 +9,8 @@
 *
 *
 */
-
 class AccesoriesAction extends Action {
     public function index(){
-        $this->display("accesories");
+        $this->display("Accesories");
     }
 }

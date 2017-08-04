@@ -1,84 +1,23 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Register | 注册界面</title>
+    <title>Document</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
-	<link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/shopcart.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
-    <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
-    <script type="text/javascript" src="__ROOT__/Index/Common/js/lens.js"></script>
-    <style>
-        .register_box{
-                width: 972px;
-                margin: 20px auto;
-                overflow: hidden;
-                border: #ddd solid 2px;
-                padding-bottom: 20px;
-        }
-        .register_box>.register_left{
-                width: 435px;
-                float: left;
-                padding: 40px 0px 0px 60px;
-                overflow: hidden;
-                border: 1px red solid;
-        } 
-        .register_box>.register_right{
-                width: 330px;
-                float: right;
-                padding: 130px 40px 0px 0px;
-                border: 1px blue solid;
-        }
-        .weile{
-                font-size: 14px;
-                color: #f3116c;
-                font-weight: bold;
-        }      
-        .bg{
-                height: 36px;
-                line-height: 36px;
-                width: 322px;
-                padding-left: 5px;
-                width: 302px;
-                border: 1px solid #cfcfcf;
-        }
-        .liji{
-            background: url(__ROOT__/Index/Common/img/login/liji.gif) no-repeat;
-            width: 109px;
-            height: 40px;
-            border: 0px;
-        }
-        .wl{
-            font-size: 14px;
-            padding-left: 14px;
-        }
-        .liji1{
-            padding: 15px 0;
-        }
-        .qita{
-            font-size: 12px;
-            color: #868686;
-            padding-top: 36px;
-        }
-        .zhanghao{
-                padding-top: 15px;
-        }
-            #WeChat{
-                margin-top:25px;
-            }
-
-    
-    </style>
 </head>
+
 <body>
-    <!--头部  -->
-	<header>
+    <!--首页头部  -->
+    <div>
+        <header>
     <!-- 头部 -->
     <div class="container-fluid" title="top">
         <div class="container" title="top_logo">
@@ -87,9 +26,9 @@
             </div>
             <div class="top_logo_rled">
                 <span>Hi~[
-                        <a href="__APP__/Login/login">请登录</a>
+                        <a href="#">请登录</a>
                         ][
-                        <a href="__APP__/Register/register">免费注册</a>
+                        <a href="#">免费注册</a>
                         ]
                     </span>
                 <!-- 购物车 -->
@@ -147,27 +86,27 @@
     <!-- 导航部分 -->
     <div class="container-fluid" title="bootm">
         <div class="container" title="bootm_navie">
-            <a href="__APP__/Index/index" class="bootm_naviea_hove" title="red">
+            <a href="#" class="bootm_naviea_hove" title="red">
                 <p class="naviea_hove" title="bg">HOME</p>
                 <p class="naviea_hove" title="ms">首页</p>
             </a>
-            <a href="__APP__/Lens/lens" class="bootm_naviea_hove">
+            <a href="#" class="bootm_naviea_hove">
                 <p class="naviea_hove" title="bg">LENS</p>
                 <p class="naviea_hove" title="ms">美瞳</p>
             </a>
-            <a href="__APP__/Accesories/accesories" class="bootm_naviea_hove">
+            <a href="#" class="bootm_naviea_hove">
                 <p class="naviea_hove" title="bg">EYE DROPS</p>
                 <p class="naviea_hove" title="ms">海外购</p>
             </a>
-            <a href="__APP__/Parts/parts" class="bootm_naviea_hove">
+            <a href="#" class="bootm_naviea_hove">
                 <p class="naviea_hove" title="bg">PARTS</p>
                 <p class="naviea_hove" title="ms">超级配件</p>
             </a>
-            <a href="__APP__/NewProduct/newProduct" class="bootm_naviea_hove">
+            <a href="#" class="bootm_naviea_hove">
                 <p class="naviea_hove" title="bg">NEW</p>
                 <p class="naviea_hove" title="ms">新品</p>
             </a>
-            <a href="__APP__/Hot/hot" class="bootm_naviea_hove">
+            <a href="#" class="bootm_naviea_hove">
                 <p class="naviea_hove" title="bg">HOT</p>
                 <p class="naviea_hove" title="ms">热销宝贝</p>
             </a>
@@ -184,99 +123,104 @@
 
     });
 </script>
-    <!--注册栏  -->
-    <div class="register_box">
-        <!--右边注册信息界面  -->
-        <div class="register_left">
-            <div class="weile">注册微乐</div>
-            <form action="##" method="##" name="##" onsubmit="">
-                <table width="100%"  border="0" align="left" cellpadding="5" cellspacing="3">
+    </div>
+    <!--首页主体  -->
+    <div class="shopcart_page">
+        <div class="cart_nav clearfix">
+            <img src="__ROOT__/Index/Common/img/img_cart/cart_2.gif" alt="" />
+        </div>
+        <div class="cart_title">
+            <span class="cart_title_img"></span>
+            <span class="cart_title_info">&nbsp;&nbsp;|&nbsp;&nbsp;让购物变得更轻松</span>
+        </div>
+        <form method="" action="">
+            <div class="cart_goods_list">
+                <table>
+                    <tr class="table_header">
+                        <td>
+                            <input type="checkbox" class="selectAll" id="selectAll1" />
+                            <label class="lab" for="selectAll">全选</label>
+                        </td>
+                        <td>商品名称</td>
+                        <td>属性</td>
+                        <td>市场价</td>
+                        <td>本店价</td>
+                        <td>购买数量</td>
+                        <td>小计</td>
+                        <td>操作</td>
+                    </tr>
                     <tr>
-                        <td width="20%" align="right">用户名</td>
-                        <td width="80%">
-                        <input name="username" type="text" size="25" id="username" onblur="is_registered(this.value);" class="bg"/>
-                        <span id="username_notice" style="color:#FF0000"> *</span>
+                        <td>
+                            <input type="checkbox" class="checkt" />
+                            <a href="##"><img src="__ROOT__/Index/Common/img/img_cart/1761_thumb_G_1430349195420.png" alt=""/></a>
+                        </td>
+                        <td>
+                            <a href="##">OLIVI 轻瞳 茶束棕（硅水凝胶）</a>
+                        </td>
+                        <td>
+                            <span>左眼度数:平光</span><br />
+                            <span>右眼度数:平光</span>
+                        </td>
+                        <td>198.00</td>
+                        <td>&yen;<span>132.00</span></td>
+                        <td></td>
+                        <td>&yen;<span>132.00</span></td>
+                        <td>
+                            <a href="##">删除</a>&nbsp;&nbsp;
+                            <a href="##">放入收藏夹</a>
                         </td>
                     </tr>
                     <tr>
-                        <td align="right">email</td>
                         <td>
-                        <input name="email" type="text" size="25" id="email" onblur="checkEmail(this.value);"  class="bg"/>
-                        <span id="email_notice" style="color:#FF0000"> *</span>
+                            <input type="checkbox" class="checkt" />
+                            <a href="##"><img src="__ROOT__/Index/Common/img/img_cart/1761_thumb_G_1430349195420.png" alt=""/></a>
+                        </td>
+                        <td>
+                            <a href="##">OLIVI 轻瞳 茶束棕（硅水凝胶）</a>
+                        </td>
+                        <td>
+                            <span>左眼度数:平光</span><br />
+                            <span>右眼度数:平光</span>
+                        </td>
+                        <td>198.00</td>
+                        <td>&yen;<span>132.00</span></td>
+                        <td></td>
+                        <td>&yen;<span>132.00</span></td>
+                        <td>
+                            <a href="##">删除</a>&nbsp;&nbsp;
+                            <a href="##">放入收藏夹</a>
                         </td>
                     </tr>
-                    <tr>
-                        <td align="right">密码</td>
+                    <tr class="goods_mid">
                         <td>
-                        <input name="password" type="password" id="password1" onblur="check_password(this.value);" onkeyup="checkIntensity(this.value)" class="bg"/>
-                        <span style="color:#FF0000" id="password_notice"> *</span>
+                            <input type="checkbox" class="selectAll" id="selectAll2" />
+                            <label class="lab" for="selectAll">全选</label>
+                        </td>
+                        <td colspan="6">
+                            <span>&nbsp;&nbsp;总计：</span><br />
+                            <span>&nbsp;&nbsp;优惠：</span>
+                        </td>
+                        <td>
+                            <p>&yen;<span>132.00</span></p>
+                            <p>&yen;<span>0.00</span></p>
                         </td>
                     </tr>
-                    <tr>
-                        <td align="right">密码强度</td>
-                        <td>
-                        <table width="145" border="0" cellspacing="0" cellpadding="1">
-                            <tr align="center">
-                            <td width="33%" id="pwd_lower">弱</td>
-                            <td width="33%" id="pwd_middle">中</td>
-                            <td width="33%" id="pwd_high">强</td>
-                            </tr>
-                        </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="right">确认密码</td>
-                        <td>
-                        <input name="confirm_password" type="password" id="conform_password" onblur="check_conform_password(this.value);"  class="bg"/>
-                        <span style="color:#FF0000" id="conform_password_notice"> *</span>
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td align="right" >QQ</td>
-                        <td>
-                            <input name="extend_field2" type="text" size="25" class="bg" />          
-                         </td>
-                    </tr>
-                    <tr>
-                        <td align="right" id="WeChat" >微信</td>  
-                        <td>
-                            <input name="extend_field102" type="text" size="25" class="bg" id="WeChat" />         
-                        </td>
-                    </tr>        
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td>
-                            <label>
-                                <input name="agreement" type="checkbox" value="1" checked="checked" />
-                                我已看过并接受《<a href="##" style="color:blue" target="_blank">用户协议</a>》
-                            </label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td align="left">
-                            <input name="act" type="hidden" value="act_register" >
-                            <input type="hidden" name="back_act" value="./index.php" />
-                            <input name="Submit" type="submit" value="" class="liji">
+                    <tr class="goods_btm">
+                        <td colspan="8">
+                            <p>总计（不含运费）： <i>&yen;</i><span>320.00</span></p>
                         </td>
                     </tr>
                 </table>
-            </form>
-        </div>
-        <!--立即登陆  -->
-        <div class="register_right">
-            <div class="wl">已微乐账号？</div>
-            <div class="liji1"><a href="user.php?back_act="><img src="__ROOT__/Index/Common/img/login/liji1.gif"></a></div>
-            <div class="qita">你也可以使用一下账号登录：</div>
-            <div class="zhanghao"><a href="##"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c1.gif" width="93" height="24" border="0"/></a>
-            <a href="##"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c2.gif" width="101" height="24" border="0" /></a>
-            <a href="##"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c3.gif" width="75" height="24" border="0"/></a></div>
-
-        </div>
+            </div>
+            <div class="cart_user_info">
+                <table>
+                    
+                </table>
+            </div>
+        </form>
     </div>
-	<!--底部  -->
-    <div class="header">
+    <!--首页底部  -->
+    <div class="footer">
         <!--更多-->
 <div class="home_footer">
 	<div class="container-fluid">
@@ -377,53 +321,6 @@
 		</div>
 	</div>
 </div>
-	</div>
-	<!--侧边导航栏  -->
-    <div class="sidebar_warp">
-    <div class="sidebar">
-        <ul class="sidebar_nav">
-            <li>
-                <i class="profile_icon"></i>
-                <span>个人中心</span>
-            </li>
-            <li class="sbar_cat">
-                <i class="sbar_cat_icon"></i>
-                <p>购物袋</p>
-                <i class="sbar_nub_icon">0</i>
-            </li>
-            <li>
-                <i class="serivce_icon"></i>
-                <span class="conact_img"><img src="__ROOT__/Index/Common/img/conact_float.png" alt="联系方式"/></span>
-            </li>
-            <li>
-                <i class="favor_icon"></i>
-                <span>我的收藏</span>
-            </li>
-            <li>
-                <i class="history_icon"></i>
-                <span>我看过的</span>
-            </li>
-            <li>
-                <i class="qrcode_icon"></i>
-                <span class="qrcode"><img src="__ROOT__/Index/Common/img/qrcode.png" alt="微信客服"/></span>
-            </li>
-            <li class="sbar_btm sbar_top">
-                <i class="sbar_top_icon"></i>
-                <span>返回顶部</span>
-            </li>
-            <li class="sbar_btm sbar_close">
-                <i class="sbar_close_icon"></i>
-                <span>关闭工具栏</span>
-            </li>
-        </ul>
     </div>
-    <div class="sidebar_tool">
-        <img src="__ROOT__/Index/Common/img/float_tool.png" alt="tool" />
-    </div>
-    <div class="sidebar_show">
-
-    </div>
-</div>
 </body>
-
 </html>
