@@ -238,6 +238,7 @@ html,body{
     color: #999;
 }
 
+
 /*
     第二分行 价格 点赞
 */
@@ -277,7 +278,13 @@ html,body{
     margin-right: 10px;
     
 }
-
+.Next_layer02>div:nth-child(2):hover{
+    width: 50px;
+    height: 64px;
+    display: block;
+    background: url(../img/img_lens/icon_03h.png) no-repeat center center;
+    margin-right: 10px;
+}
 /*
     第三购物车图片
 */
@@ -287,7 +294,14 @@ html,body{
     background: url(../img/img_lens/icon_04.png) no-repeat center right;
     display: inline-block; 
     margin-right: 15px;
-}   
+} 
+.Next_layer .Next_layer03:hover{
+    height: 63px;
+    width: 77px; 
+    background: url(../img/img_lens/icon_04h.png) no-repeat center right;
+    display: inline-block; 
+    margin-right: 15px;
+}    
 
 /*
 

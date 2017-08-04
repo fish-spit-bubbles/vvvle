@@ -1,19 +1,21 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LENS | 美瞳</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
-	<link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/sidebar.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/slideshow.css" />
-	<link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
-	<script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
 </head>
+
 <body>
 	<!--头部  -->
 	<header>
@@ -25,9 +27,9 @@
             </div>
             <div class="top_logo_rled">
                 <span>Hi~[
-                        <a href="#">请登录</a>
+                        <a href="__APP__/Login/login">请登录</a>
                         ][
-                        <a href="#">免费注册</a>
+                        <a href="__APP__/Register/register">免费注册</a>
                         ]
                     </span>
                 <!-- 购物车 -->
@@ -85,27 +87,27 @@
     <!-- 导航部分 -->
     <div class="container-fluid" title="bootm">
         <div class="container" title="bootm_navie">
-            <a href="#" class="bootm_naviea_hove" title="red">
+            <a href="__APP__/Index/index" class="bootm_naviea_hove" title="red">
                 <p class="naviea_hove" title="bg">HOME</p>
                 <p class="naviea_hove" title="ms">首页</p>
             </a>
-            <a href="#" class="bootm_naviea_hove">
+            <a href="__APP__/Lens/lens" class="bootm_naviea_hove">
                 <p class="naviea_hove" title="bg">LENS</p>
                 <p class="naviea_hove" title="ms">美瞳</p>
             </a>
-            <a href="#" class="bootm_naviea_hove">
+            <a href="__APP__/Accesories/accesories" class="bootm_naviea_hove">
                 <p class="naviea_hove" title="bg">EYE DROPS</p>
                 <p class="naviea_hove" title="ms">海外购</p>
             </a>
-            <a href="#" class="bootm_naviea_hove">
+            <a href="__APP__/Parts/parts" class="bootm_naviea_hove">
                 <p class="naviea_hove" title="bg">PARTS</p>
                 <p class="naviea_hove" title="ms">超级配件</p>
             </a>
-            <a href="#" class="bootm_naviea_hove">
+            <a href="__APP__/NewProduct/newProduct" class="bootm_naviea_hove">
                 <p class="naviea_hove" title="bg">NEW</p>
                 <p class="naviea_hove" title="ms">新品</p>
             </a>
-            <a href="#" class="bootm_naviea_hove">
+            <a href="__APP__/Hot/hot" class="bootm_naviea_hove">
                 <p class="naviea_hove" title="bg">HOT</p>
                 <p class="naviea_hove" title="ms">热销宝贝</p>
             </a>
@@ -139,44 +141,44 @@
 </div>
    <!-- 筛选列表 -->
         <div class="select_box">
-			<div class="select_top">
-				<span>已选条件：</span>    
-				<a href="##" class="select">
-					<span>OLIVI</span>
-					<span class="icon_01"></span>
-				</a>  
-				<a href="##" class="fr">清空筛选条件</a>
-        	</div>
-			<dl> 
-				<dt>品牌:</dt>
-				<!-- <div class="clearFloat"></div> -->
-				<dd>
-					<a href="##">mooc1</a>
-					<a href="##">mooc2</a>
-					<a href="##">mooc3</a>
-					<a href="##">mooc4</a>
-					<a href="##">mooc5</a>
-					<a href="##">mooc6</a>
-					<a href="##">mooc7</a>
-					<a href="##">mooc8</a>
-					<a href="##">mooc9</a>
-					<a href="##">mooc10</a>
-				</dd>
-			</dl> 		         
+            <div class="select_top">
+                <span>已选条件：</span>
+                <a href="##" class="select">
+                    <span>OLIVI</span>
+                    <span class="icon_01"></span>
+                </a>
+                <a href="##" class="fr">清空筛选条件</a>
+            </div>
+            <dl>
+                <dt>品牌:</dt>
+                <!-- <div class="clearFloat"></div> -->
+                <dd>
+                    <a href="##">mooc1</a>
+                    <a href="##">mooc2</a>
+                    <a href="##">mooc3</a>
+                    <a href="##">mooc4</a>
+                    <a href="##">mooc5</a>
+                    <a href="##">mooc6</a>
+                    <a href="##">mooc7</a>
+                    <a href="##">mooc8</a>
+                    <a href="##">mooc9</a>
+                    <a href="##">mooc10</a>
+                </dd>
+            </dl>
         </div>
-	</div>
-	<!--产品展示界面  Product_box产品盒子-->
-	<div class="Product_box">
-		<div class="Product_container">
-			<div class="Product_item">
-				<div class="item_01">
-					<a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-				</div>
-				<div class="item_02">
-					<a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-				</div>
-				<div class="item_03">
-					<!--
+    </div>
+    <!--产品展示界面  Product_box产品盒子-->
+    <div class="Product_box">
+        <div class="Product_container">
+            <div class="Product_item">
+                <div class="item_01">
+                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                </div>
+                <div class="item_02">
+                    <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                </div>
+                <div class="item_03">
+                    <!--
 						item_layer 下层
 					  -->
 					<div class="Next_layer">
@@ -207,163 +209,166 @@
 					<!--
 						item_layer 下层
 					  -->
-					<div class="Next_layer">
-						<div class="Next_layer01">
-							<div>999</div>
-							<div>
-								<a href="##">180</a>
-							</div>
-						</div>
-						<div class="Next_layer02">
-							<div>￥<span>268</span></div>
-							<div></div>
-						</div>
-						<div class="Next_layer03">
+                    <div class="Next_layer">
+                        <div class="Next_layer01">
+                            <div>999</div>
+                            <div>
+                                <a href="##">180</a>
+                            </div>
+                        </div>
+                        <div class="Next_layer02">
+                            <div>￥<span>268</span></div>
+                            <div></div>
+                        </div>
+                        <div class="Next_layer03">
 
-						</div>
-					</div>
-										
-				</div>
-			</div>
-			<div class="Product_item">
-				<div class="item_01">
-					<a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-				</div>
-				<div class="item_02">
-					<a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-				</div>
-				<div class="item_03">
-					<!--
-						item_layer 下层
-					  -->
-					<div class="Next_layer">
-						<div class="Next_layer01">
-							<div>999</div>
-							<div>
-								<a href="##">180</a>
-							</div>
-						</div>
-						<div class="Next_layer02">
-							<div>￥<span>268</span></div>
-							<div></div>
-						</div>
-						<div class="Next_layer03">
+                        </div>
+                    </div>
 
-						</div>
-					</div>
-										
-				</div>
-			</div>
-			<div class="Product_item">
-				<div class="item_01">
-					<a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-				</div>
-				<div class="item_02">
-					<a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-				</div>
-				<div class="item_03">
-					<!--
+                </div>
+            </div>
+            <div class="Product_item">
+                <div class="item_01">
+                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                </div>
+                <div class="item_02">
+                    <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                </div>
+                <div class="item_03">
+                    <!--
 						item_layer 下层
 					  -->
-					<div class="Next_layer">
-						<div class="Next_layer01">
-							<div>999</div>
-							<div>
-								<a href="##">180</a>
-							</div>
-						</div>
-						<div class="Next_layer02">
-							<div>￥<span>268</span></div>
-							<div></div>
-						</div>
-						<div class="Next_layer03">
+                    <div class="Next_layer">
+                        <div class="Next_layer01">
+                            <div>999</div>
+                            <div>
+                                <a href="##">180</a>
+                            </div>
+                        </div>
+                        <div class="Next_layer02">
+                            <div>￥<span>268</span></div>
+                            <div></div>
+                        </div>
+                        <div class="Next_layer03">
 
-						</div>
-					</div>
-										
-				</div>
-			</div>
-			<div class="Product_item">
-				<div class="item_01">
-					<a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-				</div>
-				<div class="item_02">
-					<a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-				</div>
-				<div class="item_03">
-					<!--
-						item_layer 下层
-					  -->
-					<div class="Next_layer">
-						<div class="Next_layer01">
-							<div>999</div>
-							<div>
-								<a href="##">180</a>
-							</div>
-						</div>
-						<div class="Next_layer02">
-							<div>￥<span>268</span></div>
-							<div></div>
-						</div>
-						<div class="Next_layer03">
+                        </div>
+                    </div>
 
-						</div>
-					</div>
-										
-				</div>
-			</div>
-			<div class="Product_item">
-				<div class="item_01">
-					<a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-				</div>
-				<div class="item_02">
-					<a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-				</div>
-				<div class="item_03">
-					<!--
+                </div>
+            </div>
+            <div class="Product_item">
+                <div class="item_01">
+                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                </div>
+                <div class="item_02">
+                    <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                </div>
+                <div class="item_03">
+                    <!--
 						item_layer 下层
 					  -->
-					<div class="Next_layer">
-						<div class="Next_layer01">
-							<div>999</div>
-							<div>
-								<a href="##">180</a>
-							</div>
-						</div>
-						<div class="Next_layer02">
-							<div>￥<span>268</span></div>
-							<div></div>
-						</div>
-						<div class="Next_layer03">
+                    <div class="Next_layer">
+                        <div class="Next_layer01">
+                            <div>999</div>
+                            <div>
+                                <a href="##">180</a>
+                            </div>
+                        </div>
+                        <div class="Next_layer02">
+                            <div>￥<span>268</span></div>
+                            <div></div>
+                        </div>
+                        <div class="Next_layer03">
 
-						</div>
-					</div>
-										
-				</div>
-			</div>
-			<div class="Product_item">
-				<div class="item_01">
-					<a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-				</div>
-				<div class="item_02">
-					<a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-				</div>
-				<div class="item_03">
-					<!--
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Product_item">
+                <div class="item_01">
+                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                </div>
+                <div class="item_02">
+                    <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                </div>
+                <div class="item_03">
+                    <!--
 						item_layer 下层
 					  -->
-					<div class="Next_layer">
-						<div class="Next_layer01">
-							<div>999</div>
-							<div>
-								<a href="##">180</a>
-							</div>
-						</div>
-						<div class="Next_layer02">
-							<div>￥<span>268</span></div>
-							<div></div>
-						</div>
-						<div class="Next_layer03">
+                    <div class="Next_layer">
+                        <div class="Next_layer01">
+                            <div>999</div>
+                            <div>
+                                <a href="##">180</a>
+                            </div>
+                        </div>
+                        <div class="Next_layer02">
+                            <div>￥<span>268</span></div>
+                            <div></div>
+                        </div>
+                        <div class="Next_layer03">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Product_item">
+                <div class="item_01">
+                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                </div>
+                <div class="item_02">
+                    <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                </div>
+                <div class="item_03">
+                    <!--
+						item_layer 下层
+					  -->
+                    <div class="Next_layer">
+                        <div class="Next_layer01">
+                            <div>999</div>
+                            <div>
+                                <a href="##">180</a>
+                            </div>
+                        </div>
+                        <div class="Next_layer02">
+                            <div>￥<span>268</span></div>
+                            <div></div>
+                        </div>
+                        <div class="Next_layer03">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Product_item">
+                <div class="item_01">
+                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                </div>
+                <div class="item_02">
+                    <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                </div>
+                <div class="item_03">
+                    <!--
+						item_layer 下层
+					  -->
+                    <div class="Next_layer">
+                        <div class="Next_layer01">
+                            <div>999</div>
+                            <div>
+                                <a href="##">180</a>
+                            </div>
+                        </div>
+                        <div class="Next_layer02">
+                            <div>￥<span>268</span></div>
+                            <div></div>
+                        </div>
+                        <div class="Next_layer03">
+
+                        </div>
+                    </div>
 
 						</div>
 					</div>
@@ -373,20 +378,20 @@
 		</div>		
 	</div>
 
-	<!--分页·paging -->
-	<div class="pager"> 
-		<span>«首页</span>
-		<span>上一页</span>  
-		<a href="##" class="current">1</a>  
-		<a href="##">2</a>  
-		<a href="##">3</a>  
-		<a href="##">4</a>  
-		<a href="##">5</a>  
-		<a href="##">6</a>  
-		<a href="##">下一页</a> 
-		<a href="##">尾页»</a>  
-		<span>1/共36页</span>
-	</div>
+        <!--分页·paging -->
+        <div class="pager">
+            <span>«首页</span>
+            <span>上一页</span>
+            <a href="##" class="current">1</a>
+            <a href="##">2</a>
+            <a href="##">3</a>
+            <a href="##">4</a>
+            <a href="##">5</a>
+            <a href="##">6</a>
+            <a href="##">下一页</a>
+            <a href="##">尾页»</a>
+            <span>1/共36页</span>
+        </div>
 
 	<!--底部  -->
      <div class="header"> 
@@ -542,4 +547,5 @@
 <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
 <script type="text/javascript" src="__ROOT__/Index/Common/js/slideshow.js"></script>
 <script type="text/javascript" src="__ROOT__/Index/Common/js/lens.js"></script>
+
 </html>
