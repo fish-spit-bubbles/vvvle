@@ -136,7 +136,7 @@
                             <div class="show_left">
                                 <ul class="show_nav">
                                     <li>
-                                        <a href="##">
+                                        <a href=<?php echo U("Lens/lens");?>>
                                             <img src="__ROOT__/Index/Common/img/img_home/rq1.png" alt="超人气款">
                                             <span>轻瞳<br />轻芯巧克力</span>
                                         </a>
