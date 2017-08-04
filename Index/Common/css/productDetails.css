@@ -1,0 +1,255 @@
+/*
+*商品详情
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+
+body {
+    font-size: 12px;
+    font-family: 微软雅黑, 宋体, Verdana, Arial;
+}
+
+
+/* <!-- 本站导航小链接 --> */
+
+.site_navigation {
+    margin: 0 auto;
+    width: 1000px;
+    height: 30px;
+    margin-bottom: 8px;
+}
+
+
+/* <!-- 中部显示BOX --> */
+
+.show_details[box="bg"] {
+    width: 1000px;
+    height: 29153px;
+    margin: 0 auto;
+    /* background: palegoldenrod; */
+}
+
+
+/* <!-- 立即购买 图片详情 --> */
+
+.show_goods_o_pic_clearfix {
+    width: 1000px;
+    height: 595px;
+}
+
+.show_goods_o_pic_clearfix_imgInfo {
+    width: 580px;
+    height: 522px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.show_goods_o_pic_clearfix_imgInfo>img {
+    margin-left: 31px;
+    margin-right: 31px;
+}
+
+
+/* 商品简介和加入购物车，立即购买 */
+
+.show_goods_o_pic_ui-form-item {
+    width: 396px;
+    height: 595px;
+    /* background-color: darkcyan; */
+    display: inline-block;
+}
+
+.show_goods_o_pic_ui-form-item_goods_o_name {
+    font-size: 24px;
+    line-height: 30px;
+    padding-left: 8px;
+    margin-bottom: 10px;
+    font-family: "微软雅黑", "宋体", Verdana, Arial;
+}
+
+.show_goods_o_pic_ui-form-item_tm-fcs {
+    background-position: left 0;
+    background-repeat: repeat-x;
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    font: 12px/1.5 "Microsoft Yahei", tahoma, arial;
+    width: 100%;
+    height: 71px;
+    padding-bottom: 10px;
+    padding-top: 8px;
+    background-image: url("../img/goods_bg_pic1.png");
+    margin-bottom: 0px;
+}
+
+.show_goods_o_pic_ui-form-item_tm-fcs>li {
+    color: #fff;
+    font-weight: 700;
+    margin-left: 20px;
+    padding: 10px 8px;
+    list-style-type: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.show_goods_o_pic_ui-form-item_tm-fcs>li>span {
+    color: #fff;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.show_goods_o_pic_ui-form-item_tm-fcs>li>span>em {
+    font-size: 16px;
+    font-style: normal;
+}
+
+.show_goods_o_pic_g_pric_in {
+    float: right;
+    margin-right: 20px;
+    bottom: 5px;
+    color: #fff;
+    margin-top: -12px;
+}
+
+.show_goods_o_pic_g_pric_in>span {
+    text-decoration: line-through;
+}
+
+.show_goods_o_pic_g_pric_in>span>em {
+    font-style: normal;
+}
+
+.show_goods_o_pic_ui-form-item_tm-fhu {
+    width: 100%;
+    height: 105px;
+    margin-bottom: 0px;
+}
+
+.show_goods_o_pic_ui-form_tlsp {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.show_goods_o_pic_ui_relative_goods {
+    height: 80px;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-left: 25px;
+    width: 126px;
+    display: inline-block;
+    float: right;
+    margin-right: -115px;
+}
+
+.show_goods_o_pic_ui_relative_goods>h2 {
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style-type: none;
+    font-family: "微软雅黑", "宋体", Verdana, Arial;
+    line-height: 150%;
+}
+
+.show_goods_o_pic_ui-form-item_tm-fhu>img[monfr="tlsp"] {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.show_goods_o_pic_ui_relative_goods>a {
+    padding: 10px 25px;
+}
+
+.show_goods_o_pic_ui_relative_goods>a>img {
+    width: 50px;
+    height: 50px;
+}
+
+.show_goods_addbeauty {
+    margin: 0px;
+    padding: 0px;
+    height: 66px;
+}
+
+.show_goods_o_pic_ui-form-item>hr {
+    border-color: #ddd;
+}
+
+.select_poret {
+    font-size: 12px;
+    margin: 7px 0 5px;
+    font-weight: bold;
+    padding: 10px 8px;
+}
+
+.show_goods_o_pic_ui-form-item>.attribute_item {
+    float: left;
+    width: 196px;
+    height: 40px;
+    padding: 10px 8px;
+}
+
+
+/* 促销价 剩余时间 */
+
+.show_goods_o_pic_ui-form-item>.padd_loop {
+    list-style-type: none;
+    padding: 3px 8px;
+    height: 26px;
+    margin-top: 50px;
+}
+
+.show_goods_o_pic_ui-form-item>.padd_loop>strong {
+    font-weight: bold;
+}
+
+.show_goods_o_pic_ui-form-item>.padd_loop>span {
+    color: #fe596a;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "微软雅黑", "宋体", Verdana, Arial;
+    margin-right: 20px;
+}
+
+.show_goods_o_pic_ui-form-item>.padd_loop>span>em {
+    font-style: normal;
+}
+
+.show_goods_o_pic_ui-form-item>.padd_loop>font {
+    color: #fe596a;
+}
+
+.show_goods_o_pic_ui-form-item>.clearfix {
+    height: 38px;
+    padding: 10px 8px;
+    list-style-type: none;
+}
+
+.show_goods_o_pic_ui-form-item>.clearfix[name="sell"]>font {
+    color: #fe596a;
+    margin-right: 15px;
+}
+
+.show_goods_o_pic_ui-form-item>.clearfix[name="count"]>input {
+    width: 37px;
+    height: 22px;
+    margin-right: 25px;
+}
+
+.show_goods_o_pic_ui-form-item>.clearfix[name="count"] em,
+.show_goods_o_pic_ui-form-item>.clearfix[name="count"] font {
+    font-style: normal;
+    color: #fe596a;
+    font-size: 16px;
+    font-weight: 600;
+}
