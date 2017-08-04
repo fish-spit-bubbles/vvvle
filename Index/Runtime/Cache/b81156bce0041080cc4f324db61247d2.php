@@ -190,7 +190,7 @@
 						</div>
 						<div class="Next_layer02">
 							<div>￥<span>268</span></div>
-							<div></div>
+							<div id="like"></div>
 						</div>
 						<div class="Next_layer03">
 						</div>
@@ -547,5 +547,4 @@
 <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
 <script type="text/javascript" src="__ROOT__/Index/Common/js/slideshow.js"></script>
 <script type="text/javascript" src="__ROOT__/Index/Common/js/lens.js"></script>
-
 </html>
