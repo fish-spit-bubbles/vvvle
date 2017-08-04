@@ -15,6 +15,7 @@
 	<script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
 </head>
 <body>
+	<!--头部  -->
 	<header>
     <!-- 头部 -->
     <div class="container-fluid" title="top">
@@ -121,7 +122,7 @@
 
     });
 </script>
-   <div class="lens_wrap">
+    <div class="lens_wrap">
    <!-- 轮播图 -->
        <div class="lunbo" id="lunbo">
     <ul id="lunboUl" class="lunboUl">
@@ -190,7 +191,6 @@
 							<div></div>
 						</div>
 						<div class="Next_layer03">
-
 						</div>
 					</div>
 										
@@ -369,7 +369,8 @@
 					</div>
 										
 				</div>
-			</div>		
+			</div>
+		</div>		
 	</div>
 
 	<!--分页·paging -->
@@ -386,8 +387,6 @@
 		<a href="##">尾页»</a>  
 		<span>1/共36页</span>
 	</div>
-
-
 
 	<!--底部  -->
      <div class="header"> 
@@ -492,6 +491,7 @@
 	</div>
 </div>
 	 </div> 
+	 
 	<!--侧边导航栏  -->
     <div class="sidebar_warp">
     <div class="sidebar">
