@@ -390,7 +390,7 @@
 
 
 	<!--底部  -->
-    <div class="header">
+     <div class="header"> 
         <!--更多-->
 <div class="home_footer">
 	<div class="container-fluid">
@@ -491,7 +491,7 @@
 		</div>
 	</div>
 </div>
-	</div>
+	 </div> 
 	<!--侧边导航栏  -->
     <div class="sidebar_warp">
     <div class="sidebar">
