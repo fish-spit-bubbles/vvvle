@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login | 登陆界面</title>
+    <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
+	<link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/lens.js"></script>
+    <style>
+        .login{width: 1000px;margin: 0 auto;margin-bottom: 25px;}
+        .login_img {margin-top: 25px;}
+        .login_bgcolor{width: 370px;height: 407px;float: right;background: url(__ROOT__/Index/Common/img/login/login_bg.gif) no-repeat;padding: 26px 26px 0px 28px;}
+        .weile{font-size: 14px;color: #f3116c;font-weight: bold;}
+        .zhu{    border: 1px solid #d0d0d0;
+                background: url(__ROOT__/Index/Common/img/login/login_icon.gif) no-repeat 10px 8px;
+                line-height: 35px;
+                width: 267px;
+                margin-top: 35px;
+                padding-left: 35px;
+                height: 35px;
+            }
+        .mima{
+                border: 1px solid #d0d0d0;
+                background: url(__ROOT__/Index/Common/img/login/login_lock.gif) no-repeat 10px 6px;
+                line-height: 35px;
+                width: 267px;
+                margin-top: 25px;
+                padding-left: 35px;
+                height: 35px;
+        }
+        .free{
+                   margin-top: 30px;
+                    font-size: 12px;
+                    position: relative;
+                    padding-left: 15px;
+                    color: #656565;
+                    height: 20px;
+        }
+        .weizhi{
+                position: absolute;
+                top: 2px;
+                left: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <!--头部  -->
+	<include file="Public:header"/>
+    <!--登录表  -->
+    <div class="login">
+        <div class="row text-left">
+            <div class="col-sm-6 login_img">
+                <img src="__ROOT__/Index/Common/img/login/77.jpg" alt="8周年庆图片">
+            </div>
+            <div class="col-sm-6 login_bgcolor">
+                <div class="weile">登录微乐</div>
+                <form name="formLogin" action="user.php" method="post" onSubmit="return userLogin()">
+                   
+                    <input type="text" name="username" id="username" class="zhu" placeholder="用户名/邮箱/手机号" />
+                    
+                    <input type="password" name="password" id="password" class="mima" />
+                    
+                    <div class="free"><span><a href="##" class="f3">忘记密码?</a></span>
+                    
+                        <input name="remember" type="checkbox" value="1" class="weizhi" checked="checked" />&nbsp;自动登录
+                    </div>
+                   
+                    <input type="hidden" name="act" value="act_login" />
+                   
+                    <input type="hidden" name="back_act" value="" />
+                    
+                    <input type="submit" name="button" id="button" value="" class="login_bb" />
+
+                    
+                    <input type="button" name="button"  value="" class="login_bb"   onclick="javascript:location.href='user.php?act=register'";
+                    style="background: url(themes/default/images/zr/zc.jpg) no-repeat;margin-left: 15px;"/>
+                </form>
+                <div class="qita">你也可以使用一下账号登录：</div>
+                <div class="zhanghao"><a href="user.php?act=oath&type=qq"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c1.gif" width="93" height="24" border="0"/></a>
+                <a href="user.php?act=oath&type=weibo"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c2.gif" width="101" height="24" border="0" /></a>
+                <a href="user.php?act=oath&type=alipay"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c3.gif" width="75" height="24" border="0"/></a></div>
+   
+            </div>            
+        </div>
+        
+    </div>
+	<!--底部  -->
+    <div class="header">
+        <include file="Public:footer"/>
+	</div>
+	<!--侧边导航栏  -->
+    <include file="Public:sidebar"/>
+</body>
+
+</html>
