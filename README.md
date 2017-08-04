@@ -43,6 +43,7 @@ vvvle
 |   |     |---LensAction.class.php   美瞳入口
 |   |     |---loginAction.class.php   登录入口
 |   |     |---RegisterAction.class.php   注册入口
+|   |     |---ProductDetailsAction.class.PHP  商品详情
 |   | 
 |   | 
 |   | 

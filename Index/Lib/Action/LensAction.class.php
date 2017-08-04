@@ -4,4 +4,5 @@ class LensAction extends Action {
     public function lens(){
         $this->display("lens");
     }
+    
 }

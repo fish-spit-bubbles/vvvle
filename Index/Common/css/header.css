@@ -178,7 +178,7 @@ a:link {
 
 .center_input_News_conten>a[title="rl"] {
     position: relative;
-    top: -21px;
+    top: -17px;
     left: 74px;
     animation: bounceOutrl 8s 2s ease reverse forwards infinite;
 }
