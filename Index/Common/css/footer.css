@@ -4,7 +4,7 @@ html,body{height: 100%;}
     overflow: hidden;
     background-color: #c41a04;
 }
-.f_wrap{
+.home_footer .container-fluid .f_wrap{
     margin-top: 64px;
     height:725px;
     width: 1200px;

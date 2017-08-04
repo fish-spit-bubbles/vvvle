@@ -19,7 +19,7 @@ body {
     border: 1px solid #EAECEB;
     margin: 0 auto;
     padding-bottom: 10px;
-    height: 323px;
+    height: 265px;
     width: 1200px;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 .containerre[title="select_box"]>.machine[title="vary"] {
-    height: auto;
+    height: 51px;
 }
 
 
@@ -86,6 +86,7 @@ body {
     padding-right: 43px;
     background: #fff;
     height: 102px;
+    cursor: pointer;
 }
 
 
@@ -101,7 +102,7 @@ body {
 }
 
 .machine_Kindd>.nolimit_choice:hover {
-    color: #2196f3;
+    color: red;
 }
 
 
@@ -149,4 +150,9 @@ body {
 
 .schon_choice>.select:hover {
     background: #F00;
+}
+
+.schon_choice>.vacum_up {
+    float: right;
+    color: #333;
 }
