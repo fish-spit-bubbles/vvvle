@@ -1,0 +1,288 @@
+html,
+body{
+    height: 100%;
+}
+.sidebar_warp{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-left: 35px;
+    z-index: 99;
+    height: 100%;
+    background: #fff;
+}
+.sidebar{   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 100%;
+    background: #000;
+}
+.sidebar_nav{
+    width: 35px;
+    height: 360px;
+    margin-top: 100px;
+    padding: 0;
+    font-size: 12px;
+    color: #fff;
+    list-style: none;
+}
+.sidebar_nav li{
+    position: relative;
+    margin: 10px 0;
+}
+.li_hover{
+    cursor: pointer;
+    background: #c40000;
+}
+.li_click{
+    cursor: pointer;
+    background: #c40000;
+}
+.sidebar_nav .sbar_cat{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-top: 1px #333 solid;
+    border-bottom: 1px #333 solid;
+}
+.sidebar_nav i{
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+.sidebar_nav p{
+    width: 12px;
+    margin: 0 auto;
+}
+.sidebar_nav .sbar_nub_icon{
+    width: 20px;
+    height: 20px;
+    margin: 10px auto 0;
+    border-radius: 50%;
+    background: #c40000;
+    text-align: center;
+    line-height: 20px;
+    font-style: normal;
+}
+.sidebar_nav span{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 90px; 
+    height: 35px; 
+    line-height: 35px;
+    background: #000;
+    text-align: center;
+}
+.conact_img::after{
+    z-index: -1;
+}
+.sidebar_nav .qrcode{
+    width: 132px;
+    height: 166px;
+    font-size: 0;
+    transform: translate(0, -82%); 
+}
+.sidebar_nav span::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0; 
+    right: -4px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: #000;
+    transform: rotate(45deg);
+}
+.sidebar_nav .qrcode::after{
+    top: 140px;
+    background: #fff;
+}
+.profile_icon{
+    background: url("../img/tian_logo.png");
+}
+.sbar_cat_icon{
+    background: url("../img/logocar.png");
+}
+.serivce_icon{
+    background: url("../img/kefu.png");
+}
+.favor_icon{
+    background: url("../img/scnav.png");
+}
+.history_icon{
+    background: url("../img/history.png");
+}
+.qrcode_icon{
+    background: url("../img/wxpng.png");
+}
+.sbar_top_icon{
+    background: url("../img/toppng.png");
+}
+.sbar_close_icon{
+    background: url("../img/float_close.png") center 6px/24px 29px no-repeat;
+}
+.sidebar_nav .sbar_btm{
+    position: absolute;
+    left: 0;
+}
+.sbar_top{
+    bottom: 75px;
+}
+.sbar_close{
+    bottom: 20px;
+}
+.sidebar_show{
+    display: none; 
+    width: 264px;
+    height: 100%;
+    padding: 0 14px;
+}
+.from_warp h4{
+    margin: 0;
+    padding: 10px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+.from_warp div{
+    padding-top: 15px;
+    font-size: 12px;
+}
+.from_warp label{
+    color: #666;
+}
+.from_warp input{
+    padding: 0;
+    width: 190px;
+    height: 22px;
+    line-height: 22px; 
+}
+.from_warp .sbar_btn{
+    width: 160px;
+    margin: 0 auto;
+}
+.sbar_btn button{
+    width: 76px;
+    height: 31px;
+    outline: none;
+    border: none;
+    vertical-align: middle;
+    background: url("../img/other_all.png")
+}
+.sbar_btn span{
+    vertical-align: middle;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.from_warp .sbar_icon a{
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 18px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+.from_warp .sbar_icon a:nth-child(1){
+    background-image: url("../img/qq.png")
+}
+.from_warp .sbar_icon a:nth-child(2){
+    background-image: url("../img/sina.png")
+}
+.from_warp .sbar_icon a:nth-child(3){
+    background-image: url("../img/alipay.png")
+}
+.logingo a{
+    height: 20px;
+    margin-left: 38px;
+    padding: 0 10px; 
+    line-height: 20px;
+    background: #eee;
+}
+.login_info{
+    margin-left: 38px;
+}
+.sbar_icon{
+    margin-left: 38px;
+}
+.sbar_icon a{
+    width: 16px;
+    height: 16px;
+    font-size: 0;
+}
+.cart_empty{
+    background: url("../img/cart_empty.png") center no-repeat;
+    width: 238px;
+    height: 100%;
+}
+.history_list{
+    font-size: 12px;
+    overflow: hidden;
+}
+.history_list>div{
+    margin-top: 16px;
+    border-bottom: 1px solid #ddd;
+}
+.history_list h4{
+    font-size: 12px;
+}
+.sidebar_show .panl_close{
+    float: right;
+    width: 10px;
+    height: 25px;
+    margin-top: -28px;
+    background: url("../img/guanbi.png") center no-repeat;
+    border-bottom: none;
+}
+.history_list a{
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #ddd;
+}
+.history_list span{
+    vertical-align: middle
+}
+.history_list .img{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: url("../img/1125_thumb_G_1398648339553.png") center/80px 80px no-repeat; 
+}
+.history_list i{
+    font-style: normal;
+}
+.history_list b{
+    font-weight: normal;
+}
+.history_list>p{
+    margin-top: 24px;
+}
+.history_list>dl{
+    float: left;
+    color: #797979;
+    width: 100px;
+    height: 134px;
+    margin: 14px 0 20px 10px;
+}
+.history_list>dl a {
+    padding: 0;
+    color: #797979;
+    text-decoration: none;
+    border-bottom: none;
+}
+.history_list .sidebar_more {
+    float: right;
+    padding: 0;
+    text-decoration: none;
+    border-bottom: none;
+}
+.sidebar_tool {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+}

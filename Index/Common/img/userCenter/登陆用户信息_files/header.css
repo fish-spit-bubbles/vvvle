@@ -1,0 +1,251 @@
+/* 头部 */
+
+a {
+    color: black;
+    text-decoration-style: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.container-fluid[title="top"] {
+    height: 34px;
+    background: #F4F4F4;
+}
+
+.container-fluid[title="center"] {
+    height: 162px;
+    background: #D92F18;
+}
+
+.container-fluid[title="bootm"] {
+    height: 135px;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 1200px;
+}
+
+.container[title="top_logo"] {
+    height: inherit;
+}
+
+.container[title="center_input"] {
+    height: inherit;
+}
+
+.container[title="bootm_navie"] {
+    height: inherit;
+    padding-top: 30px;
+    text-align: center;
+    border-bottom: 1px #000 solid;
+    vertical-align: middle;
+}
+
+.top_logo_fled {
+    width: 100px;
+    height: 34px;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    color: #0d0d0d;
+    font-size: 14px;
+    text-align: center;
+    line-height: 34px;
+    display: inline-block;
+    margin-left: 120px;
+    background: #fff;
+}
+
+.top_logo_rled {
+    margin-right: 15px;
+    float: right;
+    margin-top: 7px;
+    font-size: 12px;
+    font-family: 微软雅黑, 宋体, Verdana, Arial;
+}
+
+.top_logo_rled>span>a {
+    color: #006699;
+    display: inline-block;
+    font-family: 微软雅黑, 宋体, Verdana, Arial;
+}
+
+.top_logo_rled_add[title="red"] {
+    color: red;
+}
+
+.top_logo_rled>[title="che"] {
+    margin-left: 7px;
+}
+
+.top_logo_rled_add {
+    display: inline-block;
+    color: #000;
+    margin-right: 6px;
+}
+
+
+/* 搜索部分 */
+
+.center_input_logo {
+    margin-left: 120px;
+    margin-top: 26px;
+    display: inline-block;
+    float: left;
+}
+
+.center_input_form {
+    width: 308px;
+    height: 100px;
+    float: left;
+    margin-left: 210px;
+    margin-top: 62px;
+}
+
+.center_input_form>input {
+    width: 308px;
+    height: 30px;
+}
+
+.center_input_form>a>img {
+    width: 26px;
+    height: 26px;
+    position: relative;
+    top: -30px;
+    left: 275px;
+}
+
+
+/* 推荐 */
+
+.center_input_tuijian {
+    color: #fff;
+    margin-top: -18px;
+}
+
+.center_input_tuijian>a {
+    color: #fff;
+    padding: 0px 8px;
+    line-height: 38px;
+    font-size: 13px;
+}
+
+.center_input_News {
+    margin-left: 161px;
+    margin-top: 73px;
+    height: 88px;
+    float: left;
+    color: #fff;
+}
+
+.center_input_News>span {
+    background: #FDFF7C;
+    width: 75px;
+    height: 20px;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-family: 'Tahoma';
+    display: inline-block;
+    font-weight: 600;
+}
+
+.center_input_News_conten {
+    width: 70px;
+    height: 20px;
+    color: #fff;
+    float: right;
+    margin-left: 6px;
+    overflow: hidden;
+}
+
+.center_input_News_conten a {
+    color: #fff;
+}
+
+.center_input_News_conten>a[title="fl"] {
+    position: relative;
+    animation: bounceOutfl 8s 2s ease reverse forwards infinite;
+}
+
+.center_input_News_conten>a[title="rl"] {
+    position: relative;
+    top: -17px;
+    left: 74px;
+    animation: bounceOutrl 8s 2s ease reverse forwards infinite;
+}
+
+@keyframes bounceOutfl {
+    0% {
+        left: 0px;
+    }
+    30% {
+        left: -62px;
+    }
+    60% {
+        left: -62px;
+    }
+    80% {
+        left: 0px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes bounceOutrl {
+    0% {
+        left: 74px;
+    }
+    30% {
+        left: 0px;
+    }
+    60% {
+        left: 0px;
+    }
+    80% {
+        left: 74px;
+    }
+    100% {
+        left: 74px;
+    }
+}
+
+
+/* 导航部分 */
+
+.container[title="bootm_navie"]>a {
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    width: 160px;
+    line-height: 28px;
+}
+
+.container[title="bootm_navie"]>a:hover {
+    color: red;
+}
+
+.naviea_hove[title="bg"] {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    font-family: 幼圆;
+    margin-bottom: 10px;
+}
+
+.naviea_hove[title="ms"] {
+    font-family: 幼圆;
+}
+
+.container[title="bootm_navie"]>a[title="red"] {
+    color: red;
+}

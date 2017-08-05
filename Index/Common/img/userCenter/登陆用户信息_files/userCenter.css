@@ -1,0 +1,93 @@
+/*
+    首页用户信息界面
+*/
+.user_center{
+        width: 1200px;
+        position: relative;
+        margin: 0 auto;
+}
+.Return_home{    
+    margin-bottom: -50px;
+    position: absolute;
+    top: -18px;
+    left: 0px;
+    color: #333;
+}
+.Return_home>code{color: #333;}
+.userCenter_select{
+    display: flex;
+    flex-direction:row;
+    width: 1198px;
+    margin-bottom: 25px;
+    border: 1px solid yellowgreen;
+}
+
+/*
+
+    用户中心列表
+
+*/
+.userCenter_select .select_items_01{
+    width: 192px;
+    border: 4px solid #f1faff;
+    flex-direction:column;
+    display: flex;
+
+}
+.userCenter_select .select_items_02{
+    margin: 50px auto;
+    width: 750px;
+    height: 500px;
+    border: 4px solid #f1faff;
+}
+.select_items_02>div{
+    margin: 40px 0;
+    border: 1px solid #a1675a;
+    padding: 10px 20px;
+    background-color: #e8d1c9;
+}
+.select_items_02>h5{
+    font-weight: bold;
+    background: url(../img/userCenter/bg.gif) no-repeat 0 -616px;
+    padding-left: 25px;
+    height: 26px;
+    line-height: 26px;
+    background-color: #f6f6f6;
+    font-size: 12px;
+    color: #000;
+}
+   
+/*
+    列表公共样式
+*/
+.p{
+    width: 182px;
+    height: 28px;
+    line-height: 28px;
+    background: url(../img/userCenter/menuBg.gif) no-repeat 0 -26px;
+    color: #3f3f3f;
+    text-decoration: none;
+    margin: 0 0 3px 10px;
+    padding-left: 3px;
+    font-size: 12px;
+    font-family: "微软雅黑","宋体",Verdana, Arial;
+}
+.p_img{
+    vertical-align: top;
+    margin-top: 5px;
+}
+/* 
+    默认首页显示欢迎页面
+*/
+.home_page{
+    width: 182px;
+    height: 28px;
+    line-height: 28px;
+    background: url(../img/userCenter/menuBg.gif) no-repeat 0 3px;
+    color: #3f3f3f;
+    text-decoration: none;
+    margin: 0 0 3px 10px;
+    padding-left: 3px;
+    font-size: 12px;
+    font-family: "微软雅黑","宋体",Verdana, Arial;
+}
