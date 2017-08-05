@@ -29,7 +29,7 @@
             <span class="cart_title_info">&nbsp;&nbsp;|&nbsp;&nbsp;让购物变得更轻松</span>
         </div>
         <form method="" action="">
-            <div class="cart_goods_list">
+            <div class="cart_goods_list goods_table">
                 <table>
                     <tr class="table_header">
                         <td>
@@ -119,9 +119,158 @@
                 </table>
             </div>
             <div class="cart_user_info">
-                <table>
-                    
-                </table>
+                <div class="cart_table_header">
+                    收货人信息
+                </div>
+                <div class="table_warp">
+                    <table class="cart_adds">
+                        <tr>
+                            <td>
+                                收货人姓名:	
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                手机号:
+                            </td>
+                            <td>
+                                <input type="text" /><span>&nbsp;(必填)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                配送区域:
+                            </td>
+                            <td>
+                                <select name="country" id="">
+                                    <option value="0">请选择国家</option>
+                                    <option value="" selected>中国</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="0">请选择省</option>
+                                    <option value="" selected>北京</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="0">请选择市</option>
+                                    <option value=""></option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="">请选择区</option>
+                                </select>
+                                <span style="color: #ff3300">&nbsp;(必填)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                详细地址:
+                            </td>
+                            <td class="xiangxi_addss">
+                                <input type="text" />
+                                <span>(必填,请务必填完整您的地址，以便快递送货。)</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div> 
+            </div>
+            <div class="cart_user_express cart_warp">
+                <div class="cart_table_header">
+                    配送方式<span>保密派送，快递单无任何产品和公司等敏感信息</span>
+                </div>
+                <div class="table_warp">
+                    <table class="cart_adds">
+                        <tr>
+                            <td>
+                                <input name="express" type="radio" id="express" /><label for="express">&nbsp;快递</label>	
+                            </td>
+                            <td>
+                                费用：￥<span>0.00</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="express" type="radio" id="ems" /><label for="ems">&nbsp;EMS</label>	
+                            </td>
+                            <td>
+                                费用：￥<span>0.00</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div> 
+            </div>
+            <div class="cart_user_pay cart_warp">
+                <div class="cart_table_header">
+                    支付方式<span>保密派送，快递单无任何产品和公司等敏感信息</span>
+                </div>
+                <div class="table_warp">
+                    <table class="cart_adds">
+                        <tr>
+                            <td class="express_info">
+                                平台支付>>	
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="pay" type="radio" id="pay1" /><label for="pay1"><img src="__ROOT__/Index/Common/img/img_cart/alipay.gif" alt=""></label>	
+                                <input class="pay2" name="pay" type="radio" id="pay2" /><label for="pay2"><img src="__ROOT__/Index/Common/img/img_cart/wx_new_qrcode.gif" alt=""></label>
+                            </td>
+                        </tr>
+                    </table>
+                </div> 
+            </div>
+            <div class="cart_user_money cart_warp">
+                <div class="cart_table_header">
+                    使用优惠
+                </div>
+                <div class="group_warp">
+                    <div class="group_warp_item">
+                        <div class="group_item_title"><span>优惠券</span><span class="item_title_num">可使用0张<img src="__ROOT__/Index/Common/img/img_cart/drop.png" alt=""></span></div>
+                        <div class="item_title_show">
+                            <div class="item_title_content_titel">
+                                <p><span class="item_content_active">可用优惠券 </span><span class="content_titel_right">不可用优惠券</span></p>
+                            </div>
+                            <div class="item_title_content">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group_warp_item">
+                        <div class="group_item_title"><span>礼品券</span><span class="item_title_num">可使用0张<img src="__ROOT__/Index/Common/img/img_cart/drop.png" alt=""></span></div>
+                        <div class="item_title_show">
+                            <div class="item_title_content_titel">
+                                <p><span class="item_content_active">可用优惠券 </span><span class="content_titel_right">不可用优惠券</span></p>
+                            </div>
+                            <div class="item_title_content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group_warp_item groupl_warp_item">
+                        <div class="group_item_title">
+                            <span>红包</span>
+                            <input type="text" placeholder="直接输入红包序列号" /><button type="button">验证红包</button>
+                            <select name="money_select" id="money_select">
+                                <option value="">请选择</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_jiesuan_pay cart_warp">
+                <div class="cart_table_header">
+                    最终结算
+                </div>
+                <div class="table_warp data_info">
+                    <div>该订单完成后，您将获得&nbsp;&nbsp;<span>3</span>&nbsp;&nbsp;积分 ，以及价值<b>&nbsp;&nbsp;&yen;</b><span>0.00</span>的红包。</div>
+                    <div>商品总价: <b>&nbsp;&yen;</b><span>320.00</span></div>
+                    <div>应付款金额: <b>&nbsp;&yen;</b><span>320.00</span></div>
+                </div> 
+            </div>
+            <div class="cart_form_footer">
+                <span>给商家留言</span>
+                <input class="say_info" type="text" />
+                <input class="sure_sub" type="submit" value="" />
             </div>
         </form>
     </div>

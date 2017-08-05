@@ -81,3 +81,11 @@ $('.proDel').click(function () {
     jiancha();
     changeProTotalAndPirces();
 });
+$(".item_title_num").click(function(){
+    $(this).parents(".group_warp_item").find(".item_title_show").slideToggle(function(){
+        $(".item_title_content_titel span").click(function(){
+            $(this).parent().find("span").removeClass("item_content_active")
+            $(this).addClass("item_content_active")
+        })
+    });
+})

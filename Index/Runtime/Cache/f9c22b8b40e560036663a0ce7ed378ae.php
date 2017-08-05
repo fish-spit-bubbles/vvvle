@@ -202,8 +202,12 @@
                                 </ul>
                             </div>
                             <div class="show_right">
-                                <div class="right_up"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/EOSJZ.jpg" alt=""></a></div>
-                                <div class="right_down"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/gsnj.jpg" alt=""></a></div>
+                                <div class="right_up">
+                                    <a href="##"><img src="__ROOT__/Index/Common/img/img_home/EOSJZ.jpg" alt=""></a>
+                                </div>
+                                <div class="right_down">
+                                    <a href="##"><img src="__ROOT__/Index/Common/img/img_home/gsnj.jpg" alt=""></a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -239,8 +243,12 @@
                                 </ul>
                             </div>
                             <div class="show_right">
-                                <div class="right_up"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/bnss.jpg" alt=""></a></div>
-                                <div class="right_down"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/hxss.jpg" alt=""></a></div>
+                                <div class="right_up">
+                                    <a href="##"><img src="__ROOT__/Index/Common/img/img_home/bnss.jpg" alt=""></a>
+                                </div>
+                                <div class="right_down">
+                                    <a href="##"><img src="__ROOT__/Index/Common/img/img_home/hxss.jpg" alt=""></a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -276,8 +284,12 @@
                                 </ul>
                             </div>
                             <div class="show_right">
-                                <div class="right_up"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/dreamcon tx.jpg" alt=""></a></div>
-                                <div class="right_down"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/neowdjm.jpg" alt=""></a></div>
+                                <div class="right_up">
+                                    <a href="##"><img src="__ROOT__/Index/Common/img/img_home/dreamcon tx.jpg" alt=""></a>
+                                </div>
+                                <div class="right_down">
+                                    <a href="##"><img src="__ROOT__/Index/Common/img/img_home/neowdjm.jpg" alt=""></a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -313,8 +325,12 @@
                                 </ul>
                             </div>
                             <div class="show_right">
-                                <div class="right_up"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/geo.jpg" alt=""></a></div>
-                                <div class="right_down"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/neolx.jpg" alt=""></a></div>
+                                <div class="right_up">
+                                    <a href="##"><img src="__ROOT__/Index/Common/img/img_home/geo.jpg" alt=""></a>
+                                </div>
+                                <div class="right_down">
+                                    <a href="##"><img src="__ROOT__/Index/Common/img/img_home/neolx.jpg" alt=""></a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -350,8 +366,12 @@
                                 </ul>
                             </div>
                             <div class="show_right">
-                                <div class="right_up"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/neo30.jpg" alt=""></a></div>
-                                <div class="right_down"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/kfl.jpg" alt=""></a></div>
+                                <div class="right_up">
+                                    <a href="##"><img src="__ROOT__/Index/Common/img/img_home/neo30.jpg" alt=""></a>
+                                </div>
+                                <div class="right_down">
+                                    <a href="##"><img src="__ROOT__/Index/Common/img/img_home/kfl.jpg" alt=""></a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -471,10 +491,18 @@
             </div>
             <div class="home_salesList_content">
                 <ul>
-                    <li><a href="##"><img src="__ROOT__/Index/Common/img/img_home/41a.jpg" alt=""></a></li>
-                    <li><a href="##"><img src="__ROOT__/Index/Common/img/img_home/41b.jpg" alt=""></a></li>
-                    <li><a href="##"><img src="__ROOT__/Index/Common/img/img_home/41c.jpg" alt=""></a></li>
-                    <li><a href="##"><img src="__ROOT__/Index/Common/img/img_home/41d.jpg" alt=""></a></li>
+                    <li>
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_home/41a.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_home/41b.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_home/41c.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_home/41d.jpg" alt=""></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -485,35 +513,37 @@
                         <span>上班上学</span>
                         <span>Morning</span>
                     </div>
-                    <div class="day_content"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/list_01.jpg" alt=""></a></div>
+                    <div class="day_content">
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_home/list_01.jpg" alt=""></a>
+                    </div>
                     <ul class="day_warp_ul">
                         <li>
                             <a href="##">
-                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
-                            <p>OLIVI轻瞳</p>
-                            <p>轻芯巧克力</p>
-                        </a>
+                                <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                                <p>OLIVI轻瞳</p>
+                                <p>轻芯巧克力</p>
+                            </a>
                         </li>
                         <li>
                             <a href="##">
-                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
-                            <p>OLIVI轻瞳</p>
-                            <p>轻芯巧克力</p>
-                        </a>
+                                <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                                <p>OLIVI轻瞳</p>
+                                <p>轻芯巧克力</p>
+                            </a>
                         </li>
                         <li>
                             <a href="##">
-                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
-                            <p>OLIVI轻瞳</p>
-                            <p>轻芯巧克力</p>
-                        </a>
+                                <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                                <p>OLIVI轻瞳</p>
+                                <p>轻芯巧克力</p>
+                            </a>
                         </li>
                         <li>
                             <a href="##">
-                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
-                            <p>OLIVI轻瞳</p>
-                            <p>轻芯巧克力</p>
-                        </a>
+                                <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                                <p>OLIVI轻瞳</p>
+                                <p>轻芯巧克力</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -522,35 +552,37 @@
                         <span>上班上学</span>
                         <span>Morning</span>
                     </div>
-                    <div class="day_content"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/list_01.jpg" alt=""></a></div>
+                    <div class="day_content">
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_home/list_01.jpg" alt=""></a>
+                    </div>
                     <ul class="day_warp_ul">
                         <li>
                             <a href="##">
-                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
-                            <p>OLIVI轻瞳</p>
-                            <p>轻芯巧克力</p>
-                        </a>
+                                <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                                <p>OLIVI轻瞳</p>
+                                <p>轻芯巧克力</p>
+                            </a>
                         </li>
                         <li>
                             <a href="##">
-                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
-                            <p>OLIVI轻瞳</p>
-                            <p>轻芯巧克力</p>
-                        </a>
+                                <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                                <p>OLIVI轻瞳</p>
+                                <p>轻芯巧克力</p>
+                            </a>
                         </li>
                         <li>
                             <a href="##">
-                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
-                            <p>OLIVI轻瞳</p>
-                            <p>轻芯巧克力</p>
-                        </a>
+                                <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                                <p>OLIVI轻瞳</p>
+                                <p>轻芯巧克力</p>
+                            </a>
                         </li>
                         <li>
                             <a href="##">
-                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
-                            <p>OLIVI轻瞳</p>
-                            <p>轻芯巧克力</p>
-                        </a>
+                                <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                                <p>OLIVI轻瞳</p>
+                                <p>轻芯巧克力</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -559,35 +591,37 @@
                         <span>上班上学</span>
                         <span>Morning</span>
                     </div>
-                    <div class="day_content"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/list_01.jpg" alt=""></a></div>
+                    <div class="day_content">
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_home/list_01.jpg" alt=""></a>
+                    </div>
                     <ul class="day_warp_ul">
                         <li>
                             <a href="##">
-                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
-                            <p>OLIVI轻瞳</p>
-                            <p>轻芯巧克力</p>
-                        </a>
+                                <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                                <p>OLIVI轻瞳</p>
+                                <p>轻芯巧克力</p>
+                            </a>
                         </li>
                         <li>
                             <a href="##">
-                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
-                            <p>OLIVI轻瞳</p>
-                            <p>轻芯巧克力</p>
-                        </a>
+                                <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                                <p>OLIVI轻瞳</p>
+                                <p>轻芯巧克力</p>
+                            </a>
                         </li>
                         <li>
                             <a href="##">
-                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
-                            <p>OLIVI轻瞳</p>
-                            <p>轻芯巧克力</p>
-                        </a>
+                                <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                                <p>OLIVI轻瞳</p>
+                                <p>轻芯巧克力</p>
+                            </a>
                         </li>
                         <li>
                             <a href="##">
-                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
-                            <p>OLIVI轻瞳</p>
-                            <p>轻芯巧克力</p>
-                        </a>
+                                <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                                <p>OLIVI轻瞳</p>
+                                <p>轻芯巧克力</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -596,35 +630,37 @@
                         <span>上班上学</span>
                         <span>Morning</span>
                     </div>
-                    <div class="day_content"><a href="##"><img src="__ROOT__/Index/Common/img/img_home/list_01.jpg" alt=""></a></div>
+                    <div class="day_content">
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_home/list_01.jpg" alt=""></a>
+                    </div>
                     <ul class="day_warp_ul">
                         <li>
                             <a href="##">
-                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
-                            <p>OLIVI轻瞳</p>
-                            <p>轻芯巧克力</p>
-                        </a>
+                                <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                                <p>OLIVI轻瞳</p>
+                                <p>轻芯巧克力</p>
+                            </a>
                         </li>
                         <li>
                             <a href="##">
-                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
-                            <p>OLIVI轻瞳</p>
-                            <p>轻芯巧克力</p>
-                        </a>
+                                <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                                <p>OLIVI轻瞳</p>
+                                <p>轻芯巧克力</p>
+                            </a>
                         </li>
                         <li>
                             <a href="##">
-                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
-                            <p>OLIVI轻瞳</p>
-                            <p>轻芯巧克力</p>
-                        </a>
+                                <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                                <p>OLIVI轻瞳</p>
+                                <p>轻芯巧克力</p>
+                            </a>
                         </li>
                         <li>
                             <a href="##">
-                            <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
-                            <p>OLIVI轻瞳</p>
-                            <p>轻芯巧克力</p>
-                        </a>
+                                <img src="__ROOT__/Index/Common/img/img_home/li_02.png" alt="" />
+                                <p>OLIVI轻瞳</p>
+                                <p>轻芯巧克力</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -639,11 +675,21 @@
                     </div>
                     <div class="home_hot_content clearfix">
                         <a href="##"><img src="__ROOT__/Index/Common/img/img_home/61.jpg" alt=""></a>
-                        <a class="hot_content" href="##"><img src="__ROOT__/Index/Common/img/img_home/62.png" alt=""><p>Modern小浆果</p></a>
-                        <a class="hot_content" href="##"><img src="__ROOT__/Index/Common/img/img_home/62.png" alt=""><p>Modern小浆果</p></a>
-                        <a class="hot_content" href="##"><img src="__ROOT__/Index/Common/img/img_home/62.png" alt=""><p>Modern小浆果</p></a>
-                        <a class="hot_content" href="##"><img src="__ROOT__/Index/Common/img/img_home/62.png" alt=""><p>Modern小浆果</p></a>
-                        <a class="hot_content" href="##"><img src="__ROOT__/Index/Common/img/img_home/62.png" alt=""><p>Modern小浆果</p></a>
+                        <a class="hot_content" href="##"><img src="__ROOT__/Index/Common/img/img_home/62.png" alt="">
+                            <p>Modern小浆果</p>
+                        </a>
+                        <a class="hot_content" href="##"><img src="__ROOT__/Index/Common/img/img_home/62.png" alt="">
+                            <p>Modern小浆果</p>
+                        </a>
+                        <a class="hot_content" href="##"><img src="__ROOT__/Index/Common/img/img_home/62.png" alt="">
+                            <p>Modern小浆果</p>
+                        </a>
+                        <a class="hot_content" href="##"><img src="__ROOT__/Index/Common/img/img_home/62.png" alt="">
+                            <p>Modern小浆果</p>
+                        </a>
+                        <a class="hot_content" href="##"><img src="__ROOT__/Index/Common/img/img_home/62.png" alt="">
+                            <p>Modern小浆果</p>
+                        </a>
                         <a href="##"><img src="__ROOT__/Index/Common/img/img_home/65.jpg" alt=""></a>
                     </div>
                 </div>
