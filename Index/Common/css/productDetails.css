@@ -253,3 +253,258 @@ body {
     font-size: 16px;
     font-weight: 600;
 }
+
+
+/* 立即购买 */
+
+.show_goods_o_pic_ui-form-item>.padda {
+    width: 100%;
+    height: 57px;
+    padding: 3px 8px;
+    margin-top: 12px;
+}
+
+
+/* 购买 */
+
+.padda>.padda_buynow {
+    width: 188px;
+    height: 43px;
+    border-color: #f6403c;
+    border-radius: 10px;
+    background-image: url("../img/img_productDetails/buy_bnt_vl.png");
+    color: #fff;
+    margin-right: 30px;
+}
+
+
+/* 加入购物车 */
+
+.padda>.Join_the_shopping_cart {
+    width: 114px;
+    height: 43px;
+    border-radius: 10px;
+    border-color: #7297ff;
+    background-image: url("../img/img_productDetails/add_to_cart1.png");
+    background-repeat: no-repeat;
+    background-position-y: -2px;
+}
+
+
+/* 购物流程列车 */
+
+.show_cart_process_img {
+    width: 100%;
+    height: 131px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.vl_goods_down_clearfix {
+    width: 100%;
+    height: 28207px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.vl_goods_down_clearfix>.vl_goods_dec_fr {
+    flex: 8.6;
+}
+
+.vl_goods_down_clearfix>.vl_goods_dec_rr {
+    flex: 1.4;
+}
+
+.detail_tab_clearfix {
+    width: 855px;
+    height: 37px;
+    line-height: 37px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    background: #F4F4F4;
+    box-shadow: 0px 2px 3px #ccc;
+    font-family: "微软雅黑", "宋体", Verdana, Arial;
+}
+
+.detail_tab_clearfix>ul {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style-type: none;
+    height: 37px;
+    display: flex;
+    align-content: flex-start
+}
+
+.detail_tab_clearfix>ul>li[bokl="outs"] {
+    width: 132px;
+    height: 37px;
+    color: #333;
+    margin: -1px 0 0 0;
+    border-bottom: 1px solid #fff;
+    bottom: -1px;
+    border-top: 3px solid #FF0000;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    text-align: center;
+}
+
+.detail_tab_clearfix>ul>li>a {
+    color: #666;
+}
+
+.detail_tab_clearfix>ul>li>a:link {
+    color: #333;
+}
+
+.detail_tab_clearfix>ul>li[bokl="fbm"] {
+    color: #333;
+    border-bottom: none;
+    width: 131px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 -1px 0 0;
+    cursor: pointer;
+    border-right: 1px solid #ddd;
+}
+
+
+/* 立即购买 */
+
+.detail_tab_clearfix>ul>li[bokl="fbwb"] {
+    width: 131px;
+    text-align: center;
+    align-self: baseline;
+    height: 37px;
+    margin-left: 200px;
+}
+
+.detail_tab_clearfix>ul>li[bokl="fbwb"]>a {
+    width: 131px;
+    height: 37px;
+    display: block;
+    background-image: url("../img/img_productDetails/add_to_cart.png");
+}
+
+.legal_goods_service {
+    width: 820px;
+    height: 115px;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-image: url("../img/img_productDetails/tou1.jpg");
+}
+
+
+/* 阿里旺旺 */
+
+.legal_goods_service_alww {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    right: 254px;
+    top: 10px;
+}
+
+
+/* QQ */
+
+.legal_goods_service_qq {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    right: 154px;
+    top: 10px;
+}
+
+
+/* 惊艳 */
+
+.go_rgeousness {
+    width: 825px;
+    margin-left: 15px;
+    margin-bottom: 36px;
+}
+
+.go_spec_bar {
+    background-color: #818181;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 825px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+
+/* 表格 */
+
+.go_spec_column {
+    width: 825px;
+    height: 30px;
+    /* background-color: forestgreen; */
+    margin-left: 15px;
+    display: flex;
+}
+
+.go_spec_column_fl {
+    flex: 2.3;
+}
+
+.go_spec_column_rl {
+    flex: 7.7;
+    padding: 6px;
+    font-family: "微软雅黑", "宋体", Verdana, Arial;
+}
+
+.go_spec_column>div[title="gray"] {
+    background: #f4f4f4;
+    font-weight: bold;
+    color: #9d9d9d;
+    text-align: left;
+    line-height: 30px;
+    padding: 0 6px;
+}
+
+.go_spec_column>div[title="blue"] {
+    background: #18ded9;
+    padding: 6px;
+    color: #FFF;
+    text-align: left;
+    font-weight: bold;
+    font-family: "微软雅黑", "宋体", Verdana, Arial;
+}
+
+.go_spec_column_rl[title="gray_shm"] {
+    background: #f4f4f4;
+    text-align: left;
+    line-height: 30px;
+    padding: 0 6px;
+    font-family: "微软雅黑", "宋体", Verdana, Arial;
+}
+
+.go_for_rgeousness {
+    width: 825px;
+    margin-left: 15px;
+}
+
+.vl_goods_dec_rr_h3 {
+    height: 33px;
+    line-height: 33px;
+    font-size: 14px;
+    background: #fff;
+    text-align: right;
+    padding: 0 10px;
+    font-weight: 100;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
