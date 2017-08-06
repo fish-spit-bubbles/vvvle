@@ -94,7 +94,7 @@
              <!--右边注册信息界面  -->
             <div class="col-sm-6" id="register_left" >
                 <div class="weile">注册微乐</div>
-                <form name="myForm" novalidate="novalidate">
+                <form name="myForm"  novalidate="novalidate">
                     <table width="100%"  border="0" align="left" cellpadding="5" cellspacing="3">
                         <tr>
                             <td width="20%" align="right"><p class="pd">用户名</p></td>
@@ -105,27 +105,18 @@
                                 type="text"  
                                 ng-required="true" 
                                 ng-minlength="3" 
-                                ng-maxlength="12"
                                 class="bg"
                                 name="username"
                                 />
                                 <span id="username_notice" style="color:#FF0000"> *</span>
-                                <div 
-                                style="color:#FF0000;
-                                font-size: 12px;"       
-                                ng-show="myForm.username.$dirty"
-                                ><div
-                                 ng-show="myForm.username.$invalid"
-                                >
-                                    用户名长度不能少于 3 个字符。
-                                </div>
-                                
-                                 </div>
-                                <div
-                                style="color:darkorange;
-                                font-size: 12px;" 
+                                <span
+                                style="color:#FF0000;font-size: 12px;"                                
+                                ng-show="myForm.username.$error.required && myForm.username.$dirty"
+                                >账号不能少于 3 个字符。</span>
+                                <span
+                                style="color:darkorange;font-size: 12px;"                                
                                 ng-show="myForm.username.$valid"
-                                >可以注册</div>   
+                                >账号可以用</span>
                             </td>
                         </tr>
                         <tr>
@@ -133,21 +124,36 @@
                             <td>
                                  <!-- input 邮件  -->
                                 <input 
-                                ng-model="users.email"  type="text" class="bg" name="email"
+                                ng-model="users.email"  type="email" class="bg" name="email"
                                 ng-required="true"
                                 
                                 />
                                 <span id="email_notice" style="color:#FF0000"> *</span>
-                                <span ng-show="myForm.email.$dirty && myForm.email.$valid">邮箱是必须的。</span>
-                                <span ng-show="myForm.email.$error.email">非法的邮箱地址。</span>  
+                                <span 
+                                style="color:darkorange;font-size: 12px;"
+                                ng-show="myForm.email.$dirty && myForm.email.$valid">邮箱可以用。</span>
+                                <span 
+                                style="color:#FF0000;font-size: 12px;"
+                                ng-show="myForm.email.$error.email">非法的邮箱地址。</span>  
                             </td>
                         </tr>
                         <tr>
                             <td align="right"><p class="pd">密码</p></td>
                             <td>
                                  <!-- input 密码  -->
-                                <input ng-model="pwd" type="password" class="bg"/>
+                                <input ng-model="users.pwd" type="password" class="bg" name="pwd"
+                                ng-minlength="6"
+                                ng-required="true"
+                                />
                                 <span style="color:#FF0000" id="password_notice"> *</span>
+                                <span
+                                style="color:#FF0000;font-size: 12px;"                                
+                                ng-show="myForm.pwd.$error.required && myForm.pwd.$dirty"
+                                >登录密码不能少于 6 个字符。</span>
+                                <span
+                                style="color:darkorange;font-size: 12px;"                                
+                                ng-show="myForm.pwd.$valid"
+                                >密码可以用</span>
                             </td>
                         </tr>
                         <tr class="bg01">
@@ -166,8 +172,20 @@
                             <td align="right"><p class="pd">确认密码</p></td>
                             <td>
                                 <!-- input 确认密码  -->
-                            <input ng-model="repwd" type="password" class="bg"/>
+                            <input  ng-model="users.repwd" type="password" class="bg"
+                                    name="repwd"
+                                    ng-minlength="6"
+                                    ng-required="true"
+                            />
                             <span style="color:#FF0000" id="conform_password_notice"> *</span>
+                            <span
+                                style="color:#FF0000;font-size: 12px;"                                
+                                ng-show="myForm.repwd.$error.required && myForm.repwd.$dirty"
+                                >登录密码不能少于 6 个字符。</span>
+                                <span
+                                style="color:darkorange;font-size: 12px;"                                
+                                ng-show="myForm.repwd.$valid"
+                                >密码可以用</span>
                             </td>
                         </tr>
                         
@@ -175,14 +193,14 @@
                             <td align="right" ><p class="pd">QQ</p></td>
                             <td>
                                  <!-- input QQ  -->
-                                <input ng-model="qq" type="text"  class="bg" />          
+                                <input ng-model="users.qq" type="text"  class="bg" />          
                             </td>
                         </tr>
                         <tr>
                             <td align="right" id="WeChat" ><p class="pd">微信</p></td>  
                             <td>
                                  <!-- input 微信  -->
-                                <input ng-model="wechat" type="text" class="bg" id="WeChat" />         
+                                <input ng-model="users.wechat" type="text" class="bg" id="WeChat" />         
                             </td>
                         </tr>        
                         <tr>
@@ -197,7 +215,7 @@
                         <tr>
                             <td>&nbsp;</td>
                             <td align="left">
-                                <input ng-click="sub()" class="liji">
+                                <input ng-click="sub()" type="button" class="liji">
                             </td>
                         </tr>
                     </table> 
@@ -206,7 +224,7 @@
             <!--立即登陆  -->
             <div class="col-sm-6" id="register_right">
                 <div class="wl">已微乐账号？</div>
-                <div class="liji1"><a href="user.php?back_act="><img src="__ROOT__/Index/Common/img/login/liji1.gif"></a></div>
+                <div class="liji1"><a href="__APP__/Login/login"><img src="__ROOT__/Index/Common/img/login/liji1.gif"></a></div>
                 <div class="qita">你也可以使用一下账号登录：</div>
                 <div class="zhanghao"><a href="##"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c1.gif" width="93" height="24" border="0"/></a>
                 <a href="##"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c2.gif" width="101" height="24" border="0" /></a>
@@ -243,19 +261,21 @@
                         "Content-type":"application/x-www-form-urlencoded"
                 },
                 data:{
-                        username:$scope.username,
-                        email:$scope.email,
-                        pwd: $scope.pwd,
-                        repwd:$scope.repwd,
-                        qq:$scope.qq,
-                        wechat:$scope.wechat
+                        username:$scope.users.username,
+                        email:$scope.users.email,
+                        pwd: $scope.users.pwd,
+                        repwd:$scope.users.repwd,
+                        qq:$scope.users.qq,
+                        wechat:$scope.users.wechat
                 }
             }).success(function(data){
-                    // if(data.status==1){
-                    //     window.location.href="__APP__/Index/index";
-                    // }else{
-                    //     alert(data.info);
-                    // }
+                    if(data.status==1){
+                        // window.location.href="__APP__/Login/login";
+                        alert("注册成功");
+                        
+                    }else{
+                        alert(data.info);
+                    }
                     console.log(data);
             })
         }
