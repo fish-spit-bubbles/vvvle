@@ -17,6 +17,8 @@
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
 
 
+
+
 </head>
 
 <body ng-app="myapp" ng-controller="mycontroller">
@@ -234,8 +236,42 @@
                 <!-- 左眼度数 -->
                 <li class="attribute_item">
                     左眼度数
-                    <select>
-                        <option value="0">请选择</option>
+                    <select class="attribute_item_flet">
+                        <option value="请选择">请选择</option>
+                        <option value="平光">平光</option>
+                        <option value="-100">-100</option>
+                        <option value="-125">-125</option>
+                        <option value="-150">-150</option>
+                        <option value="-175">-175</option>
+                        <option value="-200">-200</option>
+                        <option value="-225">-225</option>
+                        <option value="-250">-250</option>
+                        <option value="-275">-275</option>
+                        <option value="-300">-300</option>
+                        <option value="-325">-325</option>
+                        <option value="-350">-350</option>
+                        <option value="-375">-375</option>
+                        <option value="-400">-400</option>
+                        <option value="-425">-425</option>
+                        <option value="-450">-450</option>
+                        <option value="-475">-475</option>
+                        <option value="-500">-500</option>
+                        <option value="-525">-525</option>
+                        <option value="-550">-550</option>
+                        <option value="-600">-600</option>
+                        <option value="-650">-650</option>
+                        <option value="-700">-700</option>
+                        <option value="-750">-750</option>
+                        <option value="-800">-800</option>
+                        
+                    </select>
+
+                </li>
+                <!-- 右眼度数 -->
+                <li class="attribute_item">
+                    右眼度数
+                    <select class="attribute_item_right">
+                        <option value="请选择">请选择</option>
                         <option value="平光">平光</option>
                         <option value="-100">-100</option>
                         <option value="-125">-125</option>
@@ -264,38 +300,13 @@
                         
                     </select>
                 </li>
-                <!-- 右眼度数 -->
-                <li class="attribute_item">
-                    右眼度数
-                    <select>
-                        <option value="0">请选择</option>
-                        <option value="平光">平光</option>
-                        <option value="-100">-100</option>
-                        <option value="-125">-125</option>
-                        <option value="-150">-150</option>
-                        <option value="-175">-175</option>
-                        <option value="-200">-200</option>
-                        <option value="-225">-225</option>
-                        <option value="-250">-250</option>
-                        <option value="-275">-275</option>
-                        <option value="-300">-300</option>
-                        <option value="-325">-325</option>
-                        <option value="-350">-350</option>
-                        <option value="-375">-375</option>
-                        <option value="-400">-400</option>
-                        <option value="-425">-425</option>
-                        <option value="-450">-450</option>
-                        <option value="-475">-475</option>
-                        <option value="-500">-500</option>
-                        <option value="-525">-525</option>
-                        <option value="-550">-550</option>
-                        <option value="-600">-600</option>
-                        <option value="-650">-650</option>
-                        <option value="-700">-700</option>
-                        <option value="-750">-750</option>
-                        <option value="-800">-800</option>
-                        
-                    </select>
+                <li class="padd_loop_check">
+                    <div class="attribute_item_option" name="dn">
+                        请选择左眼度数
+                    </div>
+                    <div class="attribute_item_option" name="dr">
+                        请选择右眼度数
+                    </div>
                 </li>
                 <!-- 促销价和剩余时间 -->
                 <li class="padd_loop">
@@ -344,16 +355,16 @@
                     <div class="detail_tab_clearfix">
                         <ul>
                             <li bokl="outs">
-                                <a href="#">商品详情</a>
+                                <a href="">商品详情</a>
                             </li>
                             <li bokl="fbm">
-                                <a href="#">卖家评价</a>
+                                <a href="">卖家评价</a>
                             </li>
                             <li bokl="fbm">
-                                <a href="#">达人秀</a>
+                                <a href="">达人秀</a>
                             </li>
                             <li bokl="fbm">
-                                <a href="#">相关文章</a>
+                                <a href="">相关文章</a>
                             </li>
                             <li bokl="fbwb">
                                 <a href="#"></a>
@@ -429,23 +440,120 @@
 
                     </div>
 
-
-
-
-
                 </div>
                 <!-- 侧边栏相同颜色商品 -->
                 <div class="vl_goods_dec_rr">
                     <h3 class="vl_goods_dec_rr_h3">相同颜色的商品</h3>
-                    <div></div>
+                    <div class="vlGoodsGoodsimg">
+                        <a name="goods" href="#">
+                            <img src="__ROOT__/Index/Common/img/img_productDetails/3175_thumb_G_1478216450806.png" alt="相同商品">
+                        </a>
+                        <div class="vlGoodsGoodsimg_font">
+                            <a href="#">
+                            【满299减199】Besco...
+                            </a>
+                            <br> 本店售价：
+                            <em>￥</em>
+                            <span class="vlGodsGoodsimgJiage">
+                                 298
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="vlGoodsGoodsimg">
+                        <a name="goods" href="#">
+                            <img src="__ROOT__/Index/Common/img/img_productDetails/3175_thumb_G_1478216450806.png" alt="相同商品">
+                        </a>
+                        <div class="vlGoodsGoodsimg_font">
+                            <a href="#">
+                            【满299减199】Besco...
+                            </a>
+                            <br> 本店售价：
+                            <em>￥</em>
+                            <span class="vlGodsGoodsimgJiage">
+                                 298
+                            </span>
+                        </div>
+
+                    </div>
+
                     <h3 class="vl_goods_dec_rr_h3">浏览历史</h3>
-                    <div></div>
+                    <div class="vlGoodsGoodsimg">
+                        <a name="goods" href="#">
+                            <img src="__ROOT__/Index/Common/img/img_productDetails/3175_thumb_G_1478216450806.png" alt="相同商品">
+                        </a>
+                        <div class="vlGoodsGoodsimg_font">
+                            <a href="#">
+                            【满299减199】Besco...
+                            </a>
+                            <br> 本店售价：
+                            <em>￥</em>
+                            <span class="vlGodsGoodsimgJiage">
+                                 298
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="vlGoodsGoodsimg">
+                        <a name="goods" href="#">
+                            <img src="__ROOT__/Index/Common/img/img_productDetails/3175_thumb_G_1478216450806.png" alt="相同商品">
+                        </a>
+                        <div class="vlGoodsGoodsimg_font">
+                            <a href="#">
+                            【满299减199】Besco...
+                            </a>
+                            <br> 本店售价：
+                            <em>￥</em>
+                            <span class="vlGodsGoodsimgJiage">
+                                 298
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <span class="vl_goods_dec_rr_vacum">[清空]</span>
                 </div>
             </div>
+            <!-- 留言板 -->
+            <div class="reviews_details">
+                <h3>
+                    <span>用户评论</span>(共
+                    <font>0</font>条品论)
+                </h3>
+                <div class="boxCenterList_clearfix">
+                    <div class="commentsList">
+                        <from>
+                            <div class="commentsList_fl  text-right">
+                                <div>用户名：</div>
+                                <div>等级评价：</div>
+                                <div>评论内容：</div>
+                            </div>
+                            <div class="commentsList_rlp">
+                                <!-- 获取用户名显示 -->
+                                <div id="commentsListRlpUsername">用户名张三</div>
+                                <!-- 评价星级 -->
+                                <div class="commentsList_rlp_appraise"></div>
+                                <!-- 评价内容 -->
+                                <textarea class="commentsList_rlp_theme"></textarea>
+                                <div>
+                                    <input type="file" placeholder="上传文件" value="上传文件">
+                                    <input type="submit" value="提交评论">
+                                </div>
 
+                            </div>
+                        </from>
+                    </div>
+                </div>
 
+            </div>
 
         </div>
+
+
+
+
     </div>
 
 
@@ -555,101 +663,8 @@
     </div>
 
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
-    <script>
-        var app = angular.module("myapp", []);
-        app.controller("mycontroller", function($scope, $http) {
-            $scope.imgarr = [{
-                path: "1500628005237569.jpg"
-            }, {
-                path: "1500628005722993.jpg"
-            }, {
-                path: "1500628006196727.jpg"
-            }, {
-                path: "1500628006809753.jpg"
-            }, {
-                path: "1500628007629155.jpg"
-            }, {
-                path: "1500628008937392.jpg"
-            }, {
-                path: "1500628009792044.jpg"
-            }, {
-                path: "1500628010579751.jpg"
-            }, {
-                path: "1500628011138678.jpg"
-            }, {
-                path: "1500628012841135.jpg"
-            }, {
-                path: "1500628012874148.jpg"
-            }, {
-                path: "1500628013199373.jpg"
-            }, {
-                path: "1500628013330298.jpg"
-            }, {
-                path: "1500628014135883.jpg"
-            }, {
-                path: "1500628014238126.jpg"
-            }, {
-                path: "1500628016194801.jpg"
-            }, {
-                path: "1500628016657137.jpg"
-            }, {
-                path: "1500628017683001.jpg"
-            }, {
-                path: "1500628018237234.jpg"
-            }, {
-                path: "1500628019505985.jpg"
-            }, {
-                path: "1500628020850656.jpg"
-            }, {
-                path: "1500628021568573.jpg"
-            }, {
-                path: "1500628022126560.jpg"
-            }, {
-                path: "1500628023811012.jpg"
-            }, {
-                path: "1500628024282769.jpg"
-            }, {
-                path: "1500628024413762.jpg"
-            }, {
-                path: "1500628025228734.jpg"
-            }, {
-                path: "1500628026245227.jpg"
-            }, {
-                path: "1500628027199852.jpg"
-            }, {
-                path: "1500628028410607.jpg"
-            }, {
-                path: "1500628029668606.jpg"
-            }, {
-                path: "1500628030652864.jpg"
-            }, {
-                path: "1487923637217966.jpg"
-            }, {
-                path: "1487923640448789.jpg"
-            }, {
-                path: "1487923643243202.jpg"
-            }, {
-                path: "1487923647368250.jpg"
-            }, {
-                path: "1487923650553691.jpg"
-            }, {
-                path: "1487923653310774.jpg"
-            }, {
-                path: "1487923656229922.jpg"
-            }, {
-                path: "1487923659652976.jpg"
-            }, {
-                path: "1487923662258672.jpg"
-            }, {
-                path: "1487923665772195.jpg"
-            }];
-            for (var i = 0; i < $scope.imgarr.length; i++) {
-                $scope.imgarr[i].path = "__ROOT__/Index/Common/img/img_productDetails/" + $scope.imgarr[i].path;
-            };
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/productDetails.js"></script>
 
-
-        });
-    </script>
 </body>
 
 </html>
