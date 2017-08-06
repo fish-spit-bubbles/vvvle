@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
-    <script type="text/javascript" src="__ROOT__/Index/Common/js/lens.js"></script>
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
     <style>
         .login{width: 1000px;margin: 0 auto;margin-bottom: 25px;}
         .login_img {margin-top: 25px;}
@@ -192,17 +192,17 @@
     });
 </script>
     <!--登录表  -->
-    <div class="login">
+    <div class="login" ng-app="myapps" ng-controller="mycontroller">
         <div class="row text-left">
             <div class="col-sm-6 login_img">
                 <img src="__ROOT__/Index/Common/img/login/77.jpg" alt="8周年庆图片">
             </div>
             <div class="col-sm-6 login_bgcolor">
                 <div class="weile">登录微乐</div>
-                <form name="formLogin" action="user.php" method="post" onSubmit="return userLogin()">
+                <form>
                     <!-- 登陆用户名  和 密码  -->
-                    <input type="text" name="username" id="username" class="zhu" placeholder="用户名/邮箱/手机号" /> 
-                    <input type="password" name="password" id="password" class="mima" placeholder="密码" />
+                    <input ng-model="username" type="text" name="username" id="username" class="zhu" placeholder="用户名/邮箱/手机号" /> 
+                    <input ng-model="pwd" type="password" name="password" id="password" class="mima" placeholder="密码" />
                     
                     <!--忘记密码  和 保存cookie session  -->
                     <div class="free">
@@ -218,8 +218,8 @@
                      <input type="hidden" name="back_act" value="" />
                     
                      <!--登陆 注册按钮  -->
-                     <input type="submit" name="button" id="button" value="" class="login_bb" />
-                     <input type="button" name="button"  value="" class="login_bb"   onclick=""/>
+                     <input ng-click="delu()" type="button" name="button" id="button"class="login_bb" />
+                     <input ng-click="zuce()" type="button" name="button"  value="" class="login_bb" />
                 </form>
                 <div class="qita">你也可以使用一下账号登录：</div>
                 <div class="account"><a href="##"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c1.gif" width="93" height="24" border="0"/></a>
@@ -380,5 +380,44 @@
     </div>
 </div>
 </body>
+<script type="text/javascript">
+        var app = angular.module("myapps",[]);
+        app.controller("mycontroller",function($scope,$http){
+            $scope.username = "";
+            $scope.pwd = "";
+            $scope.zuce = function(){
+                window.location.href="__APP__/Register/register";
+            }
+            $scope.delu = function(){
+                if($scope.username != "" &&  $scope.pwd != "" ) {
+                    var url = "__APP__/Login/checkUsers";
+                        $http({
+                            url:url,
+                            method:"POST",
+                            headers:{
+                                    "Content-type":"application/x-www-form-urlencoded"
+                            },
+                            data:{
+                                    username:$scope.username,
+                                    pwd:$scope.pwd,
+                            }
+                        }).success(function(data){
+                                if(data.status==1){
+                                    // window.location.href="__APP__/Login/login";
+                                    alert("登陆成功");
+                                    console.log(data);
+                                    
+                                }else{
+                                    alert(data.info);
+                                }
+                            
+                        })
+                    }else{
+                        alert("请填写用户名和密码")
+                    }
+                }
+        })
+
+</script>
 
 </html>
