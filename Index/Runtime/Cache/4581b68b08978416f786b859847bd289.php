@@ -14,7 +14,7 @@
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
 </head>
 
-<body>
+<body onload="_init_area()">
     <!--首页头部  -->
     <div>
         <header>
@@ -132,7 +132,7 @@
             <span class="cart_title_img"></span>
             <span class="cart_title_info">&nbsp;&nbsp;|&nbsp;&nbsp;让购物变得更轻松</span>
         </div>
-        <form method="" action="">
+        <form method="" action="" name="cart_form">
             <div class="cart_goods_list goods_table">
                 <table>
                     <tr class="table_header">
@@ -249,20 +249,11 @@
                                 配送区域:
                             </td>
                             <td>
-                                <select name="country" id="">
-                                    <option value="0">请选择国家</option>
-                                    <option value="" selected>中国</option>
+                                <select name="cart_province" id="cart_province">
                                 </select>
-                                <select name="" id="">
-                                    <option value="0">请选择省</option>
-                                    <option value="" selected>北京</option>
+                                 <select name="cart_city" id="cart_city"> 
                                 </select>
-                                <select name="" id="">
-                                    <option value="0">请选择市</option>
-                                    <option value=""></option>
-                                </select>
-                                <select name="" id="">
-                                    <option value="">请选择区</option>
+                                <select name="cart_area" id="cart_area">
                                 </select>
                                 <span style="color: #ff3300">&nbsp;(必填)</span>
                             </td>

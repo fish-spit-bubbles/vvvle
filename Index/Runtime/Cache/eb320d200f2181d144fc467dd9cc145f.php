@@ -203,6 +203,7 @@
                         <tr>
                             <td width="20%" align="right"><p class="pd">用户名</p></td>
                             <td width="80%">
+<<<<<<< HEAD
                                 <!-- input 用户名   -->
                                 <input 
                                 ng-model="users.username" 
@@ -213,6 +214,10 @@
                                 class="bg"
                                 name="username"
                                 />
+=======
+                                <!-- input 用户名  -->
+                                <input ng-model="username" type="text"  class="bg"/>
+>>>>>>> origin/master
                                 <span id="username_notice" style="color:#FF0000"> *</span>
                                 <div 
                                 style="color:#FF0000;
@@ -236,11 +241,15 @@
                             <td align="right"><p class="pd">email</p></td>
                             <td>
                                  <!-- input 邮件  -->
+<<<<<<< HEAD
                                 <input 
                                 ng-model="users.email"  type="text" class="bg" name="email"
                                 ng-required="true"
                                 
                                 />
+=======
+                                <input ng-model="email"  type="text" class="bg"/>
+>>>>>>> origin/master
                                 <span id="email_notice" style="color:#FF0000"> *</span>
                                 <span ng-show="myForm.email.$error.required">邮箱是必须的。</span>
                                 <span ng-show="myForm.email.$error.email">非法的邮箱地址。</span>  
