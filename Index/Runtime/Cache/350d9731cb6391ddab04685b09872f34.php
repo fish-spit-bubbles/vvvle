@@ -15,6 +15,13 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/slideshow.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/productDetails.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> d3f3bcb56f1526a9d129e39b57bdf3ea488337fe
 </head>
 
 <body ng-app="myapp" ng-controller="mycontroller">
@@ -232,8 +239,8 @@
                 <!-- 左眼度数 -->
                 <li class="attribute_item">
                     左眼度数
-                    <select>
-                        <option value="0">请选择</option>
+                    <select class="attribute_item_flet">
+                        <option value="请选择">请选择</option>
                         <option value="平光">平光</option>
                         <option value="-100">-100</option>
                         <option value="-125">-125</option>
@@ -261,12 +268,13 @@
                         <option value="-800">-800</option>
                         
                     </select>
+
                 </li>
                 <!-- 右眼度数 -->
                 <li class="attribute_item">
                     右眼度数
-                    <select>
-                        <option value="0">请选择</option>
+                    <select class="attribute_item_right">
+                        <option value="请选择">请选择</option>
                         <option value="平光">平光</option>
                         <option value="-100">-100</option>
                         <option value="-125">-125</option>
@@ -293,6 +301,14 @@
                         <option value="-750">-750</option>
                         <option value="-800">-800</option>
                     </select>
+                </li>
+                <li class="padd_loop_check">
+                    <div class="attribute_item_option" name="dn">
+                        请选择左眼度数
+                    </div>
+                    <div class="attribute_item_option" name="dr">
+                        请选择右眼度数
+                    </div>
                 </li>
                 <!-- 促销价和剩余时间 -->
                 <li class="padd_loop">
@@ -341,16 +357,16 @@
                     <div class="detail_tab_clearfix">
                         <ul>
                             <li bokl="outs">
-                                <a href="#">商品详情</a>
+                                <a href="">商品详情</a>
                             </li>
                             <li bokl="fbm">
-                                <a href="#">卖家评价</a>
+                                <a href="">卖家评价</a>
                             </li>
                             <li bokl="fbm">
-                                <a href="#">达人秀</a>
+                                <a href="">达人秀</a>
                             </li>
                             <li bokl="fbm">
-                                <a href="#">相关文章</a>
+                                <a href="">相关文章</a>
                             </li>
                             <li bokl="fbwb">
                                 <a href="#"></a>
@@ -430,15 +446,116 @@
                 <!-- 侧边栏相同颜色商品 -->
                 <div class="vl_goods_dec_rr">
                     <h3 class="vl_goods_dec_rr_h3">相同颜色的商品</h3>
-                    <div></div>
+                    <div class="vlGoodsGoodsimg">
+                        <a name="goods" href="#">
+                            <img src="__ROOT__/Index/Common/img/img_productDetails/3175_thumb_G_1478216450806.png" alt="相同商品">
+                        </a>
+                        <div class="vlGoodsGoodsimg_font">
+                            <a href="#">
+                            【满299减199】Besco...
+                            </a>
+                            <br> 本店售价：
+                            <em>￥</em>
+                            <span class="vlGodsGoodsimgJiage">
+                                 298
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="vlGoodsGoodsimg">
+                        <a name="goods" href="#">
+                            <img src="__ROOT__/Index/Common/img/img_productDetails/3175_thumb_G_1478216450806.png" alt="相同商品">
+                        </a>
+                        <div class="vlGoodsGoodsimg_font">
+                            <a href="#">
+                            【满299减199】Besco...
+                            </a>
+                            <br> 本店售价：
+                            <em>￥</em>
+                            <span class="vlGodsGoodsimgJiage">
+                                 298
+                            </span>
+                        </div>
+
+                    </div>
+
                     <h3 class="vl_goods_dec_rr_h3">浏览历史</h3>
-                    <div></div>
+                    <div class="vlGoodsGoodsimg">
+                        <a name="goods" href="#">
+                            <img src="__ROOT__/Index/Common/img/img_productDetails/3175_thumb_G_1478216450806.png" alt="相同商品">
+                        </a>
+                        <div class="vlGoodsGoodsimg_font">
+                            <a href="#">
+                            【满299减199】Besco...
+                            </a>
+                            <br> 本店售价：
+                            <em>￥</em>
+                            <span class="vlGodsGoodsimgJiage">
+                                 298
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="vlGoodsGoodsimg">
+                        <a name="goods" href="#">
+                            <img src="__ROOT__/Index/Common/img/img_productDetails/3175_thumb_G_1478216450806.png" alt="相同商品">
+                        </a>
+                        <div class="vlGoodsGoodsimg_font">
+                            <a href="#">
+                            【满299减199】Besco...
+                            </a>
+                            <br> 本店售价：
+                            <em>￥</em>
+                            <span class="vlGodsGoodsimgJiage">
+                                 298
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <span class="vl_goods_dec_rr_vacum">[清空]</span>
                 </div>
             </div>
+            <!-- 留言板 -->
+            <div class="reviews_details">
+                <h3>
+                    <span>用户评论</span>(共
+                    <font>0</font>条品论)
+                </h3>
+                <div class="boxCenterList_clearfix">
+                    <div class="commentsList">
+                        <from>
+                            <div class="commentsList_fl  text-right">
+                                <div>用户名：</div>
+                                <div>等级评价：</div>
+                                <div>评论内容：</div>
+                            </div>
+                            <div class="commentsList_rlp">
+                                <!-- 获取用户名显示 -->
+                                <div id="commentsListRlpUsername">用户名张三</div>
+                                <!-- 评价星级 -->
+                                <div class="commentsList_rlp_appraise"></div>
+                                <!-- 评价内容 -->
+                                <textarea class="commentsList_rlp_theme"></textarea>
+                                <div>
+                                    <input type="file" placeholder="上传文件" value="上传文件">
+                                    <input type="submit" value="提交评论">
+                                </div>
 
+                            </div>
+                        </from>
+                    </div>
+                </div>
 
+            </div>
 
         </div>
+
+
+
+
     </div>
 
 
@@ -547,6 +664,7 @@
 </div>
     </div>
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
+<<<<<<< HEAD
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.fly.min.js"></script>
     <script>
         var app = angular.module("myapp", []);
@@ -665,6 +783,10 @@
             }); 
         }); 
     </script>
+=======
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/productDetails.js"></script>
+
+>>>>>>> d3f3bcb56f1526a9d129e39b57bdf3ea488337fe
 </body>
 
 </html>

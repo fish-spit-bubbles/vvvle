@@ -31,7 +31,7 @@ body {
 
 .show_details[box="bg"] {
     width: 1000px;
-    height: 29153px;
+    height: 29453px;
     margin: 0 auto;
     /* background: palegoldenrod; */
 }
@@ -252,6 +252,37 @@ body {
     color: #fe596a;
     font-size: 16px;
     font-weight: 600;
+}
+
+
+/* 检查是否选择度数 */
+
+.padd_loop_check {
+    width: 100%;
+    height: 28px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: none;
+    justify-content: space-between;
+}
+
+
+/* 请选择度数报错 */
+
+.attribute_item_option {
+    background: #FFEBEB;
+    border: 1px solid #FFBDBE;
+    color: #E4393C;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 5px;
+    opacity: 0;
+    clear: both;
+    font-style: normal;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-bottom: 3px;
+    width: 150px;
 }
 
 
@@ -507,4 +538,138 @@ body {
     margin: 0px;
     padding: 0px;
     text-align: left;
+}
+
+.vlGoodsGoodsimg_font {
+    text-align: center;
+}
+
+.vlGoodsGoodsimg>a[name="goods"] {
+    margin-left: 18px;
+}
+
+.vlGoodsGoodsimg_font>em {
+    font-style: normal;
+    color: #ff6666;
+}
+
+.vlGodsGoodsimgJiage {
+    color: #ff6666;
+    font-size: 12px;
+    font-family: "微软雅黑", "宋体", Verdana, Arial;
+}
+
+.vl_goods_dec_rr_vacum {
+    float: right;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+.u-flyer_d {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: fixed;
+    z-index: 9999;
+    background-color: red;
+}
+
+
+/* 留言板 */
+
+.reviews_details {
+    width: 825px;
+    height: 307px;
+}
+
+.reviews_details>h3 {
+    height: 33px;
+    line-height: 33px;
+    font-size: 14px;
+    background: #fff;
+    text-align: right;
+    padding: 0 10px;
+    font-weight: 100;
+    margin: 0px;
+    width: 809px;
+}
+
+.reviews_details>h3>span {
+    float: left;
+    width: auto;
+    height: 33px;
+    line-height: 33px;
+    text-align: left;
+    color: #000;
+}
+
+.reviews_details>h3>font {
+    color: #ff6666;
+}
+
+.boxCenterList_clearfix {
+    width: 809px;
+    height: 258px;
+    padding: 8px;
+}
+
+.boxCenterList_clearfix>.commentsList {
+    border: 1px solid #ccc;
+    background: #f7f7f7;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 12px;
+    width: 787px;
+    height: 186px;
+    font-family: "微软雅黑", "宋体", Verdana, Arial;
+    color: #404040;
+    height: 258px;
+}
+
+.boxCenterList_clearfix>.commentsList>from {
+    width: 787px;
+    height: 186px;
+    display: flex;
+    padding-top: 10px;
+}
+
+.commentsList_fl {
+    width: 81px;
+    height: 160px;
+}
+
+.commentsList_rlp {
+    width: 706px;
+    height: 160px;
+    margin-left: 5px;
+}
+
+
+/* 获取用户名显示 */
+
+.commentsList_fl>div {
+    margin-bottom: 10px;
+}
+
+
+/* <!-- 评价星级 --> */
+
+.commentsList_rlp_appraise {
+    width: 724px;
+    height: 19px;
+}
+
+
+/* 评价内容 */
+
+.commentsList_rlp_theme {
+    width: 694px;
+    height: 96px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.commentsList_rlp>div {
+    margin-bottom: 10px;
 }
