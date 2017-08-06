@@ -202,6 +202,7 @@
                         <tr>
                             <td width="20%" align="right"><p class="pd">用户名</p></td>
                             <td width="80%">
+                                <!-- input 用户名  -->
                                 <input ng-model="username" type="text"  class="bg"/>
                                 <span id="username_notice" style="color:#FF0000"> *</span>
                             </td>
@@ -209,6 +210,7 @@
                         <tr>
                             <td align="right"><p class="pd">email</p></td>
                             <td>
+                                 <!-- input 邮件  -->
                                 <input ng-model="email"  type="text" class="bg"/>
                                 <span id="email_notice" style="color:#FF0000"> *</span>
                             </td>
@@ -216,6 +218,7 @@
                         <tr>
                             <td align="right"><p class="pd">密码</p></td>
                             <td>
+                                 <!-- input 密码  -->
                                 <input ng-model="pwd" type="password" class="bg"/>
                                 <span style="color:#FF0000" id="password_notice"> *</span>
                             </td>
@@ -235,6 +238,7 @@
                         <tr>
                             <td align="right"><p class="pd">确认密码</p></td>
                             <td>
+                                <!-- input 确认密码  -->
                             <input ng-model="repwd" type="password" class="bg"/>
                             <span style="color:#FF0000" id="conform_password_notice"> *</span>
                             </td>
@@ -243,12 +247,14 @@
                         <tr>
                             <td align="right" ><p class="pd">QQ</p></td>
                             <td>
+                                 <!-- input QQ  -->
                                 <input ng-model="qq" type="text"  class="bg" />          
                             </td>
                         </tr>
                         <tr>
                             <td align="right" id="WeChat" ><p class="pd">微信</p></td>  
                             <td>
+                                 <!-- input 微信  -->
                                 <input ng-model="wechat" type="text" class="bg" id="WeChat" />         
                             </td>
                         </tr>        
