@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
-    <script type="text/javascript" src="__ROOT__/Index/Common/js/lens.js"></script>
     <style>
         .login{width: 1000px;margin: 0 auto;margin-bottom: 25px;}
         .login_img {margin-top: 25px;}

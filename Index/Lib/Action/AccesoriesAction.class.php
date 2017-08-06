@@ -10,7 +10,8 @@
 *
 */
 class AccesoriesAction extends Action {
-    public function index(){
-        $this->display("Accesories");
+    public function accesories(){
+        $this->assign("accesories", "red");
+        $this->display("accesories");
     }
 }
