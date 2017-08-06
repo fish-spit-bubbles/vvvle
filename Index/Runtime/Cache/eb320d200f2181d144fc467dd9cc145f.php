@@ -198,24 +198,58 @@
              <!--右边注册信息界面  -->
             <div class="col-sm-6" id="register_left" >
                 <div class="weile">注册微乐</div>
+                <form name="myForm" novalidate="novalidate">
                     <table width="100%"  border="0" align="left" cellpadding="5" cellspacing="3">
                         <tr>
                             <td width="20%" align="right"><p class="pd">用户名</p></td>
                             <td width="80%">
-                                <input ng-model="username" type="text"  class="bg"/>
+                                <!-- input 用户名   -->
+                                <input 
+                                ng-model="users.username" 
+                                type="text"  
+                                ng-required="true" 
+                                ng-minlength="3" 
+                                ng-maxlength="12"
+                                class="bg"
+                                name="username"
+                                />
                                 <span id="username_notice" style="color:#FF0000"> *</span>
+                                <div 
+                                style="color:#FF0000;
+                                font-size: 12px;"       
+                                ng-show="myForm.username.$dirty"
+                                ><div
+                                 ng-show="myForm.username.$invalid"
+                                >
+                                    用户名长度不能少于 3 个字符。
+                                </div>
+                                
+                                 </div>
+                                <div
+                                style="color:aqua;
+                                font-size: 12px;" 
+                                ng-show="myForm.username.$valid"
+                                >可以注册</div>   
                             </td>
                         </tr>
                         <tr>
                             <td align="right"><p class="pd">email</p></td>
                             <td>
-                                <input ng-model="email"  type="text" class="bg"/>
+                                 <!-- input 邮件  -->
+                                <input 
+                                ng-model="users.email"  type="text" class="bg" name="email"
+                                ng-required="true"
+                                
+                                />
                                 <span id="email_notice" style="color:#FF0000"> *</span>
+                                <span ng-show="myForm.email.$error.required">邮箱是必须的。</span>
+                                <span ng-show="myForm.email.$error.email">非法的邮箱地址。</span>  
                             </td>
                         </tr>
                         <tr>
                             <td align="right"><p class="pd">密码</p></td>
                             <td>
+                                 <!-- input 密码  -->
                                 <input ng-model="pwd" type="password" class="bg"/>
                                 <span style="color:#FF0000" id="password_notice"> *</span>
                             </td>
@@ -235,6 +269,7 @@
                         <tr>
                             <td align="right"><p class="pd">确认密码</p></td>
                             <td>
+                                <!-- input 确认密码  -->
                             <input ng-model="repwd" type="password" class="bg"/>
                             <span style="color:#FF0000" id="conform_password_notice"> *</span>
                             </td>
@@ -243,12 +278,14 @@
                         <tr>
                             <td align="right" ><p class="pd">QQ</p></td>
                             <td>
+                                 <!-- input QQ  -->
                                 <input ng-model="qq" type="text"  class="bg" />          
                             </td>
                         </tr>
                         <tr>
                             <td align="right" id="WeChat" ><p class="pd">微信</p></td>  
                             <td>
+                                 <!-- input 微信  -->
                                 <input ng-model="wechat" type="text" class="bg" id="WeChat" />         
                             </td>
                         </tr>        
@@ -267,7 +304,8 @@
                                 <input ng-click="sub()" class="liji">
                             </td>
                         </tr>
-                    </table>            
+                    </table> 
+                </form>           
             </div>
             <!--立即登陆  -->
             <div class="col-sm-6" id="register_right">
@@ -435,12 +473,14 @@
 <script type="text/javascript">
     var app = angular.module("myapp",[]);
     app.controller("mycontroller",function($scope,$http){
-        $scope.username = "";
-        $scope.email = "";
-        $scope.pwd = "";
-        $scope.repwd = "";
-        $scope.qq = "";
-        $scope.wechat = "";
+        $scope.users = {
+            username:"",
+            email:"",
+            pwd:"",
+            repwd:"",
+            qq:"",
+            wechat:""
+        }
         $scope.sub = function(){
             var url = "__APP__/Register/addUsers";
             $http({
