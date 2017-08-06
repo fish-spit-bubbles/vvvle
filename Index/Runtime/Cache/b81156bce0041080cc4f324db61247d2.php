@@ -463,45 +463,29 @@
 			<!--第三模块-->
 			<div class="f_link">
 				<span class="f_link_p">友情链接：</span>
-				<div class="f_scrollo_bj">
-					<div id="f_scrollobj">
-						<div class="f_scrollobj_01">
-							<a href="" target="_blank">隐形眼镜网</a>
-							<a href="" target="_blank">美瞳网</a>
-							<a href="" target="_blank">隐形眼镜网</a>
-							<a href="" target="_blank">美瞳网</a>
-							<a href="" target="_blank">隐形眼镜网</a>
-							<a href="" target="_blank">美瞳网</a>
-							<a href="" target="_blank">隐形眼镜网</a>
-							<a href="" target="_blank">美瞳网</a>
-							<a href="" target="_blank">隐形眼镜网</a>
-							<a href="" target="_blank">美瞳网</a>
-							<a href="" target="_blank">隐形眼镜网</a>
-							<a href="" target="_blank">美瞳网</a>
-							<a href="" target="_blank">隐形眼镜网</a>
-							<a href="" target="_blank">美瞳网</a>
-							<a href="" target="_blank">隐形眼镜网</a>
-							<a href="" target="_blank">美瞳网</a>
-						</div>		
-						<div class="f_scrollobj_01 f_scrollobj_l">
-							<a href="" target="_blank">隐形眼镜网</a>
-							<a href="" target="_blank">美瞳网</a>
-							<a href="" target="_blank">隐形眼镜网</a>
-							<a href="" target="_blank">美瞳网</a>
-							<a href="" target="_blank">隐形眼镜网</a>
-							<a href="" target="_blank">美瞳网</a>
-							<a href="" target="_blank">隐形眼镜网</a>
-							<a href="" target="_blank">美瞳网</a>
-							<a href="" target="_blank">隐形眼镜网</a>
-							<a href="" target="_blank">美瞳网</a>
-							<a href="" target="_blank">隐形眼镜网</a>
-							<a href="" target="_blank">美瞳网</a>
-							<a href="" target="_blank">隐形眼镜网</a>
-							<a href="" target="_blank">美瞳网</a>
-							<a href="" target="_blank">隐形眼镜网</a>
-							<a href="" target="_blank">美瞳网</a>
-						</div>
+				<div id="f_scrollobj">
+					<div class="f_scrollobj_01">
+						<a href="" target="_blank">隐形眼镜网</a>
+						<a href="" target="_blank">美瞳网</a>
+						<a href="" target="_blank">隐形眼镜网</a>
+						<a href="" target="_blank">美瞳网</a>
+						<a href="" target="_blank">隐形眼镜网</a>
+						<a href="" target="_blank">美瞳网</a>
+						<a href="" target="_blank">隐形眼镜网</a>
+						<a href="" target="_blank">美瞳网</a>
+						<a href="" target="_blank">隐形眼镜网</a>
+						<a href="" target="_blank">美瞳网</a>
+						<a href="" target="_blank">隐形眼镜网</a>
+						<a href="" target="_blank">美瞳网</a>
+						<a href="" target="_blank">隐形眼镜网</a>
+						<a href="" target="_blank">美瞳网</a>
+						<a href="" target="_blank">隐形眼镜网</a>
+						<a href="" target="_blank">美瞳网</a>
+						<a href="" target="_blank">隐形眼镜网</a>
+						<a href="" target="_blank">美瞳网</a>
+
 					</div>
+
 				</div>
 				<p class="text-right" id="f_ICP">© 2015 vvvle.cn 广州市敦泽贸易有限公司 版权所有｜
 					<span><a href="http://www.miitbeian.gov.cn/">粤ICP备13029115号-1</a></span>
