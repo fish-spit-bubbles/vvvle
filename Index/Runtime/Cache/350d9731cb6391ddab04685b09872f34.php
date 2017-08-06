@@ -15,8 +15,6 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/slideshow.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/productDetails.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
-
-
 </head>
 
 <body ng-app="myapp" ng-controller="mycontroller">
@@ -91,27 +89,27 @@
     <!-- 导航部分 -->
     <div class="container-fluid" title="bootm">
         <div class="container" title="bootm_navie">
-            <a href="__APP__/Index/index" class="bootm_naviea_hove" title="red">
+            <a href="__APP__/Index/index" class="bootm_naviea_hove" title="<?php echo ($index); ?>">
                 <p class="naviea_hove" title="bg">HOME</p>
                 <p class="naviea_hove" title="ms">首页</p>
             </a>
-            <a href="__APP__/Lens/lens" class="bootm_naviea_hove">
+            <a href="__APP__/Lens/lens" class="bootm_naviea_hove" title="<?php echo ($lens); ?>">
                 <p class="naviea_hove" title="bg">LENS</p>
                 <p class="naviea_hove" title="ms">美瞳</p>
             </a>
-            <a href="__APP__/Accesories/accesories" class="bootm_naviea_hove">
+            <a href="__APP__/Accesories/accesories" class="bootm_naviea_hove" title="<?php echo ($accesories); ?>">
                 <p class="naviea_hove" title="bg">EYE DROPS</p>
                 <p class="naviea_hove" title="ms">海外购</p>
             </a>
-            <a href="__APP__/Parts/parts" class="bootm_naviea_hove">
+            <a href="__APP__/Parts/parts" class="bootm_naviea_hove" title="<?php echo ($parts); ?>">
                 <p class="naviea_hove" title="bg">PARTS</p>
                 <p class="naviea_hove" title="ms">超级配件</p>
             </a>
-            <a href="__APP__/NewProduct/newProduct" class="bootm_naviea_hove">
+            <a href="__APP__/NewProduct/newProduct" class="bootm_naviea_hove" title="<?php echo ($newProduct); ?>">
                 <p class="naviea_hove" title="bg">NEW</p>
                 <p class="naviea_hove" title="ms">新品</p>
             </a>
-            <a href="__APP__/Hot/hot" class="bootm_naviea_hove">
+            <a href="__APP__/Hot/hot" class="bootm_naviea_hove" title="<?php echo ($hot); ?>">
                 <p class="naviea_hove" title="bg">HOT</p>
                 <p class="naviea_hove" title="ms">热销宝贝</p>
             </a>
@@ -294,7 +292,6 @@
                         <option value="-700">-700</option>
                         <option value="-750">-750</option>
                         <option value="-800">-800</option>
-                        
                     </select>
                 </li>
                 <!-- 促销价和剩余时间 -->
@@ -429,10 +426,6 @@
 
                     </div>
 
-
-
-
-
                 </div>
                 <!-- 侧边栏相同颜色商品 -->
                 <div class="vl_goods_dec_rr">
@@ -541,9 +534,9 @@
 						<a href="" target="_blank">美瞳网</a>
 						<a href="" target="_blank">隐形眼镜网</a>
 						<a href="" target="_blank">美瞳网</a>
-
+						<a href="" target="_blank">隐形眼镜网</a>
+						<a href="" target="_blank">美瞳网</a>
 					</div>
-
 				</div>
 				<p class="text-right" id="f_ICP">© 2015 vvvle.cn 广州市敦泽贸易有限公司 版权所有｜
 					<span><a href="http://www.miitbeian.gov.cn/">粤ICP备13029115号-1</a></span>
@@ -553,8 +546,8 @@
 	</div>
 </div>
     </div>
-
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.fly.min.js"></script>
     <script>
         var app = angular.module("myapp", []);
         app.controller("mycontroller", function($scope, $http) {
@@ -646,9 +639,31 @@
             for (var i = 0; i < $scope.imgarr.length; i++) {
                 $scope.imgarr[i].path = "__ROOT__/Index/Common/img/img_productDetails/" + $scope.imgarr[i].path;
             };
-
-
         });
+        $(function() { 
+            $(".Join_the_shopping_cart").click(function(event){
+                var offset = $(".sbar_nub_icon").offset(); 
+                var addcar = $(this); 
+                var flyer = $("<div style='display:inline-block; width: 20px; height: 20px; background: red;border-radius: 50%;'></div>"); 
+                flyer.fly({ 
+                    start: { 
+                        left: event.clientX, //开始位置（必填）#fly元素会被设置成position: fixed 
+                        top: event.clientY //开始位置（必填） 
+                    }, 
+                    end: { 
+                        left: offset.left+10, //结束位置（必填） 
+                        top: 252, //结束位置（必填） 
+                        width: 0, //结束时宽度 
+                        height: 0 //结束时高度 
+                    }, 
+                    onEnd: function(){ //结束回调 
+                        // $("#msg").show().animate({width: '250px'}, 200).fadeOut(1000); //提示信息 
+                        // addcar.css("cursor","default").removeClass('orange').unbind('click'); 
+                        this.destory(); //移除dom 
+                    } 
+                }); 
+            }); 
+        }); 
     </script>
 </body>
 
