@@ -32,12 +32,15 @@
                 <a href="#">微乐美瞳网</a>
             </div>
             <div class="top_logo_rled">
-                <span>Hi~[
-                        <a href="__APP__/Login/login">请登录</a>
-                        ][
-                        <a href="__APP__/Register/register">免费注册</a>
-                        ]
+                <span>Hi~
+                        <a ng-show="<?php echo ($judge1); ?>" href="__APP__/Login/login">[请登录]</a>                        
+                        <a ng-show="<?php echo ($judge1); ?>" href="__APP__/Register/register">[免费注册]</a>                        
+                        <a ng-show="<?php echo ($judge); ?>" ><?php echo ($username); ?>,欢迎回来！</a>
+                        <a ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
+                        <a ng-show="<?php echo ($judge); ?>" href="##">[退出]</a>  
                     </span>
+                    
+                    
                 <!-- 购物车 -->
                 <a href="#" title="che">
                     <i class="glyphicon glyphicon-shopping-cart"></i>
@@ -182,10 +185,7 @@
                     <a class="nolimit_choice" href="#">蓝牌W</a>
                     <a class="nolimit_choice" href="#">Make skip</a>
                     <a class="nolimit_choice" href="#">innoxa</a>
-
                 </div>
-
-
             </div>
             <div class="machine">
                 <div class="machine_sort">品类：</div>
@@ -479,6 +479,7 @@
                 <i class="sbar_cat_icon"></i>
                 <p>购物袋</p>
                 <i class="sbar_nub_icon">0</i>
+                <div id="msg">已成功加入购物车！</div>
             </li>
             <li>
                 <i class="serivce_icon"></i>

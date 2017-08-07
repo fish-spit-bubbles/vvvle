@@ -12,10 +12,11 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/home.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
 </head>
 
-<body>
+<body ng-app="myapps">
     <!--首页头部  -->
     <div>
         <include file="Public:header" />
@@ -833,5 +834,8 @@
 </body>
 <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
 <script type="text/javascript" src="__ROOT__/Index/Common/js/home.js"></script>
-
+<script>
+    var app = angular.module("myapps",[]);
+    // app.controller("mycontroller",function($scope,$http){})
+</script>
 </html>

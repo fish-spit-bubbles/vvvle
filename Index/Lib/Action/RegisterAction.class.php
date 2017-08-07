@@ -26,6 +26,7 @@ class RegisterAction extends Action {
 
         $str = file_get_contents("php://input");
         $sureData = json_decode($str,true);  
+        $data['addtimes'] = time();
         // 获取注册信息
         $username = $sureData['username'];
         $email = $sureData['email'];
@@ -40,7 +41,7 @@ class RegisterAction extends Action {
         $data['pwd'] = md5($pwd);
         $data['qq'] = $qq;
         $data['wechat'] = $wechat;
-
+       
         //实例化数据库
         $news = M("users");
 
@@ -49,6 +50,7 @@ class RegisterAction extends Action {
         if($res){
             $info['info'] = "数据库添加成功";
             $info['status'] = 1;
+
             session("username",$username);
         }else{
             $info['info'] = "数据库添加失败";

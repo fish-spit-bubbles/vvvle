@@ -13,10 +13,7 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
-<<<<<<< HEAD
-=======
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
->>>>>>> 3e9f04dbff9091d2b1b5f293a4d5e8d0b3815df6
     <style>
         .login{width: 1000px;margin: 0 auto;margin-bottom: 25px;}
         .login_img {margin-top: 25px;}
@@ -87,7 +84,7 @@
             
     </style>
 </head>
-<body>
+<body ng-app="myapps" ng-controller="mycontroller">
     <!--头部  -->
 	<header>
     <!-- 头部 -->
@@ -97,12 +94,15 @@
                 <a href="#">微乐美瞳网</a>
             </div>
             <div class="top_logo_rled">
-                <span>Hi~[
-                        <a href="__APP__/Login/login">请登录</a>
-                        ][
-                        <a href="__APP__/Register/register">免费注册</a>
-                        ]
+                <span>Hi~
+                        <a ng-show="<?php echo ($judge1); ?>" href="__APP__/Login/login">[请登录]</a>                        
+                        <a ng-show="<?php echo ($judge1); ?>" href="__APP__/Register/register">[免费注册]</a>                        
+                        <a ng-show="<?php echo ($judge); ?>" ><?php echo ($username); ?>,欢迎回来！</a>
+                        <a ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
+                        <a ng-show="<?php echo ($judge); ?>" href="##">[退出]</a>  
                     </span>
+                    
+                    
                 <!-- 购物车 -->
                 <a href="#" title="che">
                     <i class="glyphicon glyphicon-shopping-cart"></i>
@@ -158,27 +158,27 @@
     <!-- 导航部分 -->
     <div class="container-fluid" title="bootm">
         <div class="container" title="bootm_navie">
-            <a href="__APP__/Index/index" class="bootm_naviea_hove" title="red">
+            <a href="__APP__/Index/index" class="bootm_naviea_hove" title="<?php echo ($index); ?>">
                 <p class="naviea_hove" title="bg">HOME</p>
                 <p class="naviea_hove" title="ms">首页</p>
             </a>
-            <a href="__APP__/Lens/lens" class="bootm_naviea_hove">
+            <a href="__APP__/Lens/lens" class="bootm_naviea_hove" title="<?php echo ($lens); ?>">
                 <p class="naviea_hove" title="bg">LENS</p>
                 <p class="naviea_hove" title="ms">美瞳</p>
             </a>
-            <a href="__APP__/Accesories/accesories" class="bootm_naviea_hove">
+            <a href="__APP__/Accesories/accesories" class="bootm_naviea_hove" title="<?php echo ($accesories); ?>">
                 <p class="naviea_hove" title="bg">EYE DROPS</p>
                 <p class="naviea_hove" title="ms">海外购</p>
             </a>
-            <a href="__APP__/Parts/parts" class="bootm_naviea_hove">
+            <a href="__APP__/Parts/parts" class="bootm_naviea_hove" title="<?php echo ($parts); ?>">
                 <p class="naviea_hove" title="bg">PARTS</p>
                 <p class="naviea_hove" title="ms">超级配件</p>
             </a>
-            <a href="__APP__/NewProduct/newProduct" class="bootm_naviea_hove">
+            <a href="__APP__/NewProduct/newProduct" class="bootm_naviea_hove" title="<?php echo ($newProduct); ?>">
                 <p class="naviea_hove" title="bg">NEW</p>
                 <p class="naviea_hove" title="ms">新品</p>
             </a>
-            <a href="__APP__/Hot/hot" class="bootm_naviea_hove">
+            <a href="__APP__/Hot/hot" class="bootm_naviea_hove" title="<?php echo ($hot); ?>">
                 <p class="naviea_hove" title="bg">HOT</p>
                 <p class="naviea_hove" title="ms">热销宝贝</p>
             </a>
@@ -195,7 +195,7 @@
     });
 </script>
     <!--登录表  -->
-    <div class="login" ng-app="myapps" ng-controller="mycontroller">
+    <div class="login">
         <div class="row text-left">
             <div class="col-sm-6 login_img">
                 <img src="__ROOT__/Index/Common/img/login/77.jpg" alt="8周年庆图片">
@@ -324,9 +324,9 @@
 						<a href="" target="_blank">美瞳网</a>
 						<a href="" target="_blank">隐形眼镜网</a>
 						<a href="" target="_blank">美瞳网</a>
-
+						<a href="" target="_blank">隐形眼镜网</a>
+						<a href="" target="_blank">美瞳网</a>
 					</div>
-
 				</div>
 				<p class="text-right" id="f_ICP">© 2015 vvvle.cn 广州市敦泽贸易有限公司 版权所有｜
 					<span><a href="http://www.miitbeian.gov.cn/">粤ICP备13029115号-1</a></span>
@@ -348,6 +348,7 @@
                 <i class="sbar_cat_icon"></i>
                 <p>购物袋</p>
                 <i class="sbar_nub_icon">0</i>
+                <div id="msg">已成功加入购物车！</div>
             </li>
             <li>
                 <i class="serivce_icon"></i>
@@ -406,9 +407,8 @@
                             }
                         }).success(function(data){
                                 if(data.status==1){
-                                    // window.location.href="__APP__/Login/login";
-                                    alert("登陆成功");
-                                    console.log(data);
+                                    window.location.href="__APP__/Index/index";
+                                   
                                     
                                 }else{
                                     alert(data.info);
