@@ -13,6 +13,7 @@ body {
 
 .container-fluid[mpod="xia"] {
     padding-top: 30px;
+    margin-bottom: 80px;
 }
 
 .containerre[title="select_box"] {
@@ -24,18 +25,14 @@ body {
 }
 
 .containerre[title="select_box"]>.machine {
-    height: 51px;
+    height: auto;
     overflow: hidden;
     border-bottom: 1px solid #EAECEB;
-    min-height: 51px;
-    background: #eaeceb;
+    /* background: #eaeceb; */
     font-size: 12px;
     margin-left: 0px;
     font-family: "微软雅黑", "宋体", Verdana, Arial;
-}
-
-.containerre[title="select_box"]>.machine[title="vary"] {
-    height: 51px;
+    display: flex;
 }
 
 
@@ -48,15 +45,13 @@ body {
     font-size: 18px;
     line-height: 51px;
     height: 100%;
-    float: left;
+    background-color: #eaeceb;
 }
 
 .machine_Kindd {
     padding-left: 10px;
     width: 1000px;
-    min-height: 51px;
     background: #FFF;
-    float: right;
 }
 
 .machine_Kindd>.nolimit {
@@ -85,7 +80,6 @@ body {
     text-align: center;
     padding-right: 43px;
     background: #fff;
-    height: 102px;
     cursor: pointer;
 }
 
@@ -404,4 +398,10 @@ body {
     border: 1px solid #D92F18;
     color: #fff;
     background-color: #D92F18;
+}
+
+.nolimit_choice:before {
+    clear: both;
+    content: "";
+    display: block;
 }

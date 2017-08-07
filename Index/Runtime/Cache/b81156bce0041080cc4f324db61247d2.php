@@ -176,7 +176,7 @@
         <div class="Product_container">
             <div class="Product_item">
                 <div class="item_01">
-                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    <a href="__APP__/ProductDetails/index"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
                 </div>
                 <div class="item_02">
                     <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
@@ -204,7 +204,7 @@
             </div>
             <div class="Product_item">
                 <div class="item_01">
-                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    <a href="__APP__/ProductDetails/index"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
                 </div>
                 <div class="item_02">
                     <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
@@ -233,7 +233,7 @@
             </div>
             <div class="Product_item">
                 <div class="item_01">
-                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    <a href="__APP__/ProductDetails/index"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
                 </div>
                 <div class="item_02">
                     <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
@@ -262,7 +262,7 @@
             </div>
             <div class="Product_item">
                 <div class="item_01">
-                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    <a href="__APP__/ProductDetails/index"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
                 </div>
                 <div class="item_02">
                     <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
@@ -291,7 +291,7 @@
             </div>
             <div class="Product_item">
                 <div class="item_01">
-                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    <a href="__APP__/ProductDetails/index"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
                 </div>
                 <div class="item_02">
                     <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>

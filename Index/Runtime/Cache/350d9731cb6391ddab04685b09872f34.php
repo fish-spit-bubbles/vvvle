@@ -365,7 +365,7 @@
                                 <a href="">相关文章</a>
                             </li>
                             <li bokl="fbwb">
-                                <a href="#"></a>
+                                <a href="__APP__/ShopCart/index"></a>
                             </li>
                         </ul>
                     </div>
