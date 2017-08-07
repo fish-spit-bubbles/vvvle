@@ -15,13 +15,6 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/slideshow.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/productDetails.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
-<<<<<<< HEAD
-=======
-
-
-
-
->>>>>>> d3f3bcb56f1526a9d129e39b57bdf3ea488337fe
 </head>
 
 <body ng-app="myapp" ng-controller="mycontroller">
@@ -145,6 +138,7 @@
                 <i class="sbar_cat_icon"></i>
                 <p>购物袋</p>
                 <i class="sbar_nub_icon">0</i>
+                <div id="msg">已成功加入购物车！</div>
             </li>
             <li>
                 <i class="serivce_icon"></i>
@@ -543,7 +537,6 @@
                                     <input type="file" placeholder="上传文件" value="上传文件">
                                     <input type="submit" value="提交评论">
                                 </div>
-
                             </div>
                         </from>
                     </div>
@@ -664,7 +657,6 @@
 </div>
     </div>
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
-<<<<<<< HEAD
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.fly.min.js"></script>
     <script>
         var app = angular.module("myapp", []);
@@ -775,7 +767,9 @@
                         height: 0 //结束时高度 
                     }, 
                     onEnd: function(){ //结束回调 
-                        // $("#msg").show().animate({width: '250px'}, 200).fadeOut(1000); //提示信息 
+                        $(".sidebar_nav #msg").show().animate({width: '250px'}, 200).fadeOut(1000, function(){
+                            $(this).width("-1");
+                        }); //提示信息 
                         // addcar.css("cursor","default").removeClass('orange').unbind('click'); 
                         this.destory(); //移除dom 
                     } 
@@ -783,10 +777,6 @@
             }); 
         }); 
     </script>
-=======
-    <script type="text/javascript" src="__ROOT__/Index/Common/js/productDetails.js"></script>
-
->>>>>>> d3f3bcb56f1526a9d129e39b57bdf3ea488337fe
 </body>
 
 </html>
