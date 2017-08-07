@@ -1,92 +1,138 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login | 登陆界面</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
-	<link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/sidebar.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
+
+
+    <!-- 头部尾部侧边栏CSS -->
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
+
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
+<<<<<<< HEAD
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
+=======
+
+
+
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
+
+
+
+
+
+>>>>>>> origin/master
     <style>
-        .login{width: 1000px;margin: 0 auto;margin-bottom: 25px;}
-        .login_img {margin-top: 25px;}
-        .login_bgcolor{width: 370px;height: 407px;float: right;background: url(__ROOT__/Index/Common/img/login/login_bg.gif) no-repeat;padding: 26px 26px 0px 28px;}
-        .weile{font-size: 14px;color: #f3116c;font-weight: bold;}
-        .zhu{    border: 1px solid #d0d0d0;
-                background: url(__ROOT__/Index/Common/img/login/login_icon.gif) no-repeat 10px 8px;
-                line-height: 35px;
-                width: 267px;
-                margin-top: 35px;
-                padding-left: 35px;
-                height: 35px;
-            }
-        .mima{
-                border: 1px solid #d0d0d0;
-                background: url(__ROOT__/Index/Common/img/login/login_lock.gif) no-repeat 10px 6px;
-                line-height: 35px;
-                width: 267px;
-                margin-top: 25px;
-                padding-left: 35px;
-                height: 35px;
-        }
-        .free{
-                margin-top: 30px;
-                font-size: 12px;
-                position: relative;
-                padding-left: 15px;
-                color: #656565;
-                height: 20px;
-        }
-        .free>span>.f3[mon="bs"]{
-                color: #9e9e9e;
-                text-decoration: none;
-                position: absolute;
-                right: 45px;
-        }
-        .weizhi{
-                position: absolute;
-                top: -2px;
-                left: 0;
-                
-        }
-        input#button{
-                background: url(__ROOT__/Index/Common/img/login/login_bottom.gif) no-repeat;
-                width: 109px;
-                height: 40px;
-                margin-top: 15px;
-                border: 0px;
-        }
-        input.login_bb{
-                background: url(__ROOT__/Index/Common/img/login/zc.jpg) no-repeat;
-                margin-left: 15px;
-                width: 109px;
-                height: 40px;
-                margin-top: 15px;
-                border: 0px;
-        }
-        .qita{
-                font-size: 12px;
-                color: #868686;
-                padding-top: 36px;
-        }
-            /*账号  */
-        .account{
-                padding-top: 15px;
+        .login {
+            width: 1000px;
+            margin: 0 auto;
+            margin-bottom: 25px;
         }
         
-            
+        .login_img {
+            margin-top: 25px;
+        }
+        
+        .login_bgcolor {
+            width: 370px;
+            height: 407px;
+            float: right;
+            background: url(__ROOT__/Index/Common/img/login/login_bg.gif) no-repeat;
+            padding: 26px 26px 0px 28px;
+        }
+        
+        .weile {
+            font-size: 14px;
+            color: #f3116c;
+            font-weight: bold;
+        }
+        
+        .zhu {
+            border: 1px solid #d0d0d0;
+            background: url(__ROOT__/Index/Common/img/login/login_icon.gif) no-repeat 10px 8px;
+            line-height: 35px;
+            width: 267px;
+            margin-top: 35px;
+            padding-left: 35px;
+            height: 35px;
+        }
+        
+        .mima {
+            border: 1px solid #d0d0d0;
+            background: url(__ROOT__/Index/Common/img/login/login_lock.gif) no-repeat 10px 6px;
+            line-height: 35px;
+            width: 267px;
+            margin-top: 25px;
+            padding-left: 35px;
+            height: 35px;
+        }
+        
+        .free {
+            margin-top: 30px;
+            font-size: 12px;
+            position: relative;
+            padding-left: 15px;
+            color: #656565;
+            height: 20px;
+        }
+        
+        .free>span>.f3[mon="bs"] {
+            color: #9e9e9e;
+            text-decoration: none;
+            position: absolute;
+            right: 45px;
+        }
+        
+        .weizhi {
+            position: absolute;
+            top: -2px;
+            left: 0;
+        }
+        
+        input#button {
+            background: url(__ROOT__/Index/Common/img/login/login_bottom.gif) no-repeat;
+            width: 109px;
+            height: 40px;
+            margin-top: 15px;
+            border: 0px;
+        }
+        
+        input.login_bb {
+            background: url(__ROOT__/Index/Common/img/login/zc.jpg) no-repeat;
+            margin-left: 15px;
+            width: 109px;
+            height: 40px;
+            margin-top: 15px;
+            border: 0px;
+        }
+        
+        .qita {
+            font-size: 12px;
+            color: #868686;
+            padding-top: 36px;
+        }
+        /*账号  */
+        
+        .account {
+            padding-top: 15px;
+        }
     </style>
 </head>
+<<<<<<< HEAD
 <body ng-app="myapps" ng-controller="mycontroller">
+=======
+
+<body>
+>>>>>>> origin/master
     <!--头部  -->
-	<header>
+    <header>
     <!-- 头部 -->
     <div class="container-fluid" title="top">
         <div class="container" title="top_logo">
@@ -204,9 +250,9 @@
                 <div class="weile">登录微乐</div>
                 <form>
                     <!-- 登陆用户名  和 密码  -->
-                    <input ng-model="username" type="text" name="username" id="username" class="zhu" placeholder="用户名/邮箱/手机号" /> 
+                    <input ng-model="username" type="text" name="username" id="username" class="zhu" placeholder="用户名/邮箱/手机号" />
                     <input ng-model="pwd" type="password" name="password" id="password" class="mima" placeholder="密码" />
-                    
+
                     <!--忘记密码  和 保存cookie session  -->
                     <div class="free">
                         <span><a href="##" class="f3" mon="bs">忘记密码?</a></span>
@@ -217,23 +263,25 @@
                         <input type="hidden" /> 定义隐藏字段。隐藏字段对于用户是不可见的。隐藏字段通常会存储一个默认值，它们的值也可以由 JavaScript 进行修改。
 
                       -->
-                     <input type="hidden" name="act" value="act_login" />
-                     <input type="hidden" name="back_act" value="" />
-                    
-                     <!--登陆 注册按钮  -->
-                     <input ng-click="delu()" type="button" name="button" id="button"class="login_bb" />
-                     <input ng-click="zuce()" type="button" name="button"  value="" class="login_bb" />
+                    <input type="hidden" name="act" value="act_login" />
+                    <input type="hidden" name="back_act" value="" />
+
+                    <!--登陆 注册按钮  -->
+                    <input ng-click="delu()" type="button" name="button" id="button" class="login_bb" />
+                    <input ng-click="zuce()" type="button" name="button" value="" class="login_bb" />
                 </form>
                 <div class="qita">你也可以使用一下账号登录：</div>
-                <div class="account"><a href="##"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c1.gif" width="93" height="24" border="0"/></a>
-                <a href="##"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c2.gif" width="101" height="24" border="0" /></a>
-                <a href="user.php?act=oath&type=alipay"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c3.gif" width="75" height="24" border="0"/></a></div>
-   
-            </div>            
+                <div class="account">
+                    <a href="##"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c1.gif" width="93" height="24" border="0" /></a>
+                    <a href="##"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c2.gif" width="101" height="24" border="0" /></a>
+                    <a href="user.php?act=oath&type=alipay"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c3.gif" width="75" height="24" border="0" /></a>
+                </div>
+
+            </div>
         </div>
-        
+
     </div>
-	<!--底部  -->
+    <!--底部  -->
     <div class="header">
         <!--更多-->
 <div class="home_footer">
@@ -335,8 +383,8 @@
 		</div>
 	</div>
 </div>
-	</div>
-	<!--侧边导航栏  -->
+    </div>
+    <!--侧边导航栏  -->
     <div class="sidebar_warp">
     <div class="sidebar">
         <ul class="sidebar_nav">
@@ -383,18 +431,19 @@
 
     </div>
 </div>
-</body>
-<script type="text/javascript">
-        var app = angular.module("myapps",[]);
-        app.controller("mycontroller",function($scope,$http){
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
+    <script type="text/javascript">
+        var app = angular.module("myapps", []);
+        app.controller("mycontroller", function($scope, $http) {
             $scope.username = "";
             $scope.pwd = "";
-            $scope.zuce = function(){
-                window.location.href="__APP__/Register/register";
+            $scope.zuce = function() {
+                window.location.href = "__APP__/Register/register";
             }
-            $scope.delu = function(){
-                if($scope.username != "" &&  $scope.pwd != "" ) {
+            $scope.delu = function() {
+                if ($scope.username != "" && $scope.pwd != "") {
                     var url = "__APP__/Login/checkUsers";
+<<<<<<< HEAD
                         $http({
                             url:url,
                             method:"POST",
@@ -418,9 +467,37 @@
                     }else{
                         alert("请填写用户名和密码")
                     }
-                }
-        })
+=======
+                    $http({
+                        url: url,
+                        method: "POST",
+                        headers: {
+                            "Content-type": "application/x-www-form-urlencoded"
+                        },
+                        data: {
+                            username: $scope.username,
+                            pwd: $scope.pwd,
+                        }
+                    }).success(function(data) {
+                        if (data.status == 1) {
+                            // window.location.href="__APP__/Login/login";
+                            alert("登陆成功");
+                            console.log(data);
 
-</script>
+                        } else {
+                            alert(data.info);
+                        }
+
+                    })
+                } else {
+                    alert("请填写用户名和密码")
+>>>>>>> origin/master
+                }
+            }
+        })
+    </script>
+
+</body>
+
 
 </html>

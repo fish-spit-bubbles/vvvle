@@ -9,8 +9,10 @@
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/shopcart.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
+
+    <!-- 头部尾部侧边栏CSS -->
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
+
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
 </head>
 
@@ -151,7 +153,7 @@
                     <tr>
                         <td>
                             <input type="checkbox" class="checkt" />
-                            <a href="##"><img src="__ROOT__/Index/Common/img/img_cart/1761_thumb_G_1430349195420.png" alt=""/></a>
+                            <a href="##"><img src="__ROOT__/Index/Common/img/img_cart/1761_thumb_G_1430349195420.png" alt="" /></a>
                         </td>
                         <td>
                             <a href="##">OLIVI 轻瞳 茶束棕（硅水凝胶）</a>
@@ -165,7 +167,7 @@
                         <td class="proCount">
                             <input type="button" value="-" class="ys ys1" />
                             <input type="text" class="count" value="1" />
-                            <input type="button" value="+" class="ys ys2"/>
+                            <input type="button" value="+" class="ys ys2" />
                         </td>
                         <td>&yen;<span class="proMoney">132.00</span></td>
                         <td>
@@ -176,7 +178,7 @@
                     <tr>
                         <td>
                             <input type="checkbox" class="checkt" />
-                            <a href="##"><img src="__ROOT__/Index/Common/img/img_cart/1761_thumb_G_1430349195420.png" alt=""/></a>
+                            <a href="##"><img src="__ROOT__/Index/Common/img/img_cart/1761_thumb_G_1430349195420.png" alt="" /></a>
                         </td>
                         <td>
                             <a href="##">OLIVI 轻瞳 茶束棕（硅水凝胶）</a>
@@ -190,7 +192,7 @@
                         <td class="proCount">
                             <input type="button" value="-" class="ys ys1" />
                             <input type="text" class="count" value="1" />
-                            <input type="button" value="+" class="ys ys2"/>
+                            <input type="button" value="+" class="ys ys2" />
                         </td>
                         <td>&yen;<span class="proMoney">132.00</span></td>
                         <td>
@@ -230,7 +232,7 @@
                     <table class="cart_adds">
                         <tr>
                             <td>
-                                收货人姓名:	
+                                收货人姓名:
                             </td>
                             <td>
                                 <input type="text" />
@@ -251,7 +253,7 @@
                             <td>
                                 <select name="cart_province" id="cart_province">
                                 </select>
-                                 <select name="cart_city" id="cart_city"> 
+                                <select name="cart_city" id="cart_city"> 
                                 </select>
                                 <select name="cart_area" id="cart_area">
                                 </select>
@@ -268,7 +270,7 @@
                             </td>
                         </tr>
                     </table>
-                </div> 
+                </div>
             </div>
             <div class="cart_user_express cart_warp">
                 <div class="cart_table_header">
@@ -278,7 +280,7 @@
                     <table class="cart_adds">
                         <tr>
                             <td>
-                                <input name="express" type="radio" id="express" /><label for="express">&nbsp;快递</label>	
+                                <input name="express" type="radio" id="express" /><label for="express">&nbsp;快递</label>
                             </td>
                             <td>
                                 费用：￥<span>0.00</span>
@@ -286,14 +288,14 @@
                         </tr>
                         <tr>
                             <td>
-                                <input name="express" type="radio" id="ems" /><label for="ems">&nbsp;EMS</label>	
+                                <input name="express" type="radio" id="ems" /><label for="ems">&nbsp;EMS</label>
                             </td>
                             <td>
                                 费用：￥<span>0.00</span>
                             </td>
                         </tr>
                     </table>
-                </div> 
+                </div>
             </div>
             <div class="cart_user_pay cart_warp">
                 <div class="cart_table_header">
@@ -303,17 +305,17 @@
                     <table class="cart_adds">
                         <tr>
                             <td class="express_info">
-                                平台支付>>	
+                                平台支付>>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input name="pay" type="radio" id="pay1" /><label for="pay1"><img src="__ROOT__/Index/Common/img/img_cart/alipay.gif" alt=""></label>	
+                                <input name="pay" type="radio" id="pay1" /><label for="pay1"><img src="__ROOT__/Index/Common/img/img_cart/alipay.gif" alt=""></label>
                                 <input class="pay2" name="pay" type="radio" id="pay2" /><label for="pay2"><img src="__ROOT__/Index/Common/img/img_cart/wx_new_qrcode.gif" alt=""></label>
                             </td>
                         </tr>
                     </table>
-                </div> 
+                </div>
             </div>
             <div class="cart_user_money cart_warp">
                 <div class="cart_table_header">
@@ -360,7 +362,7 @@
                     <div>该订单完成后，您将获得&nbsp;&nbsp;<span>3</span>&nbsp;&nbsp;积分 ，以及价值<b>&nbsp;&nbsp;&yen;</b><span>0.00</span>的红包。</div>
                     <div>商品总价: <b>&nbsp;&yen;</b><span>320.00</span></div>
                     <div>应付款金额: <b>&nbsp;&yen;</b><span>320.00</span></div>
-                </div> 
+                </div>
             </div>
             <div class="cart_form_footer">
                 <span>给商家留言</span>
@@ -474,4 +476,5 @@
     </div>
 </body>
 <script type="text/javascript" src="__ROOT__/Index/Common/js/shopcart.js"></script>
+
 </html>

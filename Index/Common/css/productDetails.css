@@ -373,10 +373,7 @@ body {
     height: 37px;
     color: #333;
     margin: -1px 0 0 0;
-    border-bottom: 1px solid #fff;
     bottom: -1px;
-    border-top: 3px solid #FF0000;
-    background: #fff;
     border-right: 1px solid #ddd;
     border-left: 1px solid #ddd;
     text-align: center;
@@ -678,4 +675,72 @@ body {
     display: flex;
     justify-content: flex-end;
     width: 680px;
+}
+
+.commentsList_rlp>.commentsList_rlp_file>div {
+    margin-right: 20px;
+    position: relative;
+}
+
+.commentsList_rlp>.commentsList_rlp_file>div>input {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 82px;
+    height: 34px;
+    background-color: #FFBDBE;
+    opacity: 0;
+}
+
+
+/* 用户评论 */
+
+.comments {
+    width: 809px;
+    margin-bottom: 5px;
+    font-family: "微软雅黑", "宋体", Verdana, Arial;
+    color: #404040;
+    font-size: 12px;
+}
+
+.comments>li {
+    padding: 3px 8px;
+    width: 97%;
+    _height: 1%;
+    text-align: left;
+    position: relative;
+    margin-bottom: 8px;
+    list-style-type: none;
+}
+
+
+/* 分页 */
+
+.pager {
+    margin: 10px 0;
+    line-height: 23px;
+    font-size: 12px;
+    text-align: center;
+    padding: 25px;
+}
+
+.pager a,
+.pager span {
+    display: inline-block;
+    margin: 0 2px;
+    padding: 2px 10px;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+}
+
+.pager .current {
+    border: 1px solid #D92F18;
+    color: #fff;
+    background-color: #D92F18;
+}
+
+.pager a:active {
+    border: 1px solid #D92F18;
+    color: #fff;
+    background-color: #D92F18;
 }
