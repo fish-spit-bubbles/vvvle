@@ -673,3 +673,9 @@ body {
 .commentsList_rlp>div {
     margin-bottom: 10px;
 }
+
+.commentsList_rlp>.commentsList_rlp_file {
+    display: flex;
+    justify-content: flex-end;
+    width: 680px;
+}
