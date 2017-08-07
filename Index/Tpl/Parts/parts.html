@@ -19,12 +19,11 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/slideshow.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/accesories.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
-
-
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
 
 </head>
 
-<body>
+<body ng-app="myapps">
     <!-- 头部 -->
     <div>
         <include file="Public:header" />
@@ -237,5 +236,8 @@
 
 
 </body>
-
+<script>
+    var app = angular.module("myapps",[]);
+    // app.controller("mycontroller",function($scope,$http){})
+</script>
 </html>

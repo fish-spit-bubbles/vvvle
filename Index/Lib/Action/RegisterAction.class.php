@@ -2,7 +2,17 @@
 // 本类由系统自动生成，仅供测试用途
 class RegisterAction extends Action {
     public function register(){
-        $this->display("register");
+        if(!empty($_SESSION['username'])) {
+            $this->assign("username",$_SESSION['username']);
+            $this->assign("judge",'true');
+            $this->assign("judge1",'false');
+            $this->display("register");
+
+        }else{
+            $this->assign("judge",'false');
+            $this->assign("judge1",'true');
+            $this->display("register");
+        }
     }
 
 

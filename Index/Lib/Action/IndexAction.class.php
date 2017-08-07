@@ -8,11 +8,21 @@ class IndexAction extends Action {
             $this->assign("judge",'true');
             $this->assign("judge1",'false');
             $this->display("index");
-
         }else{
             $this->assign("judge",'false');
             $this->assign("judge1",'true');
             $this->display("index");
         }
+    
     }
+    
+    public function loginout(){
+        session(null);
+        $this->assign("judge",'false');
+        $this->assign("judge1",'true');
+        $this->display("index");
+    }
+
+
 }
+

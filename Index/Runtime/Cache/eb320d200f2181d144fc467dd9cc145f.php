@@ -16,10 +16,6 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
 
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
     <style>
         .register_box {
@@ -98,7 +94,6 @@
             padding-right: 15px;
             display: table-cell;
         }
-<<<<<<< HEAD
         #pwd_lower{
                  border-bottom: 2px solid red; 
                  text-align: center;
@@ -118,12 +113,6 @@
     </style>
 </head>
 <body ng-app="myapp" ng-controller="mycontroller">
-=======
-    </style>
-</head>
-
-<body>
->>>>>>> origin/master
     <!--头部  -->
     <header>
     <!-- 头部 -->
@@ -134,11 +123,11 @@
             </div>
             <div class="top_logo_rled">
                 <span>Hi~
-                        <a ng-show="<?php echo ($judge1); ?>" href="__APP__/Login/login">[请登录]</a>                        
-                        <a ng-show="<?php echo ($judge1); ?>" href="__APP__/Register/register">[免费注册]</a>                        
-                        <a ng-show="<?php echo ($judge); ?>" ><?php echo ($username); ?>,欢迎回来！</a>
-                        <a ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
-                        <a ng-show="<?php echo ($judge); ?>" href="##">[退出]</a>  
+                        <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Login/login">[请登录]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Register/register">[免费注册]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" ><?php echo ($username); ?>,欢迎回来！</a>
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="##">[退出]</a>  
                     </span>
                     
                     
@@ -249,7 +238,6 @@
                                 <!-- input 用户名   -->
                                 <input ng-model="users.username" type="text" ng-required="true" ng-minlength="3" class="bg" name="username" />
                                 <span id="username_notice" style="color:#FF0000"> *</span>
-<<<<<<< HEAD
                                 <span
                                  ng-cloak                                style="color:#FF0000;font-size: 12px;"                                
                                 ng-show="myForm.username.$error.required && myForm.username.$dirty"
@@ -259,10 +247,6 @@
                                 style="color:darkorange;font-size: 12px;"                                
                                 ng-show="myForm.username.$valid"
                                 >账号可以用</span>
-=======
-                                <span style="color:#FF0000;font-size: 12px;" ng-show="myForm.username.$error.required && myForm.username.$dirty">账号不能少于 3 个字符。</span>
-                                <span style="color:darkorange;font-size: 12px;" ng-show="myForm.username.$valid">账号可以用</span>
->>>>>>> origin/master
                             </td>
                         </tr>
                         <tr>
@@ -273,7 +257,6 @@
                                 <!-- input 邮件  -->
                                 <input ng-model="users.email" type="email" class="bg" name="email" ng-required="true" />
                                 <span id="email_notice" style="color:#FF0000"> *</span>
-<<<<<<< HEAD
                                 <span 
                                  ng-cloak
                                 style="color:darkorange;font-size: 12px;"
@@ -282,10 +265,6 @@
                                  ng-cloak
                                 style="color:#FF0000;font-size: 12px;"
                                 ng-show="myForm.email.$error.email">非法的邮箱地址。</span>  
-=======
-                                <span style="color:darkorange;font-size: 12px;" ng-show="myForm.email.$dirty && myForm.email.$valid">邮箱可以用。</span>
-                                <span style="color:#FF0000;font-size: 12px;" ng-show="myForm.email.$error.email">非法的邮箱地址。</span>
->>>>>>> origin/master
                             </td>
                         </tr>
                         <tr>
@@ -293,7 +272,6 @@
                                 <p class="pd">密码</p>
                             </td>
                             <td>
-<<<<<<< HEAD
                                  <!-- input 密码  -->
                                 <input ng-model="users.pwd" type="password" class="bg" name="pwd"
                                 ng-minlength="6"
@@ -311,13 +289,6 @@
                                 style="color:darkorange;font-size: 12px;"                                
                                 ng-show="myForm.pwd.$valid"
                                 >密码可以用</span>
-=======
-                                <!-- input 密码  -->
-                                <input ng-model="users.pwd" type="password" class="bg" name="pwd" ng-minlength="6" ng-required="true" />
-                                <span style="color:#FF0000" id="password_notice"> *</span>
-                                <span style="color:#FF0000;font-size: 12px;" ng-show="myForm.pwd.$error.required && myForm.pwd.$dirty">登录密码不能少于 6 个字符。</span>
-                                <span style="color:darkorange;font-size: 12px;" ng-show="myForm.pwd.$valid">密码可以用</span>
->>>>>>> origin/master
                             </td>
                         </tr>
                         <tr class="bg01">
@@ -325,19 +296,11 @@
                                 <p id="repwd">密码强度</p>
                             </td>
                             <td>
-<<<<<<< HEAD
                                 <table width="145" border="0" cellspacing="0" cellpadding="0" >
                                     <tr align="right" >
                                         <td width="33%" class="pwd_bottom" >弱</td>
                                         <td width="33%" class="pwd_bottom" >中</td>
                                         <td width="33%" class="pwd_bottom" >强</td>
-=======
-                                <table width="145" border="0" cellspacing="0" cellpadding="0">
-                                    <tr align="right">
-                                        <td width="33%" id="pwd_lower">弱</td>
-                                        <td width="33%" id="pwd_middle">中</td>
-                                        <td width="33%" id="pwd_high">强</td>
->>>>>>> origin/master
                                     </tr>
                                 </table>
                             </td>
@@ -348,7 +311,6 @@
                             </td>
                             <td>
                                 <!-- input 确认密码  -->
-<<<<<<< HEAD
                             <input  ng-model="users.repwd" type="password" class="bg"
                                     name="repwd"
                                     ng-minlength="6"
@@ -365,12 +327,6 @@
                                 style="color:darkorange;font-size: 12px;"                                
                                 ng-show="myForm.repwd.$valid"
                                 >密码可以用</span>
-=======
-                                <input ng-model="users.repwd" type="password" class="bg" name="repwd" ng-minlength="6" ng-required="true" />
-                                <span style="color:#FF0000" id="conform_password_notice"> *</span>
-                                <span style="color:#FF0000;font-size: 12px;" ng-show="myForm.repwd.$error.required && myForm.repwd.$dirty">登录密码不能少于 6 个字符。</span>
-                                <span style="color:darkorange;font-size: 12px;" ng-show="myForm.repwd.$valid">密码可以用</span>
->>>>>>> origin/master
                             </td>
                         </tr>
 
@@ -529,8 +485,8 @@
 		</div>
 	</div>
 </div>
-    </div>
-    <!--侧边导航栏  -->
+	</div>
+	<!--侧边导航栏  -->
     <div class="sidebar_warp">
     <div class="sidebar">
         <ul class="sidebar_nav">
@@ -577,7 +533,6 @@
 
     </div>
 </div>
-<<<<<<< HEAD
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
 </body>
 <script type="text/javascript">
@@ -659,57 +614,4 @@
 </script>
 
 
-=======
-
-    <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
-    <script type="text/javascript">
-        var app = angular.module("myapp", []);
-        app.controller("mycontroller", function($scope, $http) {
-            $scope.users = {
-                username: "",
-                email: "",
-                pwd: "",
-                repwd: "",
-                qq: "",
-                wechat: ""
-            }
-            $scope.sub = function() {
-                var url = "__APP__/Register/addUsers";
-                $http({
-                    url: url,
-                    method: "POST",
-                    headers: {
-                        "Content-type": "application/x-www-form-urlencoded"
-                    },
-                    data: {
-                        username: $scope.users.username,
-                        email: $scope.users.email,
-                        pwd: $scope.users.pwd,
-                        repwd: $scope.users.repwd,
-                        qq: $scope.users.qq,
-                        wechat: $scope.users.wechat
-                    }
-                }).success(function(data) {
-                    if (data.status == 1) {
-                        // window.location.href="__APP__/Login/login";
-                        alert("注册成功");
-
-                    } else {
-                        alert(data.info);
-                    }
-                    console.log(data);
-                })
-            }
-
-
-
-
-        });
-    </script>
-
-
-</body>
-
-
->>>>>>> origin/master
 </html>

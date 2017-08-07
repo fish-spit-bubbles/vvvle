@@ -89,6 +89,13 @@ a:link {
     display: inline-block;
     font-family: 微软雅黑, 宋体, Verdana, Arial;
 }
+.top_logo_rled>span>a:nth-child(3),.top_logo_rled>span>a:nth-child(4),.top_logo_rled>span>a:nth-child(5){
+    color: #333;
+    font-family: 微软雅黑, 宋体, Verdana, Arial;
+    display: inline-block;
+        
+}
+
 
 .top_logo_rled_add[title="red"] {
     color: #ee0011;

@@ -1,21 +1,25 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>登陆用户信息</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
-	<link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/sidebar.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
+
+    <!-- 头部尾部侧边栏CSS -->
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
+
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/userCenter.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
+     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
 </head>
-<body>
+
+<body ng-app="myapps">
     <!--头部  -->
     <header>
     <!-- 头部 -->
@@ -26,11 +30,11 @@
             </div>
             <div class="top_logo_rled">
                 <span>Hi~
-                        <a ng-show="<?php echo ($judge1); ?>" href="__APP__/Login/login">[请登录]</a>                        
-                        <a ng-show="<?php echo ($judge1); ?>" href="__APP__/Register/register">[免费注册]</a>                        
-                        <a ng-show="<?php echo ($judge); ?>" ><?php echo ($username); ?>,欢迎回来！</a>
-                        <a ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
-                        <a ng-show="<?php echo ($judge); ?>" href="##">[退出]</a>  
+                        <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Login/login">[请登录]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Register/register">[免费注册]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" ><?php echo ($username); ?>,欢迎回来！</a>
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="##">[退出]</a>  
                     </span>
                     
                     
@@ -127,8 +131,8 @@
 </script>
 
     <!--用户中心  -->
-   <div class="user_center">
-       <!--首页 > 用户中心  -->
+    <div class="user_center">
+        <!--首页 > 用户中心  -->
         <div class="Return_home">
             <a href="__APP__/Index/index">首页</a>
             <span>> </span>用户中心
@@ -152,7 +156,7 @@
                 <a href="##" class="p"><img class="p_img" src="__ROOT__/Index/Common/img/userCenter/u8.gif" alt="缺货登记">&nbsp; 缺货登记</a>
                 <a href="##" class="p"><img class="p_img" src="__ROOT__/Index/Common/img/userCenter/u10.gif" alt="我的推荐">&nbsp; 我的推荐</a>
                 <a href="##" class="p"><img class="p_img" src="__ROOT__/Index/Common/img/userCenter/u12.gif" alt="跟踪包裹">&nbsp; 跟踪包裹</a>
-                <a href="##" class="p"><img class="p_img" src="__ROOT__/Index/Common/img/userCenter/u3.gif" alt="我的奖品">&nbsp; 我的奖品</a>  
+                <a href="##" class="p"><img class="p_img" src="__ROOT__/Index/Common/img/userCenter/u3.gif" alt="我的奖品">&nbsp; 我的奖品</a>
                 <a href="##" class="home_page"><img class="p_img" src="__ROOT__/Index/Common/img/userCenter/u1.gif" alt="欢迎页">&nbsp; 欢迎页</a>
                 <a class="text-right" href="##"><img src="__ROOT__/Index/Common/img/userCenter/bnt_sign.gif" alt="安全提交"></a>
             </div>
@@ -168,12 +172,12 @@
             </div>
             <!--用户个人资料  -->
             <div class="select_items_03" style="display:none;">
-                 <h5>个人资料</h5>
-                 <table class="table table-bordered">
+                <h5>个人资料</h5>
+                <table class="table table-bordered">
                     <tbody>
                         <tr>
                             <td width="150" class="text-right">出生日期:</td>
-                            <td >
+                            <td>
                                 <select>
                                     <option value="年">1957</option>
                                     <option value="年">1957</option>                                   
@@ -197,7 +201,7 @@
                                 <label class="radio-inline">
                                     <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 男
                                 </label>
-                                 <label class="radio-inline">
+                                <label class="radio-inline">
                                     <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 女
                                 </label>
                             </td>
@@ -208,67 +212,71 @@
                                 <input type="text" class="form-control" id="name">
                             </td>
                         </tr>
-                         <tr>
+                        <tr>
                             <td class="text-right">QQ:</td>
                             <td>
                                 <input type="text" class="form-control" id="name">
                             </td>
                         </tr>
-                         <tr>
+                        <tr>
                             <td class="text-right">微信:</td>
                             <td>
                                 <input type="text" class="form-control" id="name">
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2"><p class="Confirm_the_change_01">确认修改</p></td>
+                            <td colspan="2">
+                                <p class="Confirm_the_change_01">确认修改</p>
+                            </td>
                         </tr>
-                         <tr>
+                        <tr>
                             <td class="text-right">原密码:</td>
                             <td>
                                 <input type="text" class="form-control" id="name">
                             </td>
                         </tr>
-                         <tr>
+                        <tr>
                             <td class="text-right">新密码:</td>
                             <td>
                                 <input type="text" class="form-control" id="name">
                             </td>
                         </tr>
-                         <tr>
+                        <tr>
                             <td class="text-right">确认密码:</td>
                             <td>
                                 <input type="text" class="form-control" id="name">
                             </td>
                         </tr>
-                         <tr>
-                            <td colspan="2"><p class="Confirm_the_change_02">确认修改</p></td>
+                        <tr>
+                            <td colspan="2">
+                                <p class="Confirm_the_change_02">确认修改</p>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
-            </div> 
-            
+            </div>
+
             <!-- 用户留言表  -->
             <div class="select_items_04" style="display:none;">
                 <h5>我的留言</h5>
-                 <table class="table table-bordered">
+                <table class="table table-bordered">
                     <tbody>
                         <tr>
                             <td width="150" class="text-right">留言类型:</td>
-                            <td >
+                            <td>
                                 <label class="radio-inline">
                                     <input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> 留言
                                 </label>
                                 <label class="radio-inline">
                                     <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 投诉
                                 </label>
-                                 <label class="radio-inline">
+                                <label class="radio-inline">
                                     <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 询问
                                 </label>
-                                 <label class="radio-inline">
+                                <label class="radio-inline">
                                     <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 售后
                                 </label>
-                                 <label class="radio-inline">
+                                <label class="radio-inline">
                                     <input type="radio" name="optionsRadiosinline" id="optionsRadios4"  value="option2"> 求购
                                 </label>
                             </td>
@@ -276,7 +284,7 @@
                         <tr>
                             <td class="text-right">主题:</td>
                             <td>
-                                 <input type="text" class="form-control" id="td_name">
+                                <input type="text" class="form-control" id="td_name">
                             </td>
                         </tr>
                         <tr>
@@ -285,25 +293,26 @@
                                 <textarea class="form-control" rows="8" id="td_content"></textarea>
                             </td>
                         </tr>
-                         <tr>
+                        <tr>
                             <td class="text-right">上传文件:</td>
-                            <td>                       
+                            <td>
                                 <input type="file">
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2"><p class="Confirm_sub">提交</p></td>
+                            <td colspan="2">
+                                <p class="Confirm_sub">提交</p>
+                            </td>
                         </tr>
-                         <tr>
+                        <tr>
                             <td colspan="2" class="text-center">
-                                <p class="tip">温馨小提示:</p> 您可以上传以下格式的文件：
-                                gif、jpg、png、word、excel、txt、zip、ppt、pdf
+                                <p class="tip">温馨小提示:</p> 您可以上传以下格式的文件： gif、jpg、png、word、excel、txt、zip、ppt、pdf
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            
+
             <!--用户评论  -->
             <div class="select_items_05" style="display:none;">
                 <h5>我的评论</h5>
@@ -312,7 +321,7 @@
         </div>
 
     </div>
-	<!--底部  -->
+    <!--底部  -->
     <div class="header">
         <!--更多-->
 <div class="home_footer">
@@ -414,8 +423,8 @@
 		</div>
 	</div>
 </div>
-	</div>
-	<!--侧边导航栏  -->
+    </div>
+    <!--侧边导航栏  -->
     <div class="sidebar_warp">
     <div class="sidebar">
         <ul class="sidebar_nav">
@@ -464,43 +473,51 @@
 </div>
 </body>
 <script type="text/javascript">
-    $(".select_items_01").find("a").map(function(){
-         $(".select_items_01").find("a").on("click",function(){
-            $(this).css(
-                {
-                    "background":"url(__ROOT__/Index/Common/img/userCenter/menuBg.gif) no-repeat 0 4px",
-                } 
-            ).siblings().css(
-                {
-                "background":"url(__ROOT__/Index/Common/img/userCenter/menuBg.gif) no-repeat 0 -26px",
-                }
-            )
-         })
-    })
-     $(".select_items_01").find("a").eq(5).on("click",function(){
-       $(".select_items_04").show();
-       $(".select_items_02").hide();
-       $(".select_items_03").hide();
-       $(".select_items_05").hide();
-     })
-      $(".select_items_01").find("a").eq(17).on("click",function(){
-       $(".select_items_04").hide();
-       $(".select_items_02").show();
-       $(".select_items_03").hide();
-       $(".select_items_05").hide();
-     })
-      $(".select_items_01").find("a").eq(6).on("click",function(){
-       $(".select_items_04").hide();
-       $(".select_items_05").show();
-       $(".select_items_03").hide();
-       $(".select_items_02").hide();
-     })
-      $(".select_items_01").find("a").eq(7).on("click",function(){
-       $(".select_items_04").hide();
-       $(".select_items_03").show();
-       $(".select_items_02").hide();
-       $(".select_items_05").hide();
-     })
+ var app = angular.module("myapps",[]);
+    // app.controller("mycontroller",function($scope,$http){})
 
+
+
+
+
+
+
+
+
+    $(".select_items_01").find("a").map(function() {
+        $(".select_items_01").find("a").on("click", function() {
+            $(this).css({
+                "background": "url(__ROOT__/Index/Common/img/userCenter/menuBg.gif) no-repeat 0 4px",
+            }).siblings().css({
+                "background": "url(__ROOT__/Index/Common/img/userCenter/menuBg.gif) no-repeat 0 -26px",
+            })
+        })
+    })
+    $(".select_items_01").find("a").eq(5).on("click", function() {
+        $(".select_items_04").show();
+        $(".select_items_02").hide();
+        $(".select_items_03").hide();
+        $(".select_items_05").hide();
+    })
+    $(".select_items_01").find("a").eq(17).on("click", function() {
+        $(".select_items_04").hide();
+        $(".select_items_02").show();
+        $(".select_items_03").hide();
+        $(".select_items_05").hide();
+    })
+    $(".select_items_01").find("a").eq(6).on("click", function() {
+        $(".select_items_04").hide();
+        $(".select_items_05").show();
+        $(".select_items_03").hide();
+        $(".select_items_02").hide();
+    })
+    $(".select_items_01").find("a").eq(7).on("click", function() {
+        $(".select_items_04").hide();
+        $(".select_items_03").show();
+        $(".select_items_02").hide();
+        $(".select_items_05").hide();
+    })
 </script>
+
+
 </html>

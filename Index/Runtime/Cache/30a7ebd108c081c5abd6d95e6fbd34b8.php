@@ -12,9 +12,10 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/home.css" />
     <!-- 头部尾部侧边栏CSS -->
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
-
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />  
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
+ 
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
     <style>
         .new_product {
             width: 1200px;
@@ -36,7 +37,7 @@
     </style>
 </head>
 
-<body>
+<body ng-app="myapps">
     <!-- 头部 -->
     <div>
         <header>
@@ -48,11 +49,11 @@
             </div>
             <div class="top_logo_rled">
                 <span>Hi~
-                        <a ng-show="<?php echo ($judge1); ?>" href="__APP__/Login/login">[请登录]</a>                        
-                        <a ng-show="<?php echo ($judge1); ?>" href="__APP__/Register/register">[免费注册]</a>                        
-                        <a ng-show="<?php echo ($judge); ?>" ><?php echo ($username); ?>,欢迎回来！</a>
-                        <a ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
-                        <a ng-show="<?php echo ($judge); ?>" href="##">[退出]</a>  
+                        <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Login/login">[请登录]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Register/register">[免费注册]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" ><?php echo ($username); ?>,欢迎回来！</a>
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="##">[退出]</a>  
                     </span>
                     
                     
@@ -675,5 +676,8 @@
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
     <script src="__ROOT__/Index/Common/js/accesories.js"></script>
 </body>
-
+<script>
+    var app = angular.module("myapps",[]);
+    // app.controller("mycontroller",function($scope,$http){})
+</script>
 </html>

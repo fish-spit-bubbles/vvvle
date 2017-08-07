@@ -9,16 +9,10 @@
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/home.css" />
-<<<<<<< HEAD
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
-    <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
-=======
     <!-- 头部尾部侧边栏CSS -->
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
-
->>>>>>> origin/master
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
 </head>
 
 <body ng-app="myapps">
@@ -37,7 +31,7 @@
                         <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Register/register">[免费注册]</a>                        
                         <a ng-cloak ng-show="<?php echo ($judge); ?>" ><?php echo ($username); ?>,欢迎回来！</a>
                         <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
-                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="##">[退出]</a>  
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/Index/loginout">[退出]</a>  
                     </span>
                     
                     
