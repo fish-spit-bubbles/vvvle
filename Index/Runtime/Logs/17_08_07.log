@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [ 2017-08-07T09:44:47+08:00 ] 127.0.0.1 /vvvle/index.php/Login/login
 INFO: [ route_check ] --START--
 INFO: CheckRoute Behavior ::run [ RunTime:0.001258s ]
@@ -9,6 +10,8 @@ INFO: [ app_begin ] --START--
 INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000527s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
 =======
+=======
+>>>>>>> origin/master
 [ 2017-08-07T08:58:51+08:00 ] 0.0.0.0 /vvvle/index.php/ProductDetails/index
 INFO: [ route_check ] --START--
 INFO: CheckRoute Behavior ::run [ RunTime:0.000328s ]
@@ -17,6 +20,9 @@ NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_ca
 INFO: [ app_begin ] --START--
 INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000223s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000259s ]
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 =======
 [ 2017-08-07T08:58:53+08:00 ] 0.0.0.0 /vvvle/index.php/ProductDetails/productDetails
@@ -5142,6 +5148,9 @@ INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
 NOTIC: [8] Constant THEME_NAME already defined /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/View.class.php 第 223 行.
 NOTIC: [8] Constant THEME_PATH already defined /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/View.class.php 第 174 行.
 NOTIC: [8] Constant APP_TMPL_PATH already defined /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/View.class.php 第 175 行.
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 INFO: [ view_parse ] --START--
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
@@ -5245,6 +5254,7 @@ NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_ca
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 197 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 137 行.
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: ParseTemplate Behavior ::run [ RunTime:0.065929s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.066020s ]
 INFO: [ view_filter ] --START--
@@ -5266,6 +5276,8 @@ INFO: [ app_begin ] --START--
 INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000220s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
 =======
+=======
+>>>>>>> origin/master
 NOTIC: [8] Undefined variable: index /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 92 行.
 NOTIC: [8] Undefined variable: lens /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 96 行.
 NOTIC: [8] Undefined variable: accesories /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 100 行.
@@ -5312,6 +5324,9 @@ NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_ca
 INFO: [ app_begin ] --START--
 INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000450s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 NOTIC: [8] Constant THEME_NAME already defined /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/View.class.php 第 223 行.
 NOTIC: [8] Constant THEME_PATH already defined /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/View.class.php 第 174 行.
@@ -5322,7 +5337,10 @@ NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_ca
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/master
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 168 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
@@ -5472,6 +5490,9 @@ INFO: [ view_parse ] --START--
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 168 行.
@@ -5571,6 +5592,7 @@ NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_ca
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 197 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 137 行.
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: ParseTemplate Behavior ::run [ RunTime:0.040421s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.040491s ]
 INFO: [ view_filter ] --START--
@@ -5583,6 +5605,8 @@ INFO: [ view_end ] --START--
 INFO: ShowPageTrace Behavior ::run [ RunTime:0.000421s ]
 INFO: [ view_end ] --END-- [ RunTime:0.000472s ]
 =======
+=======
+>>>>>>> origin/master
 NOTIC: [8] Undefined variable: index /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 92 行.
 NOTIC: [8] Undefined variable: lens /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 96 行.
 NOTIC: [8] Undefined variable: accesories /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 100 行.
@@ -5761,5 +5785,8 @@ INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000423s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
 >>>>>>> origin/master
 ERR: 非法操作:{{v.path}}
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 
