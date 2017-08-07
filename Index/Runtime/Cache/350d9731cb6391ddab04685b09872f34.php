@@ -15,7 +15,10 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/slideshow.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/productDetails.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
+<<<<<<< HEAD
     <<<<<<< HEAD=======>>>>>>> d3f3bcb56f1526a9d129e39b57bdf3ea488337fe
+=======
+>>>>>>> origin/master
 </head>
 
 <body ng-app="myapp" ng-controller="mycontroller">
@@ -139,6 +142,7 @@
                 <i class="sbar_cat_icon"></i>
                 <p>购物袋</p>
                 <i class="sbar_nub_icon">0</i>
+                <div id="msg">已成功加入购物车！</div>
             </li>
             <li>
                 <i class="serivce_icon"></i>
@@ -539,7 +543,6 @@
 
                                     <input type="submit" value="提交评论">
                                 </div>
-
                             </div>
                         </from>
                     </div>
@@ -660,6 +663,7 @@
 </div>
     </div>
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
+<<<<<<< HEAD
     <<<<<<< HEAD <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.fly.min.js">
         </script>
         <script>
@@ -783,6 +787,128 @@
         <script type="text/javascript" src="__ROOT__/Index/Common/js/productDetails.js"></script>
 
         >>>>>>> d3f3bcb56f1526a9d129e39b57bdf3ea488337fe
+=======
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.fly.min.js"></script>
+    <script>
+        var app = angular.module("myapp", []);
+        app.controller("mycontroller", function($scope, $http) {
+            $scope.imgarr = [{
+                path: "1500628005237569.jpg"
+            }, {
+                path: "1500628005722993.jpg"
+            }, {
+                path: "1500628006196727.jpg"
+            }, {
+                path: "1500628006809753.jpg"
+            }, {
+                path: "1500628007629155.jpg"
+            }, {
+                path: "1500628008937392.jpg"
+            }, {
+                path: "1500628009792044.jpg"
+            }, {
+                path: "1500628010579751.jpg"
+            }, {
+                path: "1500628011138678.jpg"
+            }, {
+                path: "1500628012841135.jpg"
+            }, {
+                path: "1500628012874148.jpg"
+            }, {
+                path: "1500628013199373.jpg"
+            }, {
+                path: "1500628013330298.jpg"
+            }, {
+                path: "1500628014135883.jpg"
+            }, {
+                path: "1500628014238126.jpg"
+            }, {
+                path: "1500628016194801.jpg"
+            }, {
+                path: "1500628016657137.jpg"
+            }, {
+                path: "1500628017683001.jpg"
+            }, {
+                path: "1500628018237234.jpg"
+            }, {
+                path: "1500628019505985.jpg"
+            }, {
+                path: "1500628020850656.jpg"
+            }, {
+                path: "1500628021568573.jpg"
+            }, {
+                path: "1500628022126560.jpg"
+            }, {
+                path: "1500628023811012.jpg"
+            }, {
+                path: "1500628024282769.jpg"
+            }, {
+                path: "1500628024413762.jpg"
+            }, {
+                path: "1500628025228734.jpg"
+            }, {
+                path: "1500628026245227.jpg"
+            }, {
+                path: "1500628027199852.jpg"
+            }, {
+                path: "1500628028410607.jpg"
+            }, {
+                path: "1500628029668606.jpg"
+            }, {
+                path: "1500628030652864.jpg"
+            }, {
+                path: "1487923637217966.jpg"
+            }, {
+                path: "1487923640448789.jpg"
+            }, {
+                path: "1487923643243202.jpg"
+            }, {
+                path: "1487923647368250.jpg"
+            }, {
+                path: "1487923650553691.jpg"
+            }, {
+                path: "1487923653310774.jpg"
+            }, {
+                path: "1487923656229922.jpg"
+            }, {
+                path: "1487923659652976.jpg"
+            }, {
+                path: "1487923662258672.jpg"
+            }, {
+                path: "1487923665772195.jpg"
+            }];
+            for (var i = 0; i < $scope.imgarr.length; i++) {
+                $scope.imgarr[i].path = "__ROOT__/Index/Common/img/img_productDetails/" + $scope.imgarr[i].path;
+            };
+        });
+        $(function() { 
+            $(".Join_the_shopping_cart").click(function(event){
+                var offset = $(".sbar_nub_icon").offset(); 
+                var addcar = $(this); 
+                var flyer = $("<div style='display:inline-block; width: 20px; height: 20px; background: red;border-radius: 50%;'></div>"); 
+                flyer.fly({ 
+                    start: { 
+                        left: event.clientX, //开始位置（必填）#fly元素会被设置成position: fixed 
+                        top: event.clientY //开始位置（必填） 
+                    }, 
+                    end: { 
+                        left: offset.left+10, //结束位置（必填） 
+                        top: 252, //结束位置（必填） 
+                        width: 0, //结束时宽度 
+                        height: 0 //结束时高度 
+                    }, 
+                    onEnd: function(){ //结束回调 
+                        $(".sidebar_nav #msg").show().animate({width: '250px'}, 200).fadeOut(1000, function(){
+                            $(this).width("-1");
+                        }); //提示信息 
+                        // addcar.css("cursor","default").removeClass('orange').unbind('click'); 
+                        this.destory(); //移除dom 
+                    } 
+                }); 
+            }); 
+        }); 
+    </script>
+>>>>>>> origin/master
 </body>
 
 </html>
