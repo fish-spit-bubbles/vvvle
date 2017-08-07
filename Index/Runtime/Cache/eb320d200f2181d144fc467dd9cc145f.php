@@ -1,93 +1,106 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register | 注册界面</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
-	<link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/sidebar.css" />
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
+
+    <!-- 头部尾部侧边栏CSS -->
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
+
+
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
+
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
-    <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
+
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
     <style>
-        .register_box{
-                width: 972px;
-                margin: 20px auto;
-                overflow: hidden;
-                border: #ddd solid 2px;
-                padding-bottom: 20px;
+        .register_box {
+            width: 972px;
+            margin: 20px auto;
+            overflow: hidden;
+            border: #ddd solid 2px;
+            padding-bottom: 20px;
         }
-        #register_left{
-                width: 435px;
-                margin: 40px 0px 0px 60px;
-                overflow: hidden;
-        } 
-        #register_right{
-                width: 330px;
-                margin: 120px 80px 0;
-
+        
+        #register_left {
+            width: 435px;
+            margin: 40px 0px 0px 60px;
+            overflow: hidden;
         }
-         .weile{
-                font-size: 14px;
-                color: #f3116c;
-                font-weight: bold;
-        }      
-        .bg{
-                height: 36px;
-                line-height: 36px;
-                margin-top: 10px;
-                width: 322px;
-                padding-left: 5px;
-                width: 302px;
-                border: 1px solid #cfcfcf;
+        
+        #register_right {
+            width: 330px;
+            margin: 120px 80px 0;
         }
-        .bg01{
+        
+        .weile {
+            font-size: 14px;
+            color: #f3116c;
+            font-weight: bold;
+        }
+        
+        .bg {
             height: 36px;
-                line-height: 36px;
-                margin-top: 20px;
-                width: 322px;
-                padding-left: 5px;
-                width: 302px;
+            line-height: 36px;
+            margin-top: 10px;
+            width: 322px;
+            padding-left: 5px;
+            width: 302px;
+            border: 1px solid #cfcfcf;
         }
-
-        .liji{
+        
+        .bg01 {
+            height: 36px;
+            line-height: 36px;
+            margin-top: 20px;
+            width: 322px;
+            padding-left: 5px;
+            width: 302px;
+        }
+        
+        .liji {
             background: url(__ROOT__/Index/Common/img/login/liji.gif) no-repeat;
             width: 109px;
             height: 40px;
             border: 0px;
         }
-        .wl{
+        
+        .wl {
             font-size: 14px;
             padding-left: 14px;
         }
-        .liji1{
+        
+        .liji1 {
             padding: 15px 0;
         }
-        .qita{
+        
+        .qita {
             font-size: 12px;
             color: #868686;
             padding-top: 36px;
         }
-        .pd{
+        
+        .pd {
             padding-right: 15px;
             padding-top: 20px;
         }
-        #repwd{
-             padding-top: 0;
-              padding-right: 15px;
-                  display: table-cell;
+        
+        #repwd {
+            padding-top: 0;
+            padding-right: 15px;
+            display: table-cell;
         }
-    
     </style>
 </head>
+
 <body>
     <!--头部  -->
-	<header>
+    <header>
     <!-- 头部 -->
     <div class="container-fluid" title="top">
         <div class="container" title="top_logo">
@@ -156,27 +169,27 @@
     <!-- 导航部分 -->
     <div class="container-fluid" title="bootm">
         <div class="container" title="bootm_navie">
-            <a href="__APP__/Index/index" class="bootm_naviea_hove" title="red">
+            <a href="__APP__/Index/index" class="bootm_naviea_hove" title="<?php echo ($index); ?>">
                 <p class="naviea_hove" title="bg">HOME</p>
                 <p class="naviea_hove" title="ms">首页</p>
             </a>
-            <a href="__APP__/Lens/lens" class="bootm_naviea_hove">
+            <a href="__APP__/Lens/lens" class="bootm_naviea_hove" title="<?php echo ($lens); ?>">
                 <p class="naviea_hove" title="bg">LENS</p>
                 <p class="naviea_hove" title="ms">美瞳</p>
             </a>
-            <a href="__APP__/Accesories/accesories" class="bootm_naviea_hove">
+            <a href="__APP__/Accesories/accesories" class="bootm_naviea_hove" title="<?php echo ($accesories); ?>">
                 <p class="naviea_hove" title="bg">EYE DROPS</p>
                 <p class="naviea_hove" title="ms">海外购</p>
             </a>
-            <a href="__APP__/Parts/parts" class="bootm_naviea_hove">
+            <a href="__APP__/Parts/parts" class="bootm_naviea_hove" title="<?php echo ($parts); ?>">
                 <p class="naviea_hove" title="bg">PARTS</p>
                 <p class="naviea_hove" title="ms">超级配件</p>
             </a>
-            <a href="__APP__/NewProduct/newProduct" class="bootm_naviea_hove">
+            <a href="__APP__/NewProduct/newProduct" class="bootm_naviea_hove" title="<?php echo ($newProduct); ?>">
                 <p class="naviea_hove" title="bg">NEW</p>
                 <p class="naviea_hove" title="ms">新品</p>
             </a>
-            <a href="__APP__/Hot/hot" class="bootm_naviea_hove">
+            <a href="__APP__/Hot/hot" class="bootm_naviea_hove" title="<?php echo ($hot); ?>">
                 <p class="naviea_hove" title="bg">HOT</p>
                 <p class="naviea_hove" title="ms">热销宝贝</p>
             </a>
@@ -195,98 +208,54 @@
     <!--注册栏  -->
     <div class="register_box" ng-app="myapp" ng-controller="mycontroller">
         <div class="row">
-             <!--右边注册信息界面  -->
-            <div class="col-sm-6" id="register_left" >
+            <!--右边注册信息界面  -->
+            <div class="col-sm-6" id="register_left">
                 <div class="weile">注册微乐</div>
-                <form name="myForm"  novalidate="novalidate">
-                    <table width="100%"  border="0" align="left" cellpadding="5" cellspacing="3">
+                <form name="myForm" novalidate="novalidate">
+                    <table width="100%" border="0" align="left" cellpadding="5" cellspacing="3">
                         <tr>
-                            <td width="20%" align="right"><p class="pd">用户名</p></td>
+                            <td width="20%" align="right">
+                                <p class="pd">用户名</p>
+                            </td>
                             <td width="80%">
                                 <!-- input 用户名   -->
-                                <input 
-                                ng-model="users.username" 
-                                type="text"  
-                                ng-required="true" 
-                                ng-minlength="3" 
-                                class="bg"
-                                name="username"
-                                />
+                                <input ng-model="users.username" type="text" ng-required="true" ng-minlength="3" class="bg" name="username" />
                                 <span id="username_notice" style="color:#FF0000"> *</span>
-<<<<<<< HEAD
-                                <div 
-                                style="color:#FF0000;
-                                font-size: 12px;"       
-                                ng-show="myForm.username.$dirty"
-                                ><div
-                                 ng-show="myForm.username.$invalid"
-                                >
-                                    用户名长度不能少于 3 个字符。
-                                </div>
-                                
-                                 </div>
-                                <div
-                                style="color:darkorange;
-                                font-size: 12px;" 
-=======
-                                <span
-                                style="color:#FF0000;font-size: 12px;"                                
-                                ng-show="myForm.username.$error.required && myForm.username.$dirty"
-                                >账号不能少于 3 个字符。</span>
-                                <span
-                                style="color:darkorange;font-size: 12px;"                                
->>>>>>> 3e9f04dbff9091d2b1b5f293a4d5e8d0b3815df6
-                                ng-show="myForm.username.$valid"
-                                >账号可以用</span>
+                                <span style="color:#FF0000;font-size: 12px;" ng-show="myForm.username.$error.required && myForm.username.$dirty">账号不能少于 3 个字符。</span>
+                                <span style="color:darkorange;font-size: 12px;" ng-show="myForm.username.$valid">账号可以用</span>
                             </td>
                         </tr>
                         <tr>
-                            <td align="right"><p class="pd">email</p></td>
+                            <td align="right">
+                                <p class="pd">email</p>
+                            </td>
                             <td>
-                                 <!-- input 邮件  -->
-                                <input 
-                                ng-model="users.email"  type="email" class="bg" name="email"
-                                ng-required="true"
-                                
-                                />
+                                <!-- input 邮件  -->
+                                <input ng-model="users.email" type="email" class="bg" name="email" ng-required="true" />
                                 <span id="email_notice" style="color:#FF0000"> *</span>
-<<<<<<< HEAD
-                                <span ng-show="myForm.email.$dirty && myForm.email.$valid">邮箱是必须的。</span>
-                                <span ng-show="myForm.email.$error.email">非法的邮箱地址。</span>  
-=======
-                                <span 
-                                style="color:darkorange;font-size: 12px;"
-                                ng-show="myForm.email.$dirty && myForm.email.$valid">邮箱可以用。</span>
-                                <span 
-                                style="color:#FF0000;font-size: 12px;"
-                                ng-show="myForm.email.$error.email">非法的邮箱地址。</span>  
->>>>>>> 3e9f04dbff9091d2b1b5f293a4d5e8d0b3815df6
+                                <span style="color:darkorange;font-size: 12px;" ng-show="myForm.email.$dirty && myForm.email.$valid">邮箱可以用。</span>
+                                <span style="color:#FF0000;font-size: 12px;" ng-show="myForm.email.$error.email">非法的邮箱地址。</span>
                             </td>
                         </tr>
                         <tr>
-                            <td align="right"><p class="pd">密码</p></td>
+                            <td align="right">
+                                <p class="pd">密码</p>
+                            </td>
                             <td>
-                                 <!-- input 密码  -->
-                                <input ng-model="users.pwd" type="password" class="bg" name="pwd"
-                                ng-minlength="6"
-                                ng-required="true"
-                                />
+                                <!-- input 密码  -->
+                                <input ng-model="users.pwd" type="password" class="bg" name="pwd" ng-minlength="6" ng-required="true" />
                                 <span style="color:#FF0000" id="password_notice"> *</span>
-                                <span
-                                style="color:#FF0000;font-size: 12px;"                                
-                                ng-show="myForm.pwd.$error.required && myForm.pwd.$dirty"
-                                >登录密码不能少于 6 个字符。</span>
-                                <span
-                                style="color:darkorange;font-size: 12px;"                                
-                                ng-show="myForm.pwd.$valid"
-                                >密码可以用</span>
+                                <span style="color:#FF0000;font-size: 12px;" ng-show="myForm.pwd.$error.required && myForm.pwd.$dirty">登录密码不能少于 6 个字符。</span>
+                                <span style="color:darkorange;font-size: 12px;" ng-show="myForm.pwd.$valid">密码可以用</span>
                             </td>
                         </tr>
                         <tr class="bg01">
-                            <td align="right"><p id="repwd">密码强度</p></td>
+                            <td align="right">
+                                <p id="repwd">密码强度</p>
+                            </td>
                             <td>
-                                <table width="145" border="0" cellspacing="0" cellpadding="0" >
-                                    <tr align="right" >
+                                <table width="145" border="0" cellspacing="0" cellpadding="0">
+                                    <tr align="right">
                                         <td width="33%" id="pwd_lower">弱</td>
                                         <td width="33%" id="pwd_middle">中</td>
                                         <td width="33%" id="pwd_high">强</td>
@@ -295,40 +264,36 @@
                             </td>
                         </tr>
                         <tr>
-                            <td align="right"><p class="pd">确认密码</p></td>
+                            <td align="right">
+                                <p class="pd">确认密码</p>
+                            </td>
                             <td>
                                 <!-- input 确认密码  -->
-                            <input  ng-model="users.repwd" type="password" class="bg"
-                                    name="repwd"
-                                    ng-minlength="6"
-                                    ng-required="true"
-                            />
-                            <span style="color:#FF0000" id="conform_password_notice"> *</span>
-                            <span
-                                style="color:#FF0000;font-size: 12px;"                                
-                                ng-show="myForm.repwd.$error.required && myForm.repwd.$dirty"
-                                >登录密码不能少于 6 个字符。</span>
-                                <span
-                                style="color:darkorange;font-size: 12px;"                                
-                                ng-show="myForm.repwd.$valid"
-                                >密码可以用</span>
+                                <input ng-model="users.repwd" type="password" class="bg" name="repwd" ng-minlength="6" ng-required="true" />
+                                <span style="color:#FF0000" id="conform_password_notice"> *</span>
+                                <span style="color:#FF0000;font-size: 12px;" ng-show="myForm.repwd.$error.required && myForm.repwd.$dirty">登录密码不能少于 6 个字符。</span>
+                                <span style="color:darkorange;font-size: 12px;" ng-show="myForm.repwd.$valid">密码可以用</span>
                             </td>
                         </tr>
-                        
+
                         <tr>
-                            <td align="right" ><p class="pd">QQ</p></td>
+                            <td align="right">
+                                <p class="pd">QQ</p>
+                            </td>
                             <td>
-                                 <!-- input QQ  -->
-                                <input ng-model="users.qq" type="text"  class="bg" />          
+                                <!-- input QQ  -->
+                                <input ng-model="users.qq" type="text" class="bg" />
                             </td>
                         </tr>
                         <tr>
-                            <td align="right" id="WeChat" ><p class="pd">微信</p></td>  
-                            <td>
-                                 <!-- input 微信  -->
-                                <input ng-model="users.wechat" type="text" class="bg" id="WeChat" />         
+                            <td align="right" id="WeChat">
+                                <p class="pd">微信</p>
                             </td>
-                        </tr>        
+                            <td>
+                                <!-- input 微信  -->
+                                <input ng-model="users.wechat" type="text" class="bg" id="WeChat" />
+                            </td>
+                        </tr>
                         <tr>
                             <td>&nbsp;</td>
                             <td>
@@ -344,23 +309,27 @@
                                 <input ng-click="sub()" type="button" class="liji">
                             </td>
                         </tr>
-                    </table> 
-                </form>           
+                    </table>
+                </form>
             </div>
             <!--立即登陆  -->
             <div class="col-sm-6" id="register_right">
                 <div class="wl">已微乐账号？</div>
-                <div class="liji1"><a href="__APP__/Login/login"><img src="__ROOT__/Index/Common/img/login/liji1.gif"></a></div>
+                <div class="liji1">
+                    <a href="__APP__/Login/login"><img src="__ROOT__/Index/Common/img/login/liji1.gif"></a>
+                </div>
                 <div class="qita">你也可以使用一下账号登录：</div>
-                <div class="zhanghao"><a href="##"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c1.gif" width="93" height="24" border="0"/></a>
-                <a href="##"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c2.gif" width="101" height="24" border="0" /></a>
-                <a href="##"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c3.gif" width="75" height="24" border="0"/></a></div>
+                <div class="zhanghao">
+                    <a href="##"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c1.gif" width="93" height="24" border="0" /></a>
+                    <a href="##"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c2.gif" width="101" height="24" border="0" /></a>
+                    <a href="##"><img src="__ROOT__/Index/Common/img/login/zhang_r1_c3.gif" width="75" height="24" border="0" /></a>
+                </div>
 
             </div>
         </div>
-       
+
     </div>
-	<!--底部  -->
+    <!--底部  -->
     <div class="header">
         <!--更多-->
 <div class="home_footer">
@@ -451,9 +420,9 @@
 						<a href="" target="_blank">美瞳网</a>
 						<a href="" target="_blank">隐形眼镜网</a>
 						<a href="" target="_blank">美瞳网</a>
-
+						<a href="" target="_blank">隐形眼镜网</a>
+						<a href="" target="_blank">美瞳网</a>
 					</div>
-
 				</div>
 				<p class="text-right" id="f_ICP">© 2015 vvvle.cn 广州市敦泽贸易有限公司 版权所有｜
 					<span><a href="http://www.miitbeian.gov.cn/">粤ICP备13029115号-1</a></span>
@@ -462,8 +431,8 @@
 		</div>
 	</div>
 </div>
-	</div>
-	<!--侧边导航栏  -->
+    </div>
+    <!--侧边导航栏  -->
     <div class="sidebar_warp">
     <div class="sidebar">
         <ul class="sidebar_nav">
@@ -475,6 +444,7 @@
                 <i class="sbar_cat_icon"></i>
                 <p>购物袋</p>
                 <i class="sbar_nub_icon">0</i>
+                <div id="msg">已成功加入购物车！</div>
             </li>
             <li>
                 <i class="serivce_icon"></i>
@@ -509,53 +479,55 @@
 
     </div>
 </div>
-</body>
-<script type="text/javascript">
-    var app = angular.module("myapp",[]);
-    app.controller("mycontroller",function($scope,$http){
-        $scope.users = {
-            username:"",
-            email:"",
-            pwd:"",
-            repwd:"",
-            qq:"",
-            wechat:""
-        }
-        $scope.sub = function(){
-            var url = "__APP__/Register/addUsers";
-            $http({
-                url:url,
-                method:"POST",
-                headers:{
-                        "Content-type":"application/x-www-form-urlencoded"
-                },
-                data:{
-                        username:$scope.users.username,
-                        email:$scope.users.email,
+
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
+    <script type="text/javascript">
+        var app = angular.module("myapp", []);
+        app.controller("mycontroller", function($scope, $http) {
+            $scope.users = {
+                username: "",
+                email: "",
+                pwd: "",
+                repwd: "",
+                qq: "",
+                wechat: ""
+            }
+            $scope.sub = function() {
+                var url = "__APP__/Register/addUsers";
+                $http({
+                    url: url,
+                    method: "POST",
+                    headers: {
+                        "Content-type": "application/x-www-form-urlencoded"
+                    },
+                    data: {
+                        username: $scope.users.username,
+                        email: $scope.users.email,
                         pwd: $scope.users.pwd,
-                        repwd:$scope.users.repwd,
-                        qq:$scope.users.qq,
-                        wechat:$scope.users.wechat
-                }
-            }).success(function(data){
-                    if(data.status==1){
+                        repwd: $scope.users.repwd,
+                        qq: $scope.users.qq,
+                        wechat: $scope.users.wechat
+                    }
+                }).success(function(data) {
+                    if (data.status == 1) {
                         // window.location.href="__APP__/Login/login";
                         alert("注册成功");
-                        
-                    }else{
+
+                    } else {
                         alert(data.info);
                     }
                     console.log(data);
-            })
-        }
-        
-                                
-
-
-    });
+                })
+            }
 
 
 
 
-</script>
+        });
+    </script>
+
+
+</body>
+
+
 </html>

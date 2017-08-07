@@ -8,27 +8,31 @@
     <title>新品界面</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/sidebar.css" />
+
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/home.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
+    <!-- 头部尾部侧边栏CSS -->
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
+
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
     <style>
-       .new_product{
-           width: 1200px;
-           position: relative;
-           margin: 0 auto;
-       }
-        .Return_home{    
-                   margin-bottom: -50px;
-                    position: absolute;
-                    top: -18px;
-                    left: 0px;
-                    color: #333;
+        .new_product {
+            width: 1200px;
+            position: relative;
+            margin: 0 auto;
         }
-        .Return_home>code{color: #333;}
-
+        
+        .Return_home {
+            margin-bottom: -50px;
+            position: absolute;
+            top: -18px;
+            left: 0px;
+            color: #333;
+        }
+        
+        .Return_home>code {
+            color: #333;
+        }
     </style>
 </head>
 
@@ -143,7 +147,7 @@
     </div>
 
     <div class="new_product">
-       <!--首页 > 新品上市  -->
+        <!--首页 > 新品上市  -->
         <div class="Return_home">
             <a href="__APP__/Index/index">首页</a>
             <code>></code>新品上市
@@ -176,7 +180,7 @@
                             <div class="Next_layer03">
                             </div>
                         </div>
-                                            
+
                     </div>
                 </div>
                 <div class="Product_item">
@@ -205,7 +209,7 @@
 
                             </div>
                         </div>
-                                            
+
                     </div>
                 </div>
                 <div class="Product_item">
@@ -234,10 +238,10 @@
 
                             </div>
                         </div>
-                                            
+
                     </div>
                 </div>
-                    <div class="Product_item">
+                <div class="Product_item">
                     <div class="item_01">
                         <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
                     </div>
@@ -262,7 +266,7 @@
                             <div class="Next_layer03">
                             </div>
                         </div>
-                                            
+
                     </div>
                 </div>
                 <div class="Product_item">
@@ -291,7 +295,7 @@
 
                             </div>
                         </div>
-                                            
+
                     </div>
                 </div>
                 <div class="Product_item">
@@ -320,10 +324,10 @@
 
                             </div>
                         </div>
-                                            
+
                     </div>
                 </div>
-                    <div class="Product_item">
+                <div class="Product_item">
                     <div class="item_01">
                         <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
                     </div>
@@ -348,7 +352,7 @@
                             <div class="Next_layer03">
                             </div>
                         </div>
-                                            
+
                     </div>
                 </div>
                 <div class="Product_item">
@@ -377,7 +381,7 @@
 
                             </div>
                         </div>
-                                            
+
                     </div>
                 </div>
                 <div class="Product_item">
@@ -406,10 +410,10 @@
 
                             </div>
                         </div>
-                                            
+
                     </div>
                 </div>
-                    <div class="Product_item">
+                <div class="Product_item">
                     <div class="item_01">
                         <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
                     </div>
@@ -434,7 +438,7 @@
                             <div class="Next_layer03">
                             </div>
                         </div>
-                                            
+
                     </div>
                 </div>
                 <div class="Product_item">
@@ -463,7 +467,7 @@
 
                             </div>
                         </div>
-                                            
+
                     </div>
                 </div>
                 <div class="Product_item">
@@ -492,30 +496,30 @@
 
                             </div>
                         </div>
-                                            
+
                     </div>
                 </div>
-            </div>		
+            </div>
         </div>
         <!--分页·paging -->
-        <div class="pager"> 
+        <div class="pager">
             <span>«首页</span>
-            <span>上一页</span>  
-            <a href="##" class="current">1</a>  
-            <a href="##">2</a>  
-            <a href="##">3</a>  
-            <a href="##">4</a>  
-            <a href="##">5</a>  
-            <a href="##">6</a>  
-            <a href="##">下一页</a> 
-            <a href="##">尾页»</a>  
+            <span>上一页</span>
+            <a href="##" class="current">1</a>
+            <a href="##">2</a>
+            <a href="##">3</a>
+            <a href="##">4</a>
+            <a href="##">5</a>
+            <a href="##">6</a>
+            <a href="##">下一页</a>
+            <a href="##">尾页»</a>
             <span>1/共36页</span>
         </div>
     </div>
-  
+
 
     <!--底部  -->
-     <div class="header"> 
+    <div class="header">
         <!--更多-->
 <div class="home_footer">
 	<div class="container-fluid">
@@ -616,7 +620,7 @@
 		</div>
 	</div>
 </div>
-	 </div> 
+    </div>
 
     <!-- 侧边栏 -->
     <div class="sidebar_warp">
@@ -630,6 +634,7 @@
                 <i class="sbar_cat_icon"></i>
                 <p>购物袋</p>
                 <i class="sbar_nub_icon">0</i>
+                <div id="msg">已成功加入购物车！</div>
             </li>
             <li>
                 <i class="serivce_icon"></i>
