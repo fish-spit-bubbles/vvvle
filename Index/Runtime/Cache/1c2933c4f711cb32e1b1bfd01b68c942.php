@@ -1,6 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +7,11 @@
     <title>Login | 登陆界面</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
-
-
     <!-- 头部尾部侧边栏CSS -->
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
-
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
-
-
-
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
-
-
-
-
-
     <style>
         .login {
             width: 1000px;
@@ -120,8 +108,7 @@
         }
     </style>
 </head>
-
-<body>
+<body ng-app="myapps" ng-controller="mycontroller">
     <!--头部  -->
     <header>
     <!-- 头部 -->
@@ -131,12 +118,15 @@
                 <a href="#">微乐美瞳网</a>
             </div>
             <div class="top_logo_rled">
-                <span>Hi~[
-                        <a href="__APP__/Login/login">请登录</a>
-                        ][
-                        <a href="__APP__/Register/register">免费注册</a>
-                        ]
+                <span>Hi~
+                        <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Login/login">[请登录]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Register/register">[免费注册]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" ><?php echo ($username); ?>,欢迎回来！</a>
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/Index/loginout">[退出]</a>  
                     </span>
+                    
+                    
                 <!-- 购物车 -->
                 <a href="#" title="che">
                     <i class="glyphicon glyphicon-shopping-cart"></i>
@@ -229,7 +219,7 @@
     });
 </script>
     <!--登录表  -->
-    <div class="login" ng-app="myapps" ng-controller="mycontroller">
+    <div class="login">
         <div class="row text-left">
             <div class="col-sm-6 login_img">
                 <img src="__ROOT__/Index/Common/img/login/77.jpg" alt="8周年庆图片">
@@ -431,31 +421,31 @@
             $scope.delu = function() {
                 if ($scope.username != "" && $scope.pwd != "") {
                     var url = "__APP__/Login/checkUsers";
-                    $http({
-                        url: url,
-                        method: "POST",
-                        headers: {
-                            "Content-type": "application/x-www-form-urlencoded"
-                        },
-                        data: {
-                            username: $scope.username,
-                            pwd: $scope.pwd,
-                        }
-                    }).success(function(data) {
-                        if (data.status == 1) {
-                            // window.location.href="__APP__/Login/login";
-                            alert("登陆成功");
-                            console.log(data);
-
-                        } else {
-                            alert(data.info);
-                        }
-
-                    })
-                } else {
-                    alert("请填写用户名和密码")
+                        $http({
+                            url:url,
+                            method:"POST",
+                            headers:{
+                                    "Content-type":"application/x-www-form-urlencoded"
+                            },
+                            data:{
+                                    username:$scope.username,
+                                    pwd:$scope.pwd,
+                            }
+                        }).success(function(data){
+                                if(data.status==1){
+                                    alert("登陆成功");
+                                    window.location.href="__APP__/Index/index";
+                                   
+                                    
+                                }else{
+                                    alert(data.info);
+                                }
+                            
+                        })
+                    }else{
+                        alert("请填写用户名和密码")
+                    }
                 }
-            }
         })
     </script>
 

@@ -12,18 +12,17 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/home.css" />
     <!-- 头部尾部侧边栏CSS -->
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
-
-
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/slideshow.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/accesories.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/slideshow.js"></script>
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
 
 
 </head>
 
-<body>
+<body ng-app="myapps">
     <!-- 头部 -->
     <div>
         <include file="Public:header" />
@@ -254,5 +253,8 @@
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
     <script src="__ROOT__/Index/Common/js/accesories.js"></script>
 </body>
-
+<script>
+    var app = angular.module("myapps",[]);
+    // app.controller("mycontroller",function($scope,$http){})
+</script>
 </html>
