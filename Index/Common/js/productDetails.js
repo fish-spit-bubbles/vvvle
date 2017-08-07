@@ -39,6 +39,7 @@ $(".show_goods_o_pic_ui-form-item>.clearfix[name='count']>input").on("input", fu
 $(".padda>.Join_the_shopping_cart").click(function() {
     judgementDegree();
 
+
 });
 // 加入购物车
 $(".padda>.padda_buynow").click(function(){
@@ -141,6 +142,12 @@ $(document).scroll(function(){
 
     
 });
+
+
+
+
+
+
 
 
 
