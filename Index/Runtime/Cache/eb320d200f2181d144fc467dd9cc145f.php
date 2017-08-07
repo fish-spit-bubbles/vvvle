@@ -213,12 +213,29 @@
                                 name="username"
                                 />
                                 <span id="username_notice" style="color:#FF0000"> *</span>
+<<<<<<< HEAD
+                                <div 
+                                style="color:#FF0000;
+                                font-size: 12px;"       
+                                ng-show="myForm.username.$dirty"
+                                ><div
+                                 ng-show="myForm.username.$invalid"
+                                >
+                                    用户名长度不能少于 3 个字符。
+                                </div>
+                                
+                                 </div>
+                                <div
+                                style="color:darkorange;
+                                font-size: 12px;" 
+=======
                                 <span
                                 style="color:#FF0000;font-size: 12px;"                                
                                 ng-show="myForm.username.$error.required && myForm.username.$dirty"
                                 >账号不能少于 3 个字符。</span>
                                 <span
                                 style="color:darkorange;font-size: 12px;"                                
+>>>>>>> 3e9f04dbff9091d2b1b5f293a4d5e8d0b3815df6
                                 ng-show="myForm.username.$valid"
                                 >账号可以用</span>
                             </td>
@@ -233,12 +250,17 @@
                                 
                                 />
                                 <span id="email_notice" style="color:#FF0000"> *</span>
+<<<<<<< HEAD
+                                <span ng-show="myForm.email.$dirty && myForm.email.$valid">邮箱是必须的。</span>
+                                <span ng-show="myForm.email.$error.email">非法的邮箱地址。</span>  
+=======
                                 <span 
                                 style="color:darkorange;font-size: 12px;"
                                 ng-show="myForm.email.$dirty && myForm.email.$valid">邮箱可以用。</span>
                                 <span 
                                 style="color:#FF0000;font-size: 12px;"
                                 ng-show="myForm.email.$error.email">非法的邮箱地址。</span>  
+>>>>>>> 3e9f04dbff9091d2b1b5f293a4d5e8d0b3815df6
                             </td>
                         </tr>
                         <tr>

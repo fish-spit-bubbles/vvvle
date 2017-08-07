@@ -13,7 +13,10 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
+<<<<<<< HEAD
+=======
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
+>>>>>>> 3e9f04dbff9091d2b1b5f293a4d5e8d0b3815df6
     <style>
         .login{width: 1000px;margin: 0 auto;margin-bottom: 25px;}
         .login_img {margin-top: 25px;}

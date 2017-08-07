@@ -15,8 +15,10 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/slideshow.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/productDetails.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
-
-
+<<<<<<< HEAD
+    <<<<<<< HEAD=======>>>>>>> d3f3bcb56f1526a9d129e39b57bdf3ea488337fe
+=======
+>>>>>>> origin/master
 </head>
 
 <body ng-app="myapp" ng-controller="mycontroller">
@@ -91,27 +93,27 @@
     <!-- 导航部分 -->
     <div class="container-fluid" title="bootm">
         <div class="container" title="bootm_navie">
-            <a href="__APP__/Index/index" class="bootm_naviea_hove" title="red">
+            <a href="__APP__/Index/index" class="bootm_naviea_hove" title="<?php echo ($index); ?>">
                 <p class="naviea_hove" title="bg">HOME</p>
                 <p class="naviea_hove" title="ms">首页</p>
             </a>
-            <a href="__APP__/Lens/lens" class="bootm_naviea_hove">
+            <a href="__APP__/Lens/lens" class="bootm_naviea_hove" title="<?php echo ($lens); ?>">
                 <p class="naviea_hove" title="bg">LENS</p>
                 <p class="naviea_hove" title="ms">美瞳</p>
             </a>
-            <a href="__APP__/Accesories/accesories" class="bootm_naviea_hove">
+            <a href="__APP__/Accesories/accesories" class="bootm_naviea_hove" title="<?php echo ($accesories); ?>">
                 <p class="naviea_hove" title="bg">EYE DROPS</p>
                 <p class="naviea_hove" title="ms">海外购</p>
             </a>
-            <a href="__APP__/Parts/parts" class="bootm_naviea_hove">
+            <a href="__APP__/Parts/parts" class="bootm_naviea_hove" title="<?php echo ($parts); ?>">
                 <p class="naviea_hove" title="bg">PARTS</p>
                 <p class="naviea_hove" title="ms">超级配件</p>
             </a>
-            <a href="__APP__/NewProduct/newProduct" class="bootm_naviea_hove">
+            <a href="__APP__/NewProduct/newProduct" class="bootm_naviea_hove" title="<?php echo ($newProduct); ?>">
                 <p class="naviea_hove" title="bg">NEW</p>
                 <p class="naviea_hove" title="ms">新品</p>
             </a>
-            <a href="__APP__/Hot/hot" class="bootm_naviea_hove">
+            <a href="__APP__/Hot/hot" class="bootm_naviea_hove" title="<?php echo ($hot); ?>">
                 <p class="naviea_hove" title="bg">HOT</p>
                 <p class="naviea_hove" title="ms">热销宝贝</p>
             </a>
@@ -140,6 +142,7 @@
                 <i class="sbar_cat_icon"></i>
                 <p>购物袋</p>
                 <i class="sbar_nub_icon">0</i>
+                <div id="msg">已成功加入购物车！</div>
             </li>
             <li>
                 <i class="serivce_icon"></i>
@@ -234,8 +237,8 @@
                 <!-- 左眼度数 -->
                 <li class="attribute_item">
                     左眼度数
-                    <select>
-                        <option value="0">请选择</option>
+                    <select class="attribute_item_flet">
+                        <option value="请选择">请选择</option>
                         <option value="平光">平光</option>
                         <option value="-100">-100</option>
                         <option value="-125">-125</option>
@@ -263,12 +266,13 @@
                         <option value="-800">-800</option>
                         
                     </select>
+
                 </li>
                 <!-- 右眼度数 -->
                 <li class="attribute_item">
                     右眼度数
-                    <select>
-                        <option value="0">请选择</option>
+                    <select class="attribute_item_right">
+                        <option value="请选择">请选择</option>
                         <option value="平光">平光</option>
                         <option value="-100">-100</option>
                         <option value="-125">-125</option>
@@ -294,8 +298,15 @@
                         <option value="-700">-700</option>
                         <option value="-750">-750</option>
                         <option value="-800">-800</option>
-                        
                     </select>
+                </li>
+                <li class="padd_loop_check">
+                    <div class="attribute_item_option" name="dn">
+                        请选择左眼度数
+                    </div>
+                    <div class="attribute_item_option" name="dr">
+                        请选择右眼度数
+                    </div>
                 </li>
                 <!-- 促销价和剩余时间 -->
                 <li class="padd_loop">
@@ -344,16 +355,16 @@
                     <div class="detail_tab_clearfix">
                         <ul>
                             <li bokl="outs">
-                                <a href="#">商品详情</a>
+                                <a href="">商品详情</a>
                             </li>
                             <li bokl="fbm">
-                                <a href="#">卖家评价</a>
+                                <a href="">卖家评价</a>
                             </li>
                             <li bokl="fbm">
-                                <a href="#">达人秀</a>
+                                <a href="">达人秀</a>
                             </li>
                             <li bokl="fbm">
-                                <a href="#">相关文章</a>
+                                <a href="">相关文章</a>
                             </li>
                             <li bokl="fbwb">
                                 <a href="#"></a>
@@ -429,23 +440,121 @@
 
                     </div>
 
-
-
-
-
                 </div>
                 <!-- 侧边栏相同颜色商品 -->
                 <div class="vl_goods_dec_rr">
                     <h3 class="vl_goods_dec_rr_h3">相同颜色的商品</h3>
-                    <div></div>
+                    <div class="vlGoodsGoodsimg">
+                        <a name="goods" href="#">
+                            <img src="__ROOT__/Index/Common/img/img_productDetails/3175_thumb_G_1478216450806.png" alt="相同商品">
+                        </a>
+                        <div class="vlGoodsGoodsimg_font">
+                            <a href="#">
+                            【满299减199】Besco...
+                            </a>
+                            <br> 本店售价：
+                            <em>￥</em>
+                            <span class="vlGodsGoodsimgJiage">
+                                 298
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="vlGoodsGoodsimg">
+                        <a name="goods" href="#">
+                            <img src="__ROOT__/Index/Common/img/img_productDetails/3175_thumb_G_1478216450806.png" alt="相同商品">
+                        </a>
+                        <div class="vlGoodsGoodsimg_font">
+                            <a href="#">
+                            【满299减199】Besco...
+                            </a>
+                            <br> 本店售价：
+                            <em>￥</em>
+                            <span class="vlGodsGoodsimgJiage">
+                                 298
+                            </span>
+                        </div>
+
+                    </div>
+
                     <h3 class="vl_goods_dec_rr_h3">浏览历史</h3>
-                    <div></div>
+                    <div class="vlGoodsGoodsimg">
+                        <a name="goods" href="#">
+                            <img src="__ROOT__/Index/Common/img/img_productDetails/3175_thumb_G_1478216450806.png" alt="相同商品">
+                        </a>
+                        <div class="vlGoodsGoodsimg_font">
+                            <a href="#">
+                            【满299减199】Besco...
+                            </a>
+                            <br> 本店售价：
+                            <em>￥</em>
+                            <span class="vlGodsGoodsimgJiage">
+                                 298
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="vlGoodsGoodsimg">
+                        <a name="goods" href="#">
+                            <img src="__ROOT__/Index/Common/img/img_productDetails/3175_thumb_G_1478216450806.png" alt="相同商品">
+                        </a>
+                        <div class="vlGoodsGoodsimg_font">
+                            <a href="#">
+                            【满299减199】Besco...
+                            </a>
+                            <br> 本店售价：
+                            <em>￥</em>
+                            <span class="vlGodsGoodsimgJiage">
+                                 298
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <span class="vl_goods_dec_rr_vacum">[清空]</span>
                 </div>
             </div>
+            <!-- 留言板 -->
+            <div class="reviews_details">
+                <h3>
+                    <span>用户评论</span>(共
+                    <font>0</font>条品论)
+                </h3>
+                <div class="boxCenterList_clearfix">
+                    <div class="commentsList">
+                        <from>
+                            <div class="commentsList_fl  text-right">
+                                <div>用户名：</div>
+                                <div>等级评价：</div>
+                                <div>评论内容：</div>
+                            </div>
+                            <div class="commentsList_rlp">
+                                <!-- 获取用户名显示 -->
+                                <div id="commentsListRlpUsername">用户名张三</div>
+                                <!-- 评价星级 -->
+                                <div class="commentsList_rlp_appraise"></div>
+                                <!-- 评价内容 -->
+                                <textarea class="commentsList_rlp_theme"></textarea>
+                                <div class="commentsList_rlp_file">
+                                    <button>上传文件</button>
+                                    <!-- <input type="file" placeholder="上传文件" value="上传文件"> -->
 
+                                    <input type="submit" value="提交评论">
+                                </div>
+                            </div>
+                        </from>
+                    </div>
+                </div>
 
+            </div>
 
         </div>
+
+
+
+
     </div>
 
 
@@ -541,9 +650,9 @@
 						<a href="" target="_blank">美瞳网</a>
 						<a href="" target="_blank">隐形眼镜网</a>
 						<a href="" target="_blank">美瞳网</a>
-
+						<a href="" target="_blank">隐形眼镜网</a>
+						<a href="" target="_blank">美瞳网</a>
 					</div>
-
 				</div>
 				<p class="text-right" id="f_ICP">© 2015 vvvle.cn 广州市敦泽贸易有限公司 版权所有｜
 					<span><a href="http://www.miitbeian.gov.cn/">粤ICP备13029115号-1</a></span>
@@ -553,8 +662,133 @@
 	</div>
 </div>
     </div>
-
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
+<<<<<<< HEAD
+    <<<<<<< HEAD <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.fly.min.js">
+        </script>
+        <script>
+            var app = angular.module("myapp", []);
+            app.controller("mycontroller", function($scope, $http) {
+                $scope.imgarr = [{
+                    path: "1500628005237569.jpg"
+                }, {
+                    path: "1500628005722993.jpg"
+                }, {
+                    path: "1500628006196727.jpg"
+                }, {
+                    path: "1500628006809753.jpg"
+                }, {
+                    path: "1500628007629155.jpg"
+                }, {
+                    path: "1500628008937392.jpg"
+                }, {
+                    path: "1500628009792044.jpg"
+                }, {
+                    path: "1500628010579751.jpg"
+                }, {
+                    path: "1500628011138678.jpg"
+                }, {
+                    path: "1500628012841135.jpg"
+                }, {
+                    path: "1500628012874148.jpg"
+                }, {
+                    path: "1500628013199373.jpg"
+                }, {
+                    path: "1500628013330298.jpg"
+                }, {
+                    path: "1500628014135883.jpg"
+                }, {
+                    path: "1500628014238126.jpg"
+                }, {
+                    path: "1500628016194801.jpg"
+                }, {
+                    path: "1500628016657137.jpg"
+                }, {
+                    path: "1500628017683001.jpg"
+                }, {
+                    path: "1500628018237234.jpg"
+                }, {
+                    path: "1500628019505985.jpg"
+                }, {
+                    path: "1500628020850656.jpg"
+                }, {
+                    path: "1500628021568573.jpg"
+                }, {
+                    path: "1500628022126560.jpg"
+                }, {
+                    path: "1500628023811012.jpg"
+                }, {
+                    path: "1500628024282769.jpg"
+                }, {
+                    path: "1500628024413762.jpg"
+                }, {
+                    path: "1500628025228734.jpg"
+                }, {
+                    path: "1500628026245227.jpg"
+                }, {
+                    path: "1500628027199852.jpg"
+                }, {
+                    path: "1500628028410607.jpg"
+                }, {
+                    path: "1500628029668606.jpg"
+                }, {
+                    path: "1500628030652864.jpg"
+                }, {
+                    path: "1487923637217966.jpg"
+                }, {
+                    path: "1487923640448789.jpg"
+                }, {
+                    path: "1487923643243202.jpg"
+                }, {
+                    path: "1487923647368250.jpg"
+                }, {
+                    path: "1487923650553691.jpg"
+                }, {
+                    path: "1487923653310774.jpg"
+                }, {
+                    path: "1487923656229922.jpg"
+                }, {
+                    path: "1487923659652976.jpg"
+                }, {
+                    path: "1487923662258672.jpg"
+                }, {
+                    path: "1487923665772195.jpg"
+                }];
+                for (var i = 0; i < $scope.imgarr.length; i++) {
+                    $scope.imgarr[i].path = "__ROOT__/Index/Common/img/img_productDetails/" + $scope.imgarr[i].path;
+                };
+            });
+            $(function() {
+                $(".Join_the_shopping_cart").click(function(event) {
+                    var offset = $(".sbar_nub_icon").offset();
+                    var addcar = $(this);
+                    var flyer = $("<div style='display:inline-block; width: 20px; height: 20px; background: red;border-radius: 50%;'></div>");
+                    flyer.fly({
+                        start: {
+                            left: event.clientX, //开始位置（必填）#fly元素会被设置成position: fixed 
+                            top: event.clientY //开始位置（必填） 
+                        },
+                        end: {
+                            left: offset.left + 10, //结束位置（必填） 
+                            top: 252, //结束位置（必填） 
+                            width: 0, //结束时宽度 
+                            height: 0 //结束时高度 
+                        },
+                        onEnd: function() { //结束回调 
+                            // $("#msg").show().animate({width: '250px'}, 200).fadeOut(1000); //提示信息 
+                            // addcar.css("cursor","default").removeClass('orange').unbind('click'); 
+                            this.destory(); //移除dom 
+                        }
+                    });
+                });
+            });
+        </script>
+        =======
+        <script type="text/javascript" src="__ROOT__/Index/Common/js/productDetails.js"></script>
+
+        >>>>>>> d3f3bcb56f1526a9d129e39b57bdf3ea488337fe
+=======
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.fly.min.js"></script>
     <script>
         var app = angular.module("myapp", []);
         app.controller("mycontroller", function($scope, $http) {
@@ -646,10 +880,35 @@
             for (var i = 0; i < $scope.imgarr.length; i++) {
                 $scope.imgarr[i].path = "__ROOT__/Index/Common/img/img_productDetails/" + $scope.imgarr[i].path;
             };
-
-
         });
+        $(function() { 
+            $(".Join_the_shopping_cart").click(function(event){
+                var offset = $(".sbar_nub_icon").offset(); 
+                var addcar = $(this); 
+                var flyer = $("<div style='display:inline-block; width: 20px; height: 20px; background: red;border-radius: 50%;'></div>"); 
+                flyer.fly({ 
+                    start: { 
+                        left: event.clientX, //开始位置（必填）#fly元素会被设置成position: fixed 
+                        top: event.clientY //开始位置（必填） 
+                    }, 
+                    end: { 
+                        left: offset.left+10, //结束位置（必填） 
+                        top: 252, //结束位置（必填） 
+                        width: 0, //结束时宽度 
+                        height: 0 //结束时高度 
+                    }, 
+                    onEnd: function(){ //结束回调 
+                        $(".sidebar_nav #msg").show().animate({width: '250px'}, 200).fadeOut(1000, function(){
+                            $(this).width("-1");
+                        }); //提示信息 
+                        // addcar.css("cursor","default").removeClass('orange').unbind('click'); 
+                        this.destory(); //移除dom 
+                    } 
+                }); 
+            }); 
+        }); 
     </script>
+>>>>>>> origin/master
 </body>
 
 </html>
