@@ -34,7 +34,7 @@
                         <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Register/register">[免费注册]</a>                        
                         <a ng-cloak ng-show="<?php echo ($judge); ?>" ><?php echo ($username); ?>,欢迎回来！</a>
                         <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
-                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="##">[退出]</a>  
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/Index/loginout">[退出]</a>  
                     </span>
                     
                     
@@ -158,11 +158,11 @@
                 <a href="##" class="p"><img class="p_img" src="__ROOT__/Index/Common/img/userCenter/u12.gif" alt="跟踪包裹">&nbsp; 跟踪包裹</a>
                 <a href="##" class="p"><img class="p_img" src="__ROOT__/Index/Common/img/userCenter/u3.gif" alt="我的奖品">&nbsp; 我的奖品</a>
                 <a href="##" class="home_page"><img class="p_img" src="__ROOT__/Index/Common/img/userCenter/u1.gif" alt="欢迎页">&nbsp; 欢迎页</a>
-                <a class="text-right" href="##"><img src="__ROOT__/Index/Common/img/userCenter/bnt_sign.gif" alt="安全提交"></a>
+                <a class="text-right" href="__APP__/Index/loginout"><img src="__ROOT__/Index/Common/img/userCenter/bnt_sign.gif" alt="安全提交"></a>
             </div>
             <!--欢迎页面  -->
             <div class="select_items_02">
-                <h4><span>wuyan1314</span> 欢迎您回到 微乐美瞳网-正品美瞳|美瞳网！</h4>
+                <h4><span>Hi~<?php echo ($username); ?> </span> 欢迎您回到 微乐美瞳网-正品美瞳|美瞳网！</h4>
                 <small>您的上一次登录时间: 2017-08-05 15:09:17</small>
                 <div>
                     <img src="__ROOT__/Index/Common/img/userCenter/note.gif" alt="">
@@ -209,13 +209,13 @@
                         <tr>
                             <td class="text-right">电子邮件地址:</td>
                             <td>
-                                <input type="text" class="form-control" id="name">
+                                <input type="text" class="form-control" id="name"  value="<?php echo ($email); ?>" >
                             </td>
                         </tr>
                         <tr>
                             <td class="text-right">QQ:</td>
                             <td>
-                                <input type="text" class="form-control" id="name">
+                                <input type="text" class="form-control" id="name" value="<?php echo ($qq); ?>">
                             </td>
                         </tr>
                         <tr>

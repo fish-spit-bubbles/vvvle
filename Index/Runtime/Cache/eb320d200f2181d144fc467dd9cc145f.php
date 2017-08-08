@@ -239,7 +239,8 @@
                                 <input ng-model="users.username" type="text" ng-required="true" ng-minlength="3" class="bg" name="username" />
                                 <span id="username_notice" style="color:#FF0000"> *</span>
                                 <span
-                                 ng-cloak                                style="color:#FF0000;font-size: 12px;"                                
+                                 ng-cloak                                
+                                 style="color:#FF0000;font-size: 12px;"                                
                                 ng-show="myForm.username.$error.required && myForm.username.$dirty"
                                 >账号不能少于 3 个字符。</span>
                                 <span
@@ -255,7 +256,7 @@
                             </td>
                             <td>
                                 <!-- input 邮件  -->
-                                <input ng-model="users.email" type="email" class="bg" name="email" ng-required="true" />
+                                <input ng-model="users.email" type="email" class="bg" name="email" ng-required="true"  />
                                 <span id="email_notice" style="color:#FF0000"> *</span>
                                 <span 
                                  ng-cloak
