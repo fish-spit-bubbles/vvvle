@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+// ----------------------
+
+
 function changeProTotalAndPirces() {
     var money = 0;
     $('.goods_btm_money').html('0.00');
@@ -507,3 +517,9 @@ function _init_area(){  //初始化函数
 	}
 	change(0);
 }
+
+
+
+
+
+

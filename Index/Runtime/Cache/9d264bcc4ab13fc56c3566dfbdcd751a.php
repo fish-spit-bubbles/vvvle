@@ -163,6 +163,7 @@
                 <div class="machine_sort">品牌：</div>
 
                 <div class="machine_Kindd" monde="kind">
+
                     <a class="nolimit" href="#">不限</a>
 
                     <a class="nolimit_choice" href="#">博士伦</a>
@@ -517,7 +518,8 @@
     <script src="__ROOT__/Index/Common/js/accesories.js"></script>
 </body>
 <script>
-    var app = angular.module("myapps",[]);
+    var app = angular.module("myapps", []);
     // app.controller("mycontroller",function($scope,$http){})
 </script>
+
 </html>

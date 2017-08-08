@@ -33,8 +33,8 @@
                         <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
                         <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/Index/loginout">[退出]</a>  
                     </span>
-                    
-                    
+
+
                 <!-- 购物车 -->
                 <a href="#" title="che">
                     <i class="glyphicon glyphicon-shopping-cart"></i>

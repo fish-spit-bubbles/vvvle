@@ -1,30 +1,184 @@
-html,body{
+html,
+body {
     height: 100%;
 }
+
 .lens_wrap {
     width: 1210px;
     height: auto;
     border: 1px solid gray;
     margin: 10px auto;
-
 }
+
+
 /*
 
     筛选列表样式 
 
 */
+
+body {
+    font-family: "微软雅黑", "宋体", Verdana,
+}
+
+.container-fluid[mpod="xia"] {
+    padding-top: 30px;
+    margin-bottom: 80px;
+}
+
+.containerre[title="select_box"] {
+    border: 1px solid #EAECEB;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    height: 265px;
+    width: 1200px;
+}
+
+.containerre[title="select_box"]>.machine {
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #EAECEB;
+    /* background: #eaeceb; */
+    font-size: 12px;
+    margin-left: 0px;
+    font-family: "微软雅黑", "宋体", Verdana, Arial;
+    display: flex;
+}
+
+
+/* 分类 */
+
+.machine_sort {
+    width: 90px;
+    padding-left: 10px;
+    color: #515151;
+    font-size: 18px;
+    line-height: 51px;
+    height: 100%;
+    background-color: #eaeceb;
+}
+
+.machine_Kindd {
+    padding-left: 10px;
+    width: 1000px;
+    background: #FFF;
+}
+
+.machine_Kindd>.nolimit {
+    font-family: "微软雅黑", "宋体", Verdana, Arial;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 45px;
+    float: left;
+    line-height: 51px;
+    color: red;
+}
+
+.machine_Kindd>.nolimit:hover {
+    color: red;
+}
+
+
+/* 展开 */
+
+.machine>.mores_sq {
+    float: right;
+    color: #000;
+    font-size: 12px;
+    line-height: 51px;
+    display: inline-block;
+    text-align: center;
+    padding-right: 43px;
+    background: #fff;
+    cursor: pointer;
+}
+
+
+/* 选项 */
+
+.machine_Kindd>.nolimit_choice {
+    color: #515151;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 45px;
+    float: left;
+    line-height: 51px;
+}
+
+.machine_Kindd>.nolimit_choice:hover {
+    color: red;
+}
+
+
+/* 已经选择的选项 */
+
+.schon_choice {
+    padding-left: 15px;
+    padding-right: 25px;
+    height: 54px;
+    background: #EAECEB;
+    width: 1200px;
+    color: #222;
+    font-size: 14px;
+    line-height: 54px;
+    margin: 8px auto;
+    display: none;
+}
+
+.schon_choice>span {
+    color: #222;
+    font-size: 14px;
+    line-height: 54px;
+}
+
+.schon_choice>.select {
+    background: #FF9800;
+    padding-left: 5px;
+    padding-right: 20px;
+    height: 24px;
+    line-height: 24px !important;
+    color: #fff !important;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: 15px;
+    position: relative;
+    font-family: "微软雅黑", "宋体", Verdana, Arial;
+}
+
+.schon_choice>.select>.glyphicon {
+    position: relative;
+    left: 19px;
+    top: 2px;
+}
+
+.schon_choice>.select:hover {
+    background: #F00;
+}
+
+.schon_choice>.vacum_up {
+    float: right;
+    color: #333;
+}
+
+
 /*
     父级容器
 */
-.lens_wrap .select_box{
+
+.lens_wrap .select_box {
     width: 1189px;
     border: 1px solid #EAECEB;
     margin: 30px auto;
     padding-bottom: 10px;
     /* overflow: hidden; */
 }
+
+
 /* 顶部选择条件  */
-.select_box .select_top{
+
+.select_box .select_top {
     padding-left: 15px;
     padding-right: 25px;
     height: 54px;
@@ -35,13 +189,14 @@ html,body{
     line-height: 54px;
     margin-bottom: 8px;
 }
-.select_box .select_top .select{
+
+.select_box .select_top .select {
     background: #303030;
     padding-left: 5px;
     padding-right: 20px;
     height: 24px;
-    line-height: 24px ;
-    color: #fff ;
+    line-height: 24px;
+    color: #fff;
     font-size: 14px;
     margin-left: 10px;
     margin-right: 10px;
@@ -49,7 +204,8 @@ html,body{
     margin-top: 15px;
     position: relative;
 }
-.select_box .select_top .select .icon_01{
+
+.select_box .select_top .select .icon_01 {
     display: block;
     position: absolute;
     top: 9px;
@@ -58,12 +214,10 @@ html,body{
     width: 5px;
     height: 6px;
 }
-    
-.select_box .select_top .fr{
+
+.select_box .select_top .fr {
     float: right;
 }
-
-
 
 
 /*
@@ -72,7 +226,7 @@ html,body{
 
 */
 
-.lens_wrap .select_box dl{
+.lens_wrap .select_box dl {
     margin-left: 0px;
     width: 1187px;
     border-bottom: 1px solid red;
@@ -80,12 +234,13 @@ html,body{
     background: #eaeceb;
 }
 
-.clearFloat:after{
-	content: "";
-	display: block;
-	clear: both;
-} 
-.select_box dl dt{
+.clearFloat:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.select_box dl dt {
     width: 90px;
     padding-left: 10px;
     color: #515151;
@@ -94,17 +249,17 @@ html,body{
     height: 100%;
     /* background-color: blue; */
     float: left;
-    
 }
 
- .select_box dl a{
+.select_box dl a {
     color: #515151;
     font-size: 16px;
     display: inline-block;
     margin-right: 45px;
     float: left;
     line-height: 51px;
-} 
+}
+
 
 /*
 
@@ -112,71 +267,75 @@ html,body{
 
 */
 
-.Product_box{    
+.Product_box {
     margin: 20px auto;
-    width: 1200px; 
+    width: 1200px;
 }
-.Product_container{
+
+.Product_container {
     flex-wrap: wrap;
     height: 100%;
     justify-content: flex-start;
     margin: 0 0 0 -36px;
 }
-.Product_box .Product_container{
-    display: flex;   
-    height: 100%; /* Or whatever */
+
+.Product_box .Product_container {
+    display: flex;
+    height: 100%;
+    /* Or whatever */
 }
 
-
-.Product_item:hover{
-    border: 1px solid rgba(102,102,102,0);
-    box-shadow: 0 0px 60px rgba(0,0,0,0.25),
-    0 0px 60px rgba(0,0,0,0.28);
+.Product_item:hover {
+    border: 1px solid rgba(102, 102, 102, 0);
+    box-shadow: 0 0px 60px rgba(0, 0, 0, 0.25), 0 0px 60px rgba(0, 0, 0, 0.28);
     -webkit-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
     transform: translateY(-3px);
-    border: 1px red solid;  
+    border: 1px red solid;
 }
 
-        
 .Product_item {
     width: 372px;
     height: 100%;
-    margin:30px 0 0 40px;
-    background-color: rgba(255,255,255,0.85);
-    border: 1px dashed rgba(102,102,102,0.3);
+    margin: 30px 0 0 40px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px dashed rgba(102, 102, 102, 0.3);
     box-shadow: 0 0 0 transparent;
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
     transition: all 0.3s ease-out;
     position: relative;
-
 }
+
+
 /*
     美女图片
 */
-.Product_item .item_01{
-    flex-direction:column;   
-    width: 370px;
-    height: 370px;
 
-}
-.Product_item .item_01 a img{
+.Product_item .item_01 {
+    flex-direction: column;
     width: 370px;
     height: 370px;
 }
+
+.Product_item .item_01 a img {
+    width: 370px;
+    height: 370px;
+}
+
 
 /*
     产品名
 */
-.Product_item .item_02{
-    flex-direction:column;
+
+.Product_item .item_02 {
+    flex-direction: column;
     width: 370px;
     height: 35px;
-
 }
-.Product_item .item_02 a{
+
+.Product_item .item_02 a {
     display: block;
     line-height: 35px;
     text-align: center;
@@ -188,39 +347,43 @@ html,body{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-
 }
+
+
 /*
     功能按钮 内部在内部
 */
 
-.Product_item .item_03{
-    flex-direction:row;
+.Product_item .item_03 {
+    flex-direction: row;
     width: 370px;
     border-top: 2px gray solid;
     border-bottom: 2px gray solid;
     height: 67px;
-     background: #F7F6F4;  
-
+    background: #F7F6F4;
 }
-.Next_layer{
-     display: inline-flex;
-    flex-direction:row;
-     
+
+.Next_layer {
+    display: inline-flex;
+    flex-direction: row;
     width: 370px;
     height: 67px;
- }
+}
+
+
 /* 
     第一分列 评论 历史数量
 */
- .Next_layer .Next_layer01{
-   height: 63px;
-   width: 94px;
-   border-right:2px  gray solid;
-   display: inline-flex;
-    flex-direction:column; 
+
+.Next_layer .Next_layer01 {
+    height: 63px;
+    width: 94px;
+    border-right: 2px gray solid;
+    display: inline-flex;
+    flex-direction: column;
 }
-.Next_layer01>div:nth-child(1){
+
+.Next_layer01>div:nth-child(1) {
     height: 32px;
     background: url(../img/img_lens/icon_01.png) left center no-repeat;
     padding-left: 25px;
@@ -228,7 +391,8 @@ html,body{
     margin-left: 5px;
     color: #999;
 }
-.Next_layer01>div:nth-child(2){
+
+.Next_layer01>div:nth-child(2) {
     height: 32px;
     background: url(../img/img_lens/icon_02.png) left center no-repeat;
     height: 32px;
@@ -243,16 +407,16 @@ html,body{
     第二分行 价格 点赞
 */
 
- .Next_layer .Next_layer02{
-   height: 64px;
-   width: 200px;
-   border-right:2px  gray solid;
-   display: inline-flex;
-    flex-direction:row; 
+.Next_layer .Next_layer02 {
+    height: 64px;
+    width: 200px;
+    border-right: 2px gray solid;
+    display: inline-flex;
+    flex-direction: row;
     background-color: #e5e7e6;
-   
 }
-.Next_layer02>div:nth-child(1){
+
+.Next_layer02>div:nth-child(1) {
     width: 150px;
     text-align: center;
     color: #333;
@@ -260,48 +424,54 @@ html,body{
     height: 63px;
     line-height: 63px;
     font-family: 微软雅黑, 宋体, Verdana, Arial;
-
 }
-.Next_layer02>div span{
-     width: 150px;
+
+.Next_layer02>div span {
+    width: 150px;
     text-align: center;
     color: #333;
     font-size: 30px;
     height: 64px;
     line-height: 64px;
 }
-.Next_layer02>div:nth-child(2){
+
+.Next_layer02>div:nth-child(2) {
     width: 50px;
     height: 64px;
     display: block;
     background: url(../img/img_lens/icon_03.png) no-repeat center center;
     margin-right: 10px;
-    
 }
-.Next_layer02>div:nth-child(2):hover{
+
+.Next_layer02>div:nth-child(2):hover {
     width: 50px;
     height: 64px;
     display: block;
     background: url(../img/img_lens/icon_03h.png) no-repeat center center;
     margin-right: 10px;
 }
+
+
 /*
     第三购物车图片
 */
-.Next_layer .Next_layer03{
+
+.Next_layer .Next_layer03 {
     height: 63px;
-    width: 77px; 
+    width: 77px;
     background: url(../img/img_lens/icon_04.png) no-repeat center right;
-    display: inline-block; 
+    display: inline-block;
     margin-right: 15px;
-} 
-.Next_layer .Next_layer03:hover{
+}
+
+.Next_layer .Next_layer03:hover {
     height: 63px;
-    width: 77px; 
+    width: 77px;
     background: url(../img/img_lens/icon_04h.png) no-repeat center right;
-    display: inline-block; 
+    display: inline-block;
     margin-right: 15px;
-}    
+}
+
 
 /*
 
@@ -310,7 +480,7 @@ html,body{
 
 */
 
-.pager{
+.pager {
     margin: 10px 0;
     line-height: 23px;
     font-size: 12px;
@@ -318,22 +488,23 @@ html,body{
     padding: 25px;
 }
 
-.pager a,.pager span{
+.pager a,
+.pager span {
     display: inline-block;
     margin: 0 2px;
     padding: 2px 10px;
     border: 1px solid #DBDBDB;
     border-radius: 5px;
 }
-.pager .current{
-     border: 1px solid #D92F18;
-    color: #fff;
-    background-color: #D92F18;
-}
-.pager a:active{
+
+.pager .current {
     border: 1px solid #D92F18;
     color: #fff;
     background-color: #D92F18;
 }
 
-
+.pager a:active {
+    border: 1px solid #D92F18;
+    color: #fff;
+    background-color: #D92F18;
+}

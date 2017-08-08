@@ -27,12 +27,15 @@
                 <a href="#">微乐美瞳网</a>
             </div>
             <div class="top_logo_rled">
-                <span>Hi~[
-                        <a href="__APP__/Login/login">请登录</a>
-                        ][
-                        <a href="__APP__/Register/register">免费注册</a>
-                        ]
+                <span>Hi~
+                        <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Login/login">[请登录]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Register/register">[免费注册]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" ><?php echo ($username); ?>,欢迎回来！</a>
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/Index/loginout">[退出]</a>  
                     </span>
+
+
                 <!-- 购物车 -->
                 <a href="#" title="che">
                     <i class="glyphicon glyphicon-shopping-cart"></i>
@@ -474,7 +477,13 @@
 	</div>
 </div>
     </div>
+
 </body>
 <script type="text/javascript" src="__ROOT__/Index/Common/js/shopcart.js"></script>
+<script>
+    console.log({
+        $str
+    });
+</script>
 
 </html>

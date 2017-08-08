@@ -30,12 +30,15 @@
                 <a href="#">微乐美瞳网</a>
             </div>
             <div class="top_logo_rled">
-                <span>Hi~[
-                        <a href="__APP__/Login/login">请登录</a>
-                        ][
-                        <a href="__APP__/Register/register">免费注册</a>
-                        ]
+                <span>Hi~
+                        <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Login/login">[请登录]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Register/register">[免费注册]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" ><?php echo ($username); ?>,欢迎回来！</a>
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/Index/loginout">[退出]</a>  
                     </span>
+
+
                 <!-- 购物车 -->
                 <a href="#" title="che">
                     <i class="glyphicon glyphicon-shopping-cart"></i>
@@ -194,14 +197,14 @@
             <!-- 商品简介和加入购物车，立即购买 -->
             <from class="show_goods_o_pic_ui-form-item">
                 <div class="show_goods_o_pic_ui-form-item_goods_o_name">
-                    SUPER COLOR ME三色棕
+                    <span>SUPER COLOR ME三色棕</span>
                 </div>
                 <ul class="show_goods_o_pic_ui-form-item_tm-fcs">
                     <li> 微乐价：
                         <span>
                             <em>￥</em>
                             <!-- 价格 -->
-                             <span class="show_goods_tm_price1">268</span>
+                             <span class="show_goods_tm_price1">188</span>
                         </span>
                     </li>
                     <!-- 市场价格 -->
@@ -321,7 +324,7 @@
                     <span>已售出：</span>
                     <font>34</font>
                     <span>购买此商品赠送：</span>
-                    <font>3 积分</font>
+                    <font><span>3</span> 积分</font>
                 </li>
                 <li class="clearfix" name="count">
                     <span>购买数量：</span>
@@ -334,9 +337,9 @@
                 </li>
                 <li class="padda">
                     <!-- 立即购买 -->
-                    <button class="padda_buynow"> </button>
+                    <button class="padda_buynow" value="立即购买"> </button>
                     <!-- 加入购物车 -->
-                    <button class="Join_the_shopping_cart"></button>
+                    <button class="Join_the_shopping_cart" value="加入购物车"></button>
                 </li>
             </from>
             <div class="show_cart_process_img">
@@ -702,127 +705,7 @@
     <script type="text/javascript" src="__ROOT__/Index/Common/js/productDetails.js"></script>
 
 
-    <script>
-        var app = angular.module("myapp", []);
-        app.controller("mycontroller", function($scope, $http) {
-            $scope.imgarr = [{
-                path: "1500628005237569.jpg"
-            }, {
-                path: "1500628005722993.jpg"
-            }, {
-                path: "1500628006196727.jpg"
-            }, {
-                path: "1500628006809753.jpg"
-            }, {
-                path: "1500628007629155.jpg"
-            }, {
-                path: "1500628008937392.jpg"
-            }, {
-                path: "1500628009792044.jpg"
-            }, {
-                path: "1500628010579751.jpg"
-            }, {
-                path: "1500628011138678.jpg"
-            }, {
-                path: "1500628012841135.jpg"
-            }, {
-                path: "1500628012874148.jpg"
-            }, {
-                path: "1500628013199373.jpg"
-            }, {
-                path: "1500628013330298.jpg"
-            }, {
-                path: "1500628014135883.jpg"
-            }, {
-                path: "1500628014238126.jpg"
-            }, {
-                path: "1500628016194801.jpg"
-            }, {
-                path: "1500628016657137.jpg"
-            }, {
-                path: "1500628017683001.jpg"
-            }, {
-                path: "1500628018237234.jpg"
-            }, {
-                path: "1500628019505985.jpg"
-            }, {
-                path: "1500628020850656.jpg"
-            }, {
-                path: "1500628021568573.jpg"
-            }, {
-                path: "1500628022126560.jpg"
-            }, {
-                path: "1500628023811012.jpg"
-            }, {
-                path: "1500628024282769.jpg"
-            }, {
-                path: "1500628024413762.jpg"
-            }, {
-                path: "1500628025228734.jpg"
-            }, {
-                path: "1500628026245227.jpg"
-            }, {
-                path: "1500628027199852.jpg"
-            }, {
-                path: "1500628028410607.jpg"
-            }, {
-                path: "1500628029668606.jpg"
-            }, {
-                path: "1500628030652864.jpg"
-            }, {
-                path: "1487923637217966.jpg"
-            }, {
-                path: "1487923640448789.jpg"
-            }, {
-                path: "1487923643243202.jpg"
-            }, {
-                path: "1487923647368250.jpg"
-            }, {
-                path: "1487923650553691.jpg"
-            }, {
-                path: "1487923653310774.jpg"
-            }, {
-                path: "1487923656229922.jpg"
-            }, {
-                path: "1487923659652976.jpg"
-            }, {
-                path: "1487923662258672.jpg"
-            }, {
-                path: "1487923665772195.jpg"
-            }];
-            for (var i = 0; i < $scope.imgarr.length; i++) {
-                $scope.imgarr[i].path = "__ROOT__/Index/Common/img/img_productDetails/" + $scope.imgarr[i].path;
-            };
-        });
-        $(function() {
-            $(".Join_the_shopping_cart").click(function(event) {
-                var offset = $(".sbar_nub_icon").offset();
-                var addcar = $(this);
-                var flyer = $("<div style='display:inline-block; width: 20px; height: 20px; '><img src='__ROOT__/Index/Common/img/img_productDetails/cart.svg'/></div>");
-                flyer.fly({
-                    start: {
-                        left: event.clientX, //开始位置（必填）#fly元素会被设置成position: fixed 
-                        top: event.clientY //开始位置（必填） 
-                    },
-                    end: {
-                        left: offset.left + 10, //结束位置（必填） 
-                        top: 252, //结束位置（必填） 
-                        width: 0, //结束时宽度 
-                        height: 0 //结束时高度 
-                    },
-                    onEnd: function() { //结束回调 
-                        $(".sidebar_nav #msg").show().animate({
-                            width: '250px'
-                        }, 200).fadeOut(1000, function() {
-                            $(this).width("-1");
-                        }); //提示信息 
-                        // addcar.css("cursor","default").removeClass('orange').unbind('click'); 
-                        this.destory(); //移除dom 
-                    }
-                });
-            });
-        });
-    </script>
+
 </body>
 
 </html>
