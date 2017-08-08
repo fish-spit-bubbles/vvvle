@@ -1,15 +1,22 @@
 <?php
 class GoodsModel extends Model {
+    protected $tableName = "goods";
+    public function getGoods(){
+        $result = $this->select();
+        return $result;
+    }
     public function getGoodsOne($id){
-        $goods = M("goods");
         $where["id"] = $id; 
-        $result = $goods->where($where)->find();
+        $result = $this->where($where)->find();
         return $result;
     }
     public function getGoodsList($name){
-        $goods = M("goods");
         $where = $name;
-        $result = $goods->where($where)->select();
+        $result = $this->where($where)->select();
+        return $result;
+    }
+    public function addGoods($name){
+        $result = $this->add($name);
         return $result;
     }
 }
