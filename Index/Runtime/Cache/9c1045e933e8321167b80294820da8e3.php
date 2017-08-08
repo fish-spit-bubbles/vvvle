@@ -8,20 +8,22 @@
     <title>超级配件</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/sidebar.css" />
+
+
+
+    <!-- 头部尾部侧边栏CSS -->
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/home.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
+
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/slideshow.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/accesories.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
-    <script type="text/javascript" src="__ROOT__/Index/Common/js/slideshow.js"></script>
-
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
 
 </head>
 
-<body>
+<body ng-app="myapps">
     <!-- 头部 -->
     <div>
         <header>
@@ -32,12 +34,15 @@
                 <a href="#">微乐美瞳网</a>
             </div>
             <div class="top_logo_rled">
-                <span>Hi~[
-                        <a href="__APP__/Login/login">请登录</a>
-                        ][
-                        <a href="__APP__/Register/register">免费注册</a>
-                        ]
+                <span>Hi~
+                        <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Login/login">[请登录]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Register/register">[免费注册]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" ><?php echo ($username); ?>,欢迎回来！</a>
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="##">[退出]</a>  
                     </span>
+                    
+                    
                 <!-- 购物车 -->
                 <a href="#" title="che">
                     <i class="glyphicon glyphicon-shopping-cart"></i>
@@ -228,116 +233,116 @@
         </div>
     </div>
 
-    	</div>
-	<!--产品展示界面  Product_box产品盒子-->
-	<div class="Product_box">
-		<div class="Product_container">
-			<div class="Product_item">
-				<div class="item_01">
-					<a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-				</div>
-				<div class="item_02">
-					<a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-				</div>
-				<div class="item_03">
-					<!--
+    </div>
+    <!--产品展示界面  Product_box产品盒子-->
+    <div class="Product_box">
+        <div class="Product_container">
+            <div class="Product_item">
+                <div class="item_01">
+                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                </div>
+                <div class="item_02">
+                    <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                </div>
+                <div class="item_03">
+                    <!--
 						item_layer 下层
 					  -->
-					<div class="Next_layer">
-						<div class="Next_layer01">
-							<div>999</div>
-							<div>
-								<a href="##">180</a>
-							</div>
-						</div>
-						<div class="Next_layer02">
-							<div>￥<span>268</span></div>
-							<div id="like"></div>
-						</div>
-						<div class="Next_layer03">
-						</div>
-					</div>
-										
-				</div>
-			</div>
-			<div class="Product_item">
-				<div class="item_01">
-					<a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-				</div>
-				<div class="item_02">
-					<a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-				</div>
-				<div class="item_03">
-					<!--
+                    <div class="Next_layer">
+                        <div class="Next_layer01">
+                            <div>999</div>
+                            <div>
+                                <a href="##">180</a>
+                            </div>
+                        </div>
+                        <div class="Next_layer02">
+                            <div>￥<span>268</span></div>
+                            <div id="like"></div>
+                        </div>
+                        <div class="Next_layer03">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Product_item">
+                <div class="item_01">
+                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                </div>
+                <div class="item_02">
+                    <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                </div>
+                <div class="item_03">
+                    <!--
 						item_layer 下层
 					  -->
-					<div class="Next_layer">
-						<div class="Next_layer01">
-							<div>999</div>
-							<div>
-								<a href="##">180</a>
-							</div>
-						</div>
-						<div class="Next_layer02">
-							<div>￥<span>268</span></div>
-							<div></div>
-						</div>
-						<div class="Next_layer03">
+                    <div class="Next_layer">
+                        <div class="Next_layer01">
+                            <div>999</div>
+                            <div>
+                                <a href="##">180</a>
+                            </div>
+                        </div>
+                        <div class="Next_layer02">
+                            <div>￥<span>268</span></div>
+                            <div></div>
+                        </div>
+                        <div class="Next_layer03">
 
-						</div>
-					</div>
-										
-				</div>
-			</div>
-			<div class="Product_item">
-				<div class="item_01">
-					<a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-				</div>
-				<div class="item_02">
-					<a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-				</div>
-				<div class="item_03">
-					<!--
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Product_item">
+                <div class="item_01">
+                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                </div>
+                <div class="item_02">
+                    <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                </div>
+                <div class="item_03">
+                    <!--
 						item_layer 下层
 					  -->
-					<div class="Next_layer">
-						<div class="Next_layer01">
-							<div>999</div>
-							<div>
-								<a href="##">180</a>
-							</div>
-						</div>
-						<div class="Next_layer02">
-							<div>￥<span>268</span></div>
-							<div></div>
-						</div>
-						<div class="Next_layer03">
+                    <div class="Next_layer">
+                        <div class="Next_layer01">
+                            <div>999</div>
+                            <div>
+                                <a href="##">180</a>
+                            </div>
+                        </div>
+                        <div class="Next_layer02">
+                            <div>￥<span>268</span></div>
+                            <div></div>
+                        </div>
+                        <div class="Next_layer03">
 
-						</div>
-					</div>
-										
-				</div>
-			</div>
-		</div>		
-	</div>
+                        </div>
+                    </div>
 
-	<!--分页·paging -->
-	<div class="pager"> 
-		<span>«首页</span>
-		<span>上一页</span>  
-		<a href="##" class="current">1</a>  
-		<a href="##">2</a>  
-		<a href="##">3</a>  
-		<a href="##">4</a>  
-		<a href="##">5</a>  
-		<a href="##">6</a>  
-		<a href="##">下一页</a> 
-		<a href="##">尾页»</a>  
-		<span>1/共36页</span>
-	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--分页·paging -->
+    <div class="pager">
+        <span>«首页</span>
+        <span>上一页</span>
+        <a href="##" class="current">1</a>
+        <a href="##">2</a>
+        <a href="##">3</a>
+        <a href="##">4</a>
+        <a href="##">5</a>
+        <a href="##">6</a>
+        <a href="##">下一页</a>
+        <a href="##">尾页»</a>
+        <span>1/共36页</span>
+    </div>
 
     <!--底部  -->
-     <div class="header"> 
+    <div class="header">
         <!--更多-->
 <div class="home_footer">
 	<div class="container-fluid">
@@ -438,7 +443,7 @@
 		</div>
 	</div>
 </div>
-	 </div> 
+    </div>
 
     <!-- 侧边栏 -->
     <div class="sidebar_warp">
@@ -452,6 +457,7 @@
                 <i class="sbar_cat_icon"></i>
                 <p>购物袋</p>
                 <i class="sbar_nub_icon">0</i>
+                <div id="msg">已成功加入购物车！</div>
             </li>
             <li>
                 <i class="serivce_icon"></i>
@@ -486,9 +492,15 @@
 
     </div>
 </div>
+    <script src="__ROOT__/Index/Common/js/accesories.js"></script>
+    <script src="__ROOT__/Index/Common/js/lens.js"></script>
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
-	<script src="__ROOT__/Index/Common/js/accesories.js"></script>
-    <script src="__ROOT__/Index/Common/js/lens.js"></script>	
-</body>
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/slideshow.js"></script>
 
+
+</body>
+<script>
+    var app = angular.module("myapps",[]);
+    // app.controller("mycontroller",function($scope,$http){})
+</script>
 </html>

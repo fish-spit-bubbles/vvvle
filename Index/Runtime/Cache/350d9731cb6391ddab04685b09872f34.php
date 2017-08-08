@@ -7,15 +7,16 @@
     <title>商品详情页</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/sidebar.css" />
+
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/home.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
+
+    <!-- 头部尾部侧边栏CSS -->
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/slideshow.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/productDetails.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
-    <<<<<<< Updated upstream=======>>>>>>> Stashed changes
+
 </head>
 
 <body ng-app="myapp" ng-controller="mycontroller">
@@ -351,7 +352,7 @@
                     <!-- 展示头部 -->
                     <div class="detail_tab_clearfix">
                         <ul>
-                            <li bokl="outs">
+                            <li bokl="outs" style="  border-bottom: 1px solid #fff;  border-top: 3px solid #FF0000;  background: #fff;">
                                 <a href="">商品详情</a>
                             </li>
                             <li bokl="fbm">
@@ -364,7 +365,7 @@
                                 <a href="">相关文章</a>
                             </li>
                             <li bokl="fbwb">
-                                <a href="#"></a>
+                                <a href="__APP__/ShopCart/index"></a>
                             </li>
                         </ul>
                     </div>
@@ -531,22 +532,58 @@
                                 <!-- 获取用户名显示 -->
                                 <div id="commentsListRlpUsername">用户名张三</div>
                                 <!-- 评价星级 -->
-                                <div class="commentsList_rlp_appraise"></div>
+                                <div class="commentsList_rlp_appraise">
+                                    <input type="radio" name="comment_rank" value="1">
+                                    <img src="__ROOT__/Index/Common/img/img_productDetails/stars1.gif" alt="1星">
+                                    <input type="radio" name="comment_rank" value="2">
+                                    <img src="__ROOT__/Index/Common/img/img_productDetails/stars2.gif" alt="2星">
+                                    <input type="radio" name="comment_rank" value="3">
+                                    <img src="__ROOT__/Index/Common/img/img_productDetails/stars3.gif" alt="3星">
+                                    <input type="radio" name="comment_rank" value="4">
+                                    <img src="__ROOT__/Index/Common/img/img_productDetails/stars4.gif" alt="4星">
+                                    <input type="radio" name="comment_rank" value="5">
+                                    <img src="__ROOT__/Index/Common/img/img_productDetails/stars5.gif" alt="5星">
+                                </div>
                                 <!-- 评价内容 -->
                                 <textarea class="commentsList_rlp_theme"></textarea>
                                 <div class="commentsList_rlp_file">
-                                    <div></div>
-                                    <button>上传文件</button>
-                                    <!-- <input type="file" placeholder="上传文件" value="上传文件"> -->
-
-                                    <input type="submit" value="提交评论">
+                                    <div>
+                                        <button class="btn btn-info">上传文件</button>
+                                        <input type="file" value="上传文件">
+                                    </div>
+                                    <input class="btn btn-success" type="submit" value="提交评论">
                                 </div>
-                            </div>
+
+
                         </from>
+                        </div>
                     </div>
+
                 </div>
+            </div>
+            <!-- 用户评论 -->
+            <ur class="comments">
+                <li>
+                    暂时还没有任何用户评论
+                </li>
+            </ur>
+            <div class="pager">
+                <span>
+                        总计 <font>0</font> 个记录
+                    </span>
+                <span>共1页</span>
+                <span>上一页</span>
+                <a href="##" class="current">1</a>
+                <a href="##">2</a>
+                <a href="##">3</a>
+                <a href="##">4</a>
+                <a href="##">5</a>
+                <a href="##">6</a>
+                <a href="##">下一页</a>
+                <a href="##">尾页»</a>
 
             </div>
+
 
         </div>
 
@@ -761,7 +798,7 @@
             $(".Join_the_shopping_cart").click(function(event) {
                 var offset = $(".sbar_nub_icon").offset();
                 var addcar = $(this);
-                var flyer = $("<div style='display:inline-block; width: 20px; height: 20px; background: red;border-radius: 50%;'></div>");
+                var flyer = $("<div style='display:inline-block; width: 20px; height: 20px; '><img src='__ROOT__/Index/Common/img/img_productDetails/cart.svg'/></div>");
                 flyer.fly({
                     start: {
                         left: event.clientX, //开始位置（必填）#fly元素会被设置成position: fixed 

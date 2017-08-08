@@ -3,7 +3,17 @@
 class LensAction extends Action {
     public function lens(){
         $this->assign("lens", "red");
-        $this->display("lens");
+        if(!empty($_SESSION['username'])) {
+            $this->assign("username",$_SESSION['username']);
+            $this->assign("judge",'true');
+            $this->assign("judge1",'false');
+            $this->display("lens");
+
+        }else{
+            $this->assign("judge",'false');
+            $this->assign("judge1",'true');
+            $this->display("lens");
+        }
     }
     
 }

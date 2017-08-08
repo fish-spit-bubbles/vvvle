@@ -2,7 +2,17 @@
 // 本类由系统自动生成，仅供测试用途
 class LoginAction extends Action {
     public function login(){
-        $this->display("login");
+        if(!empty($_SESSION['username'])) {
+            $this->assign("username",$_SESSION['username']);
+            $this->assign("judge",'true');
+            $this->assign("judge1",'false');
+            $this->display("login");
+
+        }else{
+            $this->assign("judge",'false');
+            $this->assign("judge1",'true');
+            $this->display("login");
+        }
     }
 
     public function checkUsers(){

@@ -104,41 +104,122 @@ function judgementDegree() {
 // 点击商品详情滚动到商品详情
 $(".detail_tab_clearfix>ul>li[bokl='outs']").click(function(){
      $("body").animate({scrollTop:"1200"},300);
+        $(this).css({
+                 "borderBottom":"1px solid #fff",
+                 "borderTop":"3px solid #FF0000",
+                 "background": "#fff",
+        });
+        $(".detail_tab_clearfix>ul>li[bokl='fbm']").css({
+                "borderBottom":"",
+                 "borderTop":"",
+                 "background": "",
+        });
+
+
+
 });
+
+
 // 卖家品论
 $(".detail_tab_clearfix>ul>li[bokl='fbm']").eq(0).click(function(){
      $("body").animate({scrollTop:"29258"},300);
+   $(this).css({
+                 "borderBottom":"1px solid #fff",
+                 "borderTop":"3px solid #FF0000",
+                 "background": "#fff",
+ });
+$(".detail_tab_clearfix>ul>li[bokl='fbm']:gt(0)").css({
+                "borderBottom":"",
+                 "borderTop":"",
+                 "background": "",
+});
+$(".detail_tab_clearfix>ul>li[bokl='outs']").css({
+                 "borderBottom":"",
+                 "borderTop":"",
+                 "background": "",
+});
+    
+
+
     
 });
 // 达人秀
 $(".detail_tab_clearfix>ul>li[bokl='fbm']").eq(1).click(function(){
      $("body").animate({scrollTop:"2915"},300);
+
+  $(this).css({
+                 "borderBottom":"1px solid #fff",
+                 "borderTop":"3px solid #FF0000",
+                 "background": "#fff",
+ });
+
+$(".detail_tab_clearfix>ul>li[bokl='fbm']:first").css({
+                "borderBottom":"",
+                 "borderTop":"",
+                 "background": "",
+});
+$(".detail_tab_clearfix>ul>li[bokl='fbm']:gt(1)").css({
+                "borderBottom":"",
+                 "borderTop":"",
+                 "background": "",
+});
+
+
+$(".detail_tab_clearfix>ul>li[bokl='outs']").css({
+                 "borderBottom":"",
+                 "borderTop":"",
+                 "background": "",
+});
+
+
 });  
+
+// 相关文章  29671
+$(".detail_tab_clearfix>ul>li[bokl='fbm']").eq(2).click(function(){
+     $("body").animate({scrollTop:"29671"},300);
+  $(this).css({
+                 "borderBottom":"1px solid #fff",
+                 "borderTop":"3px solid #FF0000",
+                 "background": "#fff",
+ });
+
+$(".detail_tab_clearfix>ul>li[bokl='fbm']:lt(2)").css({
+                "borderBottom":"",
+                 "borderTop":"",
+                 "background": "",
+});
+
+
+$(".detail_tab_clearfix>ul>li[bokl='outs']").css({
+                 "borderBottom":"",
+                 "borderTop":"",
+                 "background": "",
+});
+
+
+
+});  
+
 
 
 // 用于判断商品详细咨询导航条固定
 $(document).scroll(function(){
 
-//    var str =  $(".detail_tab_clearfix").offset();
-//    console.log(str);
-        var leftbg= $(".show_details[box='bg']").offset().left;
-        // console.log(leftbg);
-
-
-    if($(document).scrollTop() >= 1200){
-      $(".detail_tab_clearfix").css({
-          "position":"fixed",
-          "top":"0px",
-          "left":leftbg,
-          "z-index":"1",
-      });
-    }else{
-        $(".detail_tab_clearfix").css({
-          "position":"",
-          "top":"",
-          "left":"",
-      });
-    };
+    var leftbg= $(".show_details[box='bg']").offset().left;
+if($(document).scrollTop() >= 1200){
+    $(".detail_tab_clearfix").css({
+        "position":"fixed",
+        "top":"0px",
+        "left":leftbg,
+        "z-index":"1",
+    });
+}else{
+    $(".detail_tab_clearfix").css({
+        "position":"",
+        "top":"",
+        "left":"",
+    });
+};
 
     
 });
@@ -264,9 +345,9 @@ app.controller("mycontroller", function($scope, $http) {
     // 图片加载路径
     $scope.imgsppath="http://localhost/vvvle/Index/Common/img/img_productDetails/";
     for (var i = 0; i < $scope.imgarr.length; i++) {
-        $scope.imgarr[i].path =   $scope.imgsppath+$scope.imgarr[i].path;
-        
+        $scope.imgarr[i].path =   $scope.imgsppath+$scope.imgarr[i].path;  
     };
+
 
 
 });

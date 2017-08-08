@@ -8,14 +8,14 @@
     <title>HOME | 首页</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/sidebar.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/home.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/header.css" />
+    <!-- 头部尾部侧边栏CSS -->
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
 </head>
 
-<body>
+<body ng-app="myapps">
     <!--首页头部  -->
     <div>
         <header>
@@ -26,12 +26,15 @@
                 <a href="#">微乐美瞳网</a>
             </div>
             <div class="top_logo_rled">
-                <span>Hi~[
-                        <a href="__APP__/Login/login">请登录</a>
-                        ][
-                        <a href="__APP__/Register/register">免费注册</a>
-                        ]
+                <span>Hi~
+                        <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Login/login">[请登录]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Register/register">[免费注册]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" ><?php echo ($username); ?>,欢迎回来！</a>
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/Index/loginout">[退出]</a>  
                     </span>
+                    
+                    
                 <!-- 购物车 -->
                 <a href="#" title="che">
                     <i class="glyphicon glyphicon-shopping-cart"></i>
@@ -707,7 +710,8 @@
             <div class="home_classis_content">
                 <ul class="classis_content">
                     <li>
-                        <a href="##" class="classis_a">
+                        <!-- 调到商品详情页 -->
+                        <a href="__APP__/ProductDetails/index" class="classis_a">
                             <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
                             <div class="classis_info clearfix">
                                 <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
@@ -720,7 +724,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="##" class="classis_a">
+                        <a href="__APP__/ProductDetails/index" class="classis_a">
                             <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
                             <div class="classis_info clearfix">
                                 <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
@@ -733,7 +737,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="##" class="classis_a">
+                        <a href="__APP__/ProductDetails/index" class="classis_a">
                             <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
                             <div class="classis_info clearfix">
                                 <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
@@ -746,7 +750,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="##" class="classis_a">
+                        <a href="__APP__/ProductDetails/index" class="classis_a">
                             <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
                             <div class="classis_info clearfix">
                                 <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
@@ -759,7 +763,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="##" class="classis_a">
+                        <a href="__APP__/ProductDetails/index" class="classis_a">
                             <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
                             <div class="classis_info clearfix">
                                 <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
@@ -772,7 +776,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="##" class="classis_a">
+                        <a href="__APP__/ProductDetails/index" class="classis_a">
                             <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
                             <div class="classis_info clearfix">
                                 <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
@@ -785,7 +789,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="##" class="classis_a">
+                        <a href="__APP__/ProductDetails/index" class="classis_a">
                             <img src="__ROOT__/Index/Common/img/img_home/1760_G_1430349447496.jpg" alt="" class="classis_img">
                             <div class="classis_info clearfix">
                                 <img src="__ROOT__/Index/Common/img/img_home/1760_thumb_G_1430349447974.png" alt="">
@@ -1081,5 +1085,8 @@
 </body>
 <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
 <script type="text/javascript" src="__ROOT__/Index/Common/js/home.js"></script>
-
+<script>
+    var app = angular.module("myapps",[]);
+    // app.controller("mycontroller",function($scope,$http){})
+</script>
 </html>
