@@ -8,10 +8,16 @@ class UserCenterAction extends Action {
             $this->assign("judge1",'false');
             $this->display("userCenter");
 
+            
+           
+
         }else{
             $this->assign("judge",'false');
             $this->assign("judge1",'true');
             $this->display("userCenter");
         }
     }
+
+
+        
 }

@@ -33,7 +33,7 @@
                         <a ng-cloak ng-show="<?php echo ($judge1); ?>" href="__APP__/Register/register">[免费注册]</a>                        
                         <a ng-cloak ng-show="<?php echo ($judge); ?>" ><?php echo ($username); ?>,欢迎回来！</a>
                         <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
-                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="##">[退出]</a>  
+                        <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/Index/loginout">[退出]</a>  
                     </span>
                     
                     

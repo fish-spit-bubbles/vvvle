@@ -23,9 +23,6 @@ class LoginAction extends Action {
 		$pwd = $sureData['pwd'];		
 		//验证用户名或密码是否正确
 		$users = M("users");
-
-		// $data['username'] == true ||  $data['email'] == true ? $username : "用户名或者邮件错误" ;
-
         $data['username'] = $username;
 		$data['pwd'] = md5($pwd);
 		$res = $users->where($data)->find();
