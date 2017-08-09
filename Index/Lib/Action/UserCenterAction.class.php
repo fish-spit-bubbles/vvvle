@@ -6,17 +6,25 @@ class UserCenterAction extends Action {
             $this->assign("username",$_SESSION['username']);
             $this->assign("judge",'true');
             $this->assign("judge1",'false');
-            $this->display("userCenter");
+            // 取出 qq wechat email
+            $this->assign("uid",$_SESSION['uid']);
+            $this->assign("qq",$_SESSION['qq']);
+            $this->assign("email",$_SESSION['email']);
+            $this->assign("wechat",$_SESSION['wechat']);
 
-            
+
            
-
+            $this->display("userCenter");
         }else{
             $this->assign("judge",'false');
             $this->assign("judge1",'true');
             $this->display("userCenter");
         }
+
+
+
     }
+
 
 
         
