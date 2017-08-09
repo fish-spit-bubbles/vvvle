@@ -7,6 +7,6 @@ return array(
     'DB_USER'   => 'root', // 用户名
     'DB_PWD'    => '', // 密码
     'DB_PORT'   => 3306, // 端口
-	'DB_PREFIX' => 'vvvle_', // 数据库表前缀 
+	'DB_PREFIX' => '', // 数据库表前缀 
 );
 ?>

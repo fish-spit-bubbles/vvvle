@@ -1,15 +1,9 @@
 <?php
+// 商品
 class GoodsModel extends Model {
-    public function getGoodsOne($id){
-        $goods = M("goods");
-        $where["id"] = $id; 
-        $result = $goods->where($where)->find();
-        return $result;
-    }
+    protected $tableName = "goods";
     public function getGoodsList($name){
-        $goods = M("goods");
-        $where = $name;
-        $result = $goods->where($where)->select();
+        $result = $this->where("brand='".$name."'")->order("id DESC")->select();
         return $result;
     }
 }
