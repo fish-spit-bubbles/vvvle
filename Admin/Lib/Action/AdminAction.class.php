@@ -1,12 +1,9 @@
 <?php
 // 本类由系统自动生成，仅供测试用途
 class AdminAction extends Action {
+    public $everyPage = 2;
     public function admin(){
-        // $id = $_get("id");
-        // $Goods = D("Goods");
-        // $Goods->getGoodsList();
-        // $this->assign("data", $Goods);
-	    $this->display('admin');
+        $this->display('admin');
     }
     //生成随机数的函数
     public function randstr($num){
@@ -70,7 +67,7 @@ class AdminAction extends Action {
         if ($res) {
             $info["info"] = "数据添加成功";
             $info["status"] = 1;
-            $list = $goods->getGoods();
+            $list = $goods->getGoods($everyPage);
             $info["data"] = $list;
         } else {
             $info["info"] = "数据添加失败";
@@ -80,7 +77,11 @@ class AdminAction extends Action {
     }
     public function getList(){
         $goods = D("Goods");
-        $res = $goods->getGoods();
+        $res = $goods->getGoods(0, $everyPage);
+        $totalCount = $goods->count();
+        $total = ceil($totalCount / $everyPage);
+        $data["total"] = $total;
+        $data["data"] = $res;
         $this->ajaxReturn($res);
     }
     public function delData(){
@@ -92,7 +93,7 @@ class AdminAction extends Action {
         if ($res) {
             $info["info"] = "数据删除成功";
             $info["status"] = 1;
-            $list = $goods->getGoods();
+            $list = $goods->getGoods($everyPage);
             $info["data"] = $list;
         } else {
             $info["info"] = "数据删除失败";
@@ -175,7 +176,7 @@ class AdminAction extends Action {
         if ($res) {
             $info["info"] = "数据更新成功";
             $info["status"] = 1;
-            $list = $goods->getGoods();
+            $list = $goods->getGoods($everyPage);
             $info["data"] = $list;
         } else {
             $info["info"] = "数据更新失败";

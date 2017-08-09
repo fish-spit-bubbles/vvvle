@@ -141,6 +141,17 @@
             </tr>
         </table>
     </div>
+    <nav aria-label="Page navigation" style="text-align: center">
+        <ul class="pagination">
+            <li>
+                <span ng-click="" aria-hidden="true">&laquo;</span>
+            </li>
+            <li><span ng-click="">1</span></li>
+            <li>
+                <span ng-click="" aria-hidden="true">&raquo;</span>
+            </li>
+        </ul>
+    </nav>
 </body>
 <script>
     var app = angular.module("myapp", []);
@@ -183,7 +194,9 @@
                 contentType: false,
                 async: true,
                 success: function (data) {
-                    $scope.list = data.data;
+                    $scope.$apply(function(){
+                        $scope.list = data.data;
+                    });
                 }
             })
         }
