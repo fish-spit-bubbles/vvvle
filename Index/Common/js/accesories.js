@@ -67,10 +67,11 @@ $(".nolimit_choice").each(function(i) {
  
     $(".nolimit_choice").eq(i).click(function() {
         var  text = $(this).text();
-        textarr.push(i);
+    
 
         hco3addtag(text);
-        limitTerm();       
+        limitTerm(); 
+  
         $(".schon_choice").css("display", "block");
 
         limitTerm();

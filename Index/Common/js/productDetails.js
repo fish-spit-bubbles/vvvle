@@ -36,22 +36,30 @@ $(".show_goods_o_pic_ui-form-item>.clearfix[name='count']>input").on("input", fu
 });
 
 // 点击立即购买和加入购物车的的时候判断用户有没有选择度数
+
+// 加入购物车
 $(".padda>.Join_the_shopping_cart").click(function() {
-    judgementDegree();
+    judgementDegree($(this));
+
 
 
 });
-// 加入购物车
-$(".padda>.padda_buynow").click(function(){
-    judgementDegree();
+// 立即购买
+$(".padda>.padda_buynow").click(function(event){
+    judgementDegree($(this));
+
+   
     
 });
 
 
 
+var obj = {
+
+};
 
 // 判断用户是否选择度数
-function judgementDegree() {
+function judgementDegree(str) {
     // 左眼度数
     var leftEyeNumber = $(".attribute_item_flet").val();
     // 右眼的度数
@@ -97,9 +105,154 @@ function judgementDegree() {
             });
             $(".show_goods_o_pic_ui-form-item>.padd_loop").css({
                 "marginTop":"50px",
-            });          
+            }); 
+            
+            if(str.prop("value")=="立即购买"){
+                     getGoods();
+            }else{
+                // 加入数据库
+                 // 立即购买AJAX返回执行动画
+                    cartGetGoods(event);
+            };
+
+            // 获取商品、用户数据、数量、单价、进行AJAX跳转到购物车
+             
      };
 };
+
+
+// 获取商品、用户数据、数量、单价、进行AJAX跳转到购物车
+function getGoods(){
+    // 用户ID
+    var  uid = 1;
+    // 产品ID
+    var  pid = 101;
+    // 商品路径
+    var pbgimg = $("img[monfr='tlsp']").prop("src");
+    // 产品名称
+    var productName = $(".show_goods_o_pic_ui-form-item_goods_o_name>span").html();
+    // 左眼度数
+    var leftdiy = $(".attribute_item_flet").val();
+    // 右眼度数
+    var  rigth = $(".attribute_item_right").val();
+    // 市场价格
+    var marketPrice =  $(".market").text();
+    // 本店价格
+    var wlprice  = $(".show_goods_tm_price1").text();
+    // 购买商品数量
+    var pnum = $("input[type='number']").val();
+    // 小计
+    var total = $(".show_goods_o_pic_ui-form-item>.clearfix[name='count'] font").text();
+    // 积分
+    var integral  = $(".show_goods_o_pic_ui-form-item>.clearfix[name='sell']>font>span").text();
+    obj={
+        uid,
+        pid ,
+        pbgimg,
+        productName,
+        leftdiy,
+        rigth,
+        marketPrice,
+        pnum,
+        total,
+        integral,
+        wlprice
+    };
+    // console.log(obj);
+
+    if(window.XMLHttpRequest){
+        var ajax = new XMLHttpRequest;
+    }else{
+        var  ajax = new ActiveXObject;
+    };
+    ajax.open("POST","http://localhost/vvvle/index.php/ProductDetails/getGoods",true);
+    ajax.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    var data = JSON.stringify(obj);
+    ajax.send(data);
+    ajax.onreadystatechange=function(){
+        if(ajax.readyState==4 && ajax.status==200){
+                var res = JSON.parse(ajax.responseText);
+                if(res.status==1){
+                        window.location.href="http://localhost/vvvle/index.php/ShopCart/index";
+                }else{
+                   alert("系统错误");     
+                };
+        };
+    };
+
+};
+
+// 立即购买AJAX返回执行动画
+
+function cartGetGoods(event){
+    // 用户ID
+    var  uid = 1;
+    // 产品ID
+    var  pid = 101;
+    // 商品路径
+    var pbgimg = $("img[monfr='tlsp']").prop("src");
+    // 产品名称
+    var productName = $(".show_goods_o_pic_ui-form-item_goods_o_name>span").html();
+    // 左眼度数
+    var leftdiy = $(".attribute_item_flet").val();
+    // 右眼度数
+    var  rigth = $(".attribute_item_right").val();
+    // 市场价格
+    var marketPrice =  $(".market").text();
+    // 本店价格
+    var wlprice  = $(".show_goods_tm_price1").text();
+    // 购买商品数量
+    var pnum = $("input[type='number']").val();
+    // 小计
+    var total = $(".show_goods_o_pic_ui-form-item>.clearfix[name='count'] font").text();
+    // 积分
+    var integral  = $(".show_goods_o_pic_ui-form-item>.clearfix[name='sell']>font>span").text();
+    obj={
+        uid,
+        pid ,
+        pbgimg,
+        productName,
+        leftdiy,
+        rigth,
+        marketPrice,
+        pnum,
+        total,
+        integral,
+        wlprice
+    };
+    // console.log(obj);
+
+    if(window.XMLHttpRequest){
+        var ajax = new XMLHttpRequest;
+    }else{
+        var  ajax = new ActiveXObject;
+    };
+    ajax.open("POST","http://localhost/vvvle/index.php/ProductDetails/getGoods",true);
+    ajax.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    var data = JSON.stringify(obj);
+    ajax.send(data);
+    ajax.onreadystatechange=function(){
+        if(ajax.readyState==4 && ajax.status==200){
+                var res = JSON.parse(ajax.responseText);
+                if(res.status==1){
+                         // 动画函数
+                      gwc(event);
+                }else{
+                   alert("系统错误");     
+                };
+        };
+    };
+
+};
+
+
+
+
+
+
+
+
+
 
 // 点击商品详情滚动到商品详情
 $(".detail_tab_clearfix>ul>li[bokl='outs']").click(function(){
@@ -225,7 +378,36 @@ if($(document).scrollTop() >= 1200){
 });
 
 
+// 购物车动画
 
+ function gwc(event) {
+    var offset = $(".sbar_nub_icon").offset();
+    var addcar = $(this);
+    var flyer = $("<div style='display:inline-block; width: 20px; height: 20px; '><img src='http://localhost/vvvle/Index/Common/img/img_productDetails/cart.svg'/></div>");
+    flyer.fly({
+        start: {
+            left: event.clientX, //开始位置（必填）#fly元素会被设置成position: fixed 
+            top: event.clientY //开始位置（必填） 
+        },
+        end: {
+            left: offset.left + 10, //结束位置（必填） 
+            top: 252, //结束位置（必填） 
+            width: 0, //结束时宽度 
+            height: 0 //结束时高度 
+        },
+        onEnd: function() { //结束回调 
+            $(".sidebar_nav #msg").show().animate({
+                width: '250px'
+            }, 200).fadeOut(1000, function() {
+                $(this).width("-1");
+            }); //提示信息 
+            // addcar.css("cursor","default").removeClass('orange').unbind('click'); 
+            this.destory(); //移除dom 
+        }
+    });
+};
+        
+ 
 
 
 

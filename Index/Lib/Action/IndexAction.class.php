@@ -21,6 +21,8 @@ class IndexAction extends Action {
         $this->assign("judge",'false');
         $this->assign("judge1",'true');
         $this->display("index");
+        
+        // $this->success('退出成功',U("Index/index"));
     }
 
 

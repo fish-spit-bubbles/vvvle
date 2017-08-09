@@ -2,6 +2,15 @@
 // 本类由系统自动生成，仅供测试用途
 class ShopCartAction extends Action {
     public function index(){
+        
+        $this->assign("str","我是类里边的方法");
+
         $this->display("shopcart");
     }
+
+
+    
+
+
+
 }
