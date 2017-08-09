@@ -2,7 +2,7 @@
 class GoodsModel extends Model {
     protected $tableName = "goods";
     public function getGoods($startPage, $everyPage){
-        $result = $this->order("addtime DESC")->limit($startPage, $everyPage)->select();
+        $result = $this->order("id DESC")->limit($startPage, $everyPage)->select();
         foreach ($result as $key => $value) {
             $result[$key]["addTime"] = date("Y-m-d", $value["addTime"]);
         }
