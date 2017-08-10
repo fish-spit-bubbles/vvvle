@@ -2,10 +2,12 @@
 // 商品详情页
 class ProductDetailsAction extends Action {
     public function index(){
-
         $this->display("productDetails");
     }
-
+    public function getList(){
+        $id = $_GET['id'];
+        
+    }
     // 获取商品详情，添加成功数据库 跳转到购物车
     public function getGoods(){
             $str =    file_get_contents("php://input");
