@@ -10,11 +10,20 @@ class ProductDetailsModel extends Model{
     }
       // 查询数据数据
     public function query($newstr){
+<<<<<<< HEAD
+                  $arr['uid']= $newstr['uid'];
+                  $arr['pid']= $newstr['pid'];
+                  $vvvle = M("order");       
+                  $res = $vvvle->where($arr)->find();
+                  
+                  return  $res;
+=======
                 $arr['uid']= $newstr['uid'];
                 $arr['pid']= $newstr['pid'];
                 $vvvle = M("order");       
                 $res = $vvvle->where($arr)->find();
                 return  $res;
+>>>>>>> origin/master
     }
 
 

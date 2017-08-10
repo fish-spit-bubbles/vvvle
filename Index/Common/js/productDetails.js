@@ -188,7 +188,7 @@ function cartGetGoods(event){
     // 用户ID
     var  uid = 1;
     // 产品ID
-    var  pid = 101;
+    var  pid = 103;
     // 商品路径
     var pbgimg = $("img[monfr='tlsp']").prop("src");
     // 产品名称

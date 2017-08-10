@@ -19,7 +19,7 @@
      <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
 </head>
 
-<body ng-app="myapps">
+<body ng-app="myapps" >
     <!--头部  -->
     <include file="Public:header" />
 
@@ -102,7 +102,7 @@
                         <tr>
                             <td class="text-right">电子邮件地址:</td>
                             <td>
-                                <input type="text" class="form-control" id="name"  value="{$email}" >
+                                <input type="email" class="form-control" id="name"  value="{$email}" >
                             </td>
                         </tr>
                         <tr>
@@ -114,12 +114,13 @@
                         <tr>
                             <td class="text-right">微信:</td>
                             <td>
-                                <input type="text" class="form-control" id="name">
+                                <input type="text" class="form-control" id="name" value="{$wechat}">
+                               
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <p class="Confirm_the_change_01">确认修改</p>
+                                <p ng-click="updateData()" class="Confirm_the_change_01">确认修改</p>
                             </td>
                         </tr>
                         <tr>
@@ -222,8 +223,13 @@
     <include file="Public:sidebar" />
 </body>
 <script type="text/javascript">
- var app = angular.module("myapps",[]);
-    // app.controller("mycontroller",function($scope,$http){})
+    var app = angular.module("myapps",[]);
+    // app.controller("mycontroller",function($scope,$http){
+    //    $scope.updateData = function(){
+    //     alert(111);
+    //    }
+
+    // })
 
 
 

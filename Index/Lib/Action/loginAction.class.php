@@ -18,9 +18,11 @@ class LoginAction extends Action {
     public function checkUsers(){
         $str = file_get_contents("php://input");
         $sureData = json_decode($str,true); 
-       
+
         $username = $sureData['username'];
-		$pwd = $sureData['pwd'];		
+		$pwd = $sureData['pwd'];
+        
+        		
 		//验证用户名或密码是否正确
 		$users = M("users");
         $data['username'] = $username;
@@ -29,7 +31,12 @@ class LoginAction extends Action {
 		if($res){
 			$info['info'] = "用户名密码正确";
 			$info['status'] = 1;
+
 			session("username",$username);
+            session("uid",$res['id']);
+            session("wechat",$res['wechat']);
+            session("qq",$res['qq']);
+            session("email",$res['email']);
 		}else{
 			$info['info'] = "用户名或者密码错误";
 			$info['status'] = 2;

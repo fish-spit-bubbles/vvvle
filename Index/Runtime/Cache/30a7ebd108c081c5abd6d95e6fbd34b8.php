@@ -55,8 +55,8 @@
                         <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
                         <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/Index/loginout">[退出]</a>  
                     </span>
-                    
-                    
+
+
                 <!-- 购物车 -->
                 <a href="#" title="che">
                     <i class="glyphicon glyphicon-shopping-cart"></i>
@@ -632,7 +632,7 @@
         <ul class="sidebar_nav">
             <li>
                 <i class="profile_icon"></i>
-                <span>个人中心</span>
+                <span>个人中心</span>        
             </li>
             <li class="sbar_cat">
                 <i class="sbar_cat_icon"></i>

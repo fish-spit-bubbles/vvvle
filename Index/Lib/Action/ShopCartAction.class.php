@@ -1,11 +1,20 @@
 <?php
-// 本类由系统自动生成，仅供测试用途
+// 购物车
+
+
 class ShopCartAction extends Action {
     public function index(){
         
-        $this->assign("str","我是类里边的方法");
-
         $this->display("shopcart");
+    }
+    // 获取数据库数据
+    public function getData(){
+          $uid=   $_POST['uid'];    
+          $shopCart= D("ShopCart");
+         $arr = $shopCart->autoLink($uid);
+         
+         $this->ajaxReturn($arr);
+      
     }
 
 

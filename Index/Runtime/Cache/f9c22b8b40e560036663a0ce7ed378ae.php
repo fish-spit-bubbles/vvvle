@@ -898,7 +898,7 @@
         <ul class="sidebar_nav">
             <li>
                 <i class="profile_icon"></i>
-                <span>个人中心</span>
+                <span>个人中心</span>        
             </li>
             <li class="sbar_cat">
                 <i class="sbar_cat_icon"></i>

@@ -19,7 +19,7 @@
      <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
 </head>
 
-<body ng-app="myapps">
+<body ng-app="myapps" >
     <!--头部  -->
     <header>
     <!-- 头部 -->
@@ -36,8 +36,8 @@
                         <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/UserCenter/userCenter">[用户中心]</a>                        
                         <a ng-cloak ng-show="<?php echo ($judge); ?>" href="__APP__/Index/loginout">[退出]</a>  
                     </span>
-                    
-                    
+
+
                 <!-- 购物车 -->
                 <a href="#" title="che">
                     <i class="glyphicon glyphicon-shopping-cart"></i>
@@ -209,7 +209,7 @@
                         <tr>
                             <td class="text-right">电子邮件地址:</td>
                             <td>
-                                <input type="text" class="form-control" id="name"  value="<?php echo ($email); ?>" >
+                                <input type="email" class="form-control" id="name"  value="<?php echo ($email); ?>" >
                             </td>
                         </tr>
                         <tr>
@@ -221,12 +221,13 @@
                         <tr>
                             <td class="text-right">微信:</td>
                             <td>
-                                <input type="text" class="form-control" id="name">
+                                <input type="text" class="form-control" id="name" value="<?php echo ($wechat); ?>">
+                               
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <p class="Confirm_the_change_01">确认修改</p>
+                                <p ng-click="updateData()" class="Confirm_the_change_01">确认修改</p>
                             </td>
                         </tr>
                         <tr>
@@ -473,8 +474,13 @@
 </div>
 </body>
 <script type="text/javascript">
- var app = angular.module("myapps",[]);
-    // app.controller("mycontroller",function($scope,$http){})
+    var app = angular.module("myapps",[]);
+    // app.controller("mycontroller",function($scope,$http){
+    //    $scope.updateData = function(){
+    //     alert(111);
+    //    }
+
+    // })
 
 
 

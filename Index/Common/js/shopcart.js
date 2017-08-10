@@ -2,6 +2,124 @@
 
 
 
+var app = angular.module("myappShop", []);
+app.controller("mycontrollerShop", function($scope, $http){
+
+     $scope.dataArr= "";
+     
+ // 刚进来的时候获取数据库数据    
+    $http({
+        url:"http://localhost/vvvle/index.php/ShopCart/getData",
+        method:"POST",
+        data:{
+            uid:1,
+        },
+        headers:{
+            "Content-type":"application/x-www-form-urlencoded",
+        },
+    }).success(function(data){
+
+        $scope.dataArr= data;
+     
+        console.log( data) ;
+    });
+
+    // 单选按钮
+    $scope.checkt=function(){
+          $scope.jiancha();
+          $scope.changeProTotalAndPirces();          
+    };
+        // 计算价格
+    $scope.changeProTotalAndPirces=function(){
+            var money = 0;
+            $('.goods_btm_money').html('0.00');
+            var $aCheck = $('.checkt').filter(function (index) {
+                return $(this).prop('checked') == true;
+            });
+            var nCount = $aCheck.length;
+            $aCheck.each(function (index, value) {
+                var xiaoji = $(this).parents('tr').find('.proMoney').html();
+                money = parseInt($('.goods_btm_money').html()) + parseInt(xiaoji) + ".00";
+                $('.goods_btm_money').html(money);
+            });
+    };
+    // 检测是否全选
+    $scope.jiancha=function(){
+         var $aCheck = $('.checkt').filter(function (index) {
+            return $(this).prop('checked') == true;
+        });
+        var $aInput = $('.checkt').length;
+        if ($aCheck.length == $aInput && $aInput != 0) {
+            $('.selectAll').prop('checked', true);
+        } else {
+            $('.selectAll').prop('checked', false);
+        }; 
+        
+    };
+    // 计算商品价格
+    $scope.reckon=function($event){
+        var num = $($event.target).parent().find('.count').val();
+        var mon = $($event.target).parents('tr').find('.proPirce').html();
+        if ($($event.target).val() == '+') {
+            num++;
+        } else {
+            num--;
+        }
+        if (num < 1) {
+            num = 1;
+        }
+        $($event.target).parents('tr').find('.proMoney').html(num * mon + ".00");
+        $($event.target).parent().find('.count').val(num);
+         $scope.changeProTotalAndPirces();   
+    };
+
+    // 点击提交
+    // 用于存商品主键ID
+$scope.goneArr=[];
+
+    $scope.submitData=function(){
+                // console.log($(".checkt"));
+              $(".checkt").each(function(i){
+                 var bfro =  $(this).prop("checked") == true;
+                    if(bfro){
+                         
+                           $scope.goneArr.push($(this).attr("sid"));
+                    };     
+              });
+              if($scope.goneArr.length==0){
+                    alert("请选择要购买商品");
+              };
+
+               console.log($scope.goneArr);  
+    };
+
+
+
+
+
+ 
+
+    
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -22,6 +140,9 @@ function changeProTotalAndPirces() {
     });
     // $('.proTotal span').html(nCount);
 }
+
+
+
 // 检测是否全选
 function jiancha() {
     var $aCheck = $('.checkt').filter(function (index) {
@@ -34,6 +155,7 @@ function jiancha() {
         $('.selectAll').prop('checked', false);
     }
 }
+
 // 全选按钮
 $('#selectAll1').click(function () {
     $('#selectAll2').prop('checked', function (index, value) {
@@ -44,6 +166,7 @@ $('#selectAll1').click(function () {
     });
     changeProTotalAndPirces();
 });
+
 $('#selectAll2').click(function () {
     $('#selectAll1').prop('checked', function (index, value) {
         return $('#selectAll2').prop('checked');
@@ -54,7 +177,20 @@ $('#selectAll2').click(function () {
     changeProTotalAndPirces();
 });
 // 获取所有btn
+
+
+
+
+
+
+
+
+
+
+
+
 $('.ys').click(function () {
+
     var num = $(this).parent().find('.count').val();
     var mon = $(this).parents('tr').find('.proPirce').html();
     if ($(this).val() == '+') {
@@ -69,11 +205,14 @@ $('.ys').click(function () {
     $(this).parent().find('.count').val(num);
     changeProTotalAndPirces();
 });
+
+
+
 // 单选按钮
-$('.checkt').click(function () {
-    jiancha();
-    changeProTotalAndPirces();
-});
+// $('.checkt').click(function () {
+//     jiancha();
+//     changeProTotalAndPirces();
+// });
 // 删除选中
 // $('.delAll').click(function () {
 //     var $aCheck = $('.checkt').filter(function (index) {
@@ -99,6 +238,21 @@ $(".item_title_num").click(function(){
         })
     });
 })
+
+
+
+
+$(".cart_form_footer .sure_sub").on("click",function(){
+
+});
+
+
+
+
+
+
+
+
 function Dsy(){
 	this.Items = {};
 }
@@ -517,6 +671,14 @@ function _init_area(){  //初始化函数
 	}
 	change(0);
 }
+
+
+
+
+
+
+
+
 
 
 
