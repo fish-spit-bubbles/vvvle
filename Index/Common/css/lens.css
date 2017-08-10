@@ -324,14 +324,14 @@ body {
     width: 370px;
     height: 370px;
 }
-.Product_item .item_01 a:nth-child(2) img{
+
+.Product_item .item_01 a:nth-child(2) img {
     position: absolute;
     right: 10px;
-    bottom:10px;
+    bottom: 10px;
     width: 100px;
     height: 100px;
 }
-
 
 
 /*
