@@ -15,4 +15,22 @@ class NewProductAction extends Action {
             $this->display("newProduct");
         }
     }
+
+    public function getNewProducts(){
+        $goods = D("Goods");
+        $name = "SEENCON";
+        $list = $goods->getGoodsList($name, 16);
+        if ($list) {
+            $info["data"] = $list;
+            $info["info"] = "成功";
+            $info["status"] = 1;
+        } else {
+            $info["info"] = "失败";
+            $info["status"] = 2;
+        }
+        $this->ajaxReturn($info);
+
+
+    }
+
 }
