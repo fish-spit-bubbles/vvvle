@@ -24,7 +24,7 @@ class IndexAction extends Action {
     public function getGoods(){
         $goods = D("Goods");
         $name = "OLIVI";
-        $list = $goods->getGoodsList($name);
+        $list = $goods->getGoodsList($name, 16);
         if ($list) {
             $info["data"] = $list;
             $info["info"] = "成功";

@@ -11,6 +11,12 @@
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
     <style>
+         html,body{width:100%;height:100%;margin:0;padding:0;font-family:"lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}
+        .header{height:40px;width:100%;background-color:#242424;position:fixed;z-index: 999;}
+        .header_title{line-height:40px;margin-left:60px;color:#fff;font-size:15px;}
+        .header_user{font-size:12px;margin-left:40px;color:#ccc;font-family: "lucida grande";font-size: 15px;}
+        .header_loginout{float: right; color:#ccc;margin-right: 50px;}
+        #box>h3{margin-top: 55px;}
         #box>div {
             margin-top: 15px;
         }
@@ -21,6 +27,9 @@
 </head>
 
 <body ng-app="myapp" ng-controller="mycontroller">
+    <div class="header">
+        <div class="header_title"><a href="/">后台管理系统</a><span class="header_user">Hi~欢迎你 , 管理员<?php echo (session('username')); ?></span><a href="__APP__/Admin/layout"><span class="header_loginout">[退出]</span</a></div>
+    </div>
     <div class="container text-center" id="box">
         <h3 class="text-primary">管理员界面</h3>
         <form action="__APP__/Admin/addData" method="post" enctype="multipart/form-data" class="form-horizontal" role="form">

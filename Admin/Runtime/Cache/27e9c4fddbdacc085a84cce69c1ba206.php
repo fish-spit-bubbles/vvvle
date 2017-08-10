@@ -19,7 +19,7 @@
 </head>
 <body ng-app="myapp" ng-controller="mycontroller">
     <div class="header">
-        <div class="header_title"><a href="/">后台管理系统</a></div>
+        <div class="header_title"><a href="##">后台管理系统</a></div>
     </div>
     <div class="panel">
         <div class="login_input">

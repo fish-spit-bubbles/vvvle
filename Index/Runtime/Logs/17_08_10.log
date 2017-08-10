@@ -1,0 +1,423 @@
+[ 2017-08-10T09:22:49+08:00 ] 0.0.0.0 /vvvle/index.php/ProductDetails/index?id=218
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001034s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001124s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 168 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 197 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 137 行.
+NOTIC: [8] Undefined variable: judge1 /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 34 行.
+NOTIC: [8] Undefined variable: judge1 /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 35 行.
+NOTIC: [8] Undefined variable: judge /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 36 行.
+NOTIC: [8] Undefined variable: username /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 36 行.
+NOTIC: [8] Undefined variable: judge /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 37 行.
+NOTIC: [8] Undefined variable: judge /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 38 行.
+NOTIC: [8] Undefined variable: index /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 97 行.
+NOTIC: [8] Undefined variable: lens /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 101 行.
+NOTIC: [8] Undefined variable: accesories /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 105 行.
+NOTIC: [8] Undefined variable: parts /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 109 行.
+NOTIC: [8] Undefined variable: newProduct /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 113 行.
+NOTIC: [8] Undefined variable: hot /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/350d9731cb6391ddab04685b09872f34.php 第 117 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.113959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.008658s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001481s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002312s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.011323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023940s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000898s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000963s ]
+
+[ 2017-08-10T09:22:50+08:00 ] 0.0.0.0 /vvvle/index.php/ProductDetails/%7B%7Bv.path%7D%7D
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000369s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000425s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+ERR: 非法操作:{{v.path}}
+
+[ 2017-08-10T09:22:50+08:00 ] 0.0.0.0 /vvvle/index.php/Index/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000657s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000752s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 168 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 197 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 137 行.
+NOTIC: [8] Undefined variable: lens /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/f9c22b8b40e560036663a0ce7ed378ae.php 第 97 行.
+NOTIC: [8] Undefined variable: accesories /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/f9c22b8b40e560036663a0ce7ed378ae.php 第 101 行.
+NOTIC: [8] Undefined variable: parts /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/f9c22b8b40e560036663a0ce7ed378ae.php 第 105 行.
+NOTIC: [8] Undefined variable: newProduct /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/f9c22b8b40e560036663a0ce7ed378ae.php 第 109 行.
+NOTIC: [8] Undefined variable: hot /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/f9c22b8b40e560036663a0ce7ed378ae.php 第 113 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.076427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076491s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000481s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000447s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000438s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003163s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000613s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2017-08-10T09:22:51+08:00 ] 0.0.0.0 /vvvle/index.php/Index/getGoods
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000555s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000643s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.099904s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` WHERE ( brand='OLIVI' ) ORDER BY id DESC LIMIT 0,16   [ RunTime:0.000274s ]
+
+[ 2017-08-10T09:23:01+08:00 ] 0.0.0.0 /vvvle/index.php/Index/loginout
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000472s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000536s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 168 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 399 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 197 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 137 行.
+NOTIC: [8] Undefined variable: username /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+NOTIC: [8] Undefined variable: index /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/f9c22b8b40e560036663a0ce7ed378ae.php 第 93 行.
+NOTIC: [8] Undefined variable: lens /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/f9c22b8b40e560036663a0ce7ed378ae.php 第 97 行.
+NOTIC: [8] Undefined variable: accesories /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/f9c22b8b40e560036663a0ce7ed378ae.php 第 101 行.
+NOTIC: [8] Undefined variable: parts /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/f9c22b8b40e560036663a0ce7ed378ae.php 第 105 行.
+NOTIC: [8] Undefined variable: newProduct /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/f9c22b8b40e560036663a0ce7ed378ae.php 第 109 行.
+NOTIC: [8] Undefined variable: hot /Applications/XAMPP/xamppfiles/htdocs/vvvle/Index/Runtime/Cache/f9c22b8b40e560036663a0ce7ed378ae.php 第 113 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.099132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099181s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.015791s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000777s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.007801s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025089s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000619s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2017-08-10T09:23:02+08:00 ] 0.0.0.0 /vvvle/index.php/Index/getGoods
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000577s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000652s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.014931s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` WHERE ( brand='OLIVI' ) ORDER BY id DESC LIMIT 0,16   [ RunTime:0.000341s ]
+
