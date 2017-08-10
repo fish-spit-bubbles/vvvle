@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HOME | 首页</title>
+    <!-- <link rel="icon" href="__ROOT__/animated_favicon.gif" type="image/gif"> -->
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/home.css" />
@@ -138,27 +139,27 @@
                             <div class="show_left">
                                 <ul class="show_nav">
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/rq1.png" alt="超人气款">
-                                            <span>轻瞳<br />轻芯巧克力</span>
+                                            <span class="searchB">轻瞳</span><br /><span>轻芯巧克力</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/rq2.png" alt="超人气款">
-                                            <span>OLIVI<br />维也纳巧克力</span>
+                                            <span class="searchB">OLIVI</span><br /><span>维也纳巧克力</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/rq3.png" alt="超人气款">
-                                            <span>NEO<br />小黑环</span>
+                                            <span class="searchB">NEO</span><br /><span>小黑环</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/rq4.png" alt="超人气款">
-                                            <span>Bebe<br />琥珀色</span>
+                                            <span class="searchB">Bebe</span><br /><span>琥珀色</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -179,27 +180,27 @@
                             <div class="show_left">
                                 <ul class="show_nav">
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/zr1.png" alt="超人气款">
-                                            <span>轻瞳<br />茶束棕</span>
+                                            <span class="searchB">轻瞳</span><br /><span>茶束棕</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/zr2.png" alt="超人气款">
-                                            <span>OLIVI<br />丝滑巧克力</span>
+                                            <span class="searchB">OLIVI</span><br /><span>丝滑巧克力</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/zr3.png" alt="超人气款">
-                                            <span>NEO<br />三代巧克力</span>
+                                            <span class="searchB">NEO</span><br /><span>三代巧克力</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/zr4.png" alt="超人气款">
-                                            <span>Bebe<br />魔术巧克力</span>
+                                            <span class="searchB">Bebe</span><br /><span>魔术巧克力</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -220,27 +221,27 @@
                             <div class="show_left">
                                 <ul class="show_nav">
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/hx1.png" alt="超人气款">
-                                            <span>轻瞳<br />圣洛灰</span>
+                                            <span class="searchB">轻瞳</span><br /><span>圣洛灰</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/hx2.png" alt="超人气款">
-                                            <span>哆米爱<br />花漾四色灰</span>
+                                            <span class="searchB">哆米爱</span><br /><span>花漾四色灰</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/hx3.png" alt="超人气款">
-                                            <span>NEO<br />皇后四色灰</span>
+                                            <span class="searchB">NEO</span><br /><span>皇后四色灰</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/hx4.png" alt="超人气款">
-                                            <span>AeveCon<br />美莎灰</span>
+                                            <span class="searchB">AeveCon</span><br /><span>美莎灰</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -261,27 +262,27 @@
                             <div class="show_left">
                                 <ul class="show_nav">
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/xs1.png" alt="超人气款">
-                                            <span>轻瞳<br />轻芯巧克力</span>
+                                            <span class="searchB">轻瞳</span><br /><span>轻芯巧克力</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/xs2.png" alt="超人气款">
-                                            <span>EOS<br />鹿眼巧克力</span>
+                                            <span class="searchB">EOS</span><span>鹿眼巧克力</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/xs3.png" alt="超人气款">
-                                            <span>Bescon<br />C7奶茶巧克力</span>
+                                            <span class="searchB">Bescon</span><br /><span>C7奶茶巧克力</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/xs4.png" alt="超人气款">
-                                            <span>芭比爱<br />幻影巧克力</span>
+                                            <span class="searchB">芭比爱</span><br /><span>幻影巧克力</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -302,27 +303,27 @@
                             <div class="show_left">
                                 <ul class="show_nav">
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/tm1.png" alt="超人气款">
-                                            <span>轻瞳<br />玛丽甜黑</span>
+                                            <span class="searchB">轻瞳</span><br />><span>玛丽甜黑</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/tm2.png" alt="超人气款">
-                                            <span>OLIVI<br />赫本棕</span>
+                                            <span class="searchB">OLIVI</span><br /><span>赫本棕</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/tm3.png" alt="超人气款">
-                                            <span>7 Modern<br />叶子自然棕</span>
+                                            <span class="searchB">7 Mode</span><br /><span>叶子自然棕</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/tm4.png" alt="超人气款">
-                                            <span>EYE-DO<br />金棕</span>
+                                            <span class="searchB">EYE-DO</span><br /><span>金棕</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -343,27 +344,27 @@
                             <div class="show_left">
                                 <ul class="show_nav">
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/rp1.png" alt="超人气款">
-                                            <span>NEO<br />巧克力30片</span>
+                                            <span class="searchB">NEO</span><br /><span>巧克力30片</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/rp2.png" alt="超人气款">
-                                            <span>CaraEyes<br />清新棕5片装</span>
+                                            <span class="searchB">CaraEyes</span><br /><span>清新棕5片装</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/rp3.png" alt="超人气款">
-                                            <span>可芙蕾<br /> 公主丽棕10片</span>
+                                            <span class="searchB">可芙蕾</span><br /><span>公主丽棕10片</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="##">
+                                        <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/rp4.png" alt="超人气款">
-                                            <span>Kiss me<br />日抛10片装</span>
+                                            <span class="searchB">Kiss me</span><br /><span>日抛10片装</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -944,15 +945,19 @@
 <script type="text/javascript" src="__ROOT__/Index/Common/js/home.js"></script>
 <script>
     var app = angular.module("myapps", []);
-    app.controller("mycontroller", function($scope, $http) {
+    app.controller("mycontroller", function ($scope, $http) {
         $scope.goodsLists = "";
-        $http.get("__APP__/Index/getGoods").success(function(data) {
+        $http.get("__APP__/Index/getGoods").success(function (data) {
             if (data.status == 1) {
                 $scope.goodsLists = data.data;
             } else {
                 alert("系统繁忙，请稍后...");
             }
         });
+        // console.log(111);
+        $(".show_nav li").on("click",function(){
+            console.log($(this).find(".searchB").html());
+        })
     })
 </script>
 

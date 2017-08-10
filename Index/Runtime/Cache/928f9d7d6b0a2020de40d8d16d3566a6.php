@@ -160,11 +160,26 @@
             <div class="Product_container">
                 <div class="Product_item" ng-cloak ng-repeat="v in newProductList">
                     <div class="item_01">
+<<<<<<< HEAD
                         <a href="__APP__/ProductDetails/index?id={{v.id}}"><img ng-src="__ROOT__/{{v.bgImg}}" alt="这是美女图片"></a>
                         <a style="width:100px;height:100px;" href="__APP__/ProductDetails/index?id={{v.id}}"><img ng-src="__ROOT__/{{v.productImg}}" alt="这是产品图片"></a>
                     </div>
                     <div class="item_02">
                         <a href="##" title="{{v.productName}}">{{v.productName}}</a>
+=======
+<<<<<<< HEAD
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    </div>
+                    <div class="item_02">
+                        <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+=======
+                        <a href="__APP__/ProductDetails/index"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                        <a style="width:100px;height:100px;" href="__APP__/ProductDetails/index"><img src="__ROOT__/Index/Common/img/1125_thumb_G_1398648339553.png" alt=""></a>
+                    </div>
+                    <div class="item_02">
+                        <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】 啊实打实大师的撒的啊实打实的撒</a>
+>>>>>>> 49769f3ff25ba64a8525694654de446e9149a8dc
+>>>>>>> origin/master
                     </div>
                     <div class="item_03">
                         <!--
@@ -178,8 +193,16 @@
                                 </div>
                             </div>
                             <div class="Next_layer02">
+<<<<<<< HEAD
                                 <div>￥<span>{{v.wlPrice}}</span></div>
+=======
+                                <div>￥<span>268</span></div>
+<<<<<<< HEAD
+                                <div></div>
+=======
+>>>>>>> origin/master
                                 <div id="like"></div>
+>>>>>>> 49769f3ff25ba64a8525694654de446e9149a8dc
                             </div>
                             <div class="Next_layer03">
                             </div>
@@ -187,6 +210,325 @@
 
                     </div>
                 </div>
+<<<<<<< HEAD
+                <div class="Product_item">
+                    <div class="item_01">
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    </div>
+                    <div class="item_02">
+                        <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                    </div>
+                    <div class="item_03">
+                        <!--
+                            item_layer 下层
+                        -->
+                        <div class="Next_layer">
+                            <div class="Next_layer01">
+                                <div>999</div>
+                                <div>
+                                    <a href="##">180</a>
+                                </div>
+                            </div>
+                            <div class="Next_layer02">
+                                <div>￥<span>268</span></div>
+                                <div></div>
+                            </div>
+                            <div class="Next_layer03">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Product_item">
+                    <div class="item_01">
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    </div>
+                    <div class="item_02">
+                        <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                    </div>
+                    <div class="item_03">
+                        <!--
+                            item_layer 下层
+                        -->
+                        <div class="Next_layer">
+                            <div class="Next_layer01">
+                                <div>999</div>
+                                <div>
+                                    <a href="##">180</a>
+                                </div>
+                            </div>
+                            <div class="Next_layer02">
+                                <div>￥<span>268</span></div>
+                                <div></div>
+                            </div>
+                            <div class="Next_layer03">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Product_item">
+                    <div class="item_01">
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    </div>
+                    <div class="item_02">
+                        <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                    </div>
+                    <div class="item_03">
+                        <!--
+                            item_layer 下层
+                        -->
+                        <div class="Next_layer">
+                            <div class="Next_layer01">
+                                <div>999</div>
+                                <div>
+                                    <a href="##">180</a>
+                                </div>
+                            </div>
+                            <div class="Next_layer02">
+                                <div>￥<span>268</span></div>
+                                <div></div>
+                            </div>
+                            <div class="Next_layer03">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Product_item">
+                    <div class="item_01">
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    </div>
+                    <div class="item_02">
+                        <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                    </div>
+                    <div class="item_03">
+                        <!--
+                            item_layer 下层
+                        -->
+                        <div class="Next_layer">
+                            <div class="Next_layer01">
+                                <div>999</div>
+                                <div>
+                                    <a href="##">180</a>
+                                </div>
+                            </div>
+                            <div class="Next_layer02">
+                                <div>￥<span>268</span></div>
+                                <div></div>
+                            </div>
+                            <div class="Next_layer03">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Product_item">
+                    <div class="item_01">
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    </div>
+                    <div class="item_02">
+                        <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                    </div>
+                    <div class="item_03">
+                        <!--
+                            item_layer 下层
+                        -->
+                        <div class="Next_layer">
+                            <div class="Next_layer01">
+                                <div>999</div>
+                                <div>
+                                    <a href="##">180</a>
+                                </div>
+                            </div>
+                            <div class="Next_layer02">
+                                <div>￥<span>268</span></div>
+                                <div></div>
+                            </div>
+                            <div class="Next_layer03">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Product_item">
+                    <div class="item_01">
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    </div>
+                    <div class="item_02">
+                        <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                    </div>
+                    <div class="item_03">
+                        <!--
+                            item_layer 下层
+                        -->
+                        <div class="Next_layer">
+                            <div class="Next_layer01">
+                                <div>999</div>
+                                <div>
+                                    <a href="##">180</a>
+                                </div>
+                            </div>
+                            <div class="Next_layer02">
+                                <div>￥<span>268</span></div>
+                                <div></div>
+                            </div>
+                            <div class="Next_layer03">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Product_item">
+                    <div class="item_01">
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    </div>
+                    <div class="item_02">
+                        <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                    </div>
+                    <div class="item_03">
+                        <!--
+                            item_layer 下层
+                        -->
+                        <div class="Next_layer">
+                            <div class="Next_layer01">
+                                <div>999</div>
+                                <div>
+                                    <a href="##">180</a>
+                                </div>
+                            </div>
+                            <div class="Next_layer02">
+                                <div>￥<span>268</span></div>
+                                <div></div>
+                            </div>
+                            <div class="Next_layer03">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Product_item">
+                    <div class="item_01">
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    </div>
+                    <div class="item_02">
+                        <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                    </div>
+                    <div class="item_03">
+                        <!--
+                            item_layer 下层
+                        -->
+                        <div class="Next_layer">
+                            <div class="Next_layer01">
+                                <div>999</div>
+                                <div>
+                                    <a href="##">180</a>
+                                </div>
+                            </div>
+                            <div class="Next_layer02">
+                                <div>￥<span>268</span></div>
+                                <div></div>
+                            </div>
+                            <div class="Next_layer03">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Product_item">
+                    <div class="item_01">
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    </div>
+                    <div class="item_02">
+                        <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                    </div>
+                    <div class="item_03">
+                        <!--
+                            item_layer 下层
+                        -->
+                        <div class="Next_layer">
+                            <div class="Next_layer01">
+                                <div>999</div>
+                                <div>
+                                    <a href="##">180</a>
+                                </div>
+                            </div>
+                            <div class="Next_layer02">
+                                <div>￥<span>268</span></div>
+                                <div></div>
+                            </div>
+                            <div class="Next_layer03">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Product_item">
+                    <div class="item_01">
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    </div>
+                    <div class="item_02">
+                        <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                    </div>
+                    <div class="item_03">
+                        <!--
+                            item_layer 下层
+                        -->
+                        <div class="Next_layer">
+                            <div class="Next_layer01">
+                                <div>999</div>
+                                <div>
+                                    <a href="##">180</a>
+                                </div>
+                            </div>
+                            <div class="Next_layer02">
+                                <div>￥<span>268</span></div>
+                                <div></div>
+                            </div>
+                            <div class="Next_layer03">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Product_item">
+                    <div class="item_01">
+                        <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    </div>
+                    <div class="item_02">
+                        <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                    </div>
+                    <div class="item_03">
+                        <!--
+                            item_layer 下层
+                        -->
+                        <div class="Next_layer">
+                            <div class="Next_layer01">
+                                <div>999</div>
+                                <div>
+                                    <a href="##">180</a>
+                                </div>
+                            </div>
+                            <div class="Next_layer02">
+                                <div>￥<span>268</span></div>
+                                <div></div>
+                            </div>
+                            <div class="Next_layer03">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+=======
+>>>>>>> 49769f3ff25ba64a8525694654de446e9149a8dc
             </div>
         </div>
         <!--分页·paging -->
