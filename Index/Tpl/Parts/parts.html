@@ -208,7 +208,6 @@
         $http.get("__APP__/parts/getParts").success(function(data){
             if (data.status == 1) {
                 $scope.newProductList = data['data'];
-                console.log(data.data)
             } else {
                 alert("系统繁忙，请稍后...");
             }

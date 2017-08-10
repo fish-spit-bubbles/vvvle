@@ -6809,6 +6809,7 @@ NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_ca
 SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.030473s ]
 >>>>>>> e98fb57c6b5d441dc7130e54b0ba437144e399a5
 
+<<<<<<< HEAD
 [ 2017-08-10T20:28:16+08:00 ] 0.0.0.0 /vvvle/admin.php/Admin/admin
 INFO: [ route_check ] --START--
 INFO: CheckRoute Behavior ::run [ RunTime:0.000428s ]
@@ -6826,6 +6827,45 @@ NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_ca
 INFO: [ app_begin ] --START--
 INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000356s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+=======
+[ 2017-08-10T20:29:16+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/seleteData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000419s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000541s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000270s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.033005s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` WHERE ( id=216 ) LIMIT 1   [ RunTime:0.031293s ]
+
+[ 2017-08-10T20:30:59+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000574s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000634s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.032226s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('SEENCON','彩虹甜心�\�','学生白领','学生白领','450','389',313,'SEENCON 彩虹甜心棕【硅水凝胶�\�','uploads/2017-08-10/ivE336Rey6.jpg','uploads/2017-08-10/GT08Xz5IIg.jpg','uploads/2017-08-10/EIfJtwrrag.png',1502368258) [ RunTime:0.033364s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 15,5   [ RunTime:0.031915s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.030923s ]
+
+[ 2017-08-10T20:32:04+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/admin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000514s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000589s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+>>>>>>> c00f656827a687d7bc43650105bd9619f5019339
 INFO: [ view_parse ] --START--
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 168 行.
@@ -6924,6 +6964,7 @@ NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_ca
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 197 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 137 行.
+<<<<<<< HEAD
 INFO: ParseTemplate Behavior ::run [ RunTime:0.035628s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.035706s ]
 INFO: [ view_filter ] --START--
@@ -7230,6 +7271,297 @@ NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_ca
 INFO: [ app_begin ] --START--
 INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000235s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+=======
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033407s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000161s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000150s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000089s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000643s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000431s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2017-08-10T20:32:05+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/getList
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000645s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000732s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.033019s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.031328s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.032300s ]
+
+[ 2017-08-10T20:34:30+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000557s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000609s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.032753s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('SEENCON','彩虹甜心�\�','学生白领','学生白领','380','260',5656,'SEENCON STARII星阳棕色【硅水凝胶�\�','uploads/2017-08-10/B0hh8BK7P8.jpg','uploads/2017-08-10/goJSP8IiDx.jpg','uploads/2017-08-10/gHwELXJY5U.png',1502368469) [ RunTime:0.039118s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.032930s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.032256s ]
+
+[ 2017-08-10T20:34:56+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000318s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000361s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.035585s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('SEENCON','彩虹甜心�\�','学生白领','学生白领','3800','2600',56,'SEENCON STARII星阳棕色【硅水凝胶�\�','uploads/2017-08-10/Fi9mcYG0Lz.jpg','uploads/2017-08-10/jl1YmGNghV.jpg','uploads/2017-08-10/NLfdfmWZHg.png',1502368495) [ RunTime:0.037670s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.036322s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.033187s ]
+
+[ 2017-08-10T20:35:24+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000316s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.035408s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('SEENCON','彩虹甜心�\�','学生白领','学生白领','360','180',990,'SEENCON STARII星阳棕色【硅水凝胶�\�','uploads/2017-08-10/VELPWdgGns.jpg','uploads/2017-08-10/QOmK2EQkrT.jpg','uploads/2017-08-10/kmr6laGf6f.png',1502368524) [ RunTime:0.033705s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.033082s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.032956s ]
+
+[ 2017-08-10T20:35:57+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000320s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.031186s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('SEENCON','彩虹甜心�\�','学生白领','学生白领','400','310',83,'SEENCON STARII星阳棕色【硅水凝胶�\�','uploads/2017-08-10/fvOKvyIAwf.jpg','uploads/2017-08-10/ueXa5QtGqm.jpg','uploads/2017-08-10/jx97XcByFt.png',1502368557) [ RunTime:0.041718s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.034913s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.033212s ]
+
+[ 2017-08-10T20:36:18+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000362s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000260s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.030595s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('SEENCON','彩虹甜心�\�','学生白领','学生白领','400','310',83,'SEENCON STARII星阳棕色【硅水凝胶�\�','uploads/2017-08-10/dnmOLrKx9M.jpg','uploads/2017-08-10/38Muu6tyQX.jpg','uploads/2017-08-10/9MmRTf9PXe.png',1502368578) [ RunTime:0.040749s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.032661s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.031405s ]
+
+[ 2017-08-10T20:36:37+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000323s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.032589s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('SEENCON','彩虹甜心�\�','学生白领','学生白领','400','310',83,'SEENCON STARII星阳棕色【硅水凝胶�\�','uploads/2017-08-10/3X3x7vRotw.jpg','uploads/2017-08-10/Xk24u3Y35V.jpg','uploads/2017-08-10/lC4N6c5R64.png',1502368597) [ RunTime:0.036007s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.033962s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.034149s ]
+
+[ 2017-08-10T20:36:49+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000316s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.031725s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('SEENCON','彩虹甜心�\�','学生白领','学生白领','400','310',83,'SEENCON STARII星阳棕色【硅水凝胶�\�','uploads/2017-08-10/78DNzfQK2H.jpg','uploads/2017-08-10/9ot2fnrmhi.jpg','uploads/2017-08-10/M8RuMeHH8n.png',1502368609) [ RunTime:0.033410s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.032738s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.031416s ]
+
+[ 2017-08-10T20:37:53+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000612s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000710s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.031814s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('SEENCON','彩虹甜心�\�','学生白领','学生白领','400','310',83,'SEENCON STARII星阳棕色【硅水凝胶�\�','uploads/2017-08-10/Tix5vFPt1o.jpg','uploads/2017-08-10/q8GgcxMn7U.jpg','uploads/2017-08-10/21eLvaCupd.png',1502368673) [ RunTime:0.034814s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.034341s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.032528s ]
+
+[ 2017-08-10T20:44:10+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000605s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000665s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.030317s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('EYE DROPS','护理�\�','佩戴隐形眼镜使用','眼镜养护','400','125',66,'法国 innoxa人鱼眼泪 去黄眼药水（裸眼使用�\�','uploads/2017-08-10/v4a5vULLts.jpg','uploads/2017-08-10/kBslifyB2z.jpg','uploads/2017-08-10/7POEHbvu7Q.png',1502369049) [ RunTime:0.036388s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.030633s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.030996s ]
+
+[ 2017-08-10T20:44:33+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000516s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000578s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.032767s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('EYE DROPS','护理�\�','佩戴隐形眼镜使用','眼镜养护','400','125',58,'法国 innoxa人鱼眼泪 去黄眼药水（裸眼使用�\�','uploads/2017-08-10/Yel9t3kUEh.jpg','uploads/2017-08-10/xNwXnyN7Dp.jpg','uploads/2017-08-10/b9TT56K3rw.png',1502369072) [ RunTime:0.038447s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.031648s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.031871s ]
+
+[ 2017-08-10T20:44:42+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000351s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000393s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000264s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.031588s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('EYE DROPS','护理�\�','佩戴隐形眼镜使用','眼镜养护','400','125',58,'法国 innoxa人鱼眼泪 去黄眼药水（裸眼使用�\�','uploads/2017-08-10/Rv2RHzKZ9M.jpg','uploads/2017-08-10/xlVvgipLTw.jpg','uploads/2017-08-10/50y6iZFa4W.png',1502369082) [ RunTime:0.044257s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.033478s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.030374s ]
+
+[ 2017-08-10T20:44:50+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000316s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.036979s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('EYE DROPS','护理�\�','佩戴隐形眼镜使用','眼镜养护','400','125',58,'法国 innoxa人鱼眼泪 去黄眼药水（裸眼使用�\�','uploads/2017-08-10/AsW5k5X14o.jpg','uploads/2017-08-10/XrmYOypFUs.jpg','uploads/2017-08-10/4FKXnagsph.png',1502369089) [ RunTime:0.037461s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.033115s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.034413s ]
+
+[ 2017-08-10T20:44:57+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000310s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000349s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.032888s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('EYE DROPS','护理�\�','佩戴隐形眼镜使用','眼镜养护','400','125',58,'法国 innoxa人鱼眼泪 去黄眼药水（裸眼使用�\�','uploads/2017-08-10/8uY1Sc4k8U.jpg','uploads/2017-08-10/8TeuMmzA9p.jpg','uploads/2017-08-10/llCXQ3okQE.png',1502369096) [ RunTime:0.035831s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.033389s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.031178s ]
+
+[ 2017-08-10T20:45:15+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000328s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000375s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000210s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.034105s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('EYE DROPS','护理�\�','佩戴隐形眼镜使用','眼镜养护','400','125',58,'法国 innoxa人鱼眼泪 去黄眼药水（裸眼使用�\�','uploads/2017-08-10/LlGRUx1FiP.jpg','uploads/2017-08-10/6fUoyC1sSW.jpg','uploads/2017-08-10/nPyU3nTIKq.png',1502369115) [ RunTime:0.037626s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.036777s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.033616s ]
+
+[ 2017-08-10T20:47:04+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/getNewPage
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000316s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000361s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.031749s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 20,5   [ RunTime:0.032578s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.031177s ]
+
+[ 2017-08-10T20:47:07+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/getNewPage
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000310s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000352s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.033361s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 10,5   [ RunTime:0.031657s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.034136s ]
+
+[ 2017-08-10T20:47:10+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/admin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000828s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000916s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+>>>>>>> c00f656827a687d7bc43650105bd9619f5019339
 INFO: [ view_parse ] --START--
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 168 行.
@@ -7328,6 +7660,7 @@ NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_ca
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 197 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 137 行.
+<<<<<<< HEAD
 INFO: ParseTemplate Behavior ::run [ RunTime:0.005649s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.005697s ]
 INFO: [ view_filter ] --START--
@@ -7359,10 +7692,90 @@ SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.031491
 INFO: [ route_check ] --START--
 INFO: CheckRoute Behavior ::run [ RunTime:0.000302s ]
 INFO: [ route_check ] --END-- [ RunTime:0.000342s ]
+=======
+INFO: ParseTemplate Behavior ::run [ RunTime:0.048574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048624s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000170s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000149s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000090s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000711s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000667s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2017-08-10T20:47:11+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/getList
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000614s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000693s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.033164s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.034372s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.032342s ]
+
+[ 2017-08-10T20:47:21+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/getNewPage
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000315s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000355s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.032668s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 10,5   [ RunTime:0.032939s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.032188s ]
+
+[ 2017-08-10T20:47:24+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/getNewPage
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000605s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000706s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.032084s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 15,5   [ RunTime:0.032622s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.032894s ]
+
+[ 2017-08-10T20:48:18+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000392s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000446s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000268s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.031124s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('PARTS','配件','裸眼使用','眼镜养护','785','565',12,'花王 蒸汽眼罩14片（玫瑰味）','uploads/2017-08-10/tRPpbta0xI.jpg','uploads/2017-08-10/ddDqhUjyp0.jpg','uploads/2017-08-10/s9GW8cnVd3.png',1502369298) [ RunTime:0.037410s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 15,5   [ RunTime:0.033541s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.034163s ]
+
+[ 2017-08-10T20:48:22+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/getNewPage
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000301s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000341s ]
+>>>>>>> c00f656827a687d7bc43650105bd9619f5019339
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
 INFO: [ app_begin ] --START--
 INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000199s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000223s ]
+<<<<<<< HEAD
 
 [ 2017-08-10T20:28:56+08:00 ] 0.0.0.0 /vvvle/admin.php/Login/login
 INFO: [ route_check ] --START--
@@ -7372,6 +7785,83 @@ NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_ca
 INFO: [ app_begin ] --START--
 INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000206s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000231s ]
+=======
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.033225s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 10,5   [ RunTime:0.035874s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.035316s ]
+
+[ 2017-08-10T20:48:24+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/getNewPage
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000300s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000339s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.031483s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.033493s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.032002s ]
+
+[ 2017-08-10T20:49:53+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000318s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.044465s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`bgImg`,`infoImg`,`productImg`,`addTime`) VALUES ('PARTS','配件','裸眼使用','眼镜养护','699','55',36,'花王 蒸汽眼罩14片（玫瑰味）','undefined','uploads/2017-08-10/M45To9DUWA.jpg','uploads/2017-08-10/eQr9we7aff.png',1502369392) [ RunTime:0.044708s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.032707s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.096425s ]
+
+[ 2017-08-10T20:50:12+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000407s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000450s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.031314s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('PARTS','配件','裸眼使用','眼镜养护','699','222',59,'花王 蒸汽眼罩14片（玫瑰味）','uploads/2017-08-10/aTRgps0zIr.jpg','uploads/2017-08-10/Xz1ng73xir.jpg','uploads/2017-08-10/wKiZ51Es7E.png',1502369412) [ RunTime:0.037067s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.033808s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.031370s ]
+
+[ 2017-08-10T20:50:36+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/seleteData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000309s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000348s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.034917s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` WHERE ( id=250 ) LIMIT 1   [ RunTime:0.034730s ]
+
+[ 2017-08-10T20:50:40+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/admin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000399s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000460s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+>>>>>>> c00f656827a687d7bc43650105bd9619f5019339
 INFO: [ view_parse ] --START--
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 273 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 168 行.
@@ -7470,6 +7960,7 @@ NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_ca
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 404 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 197 行.
 NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Template/ThinkTemplate.class.php 第 137 行.
+<<<<<<< HEAD
 INFO: ParseTemplate Behavior ::run [ RunTime:0.004553s ]
 INFO: [ view_parse ] --END-- [ RunTime:0.004590s ]
 INFO: [ view_filter ] --START--
@@ -7481,4 +7972,77 @@ INFO: [ view_filter ] --END-- [ RunTime:0.000720s ]
 INFO: [ view_end ] --START--
 INFO: ShowPageTrace Behavior ::run [ RunTime:0.000260s ]
 INFO: [ view_end ] --END-- [ RunTime:0.000284s ]
+=======
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006902s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000191s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000166s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000096s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000420s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2017-08-10T20:50:41+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/getList
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000808s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000918s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.035957s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.034849s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.032669s ]
+
+[ 2017-08-10T20:50:43+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/seleteData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000299s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.034204s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` WHERE ( id=250 ) LIMIT 1   [ RunTime:0.032521s ]
+
+[ 2017-08-10T20:51:04+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/addData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000343s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000385s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.032508s ]
+SQL: INSERT INTO `vvvle_goods` (`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`infoImg`,`bgImg`,`productImg`,`addTime`) VALUES ('PARTS','配件','裸眼使用','眼镜养护','699','55',36,'花王 蒸汽眼罩14片（玫瑰味）','uploads/2017-08-10/6PzAIkgWnP.jpg','uploads/2017-08-10/LQ2oBVYCk6.jpg','uploads/2017-08-10/DzE3JFL7OX.png',1502369464) [ RunTime:0.036365s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.037282s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.029501s ]
+
+[ 2017-08-10T20:51:15+08:00 ] 127.0.0.1 /vvvle/admin.php/Admin/delData
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000299s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Dispatcher.class.php 第 132 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `vvvle_goods` [ RunTime:0.036133s ]
+SQL: DELETE FROM `vvvle_goods` WHERE ( id=250 ) [ RunTime:0.035024s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `vvvle_goods` ORDER BY id DESC LIMIT 0,5   [ RunTime:0.033132s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /Applications/XAMPP/xamppfiles/htdocs/vvvle/ThinkPHP/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `vvvle_goods` LIMIT 1   [ RunTime:0.032670s ]
+>>>>>>> c00f656827a687d7bc43650105bd9619f5019339
 
