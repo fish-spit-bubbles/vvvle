@@ -543,7 +543,7 @@
                         </li>
                         <li>
                             <a href="##">
-                                <img src="__ROOT__/Index/Common/img/img_home/zr.png" alt="" />
+                                <img src="__ROOT__/Index/Common/img/img_home/xs4.png" alt="" />
                                 <p>OLIVI轻瞳</p>
                                 <p>轻芯巧克力</p>
                             </a>
@@ -582,7 +582,7 @@
                         </li>
                         <li>
                             <a href="##">
-                                <img src="__ROOT__/Index/Common/img/img_home/tm.png" alt="" />
+                                <img src="__ROOT__/Index/Common/img/img_home/zr4.png" alt="" />
                                 <p>OLIVI轻瞳</p>
                                 <p>轻芯巧克力</p>
                             </a>
@@ -621,7 +621,7 @@
                         </li>
                         <li>
                             <a href="##">
-                                <img src="__ROOT__/Index/Common/img/img_home/hx.png" alt="" />
+                                <img src="__ROOT__/Index/Common/img/img_home/tm4.png" alt="" />
                                 <p>OLIVI轻瞳</p>
                                 <p>轻芯巧克力</p>
                             </a>
@@ -712,9 +712,9 @@
                     <li ng-cloak ng-repeat="v in goodsLists">
                         <!-- 调到商品详情页 -->
                         <a href="__APP__/ProductDetails/index?id={{v.id}}" class="classis_a">
-                            <img src="__ROOT__/{{v.bgImg}}" alt="" class="classis_img">
+                            <img ng-src="__ROOT__/{{v.bgImg}}" alt="" class="classis_img">
                             <div class="classis_info clearfix">
-                                <img src="__ROOT__/{{v.productImg}}" alt="">
+                                <img ng-src="__ROOT__/{{v.productImg}}" alt="">
                                 <div class="classis_infos">
                                     <p class="classis_title">{{v.productName}}</p>
                                     <p class="classis_cinfo">直径:<span>14.0</span>mm | 厚度:<span>0.008</span>mm</p>
