@@ -1,7 +1,7 @@
 <?php
 // 本类由系统自动生成，仅供测试用途
 class AdminAction extends Action {
-    public $everyPage = 2;
+    private $everyPage = 5;
     public function admin(){
         $this->display('admin');
     }
@@ -19,6 +19,7 @@ class AdminAction extends Action {
     public function addData(){
         //获取用户提交的信息
         $goodsData = $_POST;
+        $page = $goodsData["page"];
         if(!file_exists("uploads")){
             mkdir("uploads");
         }
@@ -67,8 +68,11 @@ class AdminAction extends Action {
         if ($res) {
             $info["info"] = "数据添加成功";
             $info["status"] = 1;
-            $list = $goods->getGoods($everyPage);
+            $list = $goods->getGoods($page * $this->everyPage, $this->everyPage);
+            $totalCount = $goods->count();
+            $total = ceil($totalCount / $this->everyPage);
             $info["data"] = $list;
+            $info["total"] = $total;
         } else {
             $info["info"] = "数据添加失败";
             $info["status"] = 2;
@@ -77,24 +81,54 @@ class AdminAction extends Action {
     }
     public function getList(){
         $goods = D("Goods");
-        $res = $goods->getGoods(0, $everyPage);
+        $res = $goods->getGoods(0, $this->everyPage);
         $totalCount = $goods->count();
-        $total = ceil($totalCount / $everyPage);
+        $total = ceil($totalCount / $this->everyPage);
         $data["total"] = $total;
         $data["data"] = $res;
-        $this->ajaxReturn($res);
+        $this->ajaxReturn($data);
+    }
+    public function getNewPage(){
+        $str = file_get_contents("php://input");
+        $data = json_decode($str, true);
+        $page = $data["page"];
+        $goods = D("Goods");
+        $res = $goods->getGoods($page * $this->everyPage, $this->everyPage);
+        $totalCount = $goods->count();
+        $total = ceil($totalCount / $this->everyPage);
+        if ($res) {
+            $data["total"] = $total;
+            $data["data"] = $res;
+            $data["info"] = "成功";
+            $data["status"] = 1;
+        } else {
+            $data["info"] = "失败";
+            $data["status"] = 2;
+        }
+        $this->ajaxReturn($data);
     }
     public function delData(){
         $str = file_get_contents("php://input");
         $data = json_decode($str, true);
         $id = $data["id"];
+        $page = $data["page"];
         $goods = D("Goods");
         $res = $goods->delGoods($id);
         if ($res) {
             $info["info"] = "数据删除成功";
             $info["status"] = 1;
-            $list = $goods->getGoods($everyPage);
+            $list = $goods->getGoods($page * $this->everyPage, $this->everyPage);
+            $totalCount = $goods->count();
+            $total = ceil($totalCount / $this->everyPage);
+            if ($total < $page) {
+                $page = $total;
+            }
+            if ($list == null) {
+                $list = $goods->getGoods(($page-1) * $this->everyPage, $this->everyPage);
+            }
+            $info["page"] = $page;
             $info["data"] = $list;
+            $info["total"] = $total;
         } else {
             $info["info"] = "数据删除失败";
             $info["status"] = 2;
@@ -121,6 +155,7 @@ class AdminAction extends Action {
     public function upData(){
          //获取用户提交的信息
         $goodsData = $_POST;
+        $page = $goodsData["page"];
         $goods = D('Goods');
         $id = $goodsData["id"];
         $res = $goods->selectGoods($id);
@@ -171,13 +206,16 @@ class AdminAction extends Action {
                 $goodsData[$name] = $str;
             }
         }
-        $goodsData["addTime"] = time();
+        $goodsData["addTime"] = $res["addTime"];
         $res = $goods->updataGoods($id, $goodsData);
         if ($res) {
             $info["info"] = "数据更新成功";
             $info["status"] = 1;
-            $list = $goods->getGoods($everyPage);
+            $list = $goods->getGoods($page * $this->everyPage, $this->everyPage);
+            $totalCount = $goods->count();
+            $total = ceil($totalCount / $this->everyPage);
             $info["data"] = $list;
+            $info["total"] = $total;
         } else {
             $info["info"] = "数据更新失败";
             $info["status"] = 2;

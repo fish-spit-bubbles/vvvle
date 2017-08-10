@@ -324,6 +324,12 @@ ul{
 .day_morning .day_title span:nth-child(1){
     background: url('../img/img_home/bg_t.png') -10px -6px no-repeat;
 }
+.day_morning .day_title1 span:nth-child(1){
+    background: url('../img/img_home/bg_t.png') -10px -60px no-repeat;
+}
+.day_morning .day_title2 span:nth-child(1){
+    background: url('../img/img_home/bg_t.png') -10px -115px no-repeat;
+}
 .day_warp a{
     display: inline-block;
     vertical-align: middle;

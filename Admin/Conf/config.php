@@ -19,9 +19,6 @@ return array(
         'DB_PORT'   => 3306, // 端口
         'DB_PREFIX' => '', // 数据库表前缀 
         //其他项目配置参数
-<<<<<<< HEAD
-=======
->>>>>>> origin/master
 >>>>>>> origin/master
 );
 ?>
