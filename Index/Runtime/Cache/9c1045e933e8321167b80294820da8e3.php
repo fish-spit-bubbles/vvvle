@@ -5,20 +5,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>海外购</title>
+    <title>超级配件</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
 
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/home.css" />
+
+
     <!-- 头部尾部侧边栏CSS -->
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/home.css" />
+
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/slideshow.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/accesories.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
-    <script type="text/javascript" src="__ROOT__/Index/Common/js/slideshow.js"></script>
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
-
 
 </head>
 
@@ -155,12 +156,16 @@
         <div class="schon_choice">
             <span>已选条件：</span>
             <a class="vacum_up" href="#">清空筛选条件</a>
+
+
         </div>
         <div class="containerre" title="select_box">
             <div class="machine" title="vary" style="height:51px;">
                 <div class="machine_sort">品牌：</div>
+
                 <div class="machine_Kindd" monde="kind">
                     <a class="nolimit" href="#">不限</a>
+
                     <a class="nolimit_choice" href="#">博士伦</a>
                     <a class="nolimit_choice" href="#">爱尔康</a>
                     <a class="nolimit_choice" href="#">全能</a>
@@ -256,7 +261,35 @@
         <div class="Product_container">
             <div class="Product_item">
                 <div class="item_01">
-                    <a href="__APP__/ProductDetails/index"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                </div>
+                <div class="item_02">
+                    <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
+                </div>
+                <div class="item_03">
+                    <!--
+						item_layer 下层
+					  -->
+                    <div class="Next_layer">
+                        <div class="Next_layer01">
+                            <div>999</div>
+                            <div>
+                                <a href="##">180</a>
+                            </div>
+                        </div>
+                        <div class="Next_layer02">
+                            <div>￥<span>268</span></div>
+                            <div id="like"></div>
+                        </div>
+                        <div class="Next_layer03">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Product_item">
+                <div class="item_01">
+                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
                 </div>
                 <div class="item_02">
                     <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
@@ -277,34 +310,6 @@
                             <div></div>
                         </div>
                         <div class="Next_layer03">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="Product_item">
-                <div class="item_01">
-                    <a href="__APP__/ProductDetails/index"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
-                </div>
-                <div class="item_02">
-                    <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
-                </div>
-                <div class="item_03">
-                    <!--
-						item_layer 下层
-					  -->
-                    <div class="Next_layer">
-                        <div class="Next_layer01">
-                            <div>999</div>
-                            <div>
-                                <a href="##">180</a>
-                            </div>
-                        </div>
-                        <div class="Next_layer02">
-                            <div>￥<span>268</span></div>
-                            <div></div>
-                        </div>
-                        <div class="Next_layer03">
 
                         </div>
                     </div>
@@ -313,7 +318,7 @@
             </div>
             <div class="Product_item">
                 <div class="item_01">
-                    <a href="__APP__/ProductDetails/index"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
+                    <a href="##"><img src="__ROOT__/Index/Common/img/img_lens/1.jpg" alt=""></a>
                 </div>
                 <div class="item_02">
                     <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】</a>
@@ -509,8 +514,12 @@
 
     </div>
 </div>
-    <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
     <script src="__ROOT__/Index/Common/js/accesories.js"></script>
+    <script src="__ROOT__/Index/Common/js/lens.js"></script>
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/slideshow.js"></script>
+
+
 </body>
 <script>
     var app = angular.module("myapps", []);

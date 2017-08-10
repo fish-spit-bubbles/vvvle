@@ -1,8 +1,8 @@
 $(".sub_nav>li").hover(function () {
-    $(this).find(".sub_show").show()
+    $(this).find(".sub_show").show();
 }, function () {
-    $(this).find(".sub_show").hide()
-});
+    $(this).find(".sub_show").hide();
+})
 // banner效果
 var length = $('.banner_imgs li').length;
 for (var i = 1; i < length + 1; i++) {
