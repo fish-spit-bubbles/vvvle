@@ -79,7 +79,7 @@ app.controller("mycontrollerShop", function($scope, $http){
 
     $scope.submitData=function(){
              $scope.selectAll();
-
+            
           
               
     };
@@ -91,24 +91,42 @@ app.controller("mycontrollerShop", function($scope, $http){
         if(res){
             //   执行选择的操作  
             alert("全选");
+            $scope.basic();
         }else{
             // 执行单选的操作
              $(".checkt").each(function(i){
                  var bfro =  $(this).prop("checked") == true;
                     if(bfro){                  
-                           $scope.goneArr.push($(this).attr("sid"));
+                            var obj ={
+                                      sid: $(this).attr("sid"),
+                                    };   
+                           $scope.goneArr.push(obj);
                     };     
               });
               if($scope.goneArr.length==0){
-                    alert("请选择要购买商品");
+                    // alert("请选择要购买商品");
+                    // 数组置空
+                    $scope.goneArr.splice(0,$scope.goneArr.length);
+                 
               };
                console.log($scope.goneArr); 
+               $scope.basic();
         };
 
     };
-    // 获取到收货支付配送方式
+    
+    // 获取到收货人
     $scope.basic=function(){
-            
+            // 收件人
+        var basicUsername = $(".cart_user_info input").eq(0).val();
+        if(basicUsername==""){
+                $(".cart_user_info input").eq(0).parent().append("<span style='color:red;'>请填写收件人</span>");
+                return false;      
+        }else{
+           return true;
+        };
+
+    
     };
 
 
