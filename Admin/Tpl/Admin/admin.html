@@ -255,39 +255,43 @@
             })
         }
         $scope.updatas = function(){
-            var bgImg = document.getElementById("inputfile01")["files"][0];
-            var productImg = document.getElementById("inputfile02")["files"][0];
-            var infoImg = document.getElementById("inputfile03")["files"];
-            var form = new FormData();
-            for (i = 0; i < infoImg.length; i++) {
-                form.append("infoImg[" + i + "]", infoImg[i]);
-            }
-            form.append("id", $scope.id);
-            form.append("brand", $scope.brand);
-            form.append("category", $scope.category);
-            form.append("applyTo", $scope.applyTo);
-            form.append("effect", $scope.effect);
-            form.append("marketPrice", $scope.marketPrice);
-            form.append("wlPrice", $scope.wlPrice);
-            form.append("salesVolume", $scope.salesVolume);
-            form.append("productName", $scope.productName);
-            form.append("page", $scope.index);
-            form.append("bgImg", bgImg);
-            form.append("productImg", productImg);
-            $.ajax({
-                type: "post",
-                url: "__APP__/Admin/upData",
-                data: form,
-                processData: false,
-                contentType: false,
-                async: true,
-                success: function (data) {
-                    $scope.$apply(function(){
-                        $scope.list = data.data;
-                        $scope.count = data.total;
-                    });
+            if ($scope.id){
+                var bgImg = document.getElementById("inputfile01")["files"][0];
+                var productImg = document.getElementById("inputfile02")["files"][0];
+                var infoImg = document.getElementById("inputfile03")["files"];
+                var form = new FormData();
+                for (i = 0; i < infoImg.length; i++) {
+                    form.append("infoImg[" + i + "]", infoImg[i]);
                 }
-            })
+                form.append("id", $scope.id);
+                form.append("brand", $scope.brand);
+                form.append("category", $scope.category);
+                form.append("applyTo", $scope.applyTo);
+                form.append("effect", $scope.effect);
+                form.append("marketPrice", $scope.marketPrice);
+                form.append("wlPrice", $scope.wlPrice);
+                form.append("salesVolume", $scope.salesVolume);
+                form.append("productName", $scope.productName);
+                form.append("page", $scope.index);
+                form.append("bgImg", bgImg);
+                form.append("productImg", productImg);
+                $.ajax({
+                    type: "post",
+                    url: "__APP__/Admin/upData",
+                    data: form,
+                    processData: false,
+                    contentType: false,
+                    async: true,
+                    success: function (data) {
+                        $scope.$apply(function(){
+                            $scope.list = data.data;
+                            $scope.count = data.total;
+                        });
+                    }
+                })
+            } else {
+                alert("请选择要修改的商品!")
+            }  
         }
         $scope.skip = function(page){
             $scope.index = page;

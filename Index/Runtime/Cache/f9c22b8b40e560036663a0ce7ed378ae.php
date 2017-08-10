@@ -543,7 +543,7 @@
                         </li>
                         <li>
                             <a href="##">
-                                <img src="__ROOT__/Index/Common/img/img_homezr.png" alt="" />
+                                <img src="__ROOT__/Index/Common/img/img_home/zr.png" alt="" />
                                 <p>OLIVI轻瞳</p>
                                 <p>轻芯巧克力</p>
                             </a>
@@ -582,7 +582,7 @@
                         </li>
                         <li>
                             <a href="##">
-                                <img src="__ROOT__/Index/Common/img/img_hometm.png" alt="" />
+                                <img src="__ROOT__/Index/Common/img/img_home/tm.png" alt="" />
                                 <p>OLIVI轻瞳</p>
                                 <p>轻芯巧克力</p>
                             </a>
@@ -621,7 +621,7 @@
                         </li>
                         <li>
                             <a href="##">
-                                <img src="__ROOT__/Index/Common/img/img_homehx.png" alt="" />
+                                <img src="__ROOT__/Index/Common/img/img_home/hx.png" alt="" />
                                 <p>OLIVI轻瞳</p>
                                 <p>轻芯巧克力</p>
                             </a>
