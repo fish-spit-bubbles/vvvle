@@ -608,7 +608,7 @@
                         <a href="__APP__/ProductDetails/index?id={{v.id}}" class="classis_a">
                             <img ng-src="__ROOT__/{{v.bgImg}}" alt="" class="classis_img">
                             <div class="classis_info clearfix">
-                                <img ng-src="__ROOT__/{{v.productImg}}" alt="">
+                                <img width="283" height="283" ng-src="__ROOT__/{{v.productImg}}" alt="">
                                 <div class="classis_infos">
                                     <p class="classis_title">{{v.productName}}</p>
                                     <p class="classis_cinfo">直径:<span>14.0</span>mm | 厚度:<span>0.008</span>mm</p>
@@ -703,16 +703,17 @@
                 alert("系统繁忙，请稍后...");
             }
         });
-        // console.log(111);
         $(".show_nav li").on("click",function(){
-            // console.log($(this).find(".searchB").html());
             var qing=$(this).find(".searchB").html();
             $.ajax({
-                url:"",
+                url:"__APP__/ProductDetails/getDetailGoods",
                 data:{qing:qing},
                 dataType:"json",
+                type: "post",
                 success:function(data){
-                    console.log(data);
+                    if (data.status == 1) {
+                        window.location.href = "__APP__/ProductDetails/index?id=" + data.data["id"];
+                    }
                 }
             })
         })

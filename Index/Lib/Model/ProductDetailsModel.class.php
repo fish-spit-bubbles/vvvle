@@ -8,21 +8,14 @@ class ProductDetailsModel extends Model{
             $res =  $vvvle->data($newstr)->add();
             return $res;             
     }
-      // 查询数据数据
+        // 查询数据数据
     public function query($newstr){
-                $arr['uid']= $newstr['uid'];
-                $arr['pid']= $newstr['pid'];
-                $vvvle = M("order");       
-                $res = $vvvle->where($arr)->find();
-                return  $res;
+        $arr['uid']= $newstr['uid'];
+        $arr['pid']= $newstr['pid'];
+        $vvvle = M("order");       
+        $res = $vvvle->where($arr)->find();
+        return  $res;
     }
-
-
-
-
-
-
-
 };
 
 
