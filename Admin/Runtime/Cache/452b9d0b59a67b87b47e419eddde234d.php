@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -28,7 +28,7 @@
 
 <body ng-app="myapp" ng-controller="mycontroller">
     <div class="header">
-        <div class="header_title"><a href="/">后台管理系统</a><span class="header_user">Hi~欢迎你 , 管理员{$Think.session.username}</span><a href="__APP__/Admin/layout"><span class="header_loginout">[退出]</span</a></div>
+        <div class="header_title"><a href="/">后台管理系统</a><span class="header_user">Hi~欢迎你 , 管理员<?php echo (session('username')); ?></span><a href="__APP__/Admin/layout"><span class="header_loginout">[退出]</span</a></div>
     </div>
     <div class="container text-center" id="box">
         <h3 class="text-primary">管理员界面</h3>
