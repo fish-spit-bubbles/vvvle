@@ -14,6 +14,7 @@ class NewProductAction extends Action {
             $this->assign("judge1",'true');
             $this->display("newProduct");
         }
+        
     }
 
     public function getNewProducts(){

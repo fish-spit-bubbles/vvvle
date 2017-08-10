@@ -137,6 +137,14 @@ body {
     display: inline-block;
     vertical-align: top;
 }
+.show_goods_o_pic_ui-form_tlsp>img{
+    margin-top: 20px;
+}
+
+
+
+
+
 
 .show_goods_o_pic_ui_relative_goods {
     height: 80px;

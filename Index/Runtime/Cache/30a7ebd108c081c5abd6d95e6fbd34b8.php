@@ -159,13 +159,13 @@
         <!--产品展示界面  Product_box产品盒子-->
         <div class="Product_box">
             <div class="Product_container">
-                <div class="Product_item" ng-repeat="v in newProductList">
+                <div class="Product_item" ng-cloak ng-repeat="v in newProductList">
                     <div class="item_01">
                         <a href="__APP__/ProductDetails/index?id={{v.id}}"><img ng-src="__ROOT__/{{v.bgImg}}" alt=""></a>
-                        <a style="width:100px;height:100px;" href="__APP__/ProductDetails/index?id={{v.id}}"><img ng-src="__ROOT__{{v.productImg}}" alt=""></a>
+                        <a style="width:100px;height:100px;" href="__APP__/ProductDetails/index?id={{v.id}}"><img ng-src="__ROOT__/{{v.productImg}}" alt=""></a>
                     </div>
                     <div class="item_02">
-                        <a href="##" title="DorisCon 流星灰 【硅水凝胶】">DorisCon 流星灰 【硅水凝胶】 啊实打实大师的撒的啊实打实的撒</a>
+                        <a href="##" title="{{v.productName}}">{{v.productName}}</a>
                     </div>
                     <div class="item_03">
                         <!--
@@ -173,13 +173,13 @@
                         -->
                         <div class="Next_layer">
                             <div class="Next_layer01">
-                                <div>999</div>
+                                <div>{{v.salesVolume}}</div>
                                 <div>
                                     <a href="##">180</a>
                                 </div>
                             </div>
                             <div class="Next_layer02">
-                                <div>￥<span>268</span></div>
+                                <div>￥<span>{{v.wlPrice}}</span></div>
                                 <div id="like"></div>
                             </div>
                             <div class="Next_layer03">
@@ -367,7 +367,7 @@
         $scope.newProductList = "";
         $http.get("__APP__/newProduct/getNewProducts").success(function(data){
             if (data.status == 1) {
-                $scope.newProductList = data.data;
+                $scope.newProductList = data['data'];
                 console.log(data.data)
             } else {
                 alert("系统繁忙，请稍后...");

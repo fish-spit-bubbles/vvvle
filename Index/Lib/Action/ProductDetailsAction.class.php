@@ -6,17 +6,16 @@ class ProductDetailsAction extends Action {
             $this->assign("username",$_SESSION['username']);
             $this->assign("judge",'true');
             $this->assign("judge1",'false');
-            $this->display("productDetails");
-
         }else{
             $this->assign("judge",'false');
             $this->assign("judge1",'true');
-            $this->display("productDetails");
         }
-    }
-    public function getList(){
         $id = $_GET['id'];
-        
+        $goods = M("Goods");
+        $listArr = $goods->where("id=".$id)->find();
+        $this->assign("v",$listArr );
+
+        $this->display("productDetails");
     }
     // 获取商品详情，添加成功数据库 跳转到购物车
     public function getGoods(){

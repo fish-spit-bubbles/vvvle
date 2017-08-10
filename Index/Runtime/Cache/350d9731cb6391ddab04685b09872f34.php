@@ -192,33 +192,33 @@
         <div class="show_goods_o_pic_clearfix">
             <!-- 商品图片 -->
             <div class="show_goods_o_pic_clearfix_imgInfo">
-                <img src="__ROOT__/Index/Common/img/3766_P_ssds1501800650158.jpg" alt="商品">
+                <img ng-src="__ROOT__/<?php echo ($v["bgImg"]); ?>" alt="商品">
             </div>
             <!-- 商品简介和加入购物车，立即购买 -->
             <from class="show_goods_o_pic_ui-form-item">
                 <div class="show_goods_o_pic_ui-form-item_goods_o_name">
-                    <span>SUPER COLOR ME三色棕</span>
+                    <span><?php echo ($v["productName"]); ?></span>
                 </div>
                 <ul class="show_goods_o_pic_ui-form-item_tm-fcs">
                     <li> 微乐价：
                         <span>
                             <em>￥</em>
                             <!-- 价格 -->
-                             <span class="show_goods_tm_price1">188</span>
+                             <span class="show_goods_tm_price1"><?php echo ($v["wlPrice"]); ?></span>
                         </span>
                     </li>
                     <!-- 市场价格 -->
                     <p class="show_goods_o_pic_g_pric_in">市场价格：
                         <span>
                              <em>￥</em>
-                             <span class="market">402</span>
+                             <span class="market"><?php echo ($v["marketPrice"]); ?></span>
                         </span>
                     </p>
                 </ul>
                 <!-- 同系列其他商品 -->
                 <div class="show_goods_o_pic_ui-form-item_tm-fhu">
                     <div class="show_goods_o_pic_ui-form_tlsp">
-                        <img monfr="tlsp" src="__ROOT__/Index/Common/img/img_productDetails/3766_thumb_G_1501800650517.png" alt="同类商品">
+                        <img monfr="tlsp" ng-src="__ROOT__/<?php echo ($v["productImg"]); ?>" alt="同类商品">
                     </div>
                     <div class="show_goods_o_pic_ui_relative_goods">
                         <h2>同系列其他产品</h2>
@@ -314,7 +314,7 @@
                     <strong>促销价：</strong>
                     <span>
                         <em>￥</em>
-                        <span class="padd_loop_cxjs">188</span>
+                        <span class="padd_loop_cxjs"><?php echo ($v["wlPrice"]); ?></span>
                     </span>
                     <strong>剩余时间：</strong>
                     <font>2天01小时38分钟18秒</font>
@@ -322,7 +322,7 @@
                 <hr/>
                 <li class="clearfix" name="sell">
                     <span>已售出：</span>
-                    <font>34</font>
+                    <font><?php echo ($v["salesVolume"]); ?></font>
                     <span>购买此商品赠送：</span>
                     <font><span>3</span> 积分</font>
                 </li>
