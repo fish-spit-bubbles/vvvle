@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Document</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
@@ -12,11 +12,13 @@
 
     <!-- 头部尾部侧边栏CSS -->
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
-
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
+
+
 </head>
 
-<body onload="_init_area()">
+<body onload="_init_area()" ng-app="myappShop" ng-controller="mycontrollerShop">
     <!--首页头部  -->
     <div>
         <include file="Public:header" />
@@ -46,51 +48,27 @@
                         <td>小计</td>
                         <td>操作</td>
                     </tr>
-                    <tr>
+
+                    <tr ng-cloak ng-repeat="v in dataArr">
                         <td>
-                            <input type="checkbox" class="checkt" />
-                            <a href="##"><img src="__ROOT__/Index/Common/img/img_cart/1761_thumb_G_1430349195420.png" alt="" /></a>
+                            <input ng-click="checkt()" type="checkbox" class="checkt" sid={{v.id}}>
+                            <a href="##"><img src={{v.pbgimg}} alt="" /></a>
                         </td>
                         <td>
-                            <a href="##">OLIVI 轻瞳 茶束棕（硅水凝胶）</a>
+                            <a href="##">{{v.productName}}</a>
                         </td>
                         <td>
-                            <span>左眼度数:平光</span><br />
-                            <span>右眼度数:平光</span>
+                            <span>左眼度数:{{v.leftdiy}}</span><br />
+                            <span>右眼度数:{{v.rigth}}</span>
                         </td>
-                        <td>198.00</td>
-                        <td>&yen;<span class="proPirce">132.00</span></td>
+                        <td>{{v.marketPrice}}</td>
+                        <td>&yen;<span class="proPirce">{{v.wlprice}}</span></td>
                         <td class="proCount">
-                            <input type="button" value="-" class="ys ys1" />
-                            <input type="text" class="count" value="1" />
-                            <input type="button" value="+" class="ys ys2" />
+                            <input type="button" value="-" class="ys ys1" ng-click="reckon($event)" />
+                            <input type="text" class="count" value={{v.pnum}} />
+                            <input type="button" value="+" class="ys ys2" ng-click="reckon($event)" />
                         </td>
-                        <td>&yen;<span class="proMoney">132.00</span></td>
-                        <td>
-                            <a href="##" class="proDel">删除</a>&nbsp;&nbsp;
-                            <a href="##">放入收藏夹</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" class="checkt" />
-                            <a href="##"><img src="__ROOT__/Index/Common/img/img_cart/1761_thumb_G_1430349195420.png" alt="" /></a>
-                        </td>
-                        <td>
-                            <a href="##">OLIVI 轻瞳 茶束棕（硅水凝胶）</a>
-                        </td>
-                        <td>
-                            <span>左眼度数:平光</span><br />
-                            <span>右眼度数:平光</span>
-                        </td>
-                        <td>198.00</td>
-                        <td>&yen;<span class="proPirce">132.00</span></td>
-                        <td class="proCount">
-                            <input type="button" value="-" class="ys ys1" />
-                            <input type="text" class="count" value="1" />
-                            <input type="button" value="+" class="ys ys2" />
-                        </td>
-                        <td>&yen;<span class="proMoney">132.00</span></td>
+                        <td>&yen;<span class="proMoney">{{v.total}}</span></td>
                         <td>
                             <a href="##" class="proDel">删除</a>&nbsp;&nbsp;
                             <a href="##">放入收藏夹</a>
@@ -263,7 +241,7 @@
             <div class="cart_form_footer">
                 <span>给商家留言</span>
                 <input class="say_info" type="text" />
-                <input class="sure_sub" type="submit" value="" />
+                <input class="sure_sub" ng-click="submitData()" value="" />
             </div>
         </form>
     </div>
@@ -272,8 +250,10 @@
         <include file="Public:footer" />
     </div>
 
+    <script type="text/javascript" src="__ROOT__/Index/Common/js/shopcart.js"></script>
+
 </body>
-<script type="text/javascript" src="__ROOT__/Index/Common/js/shopcart.js"></script>
+
 
 
 </html>

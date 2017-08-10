@@ -14,6 +14,7 @@ class ProductDetailsModel extends Model{
                   $arr['pid']= $newstr['pid'];
                   $vvvle = M("order");       
                   $res = $vvvle->where($arr)->find();
+                  
                   return  $res;
     }
 
