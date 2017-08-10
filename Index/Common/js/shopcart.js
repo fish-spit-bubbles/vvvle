@@ -75,22 +75,40 @@ app.controller("mycontrollerShop", function($scope, $http){
 
     // 点击提交
     // 用于存商品主键ID
-$scope.goneArr=[];
+    $scope.goneArr=[];
 
     $scope.submitData=function(){
-                // console.log($(".checkt"));
-              $(".checkt").each(function(i){
+             $scope.selectAll();
+
+          
+              
+    };
+
+    // 判断有没有全选
+    $scope.selectAll=function(){
+        var res =$("#selectAll1").prop("checked");
+        console.log(res);
+        if(res){
+            //   执行选择的操作  
+            alert("全选");
+        }else{
+            // 执行单选的操作
+             $(".checkt").each(function(i){
                  var bfro =  $(this).prop("checked") == true;
-                    if(bfro){
-                         
+                    if(bfro){                  
                            $scope.goneArr.push($(this).attr("sid"));
                     };     
               });
               if($scope.goneArr.length==0){
                     alert("请选择要购买商品");
               };
+               console.log($scope.goneArr); 
+        };
 
-               console.log($scope.goneArr);  
+    };
+    // 获取到收货支付配送方式
+    $scope.basic=function(){
+            
     };
 
 

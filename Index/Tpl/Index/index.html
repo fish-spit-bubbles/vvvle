@@ -692,10 +692,10 @@
 <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
 <script type="text/javascript" src="__ROOT__/Index/Common/js/home.js"></script>
 <script>
-    var app = angular.module("myapps",[]);
-    app.controller("mycontroller",function($scope,$http){
+    var app = angular.module("myapps", []);
+    app.controller("mycontroller", function($scope, $http) {
         $scope.goodsLists = "";
-        $http.get("__APP__/Index/getGoods").success(function(data){
+        $http.get("__APP__/Index/getGoods").success(function(data) {
             if (data.status == 1) {
                 $scope.goodsLists = data.data;
             } else {
@@ -704,4 +704,5 @@
         });
     })
 </script>
+
 </html>
