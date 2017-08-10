@@ -2,7 +2,17 @@
 // 商品详情页
 class ProductDetailsAction extends Action {
     public function index(){
-        $this->display("productDetails");
+        if(!empty($_SESSION['username'])) {
+            $this->assign("username",$_SESSION['username']);
+            $this->assign("judge",'true');
+            $this->assign("judge1",'false');
+            $this->display("productDetails");
+
+        }else{
+            $this->assign("judge",'false');
+            $this->assign("judge1",'true');
+            $this->display("productDetails");
+        }
     }
     public function getList(){
         $id = $_GET['id'];
