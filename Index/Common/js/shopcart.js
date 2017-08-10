@@ -75,22 +75,58 @@ app.controller("mycontrollerShop", function($scope, $http){
 
     // 点击提交
     // 用于存商品主键ID
-$scope.goneArr=[];
+    $scope.goneArr=[];
 
     $scope.submitData=function(){
-                // console.log($(".checkt"));
-              $(".checkt").each(function(i){
+             $scope.selectAll();
+            
+          
+              
+    };
+
+    // 判断有没有全选
+    $scope.selectAll=function(){
+        var res =$("#selectAll1").prop("checked");
+        console.log(res);
+        if(res){
+            //   执行选择的操作  
+            alert("全选");
+            $scope.basic();
+        }else{
+            // 执行单选的操作
+             $(".checkt").each(function(i){
                  var bfro =  $(this).prop("checked") == true;
-                    if(bfro){
-                         
-                           $scope.goneArr.push($(this).attr("sid"));
+                    if(bfro){                  
+                            var obj ={
+                                      sid: $(this).attr("sid"),
+                                    };   
+                           $scope.goneArr.push(obj);
                     };     
               });
               if($scope.goneArr.length==0){
-                    alert("请选择要购买商品");
+                    // alert("请选择要购买商品");
+                    // 数组置空
+                    $scope.goneArr.splice(0,$scope.goneArr.length);
+                 
               };
+               console.log($scope.goneArr); 
+               $scope.basic();
+        };
 
-               console.log($scope.goneArr);  
+    };
+    
+    // 获取到收货人
+    $scope.basic=function(){
+            // 收件人
+        var basicUsername = $(".cart_user_info input").eq(0).val();
+        if(basicUsername==""){
+                $(".cart_user_info input").eq(0).parent().append("<span style='color:red;'>请填写收件人</span>");
+                return false;      
+        }else{
+           return true;
+        };
+
+    
     };
 
 

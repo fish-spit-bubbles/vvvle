@@ -543,7 +543,7 @@
                         </li>
                         <li>
                             <a href="##">
-                                <img src="__ROOT__/Index/Common/img/img_homezr.png" alt="" />
+                                <img src="__ROOT__/Index/Common/img/img_home/zr.png" alt="" />
                                 <p>OLIVI轻瞳</p>
                                 <p>轻芯巧克力</p>
                             </a>
@@ -582,7 +582,7 @@
                         </li>
                         <li>
                             <a href="##">
-                                <img src="__ROOT__/Index/Common/img/img_hometm.png" alt="" />
+                                <img src="__ROOT__/Index/Common/img/img_home/tm.png" alt="" />
                                 <p>OLIVI轻瞳</p>
                                 <p>轻芯巧克力</p>
                             </a>
@@ -621,7 +621,7 @@
                         </li>
                         <li>
                             <a href="##">
-                                <img src="__ROOT__/Index/Common/img/img_homehx.png" alt="" />
+                                <img src="__ROOT__/Index/Common/img/img_home/hx.png" alt="" />
                                 <p>OLIVI轻瞳</p>
                                 <p>轻芯巧克力</p>
                             </a>
@@ -943,10 +943,10 @@
 <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
 <script type="text/javascript" src="__ROOT__/Index/Common/js/home.js"></script>
 <script>
-    var app = angular.module("myapps",[]);
-    app.controller("mycontroller",function($scope,$http){
+    var app = angular.module("myapps", []);
+    app.controller("mycontroller", function($scope, $http) {
         $scope.goodsLists = "";
-        $http.get("__APP__/Index/getGoods").success(function(data){
+        $http.get("__APP__/Index/getGoods").success(function(data) {
             if (data.status == 1) {
                 $scope.goodsLists = data.data;
             } else {
@@ -955,4 +955,5 @@
         });
     })
 </script>
+
 </html>
