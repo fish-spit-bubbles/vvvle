@@ -7,6 +7,15 @@ return array(
     'DB_USER'   => 'bdm27488675', // 用户名
     'DB_PWD'    => 'SH1302070001', // 密码
     'DB_PORT'   => 3306, // 端口
+<<<<<<< HEAD
 	'DB_PREFIX'=>'vvvle_' ,  //数据库表前缀
+=======
+<<<<<<< HEAD
+	'DB_PREFIX'=>'vvvle_' ,  //数据库表前缀
+=======
+	'DB_PREFIX' => 'vvvle_' ,  //数据库表前缀
+
+>>>>>>> origin/master
+>>>>>>> f79d1db684484af02ab31b618ecab78d0ba99894
 );
 ?>

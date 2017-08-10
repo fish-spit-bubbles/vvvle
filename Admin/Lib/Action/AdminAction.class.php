@@ -3,7 +3,17 @@
 class AdminAction extends Action {
     private $everyPage = 5;
     public function admin(){
-        $this->display('admin');
+        if(!empty($_SESSION['username'])){
+              $this->display('admin');
+        }else{
+           header("Location:../../admin.php/Login/login");
+        }
+      
+    }
+    public function layout(){
+        session(null);
+        header("Location:../../admin.php/Login/login");
+        
     }
     //生成随机数的函数
     public function randstr($num){

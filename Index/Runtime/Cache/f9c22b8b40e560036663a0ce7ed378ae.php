@@ -709,9 +709,9 @@
             </div>
             <div class="home_classis_content">
                 <ul class="classis_content">
-                    <li ng-repeat="v in goodsLists">
+                    <li ng-cloak ng-repeat="v in goodsLists">
                         <!-- 调到商品详情页 -->
-                        <a href="__APP__/ProductDetails/index" class="classis_a">
+                        <a href="__APP__/ProductDetails/index?id={{v.id}}" class="classis_a">
                             <img src="__ROOT__/{{v.bgImg}}" alt="" class="classis_img">
                             <div class="classis_info clearfix">
                                 <img src="__ROOT__/{{v.productImg}}" alt="">
