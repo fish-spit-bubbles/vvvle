@@ -21,10 +21,20 @@ class ShopCartModel extends Model {
                 }else{
                         return true;
                 };
+        }
 
-        
+        public function  deleteData($id){
+                $vvvle = M("order"); 
+
+                $arr = $vvvle->where("id=".$id)->delete();
+               if($arr==1){
+                return true;
+               }else{
+                return false;
+               };
 
         }
+
 
 
 

@@ -167,11 +167,12 @@ $http({
             "Content-type":"application/x-www-form-urlencoded",
         },
     }).success(function(data){
-        console.log(data);
-  
+         if(data.status==1){
+            alert("订单提交成功");
+         }else{
+            alert("系统错误");
+         };
     });
-
-
 
 
 }else{
@@ -302,7 +303,37 @@ $scope.pay=function(){
 };
 
 
+$scope.delData=function($event){
+    var _this = $event.target; 
+    var chedex = $(_this).parent().parent().children().eq(0).children().eq(0).prop('checked');
+    if(chedex){
+        // 执行删除请求
+        $http({
+            url:"http://localhost/vvvle/index.php/ShopCart/delOrder",
+            method:"POST",
+            data:{
+                id:$(_this).parent().parent().children().eq(0).children().eq(0).attr("sid"),
+            },
+            headers:{
+                "Content-type":"application/x-www-form-urlencoded",
+            },
+        }).success(function(data){
+            if(data.status==1){
+                  window.location.href="http://localhost/vvvle/index.php/ShopCart/index";  
+            }else{
+                alert("系统错误");
+            };
+                // console.log(data);
+        });
 
+
+
+
+    }else{
+        // 返回选择删除对象
+        alert("请选择要删除的商品");
+    };
+};
 
 
 
@@ -321,6 +352,8 @@ $scope.pay=function(){
 
 
 });
+
+
 
 
 
