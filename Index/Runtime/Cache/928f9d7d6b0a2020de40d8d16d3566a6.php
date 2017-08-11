@@ -8,7 +8,7 @@
     <title>Hot界面</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
-
+    <link rel="icon" href="__ROOT__/animated_favicon.gif" type="image/gif"> 
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/home.css" />
     <!-- 头部尾部侧边栏CSS -->
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
@@ -87,15 +87,15 @@
             </a>
             <div class="center_input_form">
                 <input type="text" placeholder="请输出商品">
-                <a href="#">
+                <a href="javascript:void(0);">
                     <img src="__ROOT__/Index/Common/img/search_01.png" alt="搜索">
                 </a>
                 <!-- 推荐 -->
                 <div class="center_input_tuijian">热门搜索：
-                    <a href="#">OLIVI</a>|
-                    <a href="#">轻瞳</a>|
-                    <a href="#">硅水凝胶</a>|
-                    <a href="#">活动</a>|
+                    <a href="__APP__/Search/search?keywords=OLIVI">OLIVI</a>|
+                    <a href="__APP__/Search/search?keywords=轻瞳">轻瞳</a>|
+                    <a href="__APP__/Search/search?keywords=硅水凝胶">硅水凝胶</a>|
+                    <a href="__APP__/Search/search?keywords=活动">活动</a>|
                 </div>
             </div>
             <div class="center_input_News">
@@ -146,6 +146,10 @@
             $(".bootm_naviea_hove" + ":lt(" + i + ")").css("color", "#000");
         });
     });
+    $(".center_input_form img").click(function(){
+        var txt = $(".center_input_form input").val();
+        window.location.href = "__APP__/Search/search?keywords="+txt;
+    })
 </script>
     </div>
 
@@ -190,18 +194,13 @@
             </div>
         </div>
         <!--分页·paging -->
-        <div class="pager">
-            <span>«首页</span>
-            <span>上一页</span>
-            <a href="##" class="current">1</a>
-            <a href="##">2</a>
-            <a href="##">3</a>
-            <a href="##">4</a>
-            <a href="##">5</a>
-            <a href="##">6</a>
-            <a href="##">下一页</a>
-            <a href="##">尾页»</a>
-            <span>1/共36页</span>
+        <div ng-cloak class="pager">
+            <a href="javascript:void(0);" ng-click="skip(0)">«首页</a>
+            <a href="javascript:void(0);" ng-click="pre(index-1)">上一页</a>
+            <a ng-repeat="v in range(0, count)" ng-class="{true:'current', false: ''}[index == v]" ng-click="skip(v)" href="javascript:void(0);">{{v + 1}}</a>
+            <a href="javascript:void(0);" ng-click="nexts(index+1)">下一页</a>
+            <a href="javascript:void(0);" ng-click="skip(count - 1)">尾页»</a>
+            <span><i style="font-style: normal">{{index + 1}}</i>/共<i style="font-style: normal">{{count}}</i>页</span>
         </div>
     </div>
 
@@ -364,14 +363,58 @@
     var app = angular.module("myapps",[]);
     app.controller("myHot",function($scope,$http){
         $scope.newProductList = "";
+        $scope.index = 0;
         $http.get("__APP__/hot/getHot").success(function(data){
             if (data.status == 1) {
                 $scope.newProductList = data['data'];
+                $scope.count = data.count;
             } else {
                 alert("系统繁忙，请稍后...");
             }
         })
-
+        $scope.range = function(min, max, step) {
+            step = step || 1;
+            var input = [];
+            for (var i = min; i < max; i += step) {
+                input.push(i);
+            }
+            return input;
+        };
+        $scope.skip = function(page){
+            $scope.index = page;
+            getPageData(page);
+        }
+        $scope.pre = function(page){
+            if (page < 0) {
+                $scope.index = 0;
+            } else {
+                $scope.index = page;
+            }
+            getPageData($scope.index);
+        }
+        $scope.nexts = function(page){
+            if (page >= $scope.count) {
+                $scope.index = $scope.count - 1;
+            } else {
+                $scope.index = page;
+            }
+            getPageData($scope.index);
+        }
+        function getPageData(page) {
+            $http({
+                url: "__APP__/Hot/getNewPage",
+                method: "post",
+                data: {
+                    page: page
+                },
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                }
+            }).success(function(data){
+                $scope.newProductList = data['data'];
+                $scope.count = data.count;
+            })
+        }
     })
 </script>
 </html>

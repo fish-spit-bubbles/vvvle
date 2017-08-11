@@ -20,7 +20,7 @@
 
 <body ng-app="myapps" ng-controller="myLens">
     <!--头部  -->
-    <div ng-cloak >
+    <div ng-cloak>
         <include file="Public:header" />
     </div>
     <div class="lens_wrap">
@@ -301,11 +301,7 @@
         $http.get("__APP__/lens/getLens").success(function(data){
             if (data.status == 1) {
                 $scope.newProductList = data['data'];
-<<<<<<< HEAD
                 $scope.count = data.count;
-=======
-                console.log(data.data);
->>>>>>> 11592dab2f2e7a5d45fc0faa88b1d100aae9eeb3
             } else {
                 alert("系统繁忙，请稍后...");
             }

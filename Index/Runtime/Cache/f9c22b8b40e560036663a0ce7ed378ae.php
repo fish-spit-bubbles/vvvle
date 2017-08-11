@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HOME | 首页</title>
-    <!-- <link rel="icon" href="__ROOT__/animated_favicon.gif" type="image/gif"> -->
+    <link rel="icon" href="__ROOT__/animated_favicon.gif" type="image/gif"> 
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/home.css" />
@@ -67,15 +67,15 @@
             </a>
             <div class="center_input_form">
                 <input type="text" placeholder="请输出商品">
-                <a href="#">
+                <a href="javascript:void(0);">
                     <img src="__ROOT__/Index/Common/img/search_01.png" alt="搜索">
                 </a>
                 <!-- 推荐 -->
                 <div class="center_input_tuijian">热门搜索：
-                    <a href="#">OLIVI</a>|
-                    <a href="#">轻瞳</a>|
-                    <a href="#">硅水凝胶</a>|
-                    <a href="#">活动</a>|
+                    <a href="__APP__/Search/search?keywords=OLIVI">OLIVI</a>|
+                    <a href="__APP__/Search/search?keywords=轻瞳">轻瞳</a>|
+                    <a href="__APP__/Search/search?keywords=硅水凝胶">硅水凝胶</a>|
+                    <a href="__APP__/Search/search?keywords=活动">活动</a>|
                 </div>
             </div>
             <div class="center_input_News">
@@ -126,6 +126,10 @@
             $(".bootm_naviea_hove" + ":lt(" + i + ")").css("color", "#000");
         });
     });
+    $(".center_input_form img").click(function(){
+        var txt = $(".center_input_form input").val();
+        window.location.href = "__APP__/Search/search?keywords="+txt;
+    })
 </script>
     </div>
     <!--首页主体  -->
