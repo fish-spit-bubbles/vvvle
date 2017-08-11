@@ -47,8 +47,6 @@ $(".padda>.Join_the_shopping_cart").click(function() {
 // 立即购买
 $(".padda>.padda_buynow").click(function(event){
     judgementDegree($(this));
-
-   
     
 });
 
@@ -124,9 +122,9 @@ function judgementDegree(str) {
 // 获取商品、用户数据、数量、单价、进行AJAX跳转到购物车
 function getGoods(){
     // 用户ID
-    var  uid = 1;
+    var  uid = $("#uid").attr("uid");
     // 产品ID
-    var  pid = 101;
+    var  pid = $("#pid").attr("pid");
     // 商品路径
     var pbgimg = $("img[monfr='tlsp']").prop("src");
     // 产品名称
@@ -147,7 +145,7 @@ function getGoods(){
     var integral  = $(".show_goods_o_pic_ui-form-item>.clearfix[name='sell']>font>span").text();
     obj={
         uid,
-        pid ,
+        pid,
         pbgimg,
         productName,
         leftdiy,
@@ -158,7 +156,7 @@ function getGoods(){
         integral,
         wlprice
     };
-    // console.log(obj);
+    // console.log(uid,pid);
 
     if(window.XMLHttpRequest){
         var ajax = new XMLHttpRequest;
@@ -170,11 +168,14 @@ function getGoods(){
     var data = JSON.stringify(obj);
     ajax.send(data);
     ajax.onreadystatechange=function(){
-        if(ajax.readyState==4 && ajax.status==200){
-                var res = JSON.parse(ajax.responseText);
-                if(res.status==1){
+        if(ajax.readyState==4 && ajax.status==200){          
+                var res = ajax.responseText;
+                var ress = JSON.parse(res);
+                if(ress.status==1){
                         window.location.href="http://localhost/vvvle/index.php/ShopCart/index";
-                }else{
+                }else if(ress.status==2){
+                         window.location.href="http://localhost/vvvle/index.php/Login/login";
+                }else{      
                    alert("系统错误");     
                 };
         };
@@ -186,9 +187,9 @@ function getGoods(){
 
 function cartGetGoods(event){
     // 用户ID
-    var  uid = 1;
+    var  uid = $("#uid").attr("uid");
     // 产品ID
-    var  pid = 103;
+    var  pid = $("#pid").attr("pid");
     // 商品路径
     var pbgimg = $("img[monfr='tlsp']").prop("src");
     // 产品名称
@@ -227,16 +228,18 @@ function cartGetGoods(event){
     }else{
         var  ajax = new ActiveXObject;
     };
-    ajax.open("POST","http://localhost/vvvle/index.php/ProductDetails/getGoods",true);
+    ajax.open("POST","http://localhost/vvvle/index.php/ProductDetails/getGoodsOne",true);
     ajax.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     var data = JSON.stringify(obj);
     ajax.send(data);
     ajax.onreadystatechange=function(){
         if(ajax.readyState==4 && ajax.status==200){
-                var res = JSON.parse(ajax.responseText);
-                if(res.status==1){
+                var res = ajax.responseText;
+                var res1 = JSON.parse(res);
+                if(res1.status==1){
                          // 动画函数
                       gwc(event);
+
                 }else{
                    alert("系统错误");     
                 };
@@ -438,6 +441,7 @@ if($(document).scrollTop() >= 1200){
 
 var app = angular.module("myapp", []);
 app.controller("mycontroller", function($scope, $http) {
+
 
     $scope.imgarr = [{
         path: "1500628005237569.jpg"

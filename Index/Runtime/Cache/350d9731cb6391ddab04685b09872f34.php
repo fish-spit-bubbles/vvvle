@@ -182,9 +182,9 @@
     <!-- 本站导航小链接 -->
     <div class="site_navigation">
         <a href="#">首页</a> >
-        <a href="#">彩色隐形眼镜</a> >
-        <a href="#">DorisCon</a> >
-        <a href="#">冰柠系列</a> > DorisCon 冰柠粉 【硅水凝胶】
+        <a href="#"><?php echo ($v["category"]); ?></a> >
+        <a href="#"><?php echo ($v["brand"]); ?></a> >
+        <a href="#"><?php echo ($v["productName"]); ?></a>
     </div>
     <!-- 中部显示BOX -->
     <div class="show_details" box="bg">
@@ -193,7 +193,20 @@
             <!-- 商品图片 -->
             <div class="show_goods_o_pic_clearfix_imgInfo">
                 <img ng-src="__ROOT__/<?php echo ($v["bgImg"]); ?>" alt="商品">
+                <div class="show_goods_share">
+                    <a href="##"><span>分享到：</span></a>
+                    <a href="__APP__/Index/index"><span></span></a>
+                    <a href="__APP__/Index/index"><span></span></a>
+                    <a href="__APP__/Index/index"><span></span></a>
+                    <a href="__APP__/Index/index"><span></span></a>
+                    <a href="__APP__/Index/index"><span></span></a>
+                    <a href="__APP__/Index/index"><span></span></a>
+                    <a href="__APP__/Index/index"><span></span></a>
+                    <a href="__APP__/Index/index"><span></span></a>
+                    <a href="__APP__/Index/index"><span></span></a>   
+                </div>
             </div>
+          
             <!-- 商品简介和加入购物车，立即购买 -->
             <from class="show_goods_o_pic_ui-form-item">
                 <div class="show_goods_o_pic_ui-form-item_goods_o_name">
@@ -218,11 +231,13 @@
                 <!-- 同系列其他商品 -->
                 <div class="show_goods_o_pic_ui-form-item_tm-fhu">
                     <div class="show_goods_o_pic_ui-form_tlsp">
-                        <img monfr="tlsp" ng-src="__ROOT__/<?php echo ($v["productImg"]); ?>" alt="同类商品">
+                        <img monfr="tlsp" ng-src="__ROOT__/<?php echo ($v["productImg"]); ?>"  alt="同类商品">
+                        <span id="uid" uid="<?php echo ($uid); ?>"></span>
+                        <span id="pid" pid = "<?php echo ($pid); ?>"></span>
                     </div>
                     <div class="show_goods_o_pic_ui_relative_goods">
                         <h2>同系列其他产品</h2>
-                        <a href="#">
+                        <a href="__APP__/Hot/hot">
                             <img src="__ROOT__/Index/Common/img/img_productDetails/3765_thumb_G_1501800484125.png" alt="同系列商品小图">
                         </a>
                     </div>

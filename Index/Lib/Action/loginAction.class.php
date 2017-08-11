@@ -6,13 +6,11 @@ class LoginAction extends Action {
             $this->assign("username",$_SESSION['username']);
             $this->assign("judge",'true');
             $this->assign("judge1",'false');
-            $this->display("login");
-
         }else{
             $this->assign("judge",'false');
             $this->assign("judge1",'true');
-            $this->display("login");
         }
+         $this->display("login");
     }
 
     public function checkUsers(){
