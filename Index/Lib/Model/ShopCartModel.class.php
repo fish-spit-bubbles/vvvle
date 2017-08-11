@@ -12,7 +12,7 @@ class ShopCartModel extends Model {
                 $vvvle = M("order");  
                 $orderArr=[];
                 foreach($shoporderd as $k=>$v){
-                  $res =   $vvvle->where("id=".$v['id'])->data($shoporderd)->save();           
+                  $res =   $vvvle->where("id=".$v['id'])->save($v);           
                   $orderArr[$k]= $res;
                 };
                 if($orderArr==""){
