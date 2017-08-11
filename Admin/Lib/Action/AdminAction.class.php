@@ -3,7 +3,7 @@
 class AdminAction extends Action {
     private $everyPage = 5;
     public function admin(){
-        if(!empty($_SESSION['username'])){
+        if(!empty($_SESSION['adminer'])){
               $this->display('admin');
         }else{
            header("Location:../../admin.php/Login/login");

@@ -146,6 +146,10 @@ ul{
 .show_nav li{
     margin-bottom: 15px;
 }
+.show_nav li a span:nth-of-type(2){
+    margin-left: 106px;
+    margin-top: -74px;
+}
 /*轮播图样式  */
 .banner_wrap {
     width: 100%;

@@ -342,6 +342,7 @@ body {
     flex-direction: column;
     width: 370px;
     height: 35px;
+    text-align: -webkit-center;
 }
 
 .Product_item .item_02 a {
@@ -352,7 +353,7 @@ body {
     font-size: 14px;
     font-family: "幼圆";
     font-size: 18px;
-    width: 370px;
+    width: 200px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

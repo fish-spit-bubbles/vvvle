@@ -188,11 +188,17 @@ a:link {
 }
 
 .center_input_News_conten a {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
     color: #fff;
 }
 
 .center_input_News_conten>a[title="fl"] {
     position: relative;
+    padding-right:2px; 
     animation: bounceOutfl 8s 2s ease reverse forwards infinite;
 }
 

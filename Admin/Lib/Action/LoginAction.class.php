@@ -25,7 +25,7 @@ class LoginAction extends Action {
 		if($res){
 			$info['info'] = "用户名密码正确";
 			$info['status'] = 1;
-			session("username",$username);
+			session("adminer",$username);
 		}else{
 			$info['info'] = "用户名密码错误";
 			$info['status'] = 0;
