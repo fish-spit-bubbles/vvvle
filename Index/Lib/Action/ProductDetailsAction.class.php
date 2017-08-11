@@ -84,7 +84,7 @@ class ProductDetailsAction extends Action {
                     $info['status']=0;
                 };
                     $this->ajaxReturn($info); 
-            };   
+            };  
            
     }
 

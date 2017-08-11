@@ -111,7 +111,10 @@
 </head>
 <body ng-app="myapps" ng-controller="mycontroller">
     <!--头部  -->
-    <include file="Public:header" />
+    <div ng-cloak>   
+        <include file="Public:header" />
+    </div>
+    
     <!--登录表  -->
     <div class="login">
         <div class="row text-left">

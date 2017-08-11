@@ -19,10 +19,11 @@
      <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
 </head>
 
-<body ng-app="myapps" >
+<body  ng-app="myapps" >
     <!--头部  -->
-    <include file="Public:header" />
-
+    <div ng-cloak>
+        <include file="Public:header" />
+    </div>
     <!--用户中心  -->
     <div class="user_center">
         <!--首页 > 用户中心  -->
