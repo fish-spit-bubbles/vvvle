@@ -51,11 +51,11 @@
 
                     <tr ng-cloak ng-repeat="v in dataArr">
                         <td>
-                            <input ng-click="checkt()" type="checkbox" class="checkt" sid={{v.id}}>
+                            <input ng-click="checkt()" type="checkbox" class="checkt" sid={{v.id}} pnum={{v.pnum}}>
                             <a href="##"><img src={{v.pbgimg}} alt="" /></a>
                         </td>
                         <td>
-                            <a href="##">{{v.productName}}</a>
+                            <a href="http://localhost/vvvle/index.php/ProductDetails/index?id={{v.pid}}">{{v.productName}}</a>
                         </td>
                         <td>
                             <span>左眼度数:{{v.leftdiy}}</span><br />
@@ -70,7 +70,7 @@
                         </td>
                         <td>&yen;<span class="proMoney">{{v.total}}</span></td>
                         <td>
-                            <a href="##" class="proDel">删除</a>&nbsp;&nbsp;
+                            <a ng-click="delData($event)" class="proDel">删除</a>&nbsp;&nbsp;
                             <a href="##">放入收藏夹</a>
                         </td>
                     </tr>
@@ -80,7 +80,7 @@
                             <label class="lab" for="selectAll2">全选</label>
                         </td>
                         <td>
-                            <a href="##">继续购物</a>
+                            <a href="http://localhost/vvvle/index.php">继续购物</a>
                         </td>
                         <td colspan="5">
                             <span>&nbsp;&nbsp;总计：</span><br />
@@ -110,6 +110,7 @@
                             </td>
                             <td>
                                 <input type="text" />
+                                <span name="name" style="display:none;color:red">请正确填写姓名</span>
                             </td>
                         </tr>
                         <tr>
@@ -118,6 +119,7 @@
                             </td>
                             <td>
                                 <input type="text" /><span>&nbsp;(必填)</span>
+                                <span name="ipone" style="display:none;color:red">请正确填写手机号</span>
                             </td>
                         </tr>
                         <tr>
@@ -132,6 +134,8 @@
                                 <select name="cart_area" id="cart_area">
                                 </select>
                                 <span style="color: #ff3300">&nbsp;(必填)</span>
+                                <span name="city" style="display:none;color:red">请正确填写区域</span>
+
                             </td>
                         </tr>
                         <tr>
@@ -141,6 +145,8 @@
                             <td class="xiangxi_addss">
                                 <input type="text" />
                                 <span>(必填,请务必填完整您的地址，以便快递送货。)</span>
+                                <span name="address" style="display:none;color:red">请正确填写地址</span>
+
                             </td>
                         </tr>
                     </table>
@@ -148,13 +154,14 @@
             </div>
             <div class="cart_user_express cart_warp">
                 <div class="cart_table_header">
-                    配送方式<span>保密派送，快递单无任何产品和公司等敏感信息</span>
+                    配送方式<span>保密派送，快递单无任何产品和公司等敏感信息</span><span name="userExpress" style="display:none;color:red">请选择配送方式</span>
+
                 </div>
                 <div class="table_warp">
                     <table class="cart_adds">
                         <tr>
                             <td>
-                                <input name="express" type="radio" id="express" /><label for="express">&nbsp;快递</label>
+                                <input name="express" type="radio" id="express" value="0" /><label for="express">&nbsp;快递</label>
                             </td>
                             <td>
                                 费用：￥<span>0.00</span>
@@ -162,7 +169,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <input name="express" type="radio" id="ems" /><label for="ems">&nbsp;EMS</label>
+                                <input name="express" type="radio" id="ems" value="1" /><label for="ems">&nbsp;EMS</label>
                             </td>
                             <td>
                                 费用：￥<span>0.00</span>
@@ -173,7 +180,7 @@
             </div>
             <div class="cart_user_pay cart_warp">
                 <div class="cart_table_header">
-                    支付方式<span>保密派送，快递单无任何产品和公司等敏感信息</span>
+                    支付方式<span>保密派送，快递单无任何产品和公司等敏感信息</span><span name="userPay" style="display:none;color:red">请选择配送方式</span>
                 </div>
                 <div class="table_warp">
                     <table class="cart_adds">
@@ -184,8 +191,8 @@
                         </tr>
                         <tr>
                             <td>
-                                <input name="pay" type="radio" id="pay1" /><label for="pay1"><img src="__ROOT__/Index/Common/img/img_cart/alipay.gif" alt=""></label>
-                                <input class="pay2" name="pay" type="radio" id="pay2" /><label for="pay2"><img src="__ROOT__/Index/Common/img/img_cart/wx_new_qrcode.gif" alt=""></label>
+                                <input name="pay" type="radio" id="pay1" value="0" /><label for="pay1"><img src="__ROOT__/Index/Common/img/img_cart/alipay.gif" alt=""></label>
+                                <input class="pay2" name="pay" type="radio" id="pay2" value="1" /><label for="pay2"><img src="__ROOT__/Index/Common/img/img_cart/wx_new_qrcode.gif" alt=""></label>
                             </td>
                         </tr>
                     </table>
@@ -233,9 +240,9 @@
                     最终结算
                 </div>
                 <div class="table_warp data_info">
-                    <div>该订单完成后，您将获得&nbsp;&nbsp;<span>3</span>&nbsp;&nbsp;积分 ，以及价值<b>&nbsp;&nbsp;&yen;</b><span>0.00</span>的红包。</div>
-                    <div>商品总价: <b>&nbsp;&yen;</b><span>320.00</span></div>
-                    <div>应付款金额: <b>&nbsp;&yen;</b><span>320.00</span></div>
+                    <div>该订单完成后，您将获得&nbsp;&nbsp;<span>3</span>&nbsp;&nbsp;积分 ，以及价值<b>&nbsp;&nbsp;&yen;</b><span id="redPaper">0.00</span>的红包。</div>
+                    <div>商品总价: <b>&nbsp;&yen;</b><span id="totalPrice">0.00</span></div>
+                    <div>应付款金额: <b>&nbsp;&yen;</b><span id="sumOwing">0.00</span></div>
                 </div>
             </div>
             <div class="cart_form_footer">

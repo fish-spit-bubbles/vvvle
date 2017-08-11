@@ -6,22 +6,24 @@ var app = angular.module("myappShop", []);
 app.controller("mycontrollerShop", function($scope, $http){
 
      $scope.dataArr= "";
-     
+        // 总价格
+        $scope.grossPrice="0.00";
+
  // 刚进来的时候获取数据库数据    
     $http({
         url:"http://localhost/vvvle/index.php/ShopCart/getData",
         method:"POST",
         data:{
-            uid:1,
+            uid:"1",
         },
         headers:{
             "Content-type":"application/x-www-form-urlencoded",
         },
     }).success(function(data){
-
+        console.log(data);
         $scope.dataArr= data;
      
-        console.log( data) ;
+     
     });
 
     // 单选按钮
@@ -41,6 +43,15 @@ app.controller("mycontrollerShop", function($scope, $http){
                 var xiaoji = $(this).parents('tr').find('.proMoney').html();
                 money = parseInt($('.goods_btm_money').html()) + parseInt(xiaoji) + ".00";
                 $('.goods_btm_money').html(money);
+                 $("#totalPrice").html(money);
+               
+                 var redPaper = $("#redPaper").html();
+                 var sumOwing = "";
+                 sumOwing = ~~money - ~~redPaper;
+                  sumOwing =sumOwing+".00";
+                 $("#sumOwing").html(sumOwing );
+
+          
             });
     };
     // 检测是否全选
@@ -73,25 +84,128 @@ app.controller("mycontrollerShop", function($scope, $http){
          $scope.changeProTotalAndPirces();   
     };
 
-    // 点击提交
-    // 用于存商品主键ID
+ 
+    // 用于判断存商品主键ID
     $scope.goneArr=[];
-
+    // 用于存数据
+    $scope.obj={};
+    $scope.supergonArr=[]; 
+    
+       // 点击提交
     $scope.submitData=function(){
-             $scope.selectAll();
-            
-          
-              
-    };
+        $scope.obj=null;     
+        $scope.supergonArr=[]; 
 
+    
+    // 全选
+if($scope.selectAll()){
+$(".checkt").each(function(i){
+    var bfro =  $(this).prop("checked") == true;
+    if(bfro){                  
+        $scope.obj ={
+                    id: $(this).attr("sid"),
+                    buy:"1",
+                    pnum:$(this).attr("pnum"),
+                    sumOwing:$("#sumOwing").text(),
+                };  
+        // 判断收货人
+        if( $scope.basic()){
+            $scope.obj.takeusername=$(".cart_user_info input").eq(0).val();         
+        };
+        // 判断手机号
+        if($scope.ipone()){
+            $scope.obj.mobile=$(".cart_user_info input").eq(1).val();
+        };
+        // 判断配送区域
+        if( $scope.zone() && $scope.minute()){
+            $scope.obj.address = $("#cart_province").val()+$("#cart_city").val()+$("#cart_area").val()+$(".cart_adds .xiangxi_addss input").val();
+        };
+        // 配送方式
+        if($scope.delivery()){
+                // 快递
+               if($("#express").prop("checked")){
+                $scope.obj.method=$("#express").val();
+               } ;
+            //    EMS
+               if($("#ems").prop("checked")){
+                $scope.obj.method=$("#ems").val(); 
+               };
+        };
+        // 支付方式
+        if($scope.pay()){
+            // 支付宝
+            if($("#pay1").prop("checked")){
+                $scope.obj.payment= $("#pay1").val();
+            };
+            // 微信
+            if($("#pay2").prop("checked")){
+                $scope.obj.payment= $("#pay2").val();
+            };
+        };
+        $scope.supergonArr.push($scope.obj);
+      
+
+           
+    };     
+});  
+
+}; 
+////*
+
+console.log($scope.supergonArr);
+
+if( $scope.selectAll() && $scope.basic() && $scope.ipone() && $scope.zone()  && $scope.minute() && $scope.delivery() &&  $scope.pay() ){
+// 执行请求
+console.log("可以");
+$http({
+        url:"http://localhost/vvvle/index.php/ShopCart/submintData",
+        method:"POST",
+        data:{
+            arr:$scope.supergonArr,
+        },
+        headers:{
+            "Content-type":"application/x-www-form-urlencoded",
+        },
+    }).success(function(data){
+         if(data.status==1){
+            alert("订单提交成功");
+         }else{
+            alert("系统错误");
+         };
+    });
+
+
+}else{
+    $("body").animate({scrollTop:"470"},300);
+// 不执行请求
+};
+
+
+
+
+
+
+
+
+
+
+
+
+$scope.ipone();
+$scope.basic();
+$scope.zone();
+$scope.minute();
+$scope.delivery();
+$scope.pay();
+
+};
+ 
     // 判断有没有全选
     $scope.selectAll=function(){
         var res =$("#selectAll1").prop("checked");
-        console.log(res);
         if(res){
             //   执行选择的操作  
-            alert("全选");
-            $scope.basic();
+           return true;       
         }else{
             // 执行单选的操作
              $(".checkt").each(function(i){
@@ -105,12 +219,13 @@ app.controller("mycontrollerShop", function($scope, $http){
               });
               if($scope.goneArr.length==0){
                     // alert("请选择要购买商品");
+                      return false;    
                     // 数组置空
-                    $scope.goneArr.splice(0,$scope.goneArr.length);
-                 
+                    // $scope.goneArr.splice(0,$scope.goneArr.length);             
+              }else{
+                 return true;
               };
-               console.log($scope.goneArr); 
-               $scope.basic();
+              
         };
 
     };
@@ -120,14 +235,111 @@ app.controller("mycontrollerShop", function($scope, $http){
             // 收件人
         var basicUsername = $(".cart_user_info input").eq(0).val();
         if(basicUsername==""){
-                $(".cart_user_info input").eq(0).parent().append("<span style='color:red;'>请填写收件人</span>");
+              
                 return false;      
         }else{
            return true;
-        };
-
-    
+        }; 
     };
+    // 手机号验证
+    $scope.ipone=function(){
+        var ipone = $(".cart_user_info input").eq(1).val();
+        if(ipone==""){
+                return false;    
+        }else{
+            var cn= /^1[3|4|5|7|8][0-9]{9}$/;   
+            if(cn.test(ipone)){
+                return true;    
+            }else{
+                return false;  
+            };
+         
+        };
+    };
+    // 配送区域
+    $scope.zone=function(){
+            // 省
+          var state =  $("#cart_province").val();
+        //   市
+          var town = $("#cart_city").val();
+        //   区
+        var county = $("#cart_area").val();
+        if(state=="请选择省份" || town=="请选择市" || county=="请选择区" ){
+                 return false;  
+        }else{
+            return true;
+        };
+    };
+    // 详细地址
+    $scope.minute=function(){
+            var minucity = $(".cart_adds .xiangxi_addss input").val();
+            if(minucity ==""){
+                return false;    
+            }else{
+                 return true;
+            };
+    };
+//    配送方式   都没有选 为->假
+    $scope.delivery=function(){
+        var express = $("#express").prop("checked");
+        var ems =$("#ems").prop("checked");
+        if(express==false && ems==false){
+                return false;
+        }else{
+            return true;
+        };
+    };
+// 支付方式
+$scope.pay=function(){
+    // 支付宝
+    var pay1 = $("#pay1").prop("checked");
+    // 微信
+    var pay2 = $("#pay2").prop("checked");
+    if(pay1==false && pay2 ==false){
+                return false;
+        }else{
+            return true;
+        };
+};
+
+
+$scope.delData=function($event){
+    var _this = $event.target; 
+    var chedex = $(_this).parent().parent().children().eq(0).children().eq(0).prop('checked');
+    if(chedex){
+        // 执行删除请求
+        $http({
+            url:"http://localhost/vvvle/index.php/ShopCart/delOrder",
+            method:"POST",
+            data:{
+                id:$(_this).parent().parent().children().eq(0).children().eq(0).attr("sid"),
+            },
+            headers:{
+                "Content-type":"application/x-www-form-urlencoded",
+            },
+        }).success(function(data){
+            if(data.status==1){
+                  window.location.href="http://localhost/vvvle/index.php/ShopCart/index";  
+            }else{
+                alert("系统错误");
+            };
+                // console.log(data);
+        });
+
+
+
+
+    }else{
+        // 返回选择删除对象
+        alert("请选择要删除的商品");
+    };
+};
+
+
+
+
+
+
 
 
 
@@ -140,6 +352,8 @@ app.controller("mycontrollerShop", function($scope, $http){
 
 
 });
+
+
 
 
 
@@ -173,6 +387,12 @@ function changeProTotalAndPirces() {
         var xiaoji = $(this).parents('tr').find('.proMoney').html();
         money = parseInt($('.goods_btm_money').html()) + parseInt(xiaoji) + ".00";
         $('.goods_btm_money').html(money);
+              $("#totalPrice").html(money);
+                var redPaper = $("#redPaper").html();
+                 var sumOwing = "";
+                 sumOwing = ~~money - ~~redPaper;
+                 sumOwing =sumOwing+".00";
+                 $("#sumOwing").html(sumOwing );
     });
     // $('.proTotal span').html(nCount);
 }
@@ -213,6 +433,95 @@ $('#selectAll2').click(function () {
     changeProTotalAndPirces();
 });
 // 获取所有btn
+
+
+
+// 点击提交订单进行容错
+$(".cart_form_footer .sure_sub").click(function(){
+
+// 收件人判断
+var basicUsername = $(".cart_user_info input").eq(0).val();
+if(basicUsername.length==0){
+    $("span[name='name']").css("display","inline");
+}else{
+    $("span[name='name']").css("display","none");   
+};
+
+// 手机号判读
+var ipone = $(".cart_user_info input").eq(1).val();
+if(ipone.length==0){
+        $("span[name='ipone']").css("display","inline");
+
+}else{
+    var cn= /^1[3|4|5|7|8][0-9]{9}$/;   
+    if(cn.test(ipone)){
+         $("span[name='ipone']").css("display","none");  
+    }else{
+     
+        $("span[name='ipone']").css("display","inline");
+    };
+    
+};
+// 判断区域
+// 省
+    var state =  $("#cart_province").val();
+//   市
+    var town = $("#cart_city").val();
+//   区
+var county = $("#cart_area").val();
+if(state=="请选择省份" || town=="请选择市" || county=="请选择区" ){
+    $("span[name='city']").css("display","inline");
+          
+}else{
+     $("span[name='city']").css("display","none");
+     
+    //  $()
+};
+// 判断地区
+  var minucity = $(".cart_adds .xiangxi_addss input").val();
+    if(minucity.length==0){
+         $("span[name='address']").css("display","inline");   
+    }else{
+        $("span[name='address']").css("display","none");
+    };
+// 配送方式
+var express = $("#express").prop("checked");
+var ems =$("#ems").prop("checked");
+if(express==false && ems==false){
+       $("span[name='userExpress']").css("display","inline");
+}else{
+    $("span[name='userExpress']").css("display","none");
+};
+
+// 支付方式
+ // 支付宝
+var pay1 = $("#pay1").prop("checked");
+// 微信
+var pay2 = $("#pay2").prop("checked");
+if(pay1==false && pay2 ==false){
+    $("span[name='userPay']").css("display","inline");
+}else{
+    $("span[name='userPay']").css("display","none");
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+
+
 
 
 
@@ -277,10 +586,6 @@ $(".item_title_num").click(function(){
 
 
 
-
-$(".cart_form_footer .sure_sub").on("click",function(){
-
-});
 
 
 
