@@ -1,1 +1,0 @@
-<?php if (!defined('THINK_PATH')) exit();?>__APP__Login/login
