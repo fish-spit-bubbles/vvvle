@@ -1,4 +1,4 @@
-<?
+<?php
 
 // 商品详情逻辑层
 class ProductDetailsModel extends Model{
@@ -9,6 +9,7 @@ class ProductDetailsModel extends Model{
             return $res;             
     }
         // 查询数据数据
+
     public function query($newstr){
         $arr['uid']= $newstr['uid'];
         $arr['pid']= $newstr['pid'];

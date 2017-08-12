@@ -8,7 +8,7 @@
     <title>Register | 注册界面</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
-    <link rel="icon" href="__ROOT__/animated_favicon.gif" type="image/gif"> 
+    <link rel="icon" href="__ROOT__/animated_favicon.gif" type="image/gif">
     <!-- 头部尾部侧边栏CSS -->
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
 
@@ -94,30 +94,35 @@
             padding-right: 15px;
             display: table-cell;
         }
-        #pwd_lower{
-                 border-bottom: 2px solid red; 
-                 text-align: center;
-        } 
-        #pwd_middle{
-                 border-bottom: 2px solid red; 
-                 text-align: center;
+        
+        #pwd_lower {
+            border-bottom: 2px solid red;
+            text-align: center;
         }
-        #pwd_high{
-                 border-bottom: 2px solid red; 
-                 text-align: center;
-        } 
-        .pwd_bottom{
-             text-align: center;
-             border-bottom: 2px solid lightgrey;
-        }  
+        
+        #pwd_middle {
+            border-bottom: 2px solid red;
+            text-align: center;
+        }
+        
+        #pwd_high {
+            border-bottom: 2px solid red;
+            text-align: center;
+        }
+        
+        .pwd_bottom {
+            text-align: center;
+            border-bottom: 2px solid lightgrey;
+        }
     </style>
 </head>
-<body  ng-app="myapp" ng-controller="mycontroller">
+
+<body ng-app="myapp" ng-controller="mycontroller">
     <!--头部  -->
     <div ng-cloak>
         <include file="Public:header" />
     </div>
-    
+
     <!--注册栏  -->
     <div class="register_box">
         <div class="row">
@@ -134,16 +139,8 @@
                                 <!-- input 用户名   -->
                                 <input ng-model="users.username" type="text" ng-required="true" ng-minlength="3" class="bg" name="username" />
                                 <span id="username_notice" style="color:#FF0000"> *</span>
-                                <span
-                                 ng-cloak                                
-                                 style="color:#FF0000;font-size: 12px;"                                
-                                ng-show="myForm.username.$error.required && myForm.username.$dirty"
-                                >账号不能少于 3 个字符。</span>
-                                <span
-                                 ng-cloak
-                                style="color:darkorange;font-size: 12px;"                                
-                                ng-show="myForm.username.$valid"
-                                >账号可以用</span>
+                                <span ng-cloak style="color:#FF0000;font-size: 12px;" ng-show="myForm.username.$error.required && myForm.username.$dirty">账号不能少于 3 个字符。</span>
+                                <span ng-cloak style="color:darkorange;font-size: 12px;" ng-show="myForm.username.$valid">账号可以用</span>
                             </td>
                         </tr>
                         <tr>
@@ -152,16 +149,10 @@
                             </td>
                             <td>
                                 <!-- input 邮件  -->
-                                <input ng-model="users.email" type="email" class="bg" name="email" ng-required="true"  />
+                                <input ng-model="users.email" type="email" class="bg" name="email" ng-required="true" />
                                 <span id="email_notice" style="color:#FF0000"> *</span>
-                                <span 
-                                 ng-cloak
-                                style="color:darkorange;font-size: 12px;"
-                                ng-show="myForm.email.$dirty && myForm.email.$valid">邮箱可以用。</span>
-                                <span 
-                                 ng-cloak
-                                style="color:#FF0000;font-size: 12px;"
-                                ng-show="myForm.email.$error.email">非法的邮箱地址。</span>  
+                                <span ng-cloak style="color:darkorange;font-size: 12px;" ng-show="myForm.email.$dirty && myForm.email.$valid">邮箱可以用。</span>
+                                <span ng-cloak style="color:#FF0000;font-size: 12px;" ng-show="myForm.email.$error.email">非法的邮箱地址。</span>
                             </td>
                         </tr>
                         <tr>
@@ -169,23 +160,11 @@
                                 <p class="pd">密码</p>
                             </td>
                             <td>
-                                 <!-- input 密码  -->
-                                <input ng-model="users.pwd" type="password" class="bg" name="pwd"
-                                ng-minlength="6"
-                                ng-required="true"
-                                ng-change="myFunc()"
-                                />
+                                <!-- input 密码  -->
+                                <input ng-model="users.pwd" type="password" class="bg" name="pwd" ng-minlength="6" ng-required="true" ng-change="myFunc()" />
                                 <span style="color:#FF0000" id="password_notice"> *</span>
-                                <span
-                                ng-cloak
-                                style="color:#FF0000;font-size: 12px;"                                
-                                ng-show="myForm.pwd.$error.required && myForm.pwd.$dirty"
-                                >登录密码不能少于 6 个字符。</span>
-                                <span
-                                 ng-cloak
-                                style="color:darkorange;font-size: 12px;"                                
-                                ng-show="myForm.pwd.$valid"
-                                >密码可以用</span>
+                                <span ng-cloak style="color:#FF0000;font-size: 12px;" ng-show="myForm.pwd.$error.required && myForm.pwd.$dirty">登录密码不能少于 6 个字符。</span>
+                                <span ng-cloak style="color:darkorange;font-size: 12px;" ng-show="myForm.pwd.$valid">密码可以用</span>
                             </td>
                         </tr>
                         <tr class="bg01">
@@ -193,11 +172,11 @@
                                 <p id="repwd">密码强度</p>
                             </td>
                             <td>
-                                <table width="145" border="0" cellspacing="0" cellpadding="0" >
-                                    <tr align="right" >
-                                        <td width="33%" class="pwd_bottom" >弱</td>
-                                        <td width="33%" class="pwd_bottom" >中</td>
-                                        <td width="33%" class="pwd_bottom" >强</td>
+                                <table width="145" border="0" cellspacing="0" cellpadding="0">
+                                    <tr align="right">
+                                        <td width="33%" class="pwd_bottom">弱</td>
+                                        <td width="33%" class="pwd_bottom">中</td>
+                                        <td width="33%" class="pwd_bottom">强</td>
                                     </tr>
                                 </table>
                             </td>
@@ -208,22 +187,10 @@
                             </td>
                             <td>
                                 <!-- input 确认密码  -->
-                            <input  ng-model="users.repwd" type="password" class="bg"
-                                    name="repwd"
-                                    ng-minlength="6"
-                                    ng-required="true"
-                            />
-                            <span style="color:#FF0000" id="conform_password_notice"> *</span>
-                            <span
-                                ng-cloak
-                                style="color:#FF0000;font-size: 12px;"                                
-                                ng-show="myForm.repwd.$error.required && myForm.repwd.$dirty"
-                                >登录密码不能少于 6 个字符。</span>
-                                <span
-                                 ng-cloak
-                                style="color:darkorange;font-size: 12px;"                                
-                                ng-show="myForm.repwd.$valid"
-                                >密码可以用</span>
+                                <input ng-model="users.repwd" type="password" class="bg" name="repwd" />
+                                <span style="color:#FF0000" id="conform_password_notice"> *</span>
+                                <span ng-cloak style="color:#FF0000;font-size: 12px;" ng-show="users.pwd != users.repwd && myForm.repwd.$dirty">密码不一致。</span>
+                                <span ng-cloak style="color:darkorange;font-size: 12px;" ng-show="users.pwd == users.repwd && myForm.repwd.$dirty">密码可以用</span>
                             </td>
                         </tr>
 
@@ -282,85 +249,92 @@
     </div>
     <!--底部  -->
     <div class="header">
-        <include file="Public:footer"/>
-	</div>
-	<!--侧边导航栏  -->
-    <include file="Public:sidebar"/>
+        <include file="Public:footer" />
+    </div>
+    <!--侧边导航栏  -->
+    <include file="Public:sidebar" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
 </body>
 <script type="text/javascript">
-    var app = angular.module("myapp",[]);
-    app.controller("mycontroller",function($scope,$http){
+    var app = angular.module("myapp", []);
+    app.controller("mycontroller", function($scope, $http) {
         $scope.users = {
-            username:"",
-            email:"",
-            pwd:"",
-            repwd:"",
-            qq:"",
-            wechat:""
+            username: "",
+            email: "",
+            pwd: "",
+            repwd: "",
+            qq: "",
+            wechat: ""
         }
-        $scope.myFunc = function(){
-            var str =  $("input[name='pwd']").val();
+        $scope.myFunc = function() {
+            var str = $("input[name='pwd']").val();
             // 用户名正则，4到16位（数字）  密码强度为弱
             var uPattern = /^[0-9]{6,}$/;
             //用户名正则，4到16位（字母，数字）  密码强度为中
             var uPatterns = /^[a-zA-Z0-9]{6,}$/;
-             //    密码弱的时候
-            if(str.search(uPattern) == -1 ){
+            //    密码弱的时候
+            if (str.search(uPattern) == -1 || str.search(uPattern) == 0) {
 
-                $('.pwd_bottom').eq(0).attr("id","pwd_lower");
-            }else{
-                $('.pwd_bottom').eq(0).removeAttr("id","pwd_lower");
+                $('.pwd_bottom').eq(0).attr("id", "pwd_lower");
+            } else {
+                $('.pwd_bottom').eq(0).removeAttr("id", "pwd_lower");
             };
             // 密码中的时候
-            if(str.search(uPatterns)==0 && str.search(uPattern) == -1){
-                $('.pwd_bottom').eq(1).attr("id","pwd_middle");
-                $('.pwd_bottom').eq(0).removeAttr("id","pwd_lower"); 
-            }else{
-                 $('.pwd_bottom').eq(1).removeAttr("id","pwd_middle");
-            };            
+            if (str.search(uPatterns) == 0 && str.search(uPattern) == -1) {
+                $('.pwd_bottom').eq(1).attr("id", "pwd_middle");
+                $('.pwd_bottom').eq(0).removeAttr("id", "pwd_lower");
+            } else {
+                $('.pwd_bottom').eq(1).removeAttr("id", "pwd_middle");
+            };
         }
-        $scope.sub = function(){
-            if($scope.users.username != "" 
-            && $scope.users.email != "" 
-            && $scope.users.pwd != "" 
-            && $scope.users.repwd != "" 
-            && $scope.users.qq != "" 
-            && $scope.users.wechat != ""){           
+        $scope.sub = function() {
+            if ($scope.users.username != "" &&
+                $scope.users.email != "" &&
+                $scope.users.pwd != "" &&
+                $scope.users.repwd != "" &&
+                $scope.users.qq != "" &&
+                $scope.users.wechat != "") {
                 var url = "__APP__/Register/addUsers";
                 $http({
-                    url:url,
-                    method:"POST",
-                    headers:{
-                            "Content-type":"application/x-www-form-urlencoded"
+                    url: url,
+                    method: "POST",
+                    headers: {
+                        "Content-type": "application/x-www-form-urlencoded"
                     },
-                    data:{
-                            username:$scope.users.username,
-                            email:$scope.users.email,
-                            pwd: $scope.users.pwd,
-                            repwd:$scope.users.repwd,
-                            qq:$scope.users.qq,
-                            wechat:$scope.users.wechat
+                    data: {
+                        username: $scope.users.username,
+                        email: $scope.users.email,
+                        pwd: $scope.users.pwd,
+                        repwd: $scope.users.repwd,
+                        qq: $scope.users.qq,
+                        wechat: $scope.users.wechat
                     }
-                }).success(function(data){
-                        if(data.status==1){
-                            window.location.href="__APP__/Login/login";
-                            alert("注册成功返回登陆");
-                            
-                        }else{
-                            alert(data.info);
-                        }
-                        console.log(data);
+                }).success(function(data) {
+                    if (data.status == 1) {
+                        window.location.href = "__APP__/Login/login";
+                        alert("注册成功返回登陆");
+                    } else if (data.status == 3) {
+                        alert("用户名已存在");
+
+                        window.location.href = "http://crlate.com/vvvle/index.php/Register/register";
+                    } else if (data.status == 4) {
+                        alert("email已绑定");
+                        window.location.href = "http://crlate.com/vvvle/index.php/Register/register";
+                    } else {
+                        alert(data.info);
+
+                    }
+
                 })
 
-            }else{
+            } else {
                 //FF/{谷歌浏览器用这个 
-                (!document.all) ? alert("--用户名不能为空\\n--email不能为空\\n--登录密码不能为空") : alert("--用户名不能为空\\n--email不能为空\\n--登录密码不能为空");
-                
+                (!document.all) ? alert("--用户名不能为空\\n--email不能为空\\n--登录密码不能为空"): alert("--用户名不能为空\\n--email不能为空\\n--登录密码不能为空");
+
             }
         }
-        
-                                
+
+
 
 
     });

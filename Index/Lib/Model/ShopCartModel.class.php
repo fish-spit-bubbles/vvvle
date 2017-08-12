@@ -1,4 +1,4 @@
-<?
+<?php
 // 购物车逻辑层
 class ShopCartModel extends Model {
         public function autoLink($adddata){

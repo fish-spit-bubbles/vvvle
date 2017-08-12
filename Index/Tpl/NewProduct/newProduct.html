@@ -8,13 +8,13 @@
     <title>新品界面</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
-    <link rel="icon" href="__ROOT__/animated_favicon.gif" type="image/gif"> 
+    <link rel="icon" href="__ROOT__/animated_favicon.gif" type="image/gif">
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/home.css" />
     <!-- 头部尾部侧边栏CSS -->
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />  
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
- 
+
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
     <style>
         .new_product {
@@ -39,7 +39,7 @@
 
 <body ng-app="myapps" ng-controller="mynewProduct">
     <!-- 头部 -->
-    <div ng-cloak >
+    <div ng-cloak>
         <include file="Public:header" />
     </div>
 
@@ -106,11 +106,11 @@
     <script src="__ROOT__/Index/Common/js/accesories.js"></script>
 </body>
 <script>
-    var app = angular.module("myapps",[]);
-    app.controller("mynewProduct",function($scope,$http){
+    var app = angular.module("myapps", []);
+    app.controller("mynewProduct", function($scope, $http) {
         $scope.newProductList = "";
         $scope.index = 0;
-        $http.get("__APP__/newProduct/getNewProducts").success(function(data){
+        $http.get("__APP__/NewProduct/getNewProducts").success(function(data) {
             if (data.status == 1) {
                 $scope.newProductList = data['data'];
                 $scope.count = data.count;
@@ -126,11 +126,11 @@
             }
             return input;
         };
-        $scope.skip = function(page){
+        $scope.skip = function(page) {
             $scope.index = page;
             getPageData(page);
         }
-        $scope.pre = function(page){
+        $scope.pre = function(page) {
             if (page < 0) {
                 $scope.index = 0;
             } else {
@@ -138,7 +138,7 @@
             }
             getPageData($scope.index);
         }
-        $scope.nexts = function(page){
+        $scope.nexts = function(page) {
             if (page >= $scope.count) {
                 $scope.index = $scope.count - 1;
             } else {
@@ -146,6 +146,7 @@
             }
             getPageData($scope.index);
         }
+
         function getPageData(page) {
             $http({
                 url: "__APP__/Lens/getNewPage",
@@ -156,11 +157,12 @@
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
                 }
-            }).success(function(data){
+            }).success(function(data) {
                 $scope.newProductList = data['data'];
                 $scope.count = data.count;
             })
         }
     })
 </script>
+
 </html>

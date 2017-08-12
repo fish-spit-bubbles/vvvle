@@ -8,7 +8,7 @@
     <title>LENS | 美瞳</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
-    <link rel="icon" href="__ROOT__/animated_favicon.gif" type="image/gif"> 
+    <link rel="icon" href="__ROOT__/animated_favicon.gif" type="image/gif">
     <!-- 头部尾部侧边栏CSS -->
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/slideshow.css" />
@@ -139,36 +139,36 @@
     <div class="Product_box">
         <div class="Product_container">
             <div class="Product_item" ng-cloak ng-repeat="v in newProductList">
-                    <div class="item_01">
-                        <a href="__APP__/ProductDetails/index?id={{v.id}}"><img ng-src="__ROOT__/{{v.bgImg}}" alt=""></a>
-                        <a style="width:100px;height:100px;" href="__APP__/ProductDetails/index?id={{v.id}}"><img ng-src="__ROOT__/{{v.productImg}}" alt=""></a>
-                    </div>
-                    <div class="item_02">
-                        <a href="##" title="{{v.productName}}">{{v.productName}}</a>
-                    </div>
-                    <div class="item_03">
-                        <!--
+                <div class="item_01">
+                    <a href="__APP__/ProductDetails/index?id={{v.id}}"><img ng-src="__ROOT__/{{v.bgImg}}" alt=""></a>
+                    <a style="width:100px;height:100px;" href="__APP__/ProductDetails/index?id={{v.id}}"><img ng-src="__ROOT__/{{v.productImg}}" alt=""></a>
+                </div>
+                <div class="item_02">
+                    <a href="##" title="{{v.productName}}">{{v.productName}}</a>
+                </div>
+                <div class="item_03">
+                    <!--
                             item_layer 下层
                         -->
-                        <div class="Next_layer">
-                            <div class="Next_layer01">
-                                <div>{{v.salesVolume}}</div>
-                                <div>
-                                    <a href="##">180</a>
-                                </div>
+                    <div class="Next_layer">
+                        <div class="Next_layer01">
+                            <div>{{v.salesVolume}}</div>
+                            <div>
+                                <a href="##">180</a>
                             </div>
-                            <div class="Next_layer02">
-                                <div>￥<span>{{v.wlPrice}}</span></div>
-                                <div id="like" ng-click="like()"></div>
-                            </div>
-                            <a href="__APP__/ProductDetails/index?id={{v.id}}">
-                                 <div class="Next_layer03" >
-                                </div>
-                            </a>
-                           
                         </div>
+                        <div class="Next_layer02">
+                            <div>￥<span>{{v.wlPrice}}</span></div>
+                            <div id="like" ng-click="like()"></div>
+                        </div>
+                        <a href="__APP__/ProductDetails/index?id={{v.id}}">
+                            <div class="Next_layer03">
+                            </div>
+                        </a>
 
                     </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -297,11 +297,11 @@
 
 
     // --------
-    var app = angular.module("myapps",[]);
-    app.controller("myLens",function($scope,$http){
+    var app = angular.module("myapps", []);
+    app.controller("myLens", function($scope, $http) {
         $scope.newProductList = "";
         $scope.index = 0;
-        $http.get("__APP__/lens/getLens").success(function(data){
+        $http.get("__APP__/Lens/getLens").success(function(data) {
             if (data.status == 1) {
                 $scope.newProductList = data['data'];
                 $scope.count = data.count;
@@ -309,14 +309,14 @@
                 alert("系统繁忙，请稍后...");
             }
         })
-        $scope.like = function(){
-            $http.get("__APP__/lens/like").success(function(data){
-                if(data.status == 1) {
+        $scope.like = function() {
+            $http.get("__APP__/Lens/like").success(function(data) {
+                if (data.status == 1) {
                     alert("已经添加到收藏夹");
-                }else{
+                } else {
                     alert("由于你还未登陆，因此你还不能使用该功能");
                 }
-                    // console.log(data);
+                // console.log(data);
             })
 
         }
@@ -329,11 +329,11 @@
             }
             return input;
         };
-        $scope.skip = function(page){
+        $scope.skip = function(page) {
             $scope.index = page;
             getPageData(page);
         }
-        $scope.pre = function(page){
+        $scope.pre = function(page) {
             if (page < 0) {
                 $scope.index = 0;
             } else {
@@ -341,7 +341,7 @@
             }
             getPageData($scope.index);
         }
-        $scope.nexts = function(page){
+        $scope.nexts = function(page) {
             if (page >= $scope.count) {
                 $scope.index = $scope.count - 1;
             } else {
@@ -349,6 +349,7 @@
             }
             getPageData($scope.index);
         }
+
         function getPageData(page) {
             $http({
                 url: "__APP__/Lens/getNewPage",
@@ -359,7 +360,7 @@
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
                 }
-            }).success(function(data){
+            }).success(function(data) {
                 $scope.newProductList = data['data'];
                 $scope.count = data.count;
             })

@@ -11,7 +11,7 @@ app.controller("mycontrollerShop", function($scope, $http){
 
  // 刚进来的时候获取数据库数据    
     $http({
-        url:"http://localhost/vvvle/index.php/ShopCart/getData",
+        url:"http://crlate.com/vvvle/index.php/ShopCart/getData",
         method:"POST",
         data:{
             uid:"1",
@@ -158,7 +158,7 @@ if( $scope.selectAll() && $scope.basic() && $scope.ipone() && $scope.zone()  && 
 // 执行请求
 console.log("可以");
 $http({
-        url:"http://localhost/vvvle/index.php/ShopCart/submintData",
+        url:"http://crlate.com/vvvle/index.php/ShopCart/submintData",
         method:"POST",
         data:{
             arr:$scope.supergonArr,
@@ -309,7 +309,7 @@ $scope.delData=function($event){
     if(chedex){
         // 执行删除请求
         $http({
-            url:"http://localhost/vvvle/index.php/ShopCart/delOrder",
+            url:"http://crlate.com/vvvle/index.php/ShopCart/delOrder",
             method:"POST",
             data:{
                 id:$(_this).parent().parent().children().eq(0).children().eq(0).attr("sid"),
@@ -319,7 +319,7 @@ $scope.delData=function($event){
             },
         }).success(function(data){
             if(data.status==1){
-                  window.location.href="http://localhost/vvvle/index.php/ShopCart/index";  
+                  window.location.href="http://crlate.com/vvvle/index.php/ShopCart/index";  
             }else{
                 alert("系统错误");
             };

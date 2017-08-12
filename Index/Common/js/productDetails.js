@@ -163,7 +163,7 @@ function getGoods(){
     }else{
         var  ajax = new ActiveXObject;
     };
-    ajax.open("POST","http://localhost/vvvle/index.php/ProductDetails/getGoods",true);
+    ajax.open("POST","http://crlate.com/vvvle/index.php/ProductDetails/getGoods",true);
     ajax.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     var data = JSON.stringify(obj);
     ajax.send(data);
@@ -172,9 +172,9 @@ function getGoods(){
                 var res = ajax.responseText;
                 var ress = JSON.parse(res);
                 if(ress.status==1){
-                        window.location.href="http://localhost/vvvle/index.php/ShopCart/index";
+                        window.location.href="http://crlate.com/vvvle/index.php/ShopCart/index";
                 }else if(ress.status==2){
-                         window.location.href="http://localhost/vvvle/index.php/Login/login";
+                         window.location.href="http://crlate.com/vvvle/index.php/Login/login";
                 }else{      
                    alert("系统错误");     
                 };
@@ -228,7 +228,7 @@ function cartGetGoods(event){
     }else{
         var  ajax = new ActiveXObject;
     };
-    ajax.open("POST","http://localhost/vvvle/index.php/ProductDetails/getGoodsOne",true);
+    ajax.open("POST","http://crlate.com/vvvle/index.php/ProductDetails/getGoodsOne",true);
     ajax.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     var data = JSON.stringify(obj);
     ajax.send(data);
@@ -239,7 +239,9 @@ function cartGetGoods(event){
                 if(res1.status==1){
                          // 动画函数
                       gwc(event);
-
+                     var opdernum =$(".sbar_nub_icon").text();
+                     opdernum=1;
+                     $(".sbar_nub_icon").text(opdernum);
                 }else{
                    alert("系统错误");     
                 };
@@ -386,7 +388,7 @@ if($(document).scrollTop() >= 1200){
  function gwc(event) {
     var offset = $(".sbar_nub_icon").offset();
     var addcar = $(this);
-    var flyer = $("<div style='display:inline-block; width: 20px; height: 20px; '><img src='http://localhost/vvvle/Index/Common/img/img_productDetails/cart.svg'/></div>");
+    var flyer = $("<div style='display:inline-block; width: 20px; height: 20px; '><img src='http://crlate.com/vvvle/Index/Common/img/img_productDetails/cart.svg'/></div>");
     flyer.fly({
         start: {
             left: event.clientX, //开始位置（必填）#fly元素会被设置成position: fixed 
