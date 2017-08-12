@@ -198,7 +198,7 @@
                                     <li>
                                         <a href="javascript:void(0);">
                                             <img src="__ROOT__/Index/Common/img/img_home/tm1.png" alt="超人气款">
-                                            <span class="searchB">轻瞳</span><br />><span>玛丽甜黑</span>
+                                            <span class="searchB">轻瞳</span><br /><span>玛丽甜黑</span>
                                         </a>
                                     </li>
                                     <li>
@@ -713,6 +713,8 @@
                 success:function(data){
                     if (data.status == 1) {
                         window.location.href = "__APP__/ProductDetails/index?id=" + data.data["id"];
+                    } else {
+                        alert("没有此商品");
                     }
                 }
             })

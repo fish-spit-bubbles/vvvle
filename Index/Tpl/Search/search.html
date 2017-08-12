@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>商品搜索_</title>
+    <title>商品搜索_{$txt}</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
     <link rel="icon" href="__ROOT__/animated_favicon.gif" type="image/gif"> 
@@ -156,8 +156,12 @@
                     "Content-Type": "application/x-www-form-urlencoded"
                 }
             }).success(function(data){
-                $scope.newProductList = data['data'];
-                $scope.count = data.count;
+                if (data.status == 1) {
+                    $scope.newProductList = data['data'];
+                    $scope.count = data.count;
+                } else {
+                    alert("没有该商品");
+                }
             })
         } 
     })
