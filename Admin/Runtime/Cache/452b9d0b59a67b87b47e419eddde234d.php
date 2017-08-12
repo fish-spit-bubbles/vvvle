@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,53 +11,16 @@
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
     <style>
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-        }
-        
-        .header {
-            height: 40px;
-            width: 100%;
-            background-color: #242424;
-            position: fixed;
-            z-index: 999;
-        }
-        
-        .header_title {
-            line-height: 40px;
-            margin-left: 60px;
-            color: #fff;
-            font-size: 15px;
-        }
-        
-        .header_user {
-            font-size: 12px;
-            margin-left: 40px;
-            color: #ccc;
-            font-family: "lucida grande";
-            font-size: 15px;
-        }
-        
-        .header_loginout {
-            float: right;
-            color: #ccc;
-            margin-right: 50px;
-        }
-        
-        #box>h3 {
-            margin-top: 55px;
-        }
-        
+         html,body{width:100%;height:100%;margin:0;padding:0;font-family:"lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;}
+        .header{height:40px;width:100%;background-color:#242424;position:fixed;z-index: 999;}
+        .header_title{line-height:40px;margin-left:60px;color:#fff;font-size:15px;}
+        .header_user{font-size:12px;margin-left:40px;color:#ccc;font-family: "lucida grande";font-size: 15px;}
+        .header_loginout{float: right; color:#ccc;margin-right: 50px;}
+        #box>h3{margin-top: 55px;}
         #box>div {
             margin-top: 15px;
         }
-        
-        .pagination>li>.span_active {
+        .pagination>li>.span_active{
             background: #5cb85c;
         }
     </style>
@@ -65,12 +28,8 @@
 
 <body ng-app="myapp" ng-controller="mycontroller">
     <div class="header">
-        <div class="header_title"><a href="/">后台管理系统</a><span class="header_user">Hi~欢迎你 , 管理员{$Think.session.adminer}</span>
-<<<<<<< HEAD
-            <span class="header_loginout"><a href="__APP__/Admin/layout">[退出]</a></span></div>
-=======
+        <div class="header_title"><a href="/">后台管理系统</a><span class="header_user">Hi~欢迎你 , 管理员<?php echo (session('adminer')); ?></span>
         <span class="header_loginout"><a href="__APP__/Admin/layout">[退出]</a></span></div>
->>>>>>> origin/master
     </div>
     <div class="container text-center" id="box">
         <h3 class="text-primary">管理员界面</h3>
@@ -209,7 +168,7 @@
 </body>
 <script>
     var app = angular.module("myapp", []);
-    app.controller("mycontroller", function($scope, $http) {
+    app.controller("mycontroller", function ($scope, $http) {
         $scope.id = "";
         $scope.brand = "";
         $scope.category = "";
@@ -220,7 +179,7 @@
         $scope.salesVolume = "";
         $scope.productName = "";
         $scope.index = 0;
-        $http.get("__APP__/Admin/getList").success(function(data) {
+        $http.get("__APP__/Admin/getList").success(function(data){
             $scope.list = data.data;
             $scope.count = data.total;
         });
@@ -258,15 +217,15 @@
                 processData: false,
                 contentType: false,
                 async: true,
-                success: function(data) {
-                    $scope.$apply(function() {
+                success: function (data) {
+                    $scope.$apply(function(){
                         $scope.list = data.data;
                         $scope.count = data.total;
                     });
                 }
             })
         }
-        $scope.del = function(id) {
+        $scope.del = function(id){
             $http({
                 url: "__APP__/Admin/delData",
                 method: "post",
@@ -277,13 +236,13 @@
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
                 }
-            }).success(function(data) {
+            }).success(function(data){
                 $scope.list = data.data;
                 $scope.count = data.total;
                 $scope.index = data.page;
             })
         }
-        $scope.edit = function(id) {
+        $scope.edit = function(id){
             $http({
                 url: "__APP__/Admin/seleteData",
                 method: "post",
@@ -293,7 +252,7 @@
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
                 }
-            }).success(function(data) {
+            }).success(function(data){
                 $scope.id = data.data.id;
                 $scope.brand = data.data.brand;
                 $scope.category = data.data.category;
@@ -305,8 +264,8 @@
                 $scope.productName = data.data.productName;
             })
         }
-        $scope.updatas = function() {
-            if ($scope.id) {
+        $scope.updatas = function(){
+            if ($scope.id){
                 var bgImg = document.getElementById("inputfile01")["files"][0];
                 var productImg = document.getElementById("inputfile02")["files"][0];
                 var infoImg = document.getElementById("inputfile03")["files"];
@@ -333,8 +292,8 @@
                     processData: false,
                     contentType: false,
                     async: true,
-                    success: function(data) {
-                        $scope.$apply(function() {
+                    success: function (data) {
+                        $scope.$apply(function(){
                             $scope.list = data.data;
                             $scope.count = data.total;
                         });
@@ -342,13 +301,13 @@
                 })
             } else {
                 alert("请选择要修改的商品!")
-            }
+            }  
         }
-        $scope.skip = function(page) {
+        $scope.skip = function(page){
             $scope.index = page;
             getPage(page);
         }
-        $scope.pre = function(page) {
+        $scope.pre = function(page){
             $scope.index = page;
             if (page < 0) {
                 page = 0;
@@ -357,7 +316,7 @@
                 getPage(page);
             }
         }
-        $scope.nexts = function(page) {
+        $scope.nexts = function(page){
             $scope.index = page;
             if (page >= $scope.count) {
                 page = $scope.count - 1;
@@ -366,7 +325,6 @@
                 getPage(page);
             }
         }
-
         function getPage(page) {
             $http({
                 url: "__APP__/Admin/getNewPage",
@@ -377,7 +335,7 @@
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
                 }
-            }).success(function(data) {
+            }).success(function(data){
                 if (data.status == 1) {
                     $scope.list = data.data;
                     $scope.count = data.total;
@@ -389,5 +347,4 @@
         }
     });
 </script>
-
 </html>

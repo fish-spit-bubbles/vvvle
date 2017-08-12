@@ -187,10 +187,27 @@
                             </td>
                             <td>
                                 <!-- input 确认密码  -->
+<<<<<<< HEAD
                                 <input ng-model="users.repwd" type="password" class="bg" name="repwd" />
                                 <span style="color:#FF0000" id="conform_password_notice"> *</span>
                                 <span ng-cloak style="color:#FF0000;font-size: 12px;" ng-show="users.pwd != users.repwd && myForm.repwd.$dirty">密码不一致。</span>
                                 <span ng-cloak style="color:darkorange;font-size: 12px;" ng-show="users.pwd == users.repwd && myForm.repwd.$dirty">密码可以用</span>
+=======
+                                <input  ng-model="users.repwd" type="password" class="bg"
+                                        name="repwd"
+                                />
+                                <span style="color:#FF0000" id="conform_password_notice"> *</span>
+                                <span
+                                ng-cloak
+                                style="color:#FF0000;font-size: 12px;"                                
+                                ng-show="users.pwd != users.repwd && myForm.repwd.$dirty"
+                                >密码不一致。</span>
+                                <span
+                                ng-cloak
+                                style="color:darkorange;font-size: 12px;"                                
+                                ng-show="users.pwd == users.repwd && myForm.repwd.$dirty"
+                                >密码可以用</span>
+>>>>>>> origin/master
                             </td>
                         </tr>
 
@@ -272,8 +289,13 @@
             var uPattern = /^[0-9]{6,}$/;
             //用户名正则，4到16位（字母，数字）  密码强度为中
             var uPatterns = /^[a-zA-Z0-9]{6,}$/;
+<<<<<<< HEAD
             //    密码弱的时候
             if (str.search(uPattern) == -1 || str.search(uPattern) == 0) {
+=======
+             //    密码弱的时候
+            if(str.search(uPattern) == -1 || str.search(uPattern) == 0 ){
+>>>>>>> origin/master
 
                 $('.pwd_bottom').eq(0).attr("id", "pwd_lower");
             } else {
@@ -309,6 +331,7 @@
                         qq: $scope.users.qq,
                         wechat: $scope.users.wechat
                     }
+<<<<<<< HEAD
                 }).success(function(data) {
                     if (data.status == 1) {
                         window.location.href = "__APP__/Login/login";
@@ -325,6 +348,22 @@
 
                     }
 
+=======
+                }).success(function(data){
+                        if(data.status==1){
+                            window.location.href="__APP__/Login/login";
+                            alert("注册成功返回登陆");        
+                        }else if(data.status==3){
+                            alert("用户名已存在");
+                            window.location.href="__APP__/Register/register";
+                        }else if(data.status==4){
+                            alert("email已绑定");
+                             window.location.href="__APP__/Register/register";
+                        }else{
+                            alert(data.info);
+                        }
+                        console.log(data);
+>>>>>>> origin/master
                 })
 
             } else {

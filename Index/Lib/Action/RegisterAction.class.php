@@ -6,13 +6,11 @@ class RegisterAction extends Action {
             $this->assign("username",$_SESSION['username']);
             $this->assign("judge",'true');
             $this->assign("judge1",'false');
-            $this->display("register");
-
         }else{
             $this->assign("judge",'false');
-            $this->assign("judge1",'true');
-            $this->display("register");
+            $this->assign("judge1",'true');        
         }
+        $this->display("register");
     }
     // 添加用户
     public function addUsers(){
@@ -57,6 +55,13 @@ class RegisterAction extends Action {
            
         }
          $this->ajaxReturn($info);
+<<<<<<< HEAD
+=======
+        
+        
+
+        
+>>>>>>> origin/master
         
     
     }
