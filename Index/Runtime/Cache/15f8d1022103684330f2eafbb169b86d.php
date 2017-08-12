@@ -1,26 +1,44 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LENS | 美瞳</title>
+
+    <title>商品搜索_</title>
     <link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/libs/bootstrap/css/bootstrap.min.css" />
     <link rel="icon" href="__ROOT__/animated_favicon.gif" type="image/gif"> 
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/home.css" />
     <!-- 头部尾部侧边栏CSS -->
     <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/guard.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/slideshow.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Index/Common/css/lens.css" />
     <script type="text/javascript" src="__ROOT__/Index/Common/js/angular.min.js"></script>
+    <style>
+        .Hot {
+            width: 1200px;
+            position: relative;
+            margin: 0 auto;
+        }
 
+        .Return_home {
+            margin-bottom: -50px;
+            position: absolute;
+            top: -18px;
+            left: 0px;
+            color: #333;
+        }
+
+        .Return_home>code {
+            color: #333;
+        }
+    </style>
 </head>
 
-<body ng-app="myapps" ng-controller="myLens">
-    <!--头部  -->
-    <div ng-cloak>
+<body ng-app="myapps" ng-controller="myHot">
+    <!-- 头部 -->
+    <div>
         <header>
     <!-- 头部 -->
     <div class="container-fluid" title="top">
@@ -134,134 +152,17 @@
     })
 </script>
     </div>
-    <div class="lens_wrap">
-        <!-- 轮播图 -->
-        <div>
-            <div class="lunbo" id="lunbo">
-    <ul id="lunboUl" class="lunboUl">
-        <li><a href="##"><img src="__ROOT__/Index/Common/img/img_lens/lens_imgs01.jpg" alt="" /></a></li>
-        <li><a href="##"><img src="__ROOT__/Index/Common/img/img_lens/lens_imgs02.jpg" alt="" /></a></li>
-        <li><a href="##"><img src="__ROOT__/Index/Common/img/img_lens/lens_imgs01.jpg" alt="" /></a></li>
-    </ul>	
-        <ol id="lunboOl">
-            <li class="actBtn"></li>
-            <li></li>
-        </ol>
-    <a href="##" id="rightBtn"></a>
-    <a href="##" id="leftBtn"></a>
-</div>
+
+    <div class="Hot">
+        <!--首页 > 热销商品  -->
+        <div class="Return_home">
+            <a href="__APP__/Index/index">首页</a>
+            <code>></code>商品搜索_<span class="keywords"><?php echo ($txt); ?></span>
         </div>
-
-    </div>
-
-    <!-- 筛选列表 -->
-    <div class="container-fluid" mpod="xia">
-        <div class="schon_choice">
-            <span>已选条件：</span>
-            <a class="vacum_up" href="#">清空筛选条件</a>
-
-
-        </div>
-        <div class="containerre" title="select_box">
-            <div class="machine" title="vary" style="height:51px;">
-                <div class="machine_sort">品牌：</div>
-
-                <div class="machine_Kindd" monde="kind">
-                    <a class="nolimit" href="#">不限</a>
-
-                    <a class="nolimit_choice" href="#">博士伦</a>
-                    <a class="nolimit_choice" href="#">爱尔康</a>
-                    <a class="nolimit_choice" href="#">全能</a>
-                    <a class="nolimit_choice" href="#">韩国07护理夜</a>
-                    <a class="nolimit_choice" href="#">SAUFLON沙福隆</a>
-                    <a class="nolimit_choice" href="#">乐敦</a>
-                    <a class="nolimit_choice" href="#">参天製薬</a>
-                    <a class="nolimit_choice" href="#">千寿製薬</a>
-                    <a class="nolimit_choice" href="#">狮王LION</a>
-                    <a class="nolimit_choice" href="#">小林製薬</a>
-                    <a class="nolimit_choice" href="#">SEED</a>
-                    <a class="nolimit_choice" href="#">三菱制药</a>
-                    <a class="nolimit_choice" href="#">蓝牌W</a>
-                    <a class="nolimit_choice" href="#">Make skip</a>
-                    <a class="nolimit_choice" href="#">innoxa</a>
-                </div>
-                <span class="mores_sq">
-                    <span>展开</span>
-                <i class="glyphicon glyphicon-triangle-bottom"></i>
-                </span>
-
-            </div>
-            <div class="machine">
-                <div class="machine_sort">品类：</div>
-
-                <div class="machine_Kindd">
-                    <a class="nolimit" href="#">不限</a>
-                    <a class="nolimit_choice" href="#">护理液</a>
-                    <a class="nolimit_choice" href="#">洗眼液</a>
-                    <a class="nolimit_choice" href="#">滴眼液</a>
-                </div>
-                <span class="mores_sq">
-                    <span>展开</span>
-                <i class="glyphicon glyphicon-triangle-bottom"></i>
-                </span>
-
-            </div>
-            <div class="machine">
-                <div class="machine_sort">价格：</div>
-
-                <div class="machine_Kindd">
-                    <a class="nolimit" href="#">不限</a>
-                    <a class="nolimit_choice" href="#">100元以下</a>
-                    <a class="nolimit_choice" href="#">100-200元</a>
-                    <a class="nolimit_choice" href="#">200元以上</a>
-                </div>
-                <a class="mores_sq">
-                    <span>展开</span>
-                    <i class="glyphicon glyphicon-triangle-bottom"></i>
-                </a>
-
-            </div>
-            <div class="machine">
-                <div class="machine_sort">适用于：</div>
-
-                <div class="machine_Kindd">
-                    <a class="nolimit" href="#">不限</a>
-                    <a class="nolimit_choice" href="#">佩戴隐形眼镜使用</a>
-                    <a class="nolimit_choice" href="#">裸眼使用</a>
-                </div>
-                <span class="mores_sq">
-                    <span>展开</span>
-                <i class="glyphicon glyphicon-triangle-bottom"></i>
-                </span>
-
-            </div>
-            <div class="machine">
-                <div class="machine_sort">价格：</div>
-
-                <div class="machine_Kindd">
-                    <a class="nolimit" href="#">不限</a>
-
-                    <a class="nolimit_choice" href="#">去红血丝</a>
-                    <a class="nolimit_choice" href="#">去黄</a>
-                    <a class="nolimit_choice" href="#">消除疲劳</a>
-                    <a class="nolimit_choice" href="#">炎症治疗</a>
-                    <a class="nolimit_choice" href="#">眼睛养护</a>
-                    <a class="nolimit_choice" href="#">缓解佩戴隐形不适</a>
-                    <a class="nolimit_choice" href="#">营养养护</a>
-                </div>
-                <span class="mores_sq">
-                    <span>展开</span>
-                <i class="glyphicon glyphicon-triangle-bottom"></i>
-                </span>
-
-            </div>
-        </div>
-    </div>
-
-    <!--产品展示界面  Product_box产品盒子-->
-    <div class="Product_box">
-        <div class="Product_container">
-            <div class="Product_item" ng-cloak ng-repeat="v in newProductList">
+        <!--产品展示界面  Product_box产品盒子-->
+        <div class="Product_box">
+            <div class="Product_container">
+                <div class="Product_item" ng-cloak ng-repeat="v in newProductList">
                     <div class="item_01">
                         <a href="__APP__/ProductDetails/index?id={{v.id}}"><img ng-src="__ROOT__/{{v.bgImg}}" alt=""></a>
                         <a style="width:100px;height:100px;" href="__APP__/ProductDetails/index?id={{v.id}}"><img ng-src="__ROOT__/{{v.productImg}}" alt=""></a>
@@ -282,31 +183,27 @@
                             </div>
                             <div class="Next_layer02">
                                 <div>￥<span>{{v.wlPrice}}</span></div>
-                                <div id="like" ng-click="like()"></div>
+                                <div id="like"></div>
                             </div>
-                            <a href="__APP__/ProductDetails/index?id={{v.id}}">
-                                 <div class="Next_layer03" >
-                                </div>
-                            </a>
-                           
+                            <div class="Next_layer03">
+                            </div>
                         </div>
 
                     </div>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
+        <!--分页·paging -->
+        <div ng-cloak class="pager">
+            <a href="javascript:void(0);" ng-click="skip(0)">«首页</a>
+            <a href="javascript:void(0);" ng-click="pre(index-1)">上一页</a>
+            <a ng-repeat="v in range(0, count)" ng-class="{true:'current', false: ''}[index == v]" ng-click="skip(v)" href="javascript:void(0);">{{v + 1}}</a>
+            <a href="javascript:void(0);" ng-click="nexts(index+1)">下一页</a>
+            <a href="javascript:void(0);" ng-click="skip(count - 1)">尾页»</a>
+            <span><i style="font-style: normal">{{index + 1}}</i>/共<i style="font-style: normal">{{count}}</i>页</span>
+        </div>
     </div>
 
-    <!--分页·paging -->
-    <div ng-cloak class="pager">
-        <a href="javascript:void(0);" ng-click="skip(0)">«首页</a>
-        <a href="javascript:void(0);" ng-click="pre(index-1)">上一页</a>
-        <a ng-repeat="v in range(0, count)" ng-class="{true:'current', false: ''}[index == v]" ng-click="skip(v)" href="javascript:void(0);">{{v + 1}}</a>
-        <a href="javascript:void(0);" ng-click="nexts(index+1)">下一页</a>
-        <a href="javascript:void(0);" ng-click="skip(count - 1)">尾页»</a>
-        <span><i style="font-style: normal">{{index + 1}}</i>/共<i style="font-style: normal">{{count}}</i>页</span>
-    </div>
 
     <!--底部  -->
     <div class="header">
@@ -412,7 +309,7 @@
 </div>
     </div>
 
-    <!--侧边导航栏  -->
+    <!-- 侧边栏 -->
     <div class="sidebar_warp">
     <div class="sidebar">
         <ul class="sidebar_nav">
@@ -459,135 +356,22 @@
 
     </div>
 </div>
-    <script type="text/javascript" src="__ROOT__/Index/Common/js/lens.js"></script>
-    <script type="text/javascript" src="__ROOT__/Index/Common/js/slideshow.js"></script>
     <script type="text/javascript" src="__ROOT__/Index/Common/js/sidebar.js"></script>
-
+    <script src="__ROOT__/Index/Common/js/accesories.js"></script>
 </body>
 <script>
-    // 筛选功能
-    $(".machine>.mores_sq:gt(0)").each(function(i) {
-        let deploy = 1;
-        $(this).click(function() {
-            if (deploy == 1) {
-                $(this).children().eq(1).attr("class", "glyphicon glyphicon-triangle-top");
-                $(this).children().eq(0).text("收起");
-                deploy = 0;
-                var parendHeight = $(this).parent().css("height");
-                $(this).parent().children().eq(0).css("height", parendHeight);
-            } else {
-                $(this).children().eq(1).attr("class", "glyphicon glyphicon-triangle-bottom");
-                $(this).children().eq(0).text("展开");
-                deploy = 1;
-            };
-        });
-    });
-    var firstDeploy = 1;
-    $(".machine>.mores_sq:first").on("click", function() {
-        if (firstDeploy == 1) {
-            $(this).children().eq(1).attr("class", "glyphicon glyphicon-triangle-top");
-            $(this).children().eq(0).text("收起");
-            $(".containerre[title='select_box']>.machine[title='vary']").css("height", "auto");
-            firstDeploy = 0;
-
-            var parendHeight = $(this).parent().css("height");
-            $(this).parent().children().eq(0).css("height", parendHeight);
-
-
-        } else {
-            $(this).children().eq(1).attr("class", "glyphicon glyphicon-triangle-bottom");
-            $(this).children().eq(0).text("展开");
-            $(".containerre[title='select_box']>.machine[title='vary']").css("height", "51px");
-            firstDeploy = 1;
-        };
-    });
-    // 点击选项获取值添加标签在 已选条件里边
-    var textarr = [];
-    $(".nolimit_choice").each(function(i) {
-        // console.log(i);
-        $(".nolimit_choice").eq(i).click(function() {
-            var text = $(this).text();
-            textarr.push(i);
-
-            hco3addtag(text);
-            limitTerm();
-            $(".schon_choice").css("display", "block");
-            limitTerm();
-        });
-    });
-
-    // 获取值在创建标签添加到已选条件
-    function hco3addtag(text) {
-        var tagdata = "<a class='select' href='#'>" +
-            "<span class='select_data'>" + text + " </span>" +
-            "<i class='glyphicon glyphicon-remove'></i>" +
-            "</a>";
-        $(".schon_choice").append(tagdata);
-
-
-        // 每次添加条件时删除方法跟着走 这样就跟遍历到所有的条件
-        $(".select>.glyphicon-remove").each(function(i) {
-            $(this).click(function() {
-                $(this).parent().remove();
-            });
-        });
-    };
-    // 点击选择的时候 已选条件展开
-    $(".schon_choice>.vacum_up").click(function() {
-        $(".select").remove();
-        $(".schon_choice").css("display", "none");
-
-    });
-    // 初始时要删除已选条件
-    $(".select>.glyphicon-remove").each(function(i) {
-        $(this).click(function() {
-            $(this).parent().remove();
-        });
-    });
-    // 判断已选条件是否大于限制条件  大于条件就删除已选条件的子元素
-    function limitTerm() {
-        var str = $(".schon_choice").children().length >= 7;
-        if (str) {
-            $(".schon_choice").children().each(function(i) {
-                if (i >= 7) {
-                    $(".schon_choice").children().eq(i).remove();
-                };
-
-            });
-        };
-
-    };
-
-
-
-
-
-
-    // --------
-    var app = angular.module("myapps",[]);
-    app.controller("myLens",function($scope,$http){
-        $scope.newProductList = "";
+    var list = <?php echo ($list); ?>;
+    var count = <?php echo ($count); ?>;
+    var app = angular.module("myapps", []);
+    app.controller("myHot", function ($scope, $http) {
+        $scope.newProductList = list;
+        $scope.count = count;
         $scope.index = 0;
-        $http.get("__APP__/lens/getLens").success(function(data){
-            if (data.status == 1) {
-                $scope.newProductList = data['data'];
-                $scope.count = data.count;
-            } else {
-                alert("系统繁忙，请稍后...");
-            }
-        })
-        $scope.like = function(){
-            $http.get("__APP__/lens/like").success(function(data){
-                if(data.status == 1) {
-                    alert("已经添加到收藏夹");
-                }else{
-                    alert("由于你还未登陆，因此你还不能使用该功能");
-                }
-                    // console.log(data);
-            })
-
-        }
-
+        $(".currentPage").eq(0).addClass("current")
+        $(".currentPage").click(function () {
+            $(".currentPage").removeClass("current");
+            $(this).addClass("current");
+        });
         $scope.range = function(min, max, step) {
             step = step || 1;
             var input = [];
@@ -618,7 +402,7 @@
         }
         function getPageData(page) {
             $http({
-                url: "__APP__/Lens/getNewPage",
+                url: "__APP__/Search/getNewPage",
                 method: "post",
                 data: {
                     page: page
@@ -630,7 +414,7 @@
                 $scope.newProductList = data['data'];
                 $scope.count = data.count;
             })
-        }
+        } 
     })
 </script>
 

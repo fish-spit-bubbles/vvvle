@@ -53,4 +53,16 @@ class LensAction extends Action {
         }
         $this->ajaxReturn($info);
     }
+
+    public function like(){
+        if(!empty($_SESSION['username'])){
+            $info["info"] = "已经登录";
+            $info["status"] = 1;
+        }else{
+            $info["info"] = "未登录";
+            $info["status"] = 0;
+        }
+        $this->ajaxReturn($info);
+    }
+
 }
