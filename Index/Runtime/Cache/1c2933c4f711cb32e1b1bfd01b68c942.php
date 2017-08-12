@@ -441,7 +441,6 @@
                             }
                         }).success(function(data){
                                 if(data.status==1){
-                                    alert("登陆成功");
                                     window.location.href="__APP__/Index/index";
                                    
                                     
