@@ -1,0 +1,60 @@
+﻿SET FOREIGN_KEY_CHECKS = 0;
+
+DROP TABLE IF EXISTS  `vvvle_order`;
+CREATE TABLE `vvvle_order` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID主键',
+  `uid` int(11) DEFAULT NULL COMMENT '用户ID',
+  `pid` int(11) DEFAULT NULL COMMENT '商品ID',
+  `pbgimg` varchar(255) DEFAULT NULL COMMENT '商品图片路径',
+  `productName` varchar(255) DEFAULT NULL COMMENT '产品名称',
+  `leftdiy` varchar(255) DEFAULT NULL COMMENT '左眼度数',
+  `rigth` varchar(255) DEFAULT NULL COMMENT '右眼度数',
+  `marketPrice` varchar(255) DEFAULT NULL COMMENT '市场价格',
+  `wlprice` varchar(255) DEFAULT NULL COMMENT '本店价格',
+  `pnum` varchar(255) DEFAULT NULL COMMENT '购买商品数量',
+  `total` varchar(255) DEFAULT NULL COMMENT '小计',
+  `takeusername` varchar(255) DEFAULT NULL COMMENT '收货人',
+  `mobile` varchar(255) DEFAULT NULL COMMENT '手机号码',
+  `address` varchar(255) DEFAULT NULL COMMENT '收货地址',
+  `method` varchar(255) DEFAULT '0' COMMENT '配送方式；0为快递；1为EMS',
+  `pcost` varchar(255) DEFAULT NULL COMMENT '运费',
+  `payment` varchar(255) DEFAULT '0' COMMENT '支付方式：0为支付宝；1为微信',
+  `coupon` varchar(255) DEFAULT NULL COMMENT '优惠券',
+  `card` varchar(255) DEFAULT NULL COMMENT '礼品券',
+  `integral` varchar(255) DEFAULT NULL COMMENT '积分',
+  `sumOwing` varchar(255) DEFAULT NULL COMMENT '应付金额',
+  `buy` varchar(255) NOT NULL DEFAULT '0' COMMENT '是否购买，0为没有购买；1位购买',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8 COMMENT='购物车的表';
+
+insert into `vvvle_order`(`id`,`uid`,`pid`,`pbgimg`,`productName`,`leftdiy`,`rigth`,`marketPrice`,`wlprice`,`pnum`,`total`,`takeusername`,`mobile`,`address`,`method`,`pcost`,`payment`,`coupon`,`card`,`integral`,`sumOwing`,`buy`) values
+('6','1','101','http://localhost/vvvle/Index/Common/img/img_productDetails/3766_thumb_G_1501800650517.png','SUPER COLOR ME三色棕','-100','-125','402','188','1','188',null,null,null,'0',null,'0',null,null,'3',null,'0'),
+('7','1','103','http://localhost/vvvle/Index/Common/img/img_productDetails/3766_thumb_G_1501800650517.png','SUPER COLOR ME三色棕','-200','-375','402','188','1','188',null,null,null,'0',null,'0',null,null,'3',null,'0'),
+('16','28','251','http://127.0.0.1/vvvle/uploads/2017-08-10/wKiZ51Es7E.png','花王 蒸汽眼罩14片（玫瑰味）','-175','-200','699','222','1','188','啊实打实的','18701932036','天津市天津市和平区啊实打实的1','0',null,'1',null,null,'3','1504.00','1'),
+('17','28','241','http://127.0.0.1/vvvle/uploads/2017-08-10/M8RuMeHH8n.png','SEENCON STARII星阳棕色【硅水凝胶】','-150','-200','400','310','1','188','啊实打实的','18701932036','天津市天津市和平区啊实打实的1','0',null,'1',null,null,'3','1504.00','1'),
+('19','28','252','http://127.0.0.1/vvvle/uploads/2017-08-10/DzE3JFL7OX.png','花王 蒸汽眼罩14片（玫瑰味）','-175','-300','699','55','1','188','啊实打实的','18701932036','天津市天津市和平区啊实打实的1','0',null,'1',null,null,'3','1504.00','1'),
+('20','28','230','http://127.0.0.1/vvvle/uploads/2017-08-10/9lBJnh41LH.png','日本atex猫咪眼罩','-100','-150','276','198','1','188','啊实打实的','18701932036','天津市天津市和平区啊实打实的1','0',null,'1',null,null,'3','1504.00','1'),
+('25','28','220','http://localhost/vvvle/uploads/2017-08-09/ImpQU0xibE.png','OLIVI 摩芙巧克力','-175','-150','362','241','1','188','啊实打实的','18701932036','天津市天津市和平区啊实打实的1','0',null,'1',null,null,'3','1504.00','1'),
+('26','28','216','http://localhost/vvvle/uploads/2017-08-10/dkbEVWBUZO.png','SEENCON 彩虹甜心棕【硅水凝胶】','-175','-225','450','389','1','188','啊实打实的','18701932036','天津市天津市和平区啊实打实的1','0',null,'1',null,null,'3','1504.00','1'),
+('27','28','242','http://localhost/vvvle/uploads/2017-08-10/21eLvaCupd.png','SEENCON STARII星阳棕色【硅水凝胶】','-125','-175','400','310','1','188','啊实打实的','18701932036','天津市天津市和平区啊实打实的1','0',null,'1',null,null,'3','1504.00','1'),
+('29','34','221','http://localhost/vvvle/uploads/2017-08-09/HHJwbJGW7i.png','OLIVI 蜜糖花蕊巧克力（吴速玲同款）','-200','-200','240','360','1','188','dsasdas','18860896561','上海市上海市徐汇区asdasdasdasd','0',null,'0',null,null,'3','188.00','1'),
+('30','28','248','http://localhost/vvvle/uploads/2017-08-10/nPyU3nTIKq.png','法国 innoxa人鱼眼泪 去黄眼药水（裸眼使用）','-125','-175','400','125','1','188','啊实打实的','18701932036','天津市天津市和平区啊实打实的1','0',null,'1',null,null,'3','1504.00','1'),
+('31','0','247','http://localhost/vvvle/uploads/2017-08-10/llCXQ3okQE.png','法国 innoxa人鱼眼泪 去黄眼药水（裸眼使用）','-150','-200','400','125','1','188',null,null,null,'0',null,'0',null,null,'3',null,'0'),
+('32','0','242','http://localhost/vvvle/uploads/2017-08-10/21eLvaCupd.png','SEENCON STARII星阳棕色【硅水凝胶】','-150','-150','400','310','1','188',null,null,null,'0',null,'0',null,null,'3',null,'0'),
+('40','34','241','http://localhost/vvvle/uploads/2017-08-10/M8RuMeHH8n.png','SEENCON STARII星阳棕色【硅水凝胶】','-200','-175','400','310','1','188','阿萨斯大所多','18860896561','重庆市重庆市沙坪坝区奥术大师大所大','0',null,'0',null,null,'3','188.00','1'),
+('41','28','235','http://localhost/vvvle/uploads/2017-08-10/gHwELXJY5U.png','SEENCON STARII星阳棕色【硅水凝胶】','-175','-150','380','260','1','188','收索','18701932036','上海市上海市黄浦区s\'s撒旦','0',null,'0',null,null,'3','2080.00','1'),
+('44','0','239','http://localhost/vvvle/uploads/2017-08-10/9MmRTf9PXe.png','SEENCON STARII星阳棕色【硅水凝胶】','-125','-150','400','310','1','188',null,null,null,'0',null,'0',null,null,'3',null,'0'),
+('46','37','242','http://crlate.com/vvvle/uploads/2017-08-10/21eLvaCupd.png','SEENCON STARII星阳棕色【硅水凝胶】','-200','-150','400','310','1','188','大大发到付','18860896561','河南省洛阳市老城区奥术大师大所','0',null,'1',null,null,'3','3300.00','1'),
+('47','37','221','http://crlate.com/vvvle/uploads/2017-08-09/HHJwbJGW7i.png','OLIVI 蜜糖花蕊巧克力（吴速玲同款）','平光','-125','240','360','1','188','大大发到付','18860896561','河南省洛阳市老城区奥术大师大所','0',null,'1',null,null,'3','3300.00','1'),
+('55','37','235','http://crlate.com/vvvle/uploads/2017-08-10/gHwELXJY5U.png','SEENCON STARII星阳棕色【硅水凝胶】','-150','-150','380','260','1','188','cr','18217798504','重庆市重庆市江北区2322131321','0',null,'0',null,null,'3','188.00','1'),
+('57','34','218','http://crlate.com/vvvle/uploads/2017-08-09/KYRF5FKeVH.png','OLIVI 轻瞳 茶束棕（硅水凝胶）','-125','-125','132','198','1','188','奥术大师大','18860896561','重庆市重庆市沙坪坝区阿斯达多','0',null,'0',null,null,'3','792.00','1'),
+('58','34','254','http://crlate.com/vvvle/uploads/2017-08-13/m2mF2PP7aZ.png','SEENCON HOLICOCO棕【硅水凝胶】【年抛】','-150','-125','450','300','1','188',null,null,null,'0',null,'0',null,null,'3',null,'0'),
+('59','49','217','http://crlate.com/vvvle/uploads/2017-08-09/rhVXniLOpq.png','OLIVI 轻瞳 轻芯巧克力（硅水凝胶）','-125','-150','132','198','1','188',null,null,null,'0',null,'0',null,null,'3',null,'0'),
+('61','49','219','http://crlate.com/vvvle/uploads/2017-08-09/vUJY3oDWWf.png','OLIVI 轻瞳 圣洛灰（硅水凝胶）','-125','-150','198','132','1','188',null,null,null,'0',null,'0',null,null,'3',null,'0'),
+('62','34','242','http://crlate.com/vvvle/uploads/2017-08-10/21eLvaCupd.png','SEENCON STARII星阳棕色【硅水凝胶】','-125','-125','400','310','1','188',null,null,null,'0',null,'0',null,null,'3',null,'0'),
+('63','0','233','http://crlate.com/vvvle/uploads/2017-08-10/Fu6VNtoBGT.png','小黄鸭USB美瞳清洗器','-100','-100','78','38','1','188',null,null,null,'0',null,'0',null,null,'3',null,'0'),
+('65','28','245','http://crlate.com/vvvle/uploads/2017-08-10/50y6iZFa4W.png','法国 innoxa人鱼眼泪 去黄眼药水（裸眼使用）','-150','-175','400','125','1','188',null,null,null,'0',null,'0',null,null,'3',null,'0'),
+('67','28','234','http://crlate.com/vvvle/uploads/2017-08-10/EIfJtwrrag.png','SEENCON 彩虹甜心棕【硅水凝胶】','-150','-175','450','389','1','188',null,null,null,'0',null,'0',null,null,'3',null,'0'),
+('68','28','233','http://crlate.com/vvvle/uploads/2017-08-10/Fu6VNtoBGT.png','小黄鸭USB美瞳清洗器','-125','-125','78','38','1','188',null,null,null,'0',null,'0',null,null,'3',null,'0');
+SET FOREIGN_KEY_CHECKS = 1;
+

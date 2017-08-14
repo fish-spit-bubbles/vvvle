@@ -49,8 +49,9 @@ class ProductDetailsAction extends Action {
             };  
         }else{
              $info['status']=2;
+             $this->ajaxReturn($info); 
         }
-         $this->ajaxReturn($info); 
+       
              
     }
 
@@ -81,6 +82,7 @@ class ProductDetailsAction extends Action {
         }else{
             $info['info']="用户不存在";
             $info['status']=2;
+            $this->ajaxReturn($info); 
         };
     }
 

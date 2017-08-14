@@ -243,7 +243,7 @@ function cartGetGoods(event){
                      opdernum=1;
                      $(".sbar_nub_icon").text(opdernum);
                 }else{
-                   alert("系统错误");     
+                    window.location.href="http://crlate.com/vvvle/index.php/Login/login";    
                 };
         };
     };
@@ -531,7 +531,7 @@ app.controller("mycontroller", function($scope, $http) {
         path: "1487923665772195.jpg"
     }];
     // 图片加载路径
-    $scope.imgsppath="http://localhost/vvvle/Index/Common/img/img_productDetails/";
+    $scope.imgsppath="http://crlate.com/vvvle/Index/Common/img/img_productDetails/";
     for (var i = 0; i < $scope.imgarr.length; i++) {
         $scope.imgarr[i].path =   $scope.imgsppath+$scope.imgarr[i].path;  
     };

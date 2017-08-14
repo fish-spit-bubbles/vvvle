@@ -1,0 +1,61 @@
+﻿SET FOREIGN_KEY_CHECKS = 0;
+
+DROP TABLE IF EXISTS  `vvvle_goods`;
+CREATE TABLE `vvvle_goods` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '产品id主键',
+  `brand` varchar(255) DEFAULT NULL COMMENT '品牌',
+  `category` varchar(255) DEFAULT NULL COMMENT '品类',
+  `applyTo` varchar(255) DEFAULT NULL COMMENT '适用于',
+  `effect` varchar(255) DEFAULT NULL COMMENT '功效',
+  `marketPrice` varchar(11) DEFAULT NULL COMMENT '市场价格',
+  `wlPrice` varchar(11) DEFAULT NULL COMMENT '微乐价',
+  `salesVolume` int(11) DEFAULT NULL COMMENT '销量',
+  `productName` varchar(255) DEFAULT NULL COMMENT '产品名',
+  `bgImg` varchar(255) DEFAULT NULL COMMENT '代言人图片路径',
+  `productImg` varchar(255) DEFAULT NULL COMMENT '产品图片路径',
+  `addTime` varchar(255) DEFAULT NULL COMMENT '添加时间',
+  `infoImg` varchar(255) DEFAULT NULL COMMENT '商品信息图',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=257 DEFAULT CHARSET=utf8 COMMENT='商品表';
+
+insert into `vvvle_goods`(`id`,`brand`,`category`,`applyTo`,`effect`,`marketPrice`,`wlPrice`,`salesVolume`,`productName`,`bgImg`,`productImg`,`addTime`,`infoImg`) values
+('216','SEENCON','彩虹甜心棕','学生白领','学生白领','450','389','31','SEENCON 彩虹甜心棕【硅水凝胶】','uploads/2017-08-10/9T4XH7ZZjC.jpg','uploads/2017-08-10/dkbEVWBUZO.png',null,'uploads/2017-08-10/6sBikbBJ04.jpg'),
+('217','OLIVI','轻瞳','学生白领','学生白领','132','198','31746','OLIVI 轻瞳 轻芯巧克力（硅水凝胶）','uploads/2017-08-10/YV7KthuKLh.jpg','uploads/2017-08-09/rhVXniLOpq.png',null,'uploads/2017-08-09/7ROd8iK8mI.jpg,uploads/2017-08-09/67k9ZT4EMg.jpg,uploads/2017-08-09/h9ePxdCxRf.jpg,uploads/2017-08-09/HLlH9NTeYd.jpg'),
+('218','OLIVI','轻瞳','自然舒适','自然舒适','132','198','25148','OLIVI 轻瞳 茶束棕（硅水凝胶）','uploads/2017-08-10/lnLvdCVwNq.jpg','uploads/2017-08-09/KYRF5FKeVH.png',null,'uploads/2017-08-09/HEPjcQVgee.jpg,uploads/2017-08-09/SphSRPxWJ8.jpg,uploads/2017-08-09/GW5H5BTIB0.jpg,uploads/2017-08-09/rp9gR5r95o.jpg'),
+('219','OLIVI','轻瞳','混血冷艳','混血冷艳','198','132','20314','OLIVI 轻瞳 圣洛灰（硅水凝胶）','uploads/2017-08-10/wbdHLEHpD7.jpg','uploads/2017-08-09/vUJY3oDWWf.png',null,'uploads/2017-08-09/B9ndr5ENiN.jpg,uploads/2017-08-09/b0SZIIpKpp.jpg,uploads/2017-08-09/c0Z3Hofe04.jpg,uploads/2017-08-09/Unyw9TdljF.jpg'),
+('220','OLIVI','轻瞳','甜美气质','甜美气质','362','241','36694','OLIVI 摩芙巧克力','uploads/2017-08-10/wBewu1Uo50.jpg','uploads/2017-08-09/ImpQU0xibE.png',null,'uploads/2017-08-09/tA9fGeNfES.jpg,uploads/2017-08-09/gaj4Psu2Kx.jpg,uploads/2017-08-09/3jyxAnXJAm.jpg,uploads/2017-08-09/8CP7bWfQk0.jpg'),
+('221','OLIVI','轻瞳','混血','混血','240','360','21175','OLIVI 蜜糖花蕊巧克力（吴速玲同款）','uploads/2017-08-10/QrxBSoK0P5.jpg','uploads/2017-08-09/HHJwbJGW7i.png',null,'uploads/2017-08-09/UOUGxM292s.jpg,uploads/2017-08-09/TZfetVEbUe.jpg,uploads/2017-08-09/gSxVgFnuPM.jpg,uploads/2017-08-09/m9tOMOr9qr.jpg'),
+('222','SEENCON','STARII星阳棕色','自然','自然','450','266','26','SEENCON STARII星阳棕色【硅水凝胶】','uploads/2017-08-10/0jq2gelrAM.jpg','uploads/2017-08-10/fWUVaEGs8p.png',null,'uploads/2017-08-10/pSIkIiwhfB.jpg'),
+('223','SEENCON','STARII星阳棕色','自然','自然','450','300','28','SEENCON STARII星阳金色【硅水凝胶】','uploads/2017-08-10/DGLF8S0PGv.jpg','uploads/2017-08-10/pcFHVf0gPG.png','1502330291','uploads/2017-08-10/2i3KHts2Sa.jpg,uploads/2017-08-10/gfyZuHx5NA.jpg,uploads/2017-08-10/2xksEP2CI8.jpg,uploads/2017-08-10/XamY6DQHV4.jpg'),
+('225','EYE DROPS','滴眼液','佩戴隐形眼镜使用','消除疲劳','99','88','1631','乐敦蓝魅劲Z!专业C眼藥水 12ml','uploads/2017-08-10/8UEqgYzaWj.jpg','uploads/2017-08-10/CPUp9W4et7.png',null,'uploads/2017-08-10/qIgFw4bDjx.jpg'),
+('226','EYE DROPS','滴眼液','佩戴隐形眼镜使用','消除疲劳','237','158','1631','乐敦C3魔方护理液 500ml','uploads/2017-08-10/2pwa2bGLby.jpg','uploads/2017-08-10/22eSkgsd7i.png','1502357660','uploads/2017-08-10/6zbGvEKYXB.jpg'),
+('227','EYE DROPS','滴眼液','佩戴隐形眼镜使用','消除疲劳','137','91','8397','乐敦ROHTO 养润水 13ml','uploads/2017-08-10/lDjNV0diSb.jpg','uploads/2017-08-10/EFfwCMf4Em.png','1502357766','uploads/2017-08-10/CX0AABCiv3.jpg'),
+('228','EYE DROPS','滴眼液','佩戴隐形眼镜使用','消除疲劳','204','136','9871','乐敦ROHTO C3 Softone Moist护理液 500ml（滋润型）','uploads/2017-08-10/im9nFk17JX.jpg','uploads/2017-08-10/4xVK01Mvox.png','1502357896','uploads/2017-08-10/uvbw2N0QSm.jpg'),
+('229','PARTS','配件','裸眼使用','眼镜养护','190','150','7348','【特价秒杀】3N 自动隐形眼镜清洗器','uploads/2017-08-10/24MSIvZpd1.jpg','uploads/2017-08-10/tv4ErSZlad.png','1502365175','uploads/2017-08-10/oI3aFbM6Kr.jpg'),
+('230','PARTS','配件','裸眼使用','眼镜养护','276','198','1925','日本atex猫咪眼罩','uploads/2017-08-10/dOSDXHjw8p.jpg','uploads/2017-08-10/9lBJnh41LH.png','1502365224','uploads/2017-08-10/DPchlbYo5Y.jpg'),
+('231','PARTS','配件','裸眼使用','眼镜养护','126','70','910','花王 蒸汽眼罩14片（玫瑰味）','uploads/2017-08-10/5T73j6p4vk.jpg','uploads/2017-08-10/RVfYYi2UyA.png','1502365264','uploads/2017-08-10/QPw5EKThg9.jpg'),
+('232','PARTS','配件','裸眼使用','眼镜养护','98','68','1309','迪士尼 3D隐形眼镜双联盒','uploads/2017-08-10/ltErw1haOB.jpg','uploads/2017-08-10/pFm3ZzmSvF.png','1502365330','uploads/2017-08-10/tZb6tNEaz0.jpg'),
+('233','PARTS','配件','裸眼使用','眼镜养护','78','38','5525','小黄鸭USB美瞳清洗器','uploads/2017-08-10/qmFZmujrVu.jpg','uploads/2017-08-10/Fu6VNtoBGT.png','1502365392','uploads/2017-08-10/EvucXJnHlw.jpg'),
+('234','SEENCON','彩虹甜心棕','学生白领','学生白领','450','389','313','SEENCON 彩虹甜心棕【硅水凝胶】','uploads/2017-08-10/GT08Xz5IIg.jpg','uploads/2017-08-10/EIfJtwrrag.png','1502368258','uploads/2017-08-10/ivE336Rey6.jpg'),
+('235','SEENCON','彩虹甜心棕','学生白领','学生白领','380','260','5656','SEENCON STARII星阳棕色【硅水凝胶】','uploads/2017-08-10/goJSP8IiDx.jpg','uploads/2017-08-10/gHwELXJY5U.png','1502368469','uploads/2017-08-10/B0hh8BK7P8.jpg'),
+('236','SEENCON','彩虹甜心棕','学生白领','学生白领','3800','2600','56','SEENCON STARII星阳棕色【硅水凝胶】','uploads/2017-08-10/jl1YmGNghV.jpg','uploads/2017-08-10/NLfdfmWZHg.png','1502368495','uploads/2017-08-10/Fi9mcYG0Lz.jpg'),
+('237','SEENCON','彩虹甜心棕','学生白领','学生白领','360','180','990','SEENCON STARII星阳棕色【硅水凝胶】','uploads/2017-08-10/QOmK2EQkrT.jpg','uploads/2017-08-10/kmr6laGf6f.png','1502368524','uploads/2017-08-10/VELPWdgGns.jpg'),
+('238','SEENCON','彩虹甜心棕','学生白领','学生白领','400','310','83','SEENCON STARII星阳棕色【硅水凝胶】','uploads/2017-08-10/ueXa5QtGqm.jpg','uploads/2017-08-10/jx97XcByFt.png','1502368557','uploads/2017-08-10/fvOKvyIAwf.jpg'),
+('239','SEENCON','彩虹甜心棕','学生白领','学生白领','400','310','83','SEENCON STARII星阳棕色【硅水凝胶】','uploads/2017-08-10/38Muu6tyQX.jpg','uploads/2017-08-10/9MmRTf9PXe.png','1502368578','uploads/2017-08-10/dnmOLrKx9M.jpg'),
+('240','SEENCON','彩虹甜心棕','学生白领','学生白领','400','310','83','SEENCON STARII星阳棕色【硅水凝胶】','uploads/2017-08-10/Xk24u3Y35V.jpg','uploads/2017-08-10/lC4N6c5R64.png','1502368597','uploads/2017-08-10/3X3x7vRotw.jpg'),
+('241','SEENCON','彩虹甜心棕','学生白领','学生白领','400','310','83','SEENCON STARII星阳棕色【硅水凝胶】','uploads/2017-08-10/9ot2fnrmhi.jpg','uploads/2017-08-10/M8RuMeHH8n.png','1502368609','uploads/2017-08-10/78DNzfQK2H.jpg'),
+('242','SEENCON','彩虹甜心棕','学生白领','学生白领','400','310','83','SEENCON STARII星阳棕色【硅水凝胶】','uploads/2017-08-10/q8GgcxMn7U.jpg','uploads/2017-08-10/21eLvaCupd.png','1502368673','uploads/2017-08-10/Tix5vFPt1o.jpg'),
+('243','EYE DROPS','护理液','佩戴隐形眼镜使用','眼镜养护','400','125','66','法国 innoxa人鱼眼泪 去黄眼药水（裸眼使用）','uploads/2017-08-10/kBslifyB2z.jpg','uploads/2017-08-10/7POEHbvu7Q.png','1502369049','uploads/2017-08-10/v4a5vULLts.jpg'),
+('244','EYE DROPS','护理液','佩戴隐形眼镜使用','眼镜养护','400','125','58','法国 innoxa人鱼眼泪 去黄眼药水（裸眼使用）','uploads/2017-08-10/xNwXnyN7Dp.jpg','uploads/2017-08-10/b9TT56K3rw.png','1502369072','uploads/2017-08-10/Yel9t3kUEh.jpg'),
+('245','EYE DROPS','护理液','佩戴隐形眼镜使用','眼镜养护','400','125','58','法国 innoxa人鱼眼泪 去黄眼药水（裸眼使用）','uploads/2017-08-10/xlVvgipLTw.jpg','uploads/2017-08-10/50y6iZFa4W.png','1502369082','uploads/2017-08-10/Rv2RHzKZ9M.jpg'),
+('246','EYE DROPS','护理液','佩戴隐形眼镜使用','眼镜养护','400','125','58','法国 innoxa人鱼眼泪 去黄眼药水（裸眼使用）','uploads/2017-08-10/XrmYOypFUs.jpg','uploads/2017-08-10/4FKXnagsph.png','1502369089','uploads/2017-08-10/AsW5k5X14o.jpg'),
+('247','EYE DROPS','护理液','佩戴隐形眼镜使用','眼镜养护','400','125','58','法国 innoxa人鱼眼泪 去黄眼药水（裸眼使用）','uploads/2017-08-10/8TeuMmzA9p.jpg','uploads/2017-08-10/llCXQ3okQE.png','1502369096','uploads/2017-08-10/8uY1Sc4k8U.jpg'),
+('248','EYE DROPS','护理液','佩戴隐形眼镜使用','眼镜养护','400','125','58','法国 innoxa人鱼眼泪 去黄眼药水（裸眼使用）','uploads/2017-08-10/6fUoyC1sSW.jpg','uploads/2017-08-10/nPyU3nTIKq.png','1502369115','uploads/2017-08-10/LlGRUx1FiP.jpg'),
+('249','PARTS','配件','裸眼使用','眼镜养护','785','565','12','花王 蒸汽眼罩14片（玫瑰味）','uploads/2017-08-10/ddDqhUjyp0.jpg','uploads/2017-08-10/s9GW8cnVd3.png','1502369298','uploads/2017-08-10/tRPpbta0xI.jpg'),
+('251','PARTS','配件','裸眼使用','眼镜养护','699','222','59','花王 蒸汽眼罩14片（玫瑰味）','uploads/2017-08-10/Xz1ng73xir.jpg','uploads/2017-08-10/wKiZ51Es7E.png','1502369412','uploads/2017-08-10/aTRgps0zIr.jpg'),
+('252','PARTS','配件','裸眼使用','眼镜养护','699','55','36','花王 蒸汽眼罩14片（玫瑰味）','uploads/2017-08-10/LQ2oBVYCk6.jpg','uploads/2017-08-10/DzE3JFL7OX.png','1502369464','uploads/2017-08-10/6PzAIkgWnP.jpg'),
+('253','博士伦','轻通','佩戴隐形眼镜使用','去黄','450','300','277','SEENCON HOLICOCO棕【硅水凝胶】【年抛】','uploads/2017-08-13/cxMKMkk4Jt.jpg','uploads/2017-08-13/qhp3akZN7R.png','1502635836','uploads/2017-08-13/zvHxbNdxim.jpg'),
+('254','博士伦','轻瞳','佩戴隐形眼镜使用','去黄','450','300','277','SEENCON HOLICOCO棕【硅水凝胶】【年抛】','uploads/2017-08-13/gVnUdX39K0.jpg','uploads/2017-08-13/m2mF2PP7aZ.png','1502636003','uploads/2017-08-13/ZaCoST57Lm.jpg'),
+('255','OLIVI','OLIVI 蜜桃花','自然','自然','998','668','2000','OLIVI 蜜桃花阳棕色【硅水凝胶】','uploads/2017-08-14/cWXUcGlzdB.jpg','uploads/2017-08-14/KBMFOcPfF9.png','1502694317','uploads/2017-08-14/naFC6CMUfb.jpg');
+SET FOREIGN_KEY_CHECKS = 1;
+

@@ -45,7 +45,7 @@
                 <img src="__ROOT__/Index/Common/img/logo_02.png" alt="LOGO">
             </a>
             <div class="center_input_form">
-                <input type="text" placeholder="请输出商品">
+                <input type="text" placeholder="请输入商品">
                 <a href="javascript:void(0);">
                     <img src="__ROOT__/Index/Common/img/search_01.png" alt="搜索">
                 </a>
@@ -105,8 +105,8 @@
             $(".bootm_naviea_hove" + ":lt(" + i + ")").css("color", "#000");
         });
     });
-    $(".center_input_form img").click(function(){
+    $(".center_input_form img").click(function() {
         var txt = $(".center_input_form input").val();
-        window.location.href = "__APP__/Search/search?keywords="+txt;
+        window.location.href = "__APP__/Search/search?keywords=" + txt;
     })
 </script>
